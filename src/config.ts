@@ -25,23 +25,22 @@ export const siteConfig = {
   rating: 4.2,
   reviewCount: '6,094',
 
-  // 实时天气/日落 API 坐标（景点真实位置：湄卡运河，Haiya，清迈）
-  // 来源：Google Maps 嵌入定位 18.7771°N, 98.3858°E
+  // 实时天气/日落 API 坐标
+  // 通过环境变量动态获取，支持 pSEO 批量部署不同景点
   coords: {
-    lat: 18.7771,
-    lng: 98.3858,
+    lat: Number(import.meta.env.PUBLIC_LAT) || 18.8655, // 默认回退为 Mae Kampong (18.8655)
+    lng: Number(import.meta.env.PUBLIC_LNG) || 99.3512, // 默认回退为 Mae Kampong (99.3512)
   },
 
-  // Google Maps 跳转链接（首屏 / 照片 / 评价 / 页脚 共 4 处可见锚点均指向此处）
-  mapsUrl: 'https://maps.app.goo.gl/mjLfRYB7xBtk5quR9',
+  // Google Maps 跳转链接
+  mapsUrl: import.meta.env.PUBLIC_MAPS_URL || '',
 
-  // Google Maps 嵌入（地图区右侧缩略图）。语言由 MapSection 按站点语言动态替换。
-  googleMapsEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d483516.53501180286!2d98.38582688906251!3d18.777065699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3bb458d9dc27%3A0x2989451c5630692f!2sMae%20Kha%20Canal!5e0!3m2!1szh-CN!2sus!4v1784700761929!5m2!1szh-CN!2sus',
+  // Google Maps 嵌入
+  googleMapsEmbed: import.meta.env.PUBLIC_MAPS_EMBED || '',
 
-  // 地址与 Plus Code
-  address: '118 Ragang Rd, Haiya, Mueang Chiang Mai District, Chiang Mai 50100, Thailand',
-  plusCode: 'QXGW+R6',
+  // 地址与 Plus Code（已剔除无关的湄卡运河信息，避免 SEO 数据污染）
+  address: import.meta.env.PUBLIC_ADDRESS || '',
+  plusCode: import.meta.env.PUBLIC_PLUS_CODE || '',
 
   // 画廊图片前缀（配合 public/gallery/mae-kha-canal-1..N.jpg 使用）
   galleryPrefix: 'mae-kha-canal-',
