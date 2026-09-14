@@ -1,11 +1,15 @@
 ---
 import { siteConfig } from '../config';
+import type { Lang } from '../i18n/ui';
 
 interface Props {
   messages: Record<string, any>;
+  lang?: Lang;
 }
-const { messages } = Astro.props;
+const { messages, lang } = Astro.props;
 const s = messages.sources;
+const currentLang = (lang || 'en') as keyof typeof siteConfig.reviewsSyncDate;
+const syncDate = siteConfig.reviewsSyncDate[currentLang];
 ---
 
 <section id="sources" class="py-16 bg-teakDeep text-ivory">
@@ -21,27 +25,37 @@ const s = messages.sources;
           {s.photoItems.map((it) => (
             <li>
               {it.url
-                ? <a href={it.url} class="underline hover:text-goldBright" target="_blank" rel="noopener">{it.text} — {it.linkLabel}</a>
+                ? <a href={it.url} class="underline hover:text-goldBright" target="_blank" rel="noopener noreferrer">{it.text} — {it.linkLabel}</a>
                 : it.text}
             </li>
           ))}
         </ul>
+        <p class="mt-4 text-xs text-ivory/55 border-t border-gold/15 pt-3">{s.imageCopyright}</p>
       </div>
+      <div>
+        <h3 class="font-display text-xl text-goldBright">{s.reviewTitle}</h3>
+        <p class="mt-3 text-sm text-ivory/80">{(s.reviewText || '').replace(/\{syncDate\}/g, syncDate)}</p>
+        <a href={siteConfig.mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-goldBright underline hover:underline-offset-4 text-sm">
+          {s.reviewLink} ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-8">
       <div>
         <h3 class="font-display text-xl text-goldBright">{s.factTitle}</h3>
         <p class="mt-3 text-sm text-ivory/80">{s.factText}</p>
       </div>
-    </div>
-
-    <div class="mt-8 rounded-2xl border border-gold/30 bg-white/5 p-5">
-      <h3 class="font-display text-lg text-goldBright">{s.correctionTitle}</h3>
-      <p class="mt-2 text-sm text-ivory/80">{s.correctionText}</p>
-      <a
-        href={s.correctionMailto}
-        class="inline-block mt-3 bg-gold text-teak font-semibold px-5 py-2 rounded-full hover:bg-goldBright transition-colors text-sm"
-      >
-        {s.correctionCta}
-      </a>
+      <div class="rounded-2xl border border-gold/30 bg-white/5 p-5">
+        <h3 class="font-display text-lg text-goldBright">{s.correctionTitle}</h3>
+        <p class="mt-2 text-sm text-ivory/80">{s.correctionText}</p>
+        <a
+          href={s.correctionMailto}
+          class="inline-block mt-3 bg-gold text-teak font-semibold px-5 py-2 rounded-full hover:bg-goldBright transition-colors text-sm"
+        >
+          {s.correctionCta}
+        </a>
+      </div>
     </div>
 
     <p class="mt-8 text-xs text-ivory/45">© {new Date().getFullYear()} {s.copyright}</p>

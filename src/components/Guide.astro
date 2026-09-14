@@ -98,13 +98,166 @@ const guideImgs = [
       </div>
     </div>
 
+    <!-- ========== 新增：季度策略表 ========== -->
+    {guide.quarterly && (
+      <div class="mt-14 max-w-5xl">
+        <p class="font-hand text-gold text-xl">{guide.quarterly.label}</p>
+        <h3 class="font-display text-2xl text-teak mt-1">{guide.quarterly.title}</h3>
+        <p class="text-sm text-ink/75 mt-2 mb-6">{guide.quarterly.intro}</p>
+        <div class="overflow-x-auto rounded-2xl border border-gold/30 bg-white/60 shadow-sm">
+          <table class="min-w-full text-sm">
+            <thead class="bg-teak/10 text-teak">
+              <tr>
+                {guide.quarterly.headers.map((h) => (
+                  <th class="px-4 py-3 text-left font-display whitespace-nowrap border-b border-gold/20">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gold/15">
+              {guide.quarterly.rows.map((row) => (
+                <tr class="hover:bg-gold/5 align-top">
+                  <td class="px-4 py-3 font-semibold text-teak whitespace-nowrap">{row.q}</td>
+                  <td class="px-4 py-3 whitespace-nowrap">{row.t}</td>
+                  <td class="px-4 py-3">{row.r}</td>
+                  <td class="px-4 py-3">{row.w}</td>
+                  <td class="px-4 py-3">{row.wildlife}</td>
+                  <td class="px-4 py-3 text-gold tracking-wider whitespace-nowrap">{row.score}</td>
+                  <td class="px-4 py-3 text-ink/85">{row.adv}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<!-- ========== #routes：按人群路线 + 通用半日/全日路线 ========== -->
+<section id="routes" class="py-20 bg-teak/5 text-ink border-y border-dashed border-gold/30">
+  <div class="max-w-7xl mx-auto px-5">
+    {guide.tailoredRoutes && (
+      <div class="max-w-5xl">
+        <p class="font-hand text-gold text-xl">{guide.tailoredRoutes.label}</p>
+        <h3 class="font-display font-semibold text-3xl md:text-4xl text-teak mt-2">{guide.tailoredRoutes.title}</h3>
+        <p class="text-sm text-ink/75 mt-2 mb-8">{guide.tailoredRoutes.intro}</p>
+        <div class="grid md:grid-cols-3 gap-5">
+          {guide.tailoredRoutes.items.map((r) => (
+            <article class="rounded-2xl border border-gold/30 bg-white/70 p-6 shadow-sm flex flex-col">
+              <h4 class="font-display text-teak font-semibold text-xl leading-snug">{r.name}</h4>
+              <div class="mt-2 text-xs space-y-1 text-ink/70">
+                <div><span class="font-medium text-gold">{guide.tailoredRoutes.paceLabel || '节奏'}：</span>{r.pace}</div>
+                <div><span class="font-medium text-gold">{guide.tailoredRoutes.audienceLabel || '适用'}：</span>{r.audience}</div>
+              </div>
+              <ol class="mt-4 space-y-2 text-sm text-ink/80 list-decimal pl-5 [&>li]:marker:text-gold">
+                {r.steps.map((s) => (
+                  <li>{s.replace(/^\d+[:：\.]?\s*/, '')}</li>
+                ))}
+              </ol>
+              {r.note && (
+                <p class="mt-4 pt-4 border-t border-dashed border-gold/25 text-xs text-teak/85">💡 {r.note}</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {guide.itinerary && (
+      <div class="mt-16 max-w-5xl">
+        <p class="font-hand text-gold text-xl">{guide.itinerary.label}</p>
+        <h3 class="font-display font-semibold text-3xl md:text-4xl text-teak mt-2">{guide.itinerary.title}</h3>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          {(['half', 'full'] as const).map((key) => {
+            const plan = guide.itinerary[key];
+            if (!plan) return null;
+            return (
+              <article class="rounded-2xl border border-gold/30 bg-white/70 p-6 shadow-sm">
+                <h4 class="font-display text-xl text-teak font-semibold">{plan.name}</h4>
+                <ol class="mt-4 space-y-2 text-sm text-ink/80 list-decimal pl-5 [&>li]:marker:text-gold">
+                  {plan.steps.map((s: string) => (
+                    <li>{s.replace(/^\d+[:：\.]?\s*/, '')}</li>
+                  ))}
+                </ol>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<!-- ========== #facilities：访客服务与周边设施（7 项 · 类型中立） ========== -->
+<section id="facilities" class="py-20 bg-ivory text-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    {guide.facilities && (
+      <div class="max-w-5xl">
+        <p class="font-hand text-gold text-xl">{guide.facilities.label}</p>
+        <h3 class="font-display font-semibold text-3xl md:text-4xl text-teak mt-2">{guide.facilities.title}</h3>
+        <p class="text-sm text-ink/75 mt-2 mb-8">{guide.facilities.intro}</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {guide.facilities.groups.map((g) => (
+            <article class="rounded-2xl border border-gold/30 bg-white/60 p-6 shadow-sm hover:border-gold hover:shadow-md transition">
+              <div class="text-3xl mb-2" aria-hidden="true">{g.icon}</div>
+              <h4 class="font-display text-teak font-semibold text-lg">{g.name}</h4>
+              <p class="mt-2 text-sm text-ink/80 leading-relaxed">{g.desc}</p>
+              {g.note && (
+                <p class="mt-3 pt-3 border-t border-dashed border-gold/25 text-xs text-teak/85">· {g.note}</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- ========== 科普与访客责任 ========== -->
+    {guide.scienceAndDuty && (
+      <div class="mt-20 max-w-5xl">
+        <p class="font-hand text-gold text-xl">{guide.scienceAndDuty.label}</p>
+        <h3 class="font-display font-semibold text-3xl md:text-4xl text-teak mt-2">{guide.scienceAndDuty.title}</h3>
+
+        {guide.scienceAndDuty.science && (
+          <div class="mt-8 rounded-2xl border border-teal-300 bg-teal-50/60 p-6">
+            <h4 class="font-display text-xl text-teal-800 font-semibold">{guide.scienceAndDuty.science.h}</h4>
+            <ul class="mt-4 space-y-3 text-sm text-teal-950/85">
+              {guide.scienceAndDuty.science.items.map((it: string, i: number) => (
+                <li class="leading-relaxed">
+                  <span class="text-teal-600 font-semibold mr-1">[{String(i + 1).padStart(2, '0')}]</span>{it}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {guide.scienceAndDuty.duty && (
+          <div class="mt-8 rounded-2xl border border-gold/30 bg-white/70 p-6 shadow-sm">
+            <h4 class="font-display text-xl text-teak font-semibold">{guide.scienceAndDuty.duty.h}</h4>
+            <ul class="mt-4 space-y-2 text-sm text-ink/85 grid md:grid-cols-2 gap-x-6 gap-y-2">
+              {guide.scienceAndDuty.duty.items.map((it: string) => (
+                <li class="leading-relaxed">{it}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {guide.scienceAndDuty.cbt && (
+          <div class="mt-8 rounded-2xl border border-gold/30 bg-gold/5 p-6 shadow-sm">
+            <h4 class="font-display text-xl text-teak font-semibold">{guide.scienceAndDuty.cbt.h}</h4>
+            <p class="mt-3 text-sm text-ink/85 leading-relaxed">{guide.scienceAndDuty.cbt.text}</p>
+          </div>
+        )}
+      </div>
+    )}
+
+    <!-- 以下为 Guide.astro 原有模块（全部保留，不做删减） -->
+
     <!-- Photography & rainbow guide -->
     {guide.photography && (
       <div class="mt-14 max-w-4xl">
         <h3 class="font-display text-2xl text-teak mb-2">{guide.photography.title}</h3>
         <p class="text-sm text-ink/75 mb-5">{guide.photography.intro}</p>
 
-        <!-- Best light / rainbow windows -->
         <h4 class="font-display text-lg text-gold mb-3">{guide.photography.timesTitle}</h4>
         <div class="grid sm:grid-cols-3 gap-3 mb-6">
           {guide.photography.times.map((t) => (
@@ -115,7 +268,6 @@ const guideImgs = [
           ))}
         </div>
 
-        <!-- Photo spots -->
         <h4 class="font-display text-lg text-gold mb-3">{guide.photography.spotsTitle}</h4>
         <div class="space-y-3 mb-6">
           {guide.photography.spots.map((s) => (
@@ -127,7 +279,6 @@ const guideImgs = [
           ))}
         </div>
 
-        <!-- Camera & phone settings -->
         <h4 class="font-display text-lg text-gold mb-3">{guide.photography.settingsTitle}</h4>
         <div class="space-y-3 mb-6">
           {guide.photography.settings.map((st) => (
@@ -139,7 +290,6 @@ const guideImgs = [
           ))}
         </div>
 
-        <!-- Tips -->
         <h4 class="font-display text-lg text-gold mb-3">{guide.photography.tipsTitle}</h4>
         <ul class="space-y-2 text-sm text-ink/75">
           {guide.photography.tips.map((tp) => (

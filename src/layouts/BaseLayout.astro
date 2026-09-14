@@ -14,38 +14,60 @@ const canonical = `${siteConfig.domain}/${lang}/`;
 
 const faqs = (messages && messages.guide && messages.guide.faqs) ? messages.guide.faqs : [];
 
+const allAlternateNames = Array.from(new Set([
+  siteConfig.name.th,
+  siteConfig.name.en,
+  siteConfig.name.zh,
+  siteConfig.shortName.th,
+  siteConfig.shortName.en,
+  siteConfig.shortName.zh,
+  `${siteConfig.cityName.en} ${siteConfig.name.en}`,
+  `${siteConfig.cityName.th} ${siteConfig.name.th}`,
+  `${siteConfig.cityName.zh} ${siteConfig.name.zh}`,
+  ...(siteConfig.alternateNames?.en || []),
+  ...(siteConfig.alternateNames?.zh || []),
+  ...(siteConfig.alternateNames?.th || []),
+]));
+
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'TouristAttraction',
-    name: siteConfig.name[lang],
+    '@id': `${siteConfig.domain}/#attraction`,
+    name: siteConfig.attractionFullName[lang],
+    alternateName: allAlternateNames,
     description,
-    image: `${siteConfig.domain}/gallery/mae-kha-canal-1.jpg`,
     url: canonical,
+    image: [
+      `${siteConfig.domain}${siteConfig.ogImage}`,
+      `${siteConfig.domain}${siteConfig.heroImage}`,
+    ],
+    isAccessibleForFree: true,
+    publicAccess: true,
+    telephone: siteConfig.phone,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
-      addressCountry: 'TH',
+      streetAddress: siteConfig.addressStreet,
+      addressLocality: siteConfig.addressLocality,
+      addressRegion: siteConfig.addressRegion,
+      postalCode: siteConfig.postalCode,
+      addressCountry: siteConfig.countryCode,
     },
     geo: {
       '@type': 'GeoCoordinates',
       latitude: siteConfig.coords.lat,
       longitude: siteConfig.coords.lng,
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: siteConfig.rating,
-      reviewCount: siteConfig.reviewCount.replace(/,/g, ''),
-    },
+    hasMap: siteConfig.mapsUrl,
+    sameAs: siteConfig.sameAs,
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '16:00',
-    closes: '22:00',
+        opens: '16:00',
+        closes: '22:00',
       },
     ],
-    sameAs: siteConfig.sameAs,
   },
   {
     '@context': 'https://schema.org',
@@ -64,7 +86,8 @@ const jsonLd = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href={`/gallery/mae-kha-canal-1.jpg`} />
+    <link rel="icon" type="image/jpeg" href={`${siteConfig.ogImage}`} />
+    <link rel="apple-touch-icon" href={`${siteConfig.ogImage}`} />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -72,24 +95,33 @@ const jsonLd = [
     <meta property="og:locale" content={htmlLang[lang]} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${siteConfig.domain}/gallery/mae-kha-canal-1.jpg`} />
+    <meta property="og:image" content={`${siteConfig.domain}${siteConfig.ogImage}`} />
+    <meta property="og:image:alt" content={`${siteConfig.attractionFullName[lang]} in ${siteConfig.cityName[lang]}`} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={siteConfig.name[lang]} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content={`${siteConfig.attractionFullName[lang]} in ${siteConfig.cityName[lang]}`} />
     {languagesList.map((l) => (
       <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/th/`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/en/`} />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0d2a2e" />
+    <meta name="application-name" content={siteConfig.name[lang]} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content={siteConfig.name[lang]} />
+    <meta name="format-detection" content="telephone=no" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HXM22WWPKP"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HXM22WWPKP');
     </script>
     <link

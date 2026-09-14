@@ -5,6 +5,8 @@ import en from '../../i18n/en.json';
 import zh from '../../i18n/zh.json';
 import { languagesList } from '../../i18n/ui';
 
+export const prerender = true;
+
 export function getStaticPaths() {
   return languagesList.map((lang) => ({ params: { lang } }));
 }

@@ -1,15 +1,17 @@
 ---
 import { siteConfig } from '../config';
+import type { Lang } from '../i18n/ui';
 
 interface Props {
   messages: Record<string, any>;
+  lang?: Lang;
 }
-const { messages } = Astro.props;
+const { messages, lang } = Astro.props;
 const reviews = messages.reviews;
 const mapsUrl = siteConfig.mapsUrl;
 
-const stars = (r: string) => {
-  const n = Math.round(parseFloat(r));
+const stars = (r: number | string) => {
+  const n = Math.round(typeof r === 'number' ? r : parseFloat(r));
   return '★'.repeat(n) + '☆'.repeat(5 - n);
 };
 ---
@@ -23,9 +25,14 @@ const stars = (r: string) => {
     <div class="mt-8 flex flex-wrap items-center gap-4">
       <span class="stars text-2xl">{stars(siteConfig.rating)}</span>
       <span class="font-display text-2xl text-goldBright">{siteConfig.rating}</span>
-      <span class="text-ivory/70">{reviews.disclaimer}</span>
+      <span class="text-ivory/70">· {siteConfig.reviewCount}</span>
     </div>
-    <p class="mt-2 text-xs text-ivory/50">{reviews.declaration}</p>
+    <p class="mt-2 text-xs text-ivory/60">
+      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="underline hover:text-goldBright underline-offset-2">
+        {reviews.syncAttribution}
+      </a>
+    </p>
+    <p class="mt-1 text-xs text-ivory/45">{reviews.copyrightNotice}</p>
 
     <div class="grid md:grid-cols-2 gap-4 mt-8">
       {reviews.featured.map((f) => (
@@ -38,7 +45,6 @@ const stars = (r: string) => {
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
       {reviews.items.map((r) => {
-        // Parse tag format like "[最佳美食: 船面] text"
         let tag = '';
         let content = r.text;
         const match = r.text.match(/^\[(.*?)\]\s*(.*)/);
@@ -64,8 +70,8 @@ const stars = (r: string) => {
     </div>
 
     <div class="mt-10 text-center">
-      <a href={mapsUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-ivory border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">
-        {reviews.viewLocation}
+      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-ivory border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">
+        {reviews.viewAll} ↗
       </a>
     </div>
   </div>

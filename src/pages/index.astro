@@ -1,4 +1,30 @@
 ---
-import { defaultLang } from '../i18n/ui';
-return Astro.redirect(`/${defaultLang}/`);
+import { defaultLang, languagesList, type Lang } from '../i18n/ui';
+
+const req = Astro.request;
+const url = new URL(req.url);
+
+const host = url.hostname;
+const canonicalRoot = 'maekhacanal.com';
+if (host === 'www.maekhacanal.com') {
+  const nonWww = new URL(url);
+  nonWww.hostname = canonicalRoot;
+  return Astro.redirect(nonWww.toString(), 301);
+}
+
+const accept = req.headers.get('accept-language') || '';
+const parts = accept.split(',').map((p) => p.split(';')[0].trim().toLowerCase());
+
+let picked: Lang = defaultLang;
+for (const tag of parts) {
+  if (tag.startsWith('en')) { picked = 'en'; break; }
+  if (tag.startsWith('zh')) { picked = 'zh'; break; }
+  if (tag.startsWith('th')) { picked = 'th'; break; }
+}
+
+if (!languagesList.includes(picked)) {
+  picked = defaultLang;
+}
+
+return Astro.redirect(`/${picked}/`, 302);
 ---

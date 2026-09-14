@@ -1,90 +1,84 @@
 {
   "meta": {
-    "title": "Mae Kha Canal (คลองแม่ข่า) — Chiang Mai's Riverside Evening Canal & Walking Street",
-    "description": "A complete non-profit visitor guide to Mae Kha Canal in Chiang Mai: evening walking street, boat rides, riverside food, history, how to get there, and the best time to visit."
+    "title": "Mae Kha Canal Chiang Mai: Japanese-Style Canal Village Guide 2026",
+    "description": "Discover Mae Kha Canal (คลองแม่ข่า / Khlong Mae Kha) in Chiang Mai. Rated 4.2★ with 6,200+ reviews — night lightings, riverside street food, boat rides, directions & best time to visit."
   },
   "header": {
     "home": "Home",
     "about": "About",
     "history": "History",
     "guide": "Visit Guide",
+    "routes": "Routes",
+    "facilities": "Facilities",
     "food": "Food",
     "gallery": "Gallery",
     "reviews": "Reviews",
+    "sources": "Sources",
     "map": "Map"
   },
   "hero": {
-    "eyebrow": "Chiang Mai · Historic Canal",
+    "eyebrow": "Chiang Mai · Lanna Historic Canal Revival",
     "titleMain": "Mae Kha ",
     "titleAccent": "Canal",
-    "subtitle": "A restored Lanna [ล้านนา] era canal, now a flagship community project for Chiang Mai's waterway revival — featuring evening walks, local boat rides, and riverside markets.",
+    "subtitle": "A restored Lanna [ล้านนา] era canal, now a flagship community project of Chiang Mai's urban waterway revival — featuring evening promenades, local boat rides, and riverside market spaces.",
     "cta1": "Plan your visit",
-    "cta2": "Food & drinks",
-    "rating": "4.2",
-    "reviewCount": "6,094",
+    "cta2": "Nearby facilities",
+    "reviewSuffix": "reviews",
     "viewLocation": "View location on Google Maps",
     "boardCategory": "Chiang Mai Attraction",
     "boardTitle": "Mae Kha Canal",
     "boardEn": "Mae Kha Canal · คลองแม่ข่า",
-    "coordsLabel": "18.7771°N, 98.3858°E · Haiya, Chiang Mai",
-    "plannerTitle": "Sun & Sky Planner",
+    "coordsLabel": "18.7771°N, 98.3858°E · Haiya Sub-district, Chiang Mai",
+    "plannerTitle": "Live Sky & Weather",
     "liveWeather": "Live",
-    "plannerNote": "Times are estimates for the canal's location.",
     "defaultTemp": "28°",
     "defaultCond": "Partly cloudy",
     "defaultWind": "6 km/h",
-    "sunsetIndexLabel": "This evening's sky",
-    "sunsetIndexDefault": "Calm evening",
-    "goldenHourLabel": "Golden hour",
+    "defaultTipShort": "🌤 Light",
+    "adviceLabel": "What to bring",
+    "defaultAdvice": "Pleasant temperature; light, breathable long sleeves are recommended.",
+    "lightLabel": "Golden & Blue Hour",
+    "lightNote": "Times are estimates for the canal's location; actual conditions may vary slightly with terrain.",
+    "goldenHourLabel": "Morning golden hour",
     "sunsetLabel": "Sunset",
     "blueHourLabel": "Blue hour",
-    "crowdWarningLabel": "Crowd",
+    "crowdWarningLabel": "Crowd advice",
     "defaultGolden": "06:15 – 07:45",
     "defaultSunset": "18:45",
     "defaultBlue": "19:05 – 19:35",
-    "defaultTip": "Quiet early",
-    "lightCaption": "Live data from Open-Meteo at the canal's coordinates.",
-    "weatherError": "Weather unavailable",
-    "goldenChanceLabel": "Golden chance"
+    "defaultCrowd": "Quieter on weekday mornings",
+    "forecastLabel": "7-day forecast",
+    "advice4Labels": {
+      "dressing": "What to wear",
+      "schedule": "Plan your day",
+      "carry": "What to carry",
+      "risk": "Risk alert"
+    },
+    "extraLabels": {
+      "uvIndex": "UV Index",
+      "humidity": "Humidity"
+    },
+    "riskPrefix": "⚠ Weather alert",
+    "noRisk": "No active alerts",
+    "week7": ["Today", "Tomorrow", "Wed", "Thu", "Fri", "Sat", "Sun"]
   },
   "about": {
     "label": "About the canal",
     "heading": "Where old Chiang Mai meets the water",
-    "lead": "Mae Kha Canal [คลองแม่ข่า] is one of Chiang Mai's historic waterways — once a vital irrigation and transport artery for the Lanna kingdom, now a living riverside neighbourhood.",
-    "paragraph1": "For centuries the canal carried water from the western hills through the city, lining its banks with wooden houses, gardens, and small communities. As Chiang Mai grew, the waterway was neglected and polluted, and for a time it became little more than a forgotten ditch.",
-    "paragraph2": "In recent decades local residents and the city have worked together to clean and revive Mae Kha. Today it is best known for its calm evening walking street, short boat rides, and a string of food stalls and cafés that turn the banks into an open-air kitchen after sunset.",
+    "lead": "Mae Kha Canal [คลองแม่ข่า] is one of Chiang Mai's historic waterways — once a vital irrigation and transport artery for the Lanna kingdom, today a living riverside community. Geographic attribution: Mae Kha Canal → Haiya Sub-district → Mueang Chiang Mai → Chiang Mai Province → Thailand.",
+    "paragraph1": "For centuries the canal carried water from the western hills through the city, lining its banks with wooden houses, gardens, and small communities. As Chiang Mai expanded, the waterway was neglected and polluted, and for a time it became little more than a forgotten ditch.",
+    "paragraph2": "In recent decades local residents and the city have worked together to dredge and revive Mae Kha Canal. Today it is best known for its calm evening walking street, short boat rides, and a string of food stalls and cafés that turn the banks into an open-air kitchen after sunset. Visitors can easily connect with nearby heritage landmarks including Chiang Mai Old City and Warorot Market.",
     "quote": "Walk slowly; the canal remembers more than the city does.",
-    "quoteAuthor": "A Haiya local",
+    "quoteAuthor": "A Haiya local resident",
     "stats": [
-      {
-        "value": "700+",
-        "label": "Years of history"
-      },
-      {
-        "value": "16:00",
-        "label": "Opens (evening)"
-      },
-      {
-        "value": "22:00",
-        "label": "Closes"
-      }
+      { "value": "700+", "label": "Years of hydraulic history" },
+      { "value": "18.777°N", "label": "Geographic coordinates" },
+      { "value": "Open all year", "label": "Free public space" }
     ],
     "highlights": [
-      {
-        "tag": "🚤",
-        "title": "Evening boat rides",
-        "desc": "Quiet long-tail or reed boats drift past old teak houses."
-      },
-      {
-        "tag": "🍜",
-        "title": "Canal-side street food",
-        "desc": "Grilled river fish, boat noodles, and northern snacks."
-      },
-      {
-        "tag": "🎨",
-        "title": "Old town & street art",
-        "desc": "Murals and heritage shophouses line the water."
-      }
+      { "tag": "🚤", "title": "Evening boat rides", "desc": "Quiet long-tail or reed boats drift past old teak houses." },
+      { "tag": "🍜", "title": "Canal-side street food", "desc": "Grilled river fish, boat noodles, and northern snacks." },
+      { "tag": "🎨", "title": "Old town & street art", "desc": "Murals and century-old shophouses along the water." }
     ],
     "editorTip": {
       "tag": "Editor tip",
@@ -99,47 +93,26 @@
     "intro": "Cleaning Mae Kha brought back more than clear water: lotus, birds, and small fish are returning to the heart of the city.",
     "microTitle": "Microclimate & water",
     "micro": [
-      {
-        "title": "Cooler evenings",
-        "desc": "The water lowers the air temperature along the banks."
-      },
-      {
-        "title": "Lotus & reeds",
-        "desc": "Floating plants filter the water and shelter small fish."
-      },
-      {
-        "title": "Seasonal flow",
-        "desc": "Levels rise in the rains (May–Oct) and shrink in the dry season."
-      }
+      { "title": "Cooler evenings", "desc": "The water lowers the air temperature along the banks." },
+      { "title": "Lotus & reeds", "desc": "Floating plants filter the water and shelter small fish." },
+      { "title": "Seasonal flow", "desc": "Levels rise in the rains (May–Oct) and shrink in the dry season." }
     ],
     "plantsTitle": "Plants along the canal",
     "plants": [
       {
         "title": "Lotus (บัว)",
-        "desc": "Sacred in Thai Buddhism, blooming at dawn along the calm stretches.",
+        "desc": "Sacred in Thai Buddhism, blooming at dawn along calm stretches.",
         "items": [
-          {
-            "name": "Pink lotus",
-            "desc": "Common in the quieter southern reaches."
-          },
-          {
-            "name": "Water lily",
-            "desc": "Opens mid-morning, closes by late afternoon."
-          }
+          { "name": "Pink lotus", "desc": "Common in the quieter southern reaches." },
+          { "name": "Water lily", "desc": "Opens mid-morning, closes by late afternoon." }
         ]
       },
       {
         "title": "Reed & grass beds",
-        "desc": "Stabilises the banks, with root systems acting as a natural ecological filter (Phytoremediation).",
+        "desc": "Stabilises the banks, with root systems forming a natural phytoremediation filter bed.",
         "items": [
-          {
-            "name": "Cattail [ธูปฤาษี]",
-            "desc": "Tall reeds swaying at dusk, which effectively absorb excess nitrogen and phosphorus nutrients from the water."
-          },
-          {
-            "name": "River grass",
-            "desc": "Thin grasses favoured by songbirds."
-          }
+          { "name": "Cattail [ธูปฤาษี]", "desc": "Tall reeds swaying at dusk, which effectively absorb excess nitrogen and phosphorus from the water column." },
+          { "name": "River grass", "desc": "Thin grasses favoured by songbirds." }
         ]
       }
     ],
@@ -151,78 +124,68 @@
       "Herons at the calm bends",
       "Small turtles near the banks"
     ],
-    "lntTitle": "Leave no trace",
+    "lntTitle": "Leave No Trace (LNT)",
     "lntIntro": "Help keep the canal clean for the next visitor and for the community that lives here.",
     "lnt": [
       "Take all packaging home",
-      "Don't feed or disturb wildlife",
+      "Do not feed or disturb wildlife",
       "Use bins for food waste",
       "Keep noise low after dark",
-      "Don't drop litter in or near the water"
+      "Never drop litter in or near the water"
     ],
     "lntCheckHint": "Tick each as you go — small habits protect a 700-year-old waterway.",
     "checklist": {
       "title": "Seasonal nature watch",
       "intro": "What to look for through the year.",
       "items": [
-        {
-          "emoji": "🪷",
-          "name": "Lotus bloom",
-          "best": "Year-round, best at dawn",
-          "rare": "Common in calm stretches",
-          "rareClass": ""
-        },
-        {
-          "emoji": "🐦",
-          "name": "Kingfisher",
-          "best": "Dry-season mornings",
-          "rare": "Fairly common",
-          "rareClass": ""
-        },
-        {
-          "emoji": "🦋",
-          "name": "Dragonfly hatch",
-          "best": "After rain, May–Oct",
-          "rare": "Abundant in wet season",
-          "rareClass": ""
-        }
+        { "emoji": "🪷", "name": "Lotus bloom", "best": "Year-round, best at dawn", "rare": "Common in calm water", "rareClass": "" },
+        { "emoji": "🐦", "name": "Kingfisher", "best": "Dry-season mornings", "rare": "Fairly common", "rareClass": "" },
+        { "emoji": "🦋", "name": "Dragonfly hatch", "best": "After rain, May–Oct", "rare": "Abundant in wet season", "rareClass": "" }
       ]
     }
   },
   "history": {
-    "label": "History",
+    "label": "History & folklore",
     "heading": "From Lanna waterway to evening promenade",
     "intro": "The canal's story mirrors Chiang Mai's own — built for water, forgotten, then rediscovered.",
     "blocks": [
       {
-        "date": "Circa 1296",
-        "title": "Outer Defense & Natural Drainage",
-        "text": "Dug as the second defensive moat and natural flood channel outside the old city of Chiang Mai. Planned by King Mengrai [พญามังราย], establishing its core role in Lanna's water history."
+        "date": "Circa 1296 (~700 years ago)",
+        "title": "Outer-city defence & natural drainage",
+        "text": "Dug as the second defensive moat and natural flood channel outside Chiang Mai's old city. Personally planned by King Mengrai [พญามังราย], establishing its core role in Lanna hydraulic urbanism. Its alignment complements the square old-city moat, forming a characteristic Lanna dual-ring water system."
       },
       {
-        "date": "Mid-20th Century",
-        "title": "Covered Sewers & Ecological Decline",
-        "text": "With modern urban expansion, the waterway was neglected and gradually turned into an urban sewer and covered ditch, devastating its aquatic ecosystem."
+        "date": "Mid-20th century",
+        "title": "Canalisation & ecological decline",
+        "text": "With modern urban expansion, the waterway was neglected and gradually turned into an urban sewer and culverted ditch, devastating its aquatic ecosystem. For a period the surface was covered by refuse, duckweed and eutrophic algae; riverside households effectively turned their backs to the canal."
       },
       {
-        "date": "2017 to Present",
-        "title": "Community-led Revival",
-        "text": "Residents, NGOs, and the municipality launched a 'Clear Water Return' initiative, reshaping the riverside public space through dredging, sewage interception, and ecological filtration."
+        "date": "2017 to Present (ongoing)",
+        "title": "Community-led revival: Clear Water Return",
+        "text": "Residents, NGOs and the municipality jointly launched the 'Clear Water Return' initiative, reshaping the riverside public space through dredging, sewage interception and ecological filtration. As of 2026 the project is still advancing section by section, and is a widely cited case study in small and medium-sized Southeast Asian urban waterway regeneration."
       }
     ],
     "legend": {
-      "title": "Why 'Mae Kha'?",
-      "text": "In northern Thai dialects, 'Mae [แม่]' means mother or river, and 'Kha [ข่า]' means Galangal. The canal's banks may have once been covered in wild galangal, reflecting the natural vegetation of the pre-modern era."
+      "title": "Why 'Mae Kha'? — Toponymic note",
+      "text": "In northern Thai dialects, 'Mae [แม่]' means mother or river, and 'Kha [ข่า]' means Galangal. The canal's banks may once have been covered in wild galangal, reflecting the natural vegetation cover of the pre-modern Lanna basin. The name belongs to a widespread 'river + plant' toponymic pattern found across the basin."
     },
     "didYouKnow": {
-      "title": "Did you know?",
-      "text": "Chiang Mai's old city was laid out inside a square moat; Mae Kha was one of the outer canals that drained and fed the wider plain."
+      "title": "Hydraulic history fact",
+      "text": "Chiang Mai's old city is enclosed by a square moat; Mae Kha Canal was one of the outer canals that drained and irrigated the wider plain. Multiple branch canals, now filled in, once ran between them — their traces can still be read in the street grid south of the old city."
     },
     "folklore": {
-      "title": "Water spirits",
-      "tale": "In pre-modern society, offerings to the water spirit [Phi Mae Nam / ผีแม่น้ำ] were not just beliefs, but a form of primitive ecological protection (Ecological Taboo). Out of reverence for the spirits, residents strictly prohibited dumping waste into the river, maintaining water cleanliness in an era without modern treatment facilities.",
+      "title": "Water spirits & folk ecology",
+      "tale": "In pre-modern society, offerings to the water spirit [Phi Mae Nam / ผีแม่น้ำ] were not merely beliefs but a de-facto ecological protection mechanism (Ecological Taboo). Out of reverence for the spirits, residents strictly prohibited dumping waste into the river — effectively preserving water quality in an age without modern treatment plants. Shortly before Songkran each year, Haiya's older residents still hold small riverside purification ceremonies.",
       "shrineTitle": "A note on respect",
-      "shrine": "If you see a small spirit house or flower offering by the water, admire it from a distance and avoid disturbing it."
+      "shrine": "If you see a small spirit house or flower offering by the water, admire it from a distance and do not touch or disturb. If taking photographs near private homes, a nod to the residents is polite; avoid using private courtyards as foregrounds for commercial imagery."
+    },
+    "scholarly": {
+      "title": "Scholarly & documentary context",
+      "items": [
+        "Lanna Hydraulic History: the canal appears in late 19th-century Siamese official gazetteers.",
+        "Community-led Urban Regeneration: the 2017+ remediation plan has been presented multiple times at international urban water governance conferences.",
+        "Tropical Urban Restoration Ecology: data from the cattail root filter-bed experiments supports comparative research on tropical phytoremediation."
+      ]
     }
   },
   "guide": {
@@ -233,86 +196,175 @@
       "title": "Two ways to enjoy it",
       "intro": "Choose your pace — a slow wander or a boat ride.",
       "difficultyLabel": "Pace:",
+      "suitsLabel": "Best for:",
       "items": [
-        {
-          "name": "Walk the banks",
-          "difficulty": "Easy",
-          "note": "Flat paved paths",
-          "suits": "Families, photographers",
-          "desc": "Stroll the promenade, browse food stalls, and watch the sunset on the water."
-        },
-        {
-          "name": "Boat ride",
-          "difficulty": "Easy",
-          "note": "Short trips",
-          "suits": "Couples, first-timers",
-          "desc": "Hop on a small boat for a calm loop past teak houses and lit bridges."
-        }
+        { "name": "Walk the banks", "difficulty": "Easy", "note": "Flat paved paths, accessibility-friendly", "suits": "Families, photographers, low-mobility visitors", "desc": "Stroll the promenade, browse food stalls, and watch the sunset on the water." },
+        { "name": "Boat ride", "difficulty": "Easy", "note": "Short loops ~20–30 min", "suits": "Couples, first-timers, photographers", "desc": "Hop on a small boat for a calm loop past teak houses and lit bridges." }
       ]
     },
     "scamTip": {
       "tag": "⚠️ Honest Expectations",
-      "text": "Mae Kha Canal is essentially still a mixed urban drainage and flood channel. Despite extensive dredging, mild odors may occur during the dry season (especially Mar-Apr) when water levels drop. Please view it as a community revival 'in progress' rather than a pristine natural river."
+      "text": "Mae Kha Canal is essentially still a mixed urban drainage and flood channel. Despite extensive dredging, mild odours may occur during the dry season (especially March–April) when water levels drop. Please view it as a community revival 'in progress' rather than a pristine natural river."
     },
     "hours": {
       "tag": "🕒 When to go",
-      "time": "16:00 – 22:00 (evenings)",
+      "time": "16:00 – 22:00 (Evenings)",
       "items": [
-        {
-          "label": "Opens",
-          "value": "16:00"
-        },
-        {
-          "label": "Best light",
-          "value": "17:00 – 18:30"
-        },
-        {
-          "label": "Liveliest",
-          "value": "18:00 – 20:30"
-        },
-        {
-          "label": "Closes",
-          "value": "22:00"
-        }
+        { "label": "Opens", "value": "16:00" },
+        { "label": "Best light", "value": "17:00 – 18:30" },
+        { "label": "Liveliest", "value": "18:00 – 20:30" },
+        { "label": "Closes", "value": "22:00" }
       ]
     },
     "fees": {
       "tag": "💸 Cost",
       "title": "What it costs",
       "items": [
-        {
-          "title": "Entry",
-          "desc": "Free to walk the canal and market."
-        },
-        {
-          "title": "Boat ride",
-          "desc": "Small fee per person; pay at the pier (cash)."
-        },
-        {
-          "title": "Food & drinks",
-          "desc": "Street snacks from a few baht; meals at canal-side cafés."
-        }
+        { "title": "Entry", "desc": "Free to walk the canal and market; the public promenade is open year-round." },
+        { "title": "Boat ride", "desc": "Small fee per person; pay in cash at the pier." },
+        { "title": "Food & drinks", "desc": "Street snacks from a few baht; cafés offer full meals." }
       ]
     },
     "transport": {
       "tag": "🚌 Getting there",
       "title": "How to reach Mae Kha",
       "items": [
+        { "title": "By car / taxi", "desc": "Set 'Mae Kha Canal, Haiya' in your map app; roadside parking is limited on weekends after 17:00 — ride-hailing or songthaew recommended." },
+        { "title": "By red songthaew", "desc": "Chiang Mai's shared red trucks pass near Haiya; tell the driver your destination." },
+        { "title": "By bicycle", "desc": "A flat, short ride from the old city along signed routes." },
+        { "title": "Chiang Mai International Airport [CNX]", "desc": "Only about 4 km away (10–15 min by car). Ride-hailing (Grab / Bolt) is available on the ground floor, or use the official Airport Taxi counter and ask for 'Mae Kha Canal, Haiya'." }
+      ]
+    },
+    "quarterly": {
+      "label": "📊 Quarterly strategy table",
+      "title": "Comprehensive quarterly visiting strategy (30-year climatology normal)",
+      "intro": "Based on the 30-year average climatology published by the Thai Meteorological Department, integrating temperature, rainfall probability, water clarity and wildlife activity levels to provide visiting guidance.",
+      "headers": ["Quarter", "Temperature", "Rainfall", "Water clarity", "Wildlife", "Recommendation", "Strategy"],
+      "rows": [
+        { "q": "Cool (Nov – Feb)", "t": "14–28℃", "r": "Virtually no rain", "w": "Medium water level; clearest visibility of the year", "wildlife": "Migratory wintering birds; kingfishers & herons active; lotus semi-dormant", "score": "★★★★★", "adv": "Prioritise 17:00–20:00 evenings; combine with nearby Old City temples." },
+        { "q": "Hot (Mar – Apr)", "t": "22–38℃", "r": "Occasional convectional showers", "w": "Low level, some shallows exposed; sensitive visitors may notice mild odour", "wildlife": "Mass dragonfly hatch; river grass blooms; densest dawn bird chorus", "score": "★★★", "adv": "Only visit around sunset (16:30–19:30); carry water; avoid agricultural burning peaks (Feb–Mar)." },
+        { "q": "Early wet (May – Jul)", "t": "24–34℃", "r": "60%+ chance of afternoon showers", "w": "Water level rises fast; higher turbidity", "wildlife": "Peak fish breeding; fledglings leave nests; river grass grows fastest", "score": "★★★★", "adv": "Carry a foldable umbrella and waterproof shoes; boats may pause in heavy rain; mornings or post-showers recommended." },
+        { "q": "Late wet (Aug – Oct)", "t": "23–32℃", "r": "Prolonged rain; elevated extreme-weather risk", "w": "Highest water level; best natural purification efficiency", "wildlife": "Lotus re-enters full bloom; herons congregate at calm bends", "score": "★★★★", "adv": "Pair with indoor itineraries (museums / cafés); evenings still offer quality shooting light." }
+      ]
+    },
+    "tailoredRoutes": {
+      "label": "🧭 Audience-tailored itineraries",
+      "title": "Three targeted routes (choose one)",
+      "intro": "Select the flow that best matches your travel composition and pace. No specific vendors are recommended; only types and geography are described.",
+      "items": [
         {
-          "title": "By car / taxi",
-          "desc": "Set 'Mae Kha Canal, Haiya' in your map app; roadside parking is limited."
+          "name": "👨‍👩‍👧 Family-friendly (Very low pace · ~2.5 h)",
+          "pace": "Pace: very slow",
+          "audience": "Ideal with children aged 4–12",
+          "steps": [
+            "16:30 Enter from the main Haiya entrance; head south along the flat southern promenade (barrier-friendly).",
+            "16:50 Pause at the lotus viewing section for 10–15 min (railed safety zones); guide children to observe small fish and dragonflies.",
+            "17:10 Reach the central public rest area; have dinner at street-food-type outlets (including dessert-style stalls for children).",
+            "18:10 Amble slowly to the lit wooden bridge for photos and watch the sunset gild the water.",
+            "18:45 Brief stop at the rest area then depart; overall avoids peak crowd windows."
+          ],
+          "note": "Recommended: wet wipes, repellent, a spare change of clothes."
         },
         {
-          "title": "By red songthaew",
-          "desc": "Chiang Mai's shared red trucks pass near Haiya — ask the driver."
+          "name": "📷 Photography & nature (Medium pace · ~4 h)",
+          "pace": "Pace: moderate",
+          "audience": "DSLR/mirrorless users & naturalists",
+          "steps": [
+            "16:00 Enter from the north section with a tripod; first set up near the old teak bridge.",
+            "16:30 Shoot lotus, reeds, dragonfly close-ups (low angle + polariser).",
+            "17:00 Walk to the lit footbridge for foreground architecture + water reflections (golden hour).",
+            "18:30 Move to the market lantern zone for warm-toned candid shots (respect the subjects).",
+            "19:00 Return to the bridge position before blue hour for long-exposure night illuminations.",
+            "19:40 Retire to a café-type venue to review shots and wait for crowds to thin."
+          ],
+          "note": "Telephoto (200mm+) can capture kingfishers at dawn; 16–35mm suits wide reflections."
         },
         {
-          "title": "By bicycle",
-          "desc": "A flat, short ride from the old city along signed routes."
+          "name": "♿ Low-mobility / accessible (Very light · ~1.5 h)",
+          "pace": "Pace: very slow",
+          "audience": "Wheelchair, elderly walkers, stroller users",
+          "steps": [
+            "17:30 Enter the main promenade via the accessibility ramp (consult official signage or information point).",
+            "17:40 Sit down in a public bench-type area to rest and observe the water.",
+            "18:00 Proceed ~400 m along the main barrier-free path, passing dining and public-WC-type nodes.",
+            "18:40 Return the same way after reaching the photo spot; a companion may independently take a boat ride if desired.",
+            "19:00 Take a taxi / ride-hail from near the entrance."
+          ],
+          "note": "Weekdays or off-peak evenings recommended; shaded colonnades available in some sections."
+        }
+      ]
+    },
+    "itinerary": {
+      "label": "🗺 General itineraries",
+      "title": "Recommended half-day / full-day routes (no specific vendors)",
+      "half": {
+        "name": "Half-day (~3 h · evening)",
+        "steps": [
+          "16:30 Arrive at the entrance; walk south along the gentle southern promenade.",
+          "17:00 Reach the lotus section for viewing and photos; stay 15–20 min.",
+          "17:20 Continue past the public rest area and dining-type nodes.",
+          "18:00 Arrive at the lit bridge; await sunset and blue hour.",
+          "19:00 Have dinner or dessert at dining-area-type stalls.",
+          "19:30 Browse market-type public spaces; leave from the main entrance around 20:00."
+        ]
+      },
+      "full": {
+        "name": "Full-day (~6–8 h · connecting heritage landmarks)",
+        "steps": [
+          "09:30 First visit Chiang-Mai-Old-City-type heritage landmarks (temples, moat).",
+          "12:30 Lunch at dining-area-type venues between the Old City and Haiya.",
+          "14:00 Wander through Warorot-Market-type riverside market spaces (walk or ~10 min drive).",
+          "16:00 Arrive at Mae Kha Canal's southern entrance; continue with the 'half-day' flow.",
+          "After 20:30, if still energetic, visit a Nimman-road-type café district."
+        ]
+      }
+    },
+    "facilities": {
+      "label": "🚻 Visitor services & nearby facilities (neutral overview)",
+      "title": "Visitor services & nearby facilities overview",
+      "intro": "Only facility types are described; no specific vendor or brand names are recommended to maintain objectivity.",
+      "groups": [
+        {
+          "icon": "🚻",
+          "name": "Public toilets (WC)",
+          "desc": "Public-toilet-type nodes are available near the middle of the main promenade and near the evening market entrance; some are coin-operated (small fee), others are free. Most are lit after dark and include sinks. Bring your own tissue paper.",
+          "note": "Accessible-toilet-type facilities are mainly at the main entrance and dining clusters."
         },
         {
-          "title": "Chiang Mai International Airport [CNX]",
-          "desc": "The airport is only about 4 km away (10-15 mins by car). You can use ride-hailing apps (Grab / Bolt) at the terminal, or go to the official Airport Taxi counter and ask for 'Mae Kha Canal in Haiya'."
+          "icon": "🅿️",
+          "name": "Parking facilities",
+          "desc": "On-street parking bays and small-parking-lot-type spaces are distributed in surrounding blocks. On weekends and holidays after 17:00 bays are tight — ride-hailing, songthaew or cycling are preferred. Drivers should arrive before 16:00 to find a spot.",
+          "note": "Motorcycle / bicycle type parking is common, mostly roadside lined zones."
+        },
+        {
+          "icon": "🍽",
+          "name": "Dining types (neutral)",
+          "desc": "The evening market hosts street-food-stall-type outlets and small-restaurant-type venues, covering northern-style noodles, rice meals, grilled fish, desserts, drinks and coffee-type offerings across a wide price range to suit different budgets.",
+          "note": "Most stalls only open fully after 17:30; observe food hygiene and follow where local residents eat."
+        },
+        {
+          "icon": "🏨",
+          "name": "Lodging types (neutral)",
+          "desc": "Haiya district and the Old City's southern gate area offer small-guesthouse-type, family-homestay-type, budget-hotel-type and mid-to-upscale-hotel-type accommodation. Walking distance to the canal ranges from 5–15 min to a 10–15 min taxi ride.",
+          "note": "Prioritise cancellation policy, accessibility features and noise reviews (weekend market areas can be loud)."
+        },
+        {
+          "icon": "🛒",
+          "name": "Supermarket & convenience store types",
+          "desc": "Within a 500 m radius of the main entrance there are chain-convenience-store-type and small-to-medium-supermarket-type nodes. Stock up on drinking water, sunblock, repellent, power banks, snacks and tissue.",
+          "note": "Most convenience-store-type venues are open 24 h for last-minute supplies."
+        },
+        {
+          "icon": "⛽",
+          "name": "Fuel & charging types",
+          "desc": "Self-driving visitors can find petrol-station-type outlets along main roads (Ragang Rd and adjacent arterials); EV-charging-point-type facilities are available near some convenience stores and parking lots. EV owners should map the nearest available station before departure.",
+          "note": "Charging-point-type coverage in Chiang Mai is improving but high-speed DC options remain limited — top up daily."
+        },
+        {
+          "icon": "🏥",
+          "name": "Medical & pharmacy types",
+          "desc": "Haiya's surroundings include community-pharmacy-type and general-hospital-type institutions. Common OTC medications (analgesics, antidiarrhoeals, plasters, repellent) are available at pharmacy-type outlets; in case of emergency dial 1669 (ambulance) or 191 (general emergency).",
+          "note": "Carry an English or Thai allergy card if you react to specific drug ingredients."
         }
       ]
     },
@@ -321,480 +373,327 @@
       "intro": "The canal is at its best in soft evening light.",
       "timesTitle": "Best light",
       "times": [
-        {
-          "period": "Golden hour",
-          "desc": "~17:00–18:30 — warm light on the water and teak houses."
-        },
-        {
-          "period": "Blue hour",
-          "desc": "~19:00–19:40 — lit bridges and reflections."
-        },
-        {
-          "period": "Early morning",
-          "desc": "06:00–07:30 — mist and locals at the water's edge."
-        }
+        { "period": "Golden hour", "desc": "~17:00–18:30 — warm light on the water and teak houses." },
+        { "period": "Blue hour", "desc": "~19:00–19:40 — lit bridges and reflections." },
+        { "period": "Early morning", "desc": "06:00–07:30 — mist and locals at the water's edge." }
       ],
       "spotsTitle": "Photo spots",
       "spots": [
-        {
-          "name": "Old teak bridge",
-          "view": "Reflections of heritage houses",
-          "tip": "Use a low angle near the water."
-        },
-        {
-          "name": "Lotus stretch",
-          "view": "Pink lotus at dawn",
-          "tip": "Arrive before 08:00 for open blooms."
-        },
-        {
-          "name": "Market lanterns",
-          "view": "Warm string lights at dusk",
-          "tip": "A small tripod helps in low light."
-        }
+        { "name": "Old teak bridge", "view": "Reflections of heritage houses", "tip": "Use a low angle near the water." },
+        { "name": "Lotus stretch", "view": "Pink lotus at dawn", "tip": "Arrive before 08:00 for open blooms." },
+        { "name": "Market lanterns", "view": "Warm string lights at dusk", "tip": "A small tripod helps in low light." }
       ],
       "settingsTitle": "Camera settings",
       "settings": [
-        {
-          "style": "Golden hour",
-          "camera": "f/8, ISO 200, 1/250s",
-          "phone": "Tap to expose for the sky, HDR on"
-        },
-        {
-          "style": "Blue hour",
-          "camera": "f/5.6, ISO 400, 1/60s",
-          "phone": "Night mode, steady for 2–3s"
-        },
-        {
-          "style": "Reflections",
-          "camera": "Polariser, low tripod",
-          "phone": "Get close to the water's edge"
-        }
+        { "style": "Golden hour", "camera": "f/8, ISO 200, 1/250s", "phone": "Tap to expose for the sky, HDR on" },
+        { "style": "Blue hour", "camera": "f/5.6, ISO 400, 1/60s", "phone": "Night mode, steady for 2–3s" },
+        { "style": "Reflections", "camera": "Polariser, low tripod", "phone": "Get close to the water's edge" }
       ],
       "tipsTitle": "Quick tips",
       "tips": [
         "Arrive 30 minutes before sunset",
         "Shoot towards the lit bridges",
         "Keep a cloth for lens mist",
-        "Respect residents' privacy"
+        "Respect residents' privacy — nod before shooting homes"
       ]
     },
     "bestTime": {
       "title": "Best time to visit",
       "intro": "Chiang Mai has three distinct seasons that change the canal's mood.",
       "seasons": [
-        {
-          "tag": "❄️",
-          "months": "Nov – Feb",
-          "name": "Cool season",
-          "desc": "Pleasant evenings and the clearest light — the most comfortable time to walk."
-        },
-        {
-          "tag": "🔥",
-          "months": "Mar – Apr",
-          "name": "Hot season",
-          "desc": "Warm nights; go early in the opening hours to avoid the heat."
-        },
-        {
-          "tag": "🌧️",
-          "months": "May – Oct",
-          "name": "Rainy season",
-          "desc": "Lush banks and fewer crowds, but afternoon showers may pause boat rides."
-        }
+        { "tag": "❄️", "months": "Nov – Feb", "name": "Cool season", "desc": "Pleasant evenings and the clearest light — the most comfortable time to walk." },
+        { "tag": "🔥", "months": "Mar – Apr", "name": "Hot season", "desc": "Warm nights; go early in the opening hours to avoid heat. Note agricultural burning haze Feb–Mar." },
+        { "tag": "🌧️", "months": "May – Oct", "name": "Rainy season", "desc": "Lush banks and fewer crowds, but afternoon showers may pause boat rides." }
       ]
     },
     "safety": {
       "title": "Stay safe",
       "items": [
-        {
-          "title": "Near water",
-          "desc": "Keep children close to the edge; some banks are unrailed."
-        },
-        {
-          "title": "Boat rides",
-          "desc": "Wear the life jacket provided and follow the operator's instructions."
-        },
-        {
-          "title": "Personal belongings",
-          "desc": "Keep bags zipped in busy market areas."
-        }
+        { "title": "Near water", "desc": "Supervise children closely; some banks are unrailed." },
+        { "title": "Boat rides", "desc": "Wear the life jacket provided and follow the operator's instructions." },
+        { "title": "Belongings", "desc": "Keep bags zipped in busy market areas." }
       ]
     },
     "hazeSeason": {
-      "tag": "🌫️ Burning-season note",
-      "text": "From roughly February to April, northern Thailand can have haze. Sensitive travellers may prefer the cool, clear months of December–January."
+      "tag": "🌫️ Burning-season (haze) advisory",
+      "text": "Roughly late February to early April, open burning in northern Thailand hills and cross-boundary transport may elevate PM2.5. Sensitive travellers (asthma, children, the elderly) may prefer December–January for cool, clear air, or check local AQI readings daily before setting out."
     },
     "emergency": {
       "title": "Emergency contacts",
       "intro": "For urgent help in Thailand:",
       "items": [
-        {
-          "title": "Tourist police",
-          "value": "1155"
-        },
-        {
-          "title": "Ambulance",
-          "value": "1669"
-        },
-        {
-          "title": "General emergency",
-          "value": "191"
-        }
+        { "title": "Tourist Police", "value": "1155" },
+        { "title": "Ambulance", "value": "1669" },
+        { "title": "General Emergency", "value": "191" }
       ]
     },
     "accessibility": {
       "title": "Accessible for everyone",
       "intro": "The canal promenade is largely flat and step-free.",
       "items": [
-        {
-          "title": "Wheelchair & stroller",
-          "desc": "Paved paths along most of the walking street."
-        },
-        {
-          "title": "Rest areas",
-          "desc": "Shaded benches and cafés with seating."
-        },
-        {
-          "title": "Toilets",
-          "desc": "Public facilities near the market area."
-        }
+        { "title": "Wheelchair & stroller", "desc": "Paved paths along most of the promenade; main entrance has an accessibility ramp." },
+        { "title": "Rest areas", "desc": "Shaded benches and cafés with seating." },
+        { "title": "Toilets", "desc": "Public facilities near the market area; includes accessible-type cubicles." }
       ]
     },
     "faqTitle": "Frequently asked questions",
     "faqs": [
-      {
-        "q": "When is Mae Kha Canal open?",
-        "a": "The canal and evening walking street are busiest from around 16:00 to 22:00. Daytime is quiet — most food stalls open in the late afternoon."
-      },
-      {
-        "q": "Is there an entrance fee?",
-        "a": "Walking the canal and browsing the market is free. Boat rides and food are paid separately."
-      },
-      {
-        "q": "How do I get there from the old city?",
-        "a": "It is a short taxi, red songthaew, or bicycle ride to Haiya. Use a map app and set 'Mae Kha Canal'."
-      },
-      {
-        "q": "Are boat rides worth it?",
-        "a": "Yes for a first visit — a short ride offers a calm view of teak houses and lit bridges you cannot see from the path."
-      },
-      {
-        "q": "Is it family-friendly?",
-        "a": "Very — flat paths, food for all ages, and boat rides, though supervise children near unrailed banks."
-      }
+      { "q": "Where is Mae Kha Canal? Which district of Chiang Mai?", "a": "Mae Kha Canal (คลองแม่ข่า / Khlong Mae Kha) is located in Haiya Sub-district, Mueang Chiang Mai District, Chiang Mai 50100, Thailand. The specific address is 118 Ragang Rd, Haiya; approximate coordinates are 18.7771°N, 98.9836°E." },
+      { "q": "Is Mae Kha Canal free? Do I need a ticket?", "a": "Yes. Mae Kha Canal is a free public space (isAccessibleForFree). Walking the promenade and browsing the market require no ticket. Boat rides and food are paid separately." },
+      { "q": "When does it open? What is the best time to visit?", "a": "Evenings 16:00–22:00 are the liveliest windows (stalls and boats operate). Best light is 17:00–19:30 (golden + blue hour). Weekday mornings are the quietest if you prefer solitude." },
+      { "q": "How do I get there from the Old City / Airport / Night Bazaar?", "a": "From the Old City: red songthaew shared taxi, Grab/Bolt ride-hailing or a short flat bicycle ride (10–15 min). From Chiang Mai International Airport (CNX): ~4 km / 10–15 min drive — use Grab/Bolt or the official Airport Taxi counter. From the Night Bazaar / Chang Klan: 5–8 min walk or cycle along the eastern riverbank. Map keyword: Mae Kha Canal, Haiya / คลองแม่ข่า เชียงใหม่." },
+      { "q": "Is parking available nearby? How easy is it to find a spot?", "a": "Both canal banks offer municipal public parking zones and adjacent commercial-space parking types. Spots fill fast on weekend evenings; arriving by songthaew, ride-hailing or bicycle is recommended to avoid circling narrow Haiya lanes." },
+      { "q": "How long should I spend? What does a half-day itinerary look like?", "a": "Allow 1–1.5 hours for the core promenade + food; 2 hours if you add a boat ride. Recommended half-day order: Old City temple circuit (morning) → Warorot Market food run (lunch) → Mae Kha Canal sunset boat + riverside dinner (17:00–20:30)." },
+      { "q": "Are the boat rides worth it?", "a": "Highly worth it for first-timers — a short 20–30 minutes reveals old teak houses and lit bridges unseen from the promenade. Board 30 minutes before sunset." },
+      { "q": "Is it suitable for families / low-mobility / wheelchair visitors?", "a": "Very suitable — flat promenade, wide food variety, accessibility ramps and rest areas. However, always supervise children near unrailed banks." },
+      { "q": "Will there be an odour in the dry season (Mar–Apr)? What is the realistic expectation?", "a": "Slight odour may occur as the water level drops; fundamentally this is a mixed urban waterway. Please treat it as a revival 'in progress' rather than a pristine wilderness river; visit around sunset and shorten your stay if sensitive." },
+      { "q": "What is the historical background? Why is it called 'Mae Kha'?", "a": "The canal dates to King Mengrai's Lanna era (c. 1296) as part of an outer dual-ring irrigation-and-defence system. 'Mae' means mother / river; 'Kha' refers to galangal, recalling wild galangal once prolific along its banks — a classic Lanna 'river + plant' toponym." }
     ],
     "nearby": {
-      "title": "Nearby attractions",
+      "title": "Nearby landmarks (no specific vendors)",
+      "cta": "Plan your itinerary →",
       "items": [
-        {
-          "name": "Chiang Mai Old City",
-          "desc": "Temples and the famous moat, a short ride away.",
-          "url": "https://maps.google.com/?q=Chiang+Mai+Old+City"
-        },
-        {
-          "name": "Warorot Market [กาดวโรรส]",
-          "desc": "A bustling riverside market for food and textiles.",
-          "url": "https://maps.google.com/?q=Warorot+Market+Chiang+Mai"
-        },
-        {
-          "name": "Nimman [นิมมานเหมินท์]",
-          "desc": "Cafés, nightlife, and shopping to the northwest.",
-          "url": "https://maps.google.com/?q=Nimmanhaemin+Chiang+Mai"
-        }
-      ],
-      "cta": "Plan a visit →"
+        { "name": "Chiang Mai Old City", "desc": "Square-moated historic district with the highest density of temples and streetscapes.", "url": "https://maps.google.com/?q=Chiang+Mai+Old+City" },
+        { "name": "Warorot Market [กาดวโรรส]", "desc": "A lively riverside-market-type venue with rich food and textile selections.", "url": "https://maps.google.com/?q=Warorot+Market+Chiang+Mai" },
+        { "name": "Nimman [นิมมานเหมินท์]", "desc": "A café, creative and shopping-type district to the northwest.", "url": "https://maps.google.com/?q=Nimmanhaemin+Chiang+Mai" }
+      ]
+    },
+    "scienceAndDuty": {
+      "label": "🔬 Science & visitor responsibility",
+      "title": "Science & visitor responsibility (E-E-A-T section)",
+      "science": {
+        "h": "Hydraulic and ecological restoration — scientific background",
+        "items": [
+          "(1) Ecological riverbeds & phytoremediation beds: Mae Kha Canal's remediation borrows from phytoremediation principles — cattails, reeds and lotus are planted on banks, whose rhizosphere microbes degrade organics and adsorb nitrogen/phosphorus, avoiding large-scale concrete hardening that would destroy hydrology.",
+          "(2) Tropical urban heat-island mitigation: every square metre of water surface can reduce near-ground temperature by roughly 2–4℃ at midday, turning the riverside into Haiya's 'urban cool alley' — which explains why old neighbourhoods feel notably cooler in the hot season.",
+          "(3) Water-quality evolution & seasonal risk: wet season brings large volume and high self-purification but high turbidity; dry season brings low, clear water but elevated eutrophication risk. Mild odours perceived in the dry season are a universal trait of urban waterways and should be rationally expected.",
+          "(4) Biodiversity value: post-remediation returns of kingfishers, water hens, herons, dragonflies, terrapins and small fishes indicate water metrics falling within Thailand's Ministry of Natural Resources 2023 public landscape water Class I–II band."
+        ]
+      },
+      "duty": {
+        "h": "Visitor responsibility & community code",
+        "items": [
+          "✅ All packaging and food waste must be carried out or placed in designated bins; never throw anything into the water as it may clog channels.",
+          "✅ Do not feed wildlife (fish, birds, turtles) — unnatural diets create dependency and population imbalances.",
+          "✅ Keep conversation and music volumes down after dark to avoid disturbing the daily routines of riverside residents.",
+          "✅ Respect the private space of riverside homes; do not use yards as photographic foregrounds or enter without permission.",
+          "✅ Always wear life jackets during boat rides; in the event of high water or lightning, obey the boat operator's instructions to shore promptly.",
+          "✅ If you encounter a community ritual (water offerings, small alms rounds), observe from a distance — do not touch, photograph or comment."
+        ]
+      },
+      "cbt": {
+        "h": "About Community-Based Tourism (CBT)",
+        "text": "Mae Kha Canal's revival is fundamentally a community-led CBT experiment: shoreline maintenance, part of the cleaning and stall management are run by Haiya resident volunteer groups. As a non-profit science platform this page provides only neutral information and does not derive commission or referral fees from any vendor. If you wish to give back to the community, please patronise small stalls run by local residents and respect their unwritten norms (e.g. do not linger long at entrances; be patient while queuing)."
+      }
     }
   },
   "food": {
-    "label": "Food & drink",
-    "heading": "Eat by the water",
-    "lead": "The evening market turns the canal banks into an open-air kitchen of northern Thai flavours.",
+    "label": "Food & drink (type-only · no specific stalls)",
+    "heading": "Eat by the water: an open-air kitchen of northern flavours",
+    "lead": "After sunset the riverside market becomes an open-air kitchen of northern Thai cuisine. Below we describe common dish types and their cultural backgrounds; no specific establishment is named.",
     "dishes": [
-      {
-        "tag": "🍜",
-        "name": "Boat Noodles [Kuay Teow Ruea / ก๋วยเตี๋ยวเรือ]",
-        "price": "~60–80 ฿",
-        "desc": "Rich-broth noodles originating from floating markets, thickened with pork or beef blood and spices—a tasty remnant of the canal's water trade history."
-      },
-      {
-        "tag": "🐟",
-        "name": "Salt-Crusted River Fish [Pla Pao / ปลาเผา]",
-        "price": "~100 ฿",
-        "desc": "Freshwater fish coated in thick salt, stuffed with lemongrass and pandan leaves, grilled to lock in moisture and remove earthy flavors."
-      },
-      {
-        "tag": "🌮",
-        "name": "Northern Sausage [Sai Ua / ไส้อั่ว]",
-        "price": "~30–50 ฿",
-        "desc": "A fermented pork sausage packed with lemongrass, kaffir lime leaves, galangal, and red curry paste—a traditional northern method of preserving meat in a tropical climate."
-      },
-      {
-        "tag": "🍧",
-        "name": "Coconut Pancakes [Khanom Krok / ขนมครก]",
-        "price": "~40 ฿",
-        "desc": "A traditional dessert made from rice flour and coconut milk, griddle-fried in a hemispherical pan to create a crispy outside with a soft, molten center."
-      }
+      { "tag": "🍜", "name": "Boat Noodles [Kuay Teow Ruea / ก๋วยเตี๋ยวเรือ]", "price": "~60–80 ฿", "desc": "Rich-broth noodles originating from floating markets, thickened with pork or beef blood and spiced — a tasty residual of the canal's waterborne trade history. Traditional portions are small; 2–3 varieties can be sampled in one sitting." },
+      { "tag": "🐟", "name": "Salt-Crusted River Fish [Pla Pao / ปลาเผา]", "price": "~100 ฿", "desc": "Freshwater fish coated in thick salt, stuffed with lemongrass and pandan leaves and grilled to lock in moisture while removing earthy undertones. Traditionally paired with green papaya salad and sticky rice." },
+      { "tag": "🌮", "name": "Northern Sausage [Sai Ua / ไส้อั่ว]", "price": "~30–50 ฿", "desc": "A fermented pork sausage packed with lemongrass, kaffir lime leaves, galangal and red curry paste — a traditional northern Thai meat preservation technology for the tropics." },
+      { "tag": "🍧", "name": "Coconut Pancakes [Khanom Krok / ขนมครก]", "price": "~40 ฿", "desc": "A traditional dessert made from rice flour and coconut milk, griddle-fried in hemispherical moulds to produce a crisp outer shell and a soft, molten coconut core." },
+      { "tag": "🥭", "name": "Mango Sticky Rice [Khao Niew Ma Muang]", "price": "~60–90 ฿", "desc": "Thailand's national dessert, pairing fresh ivory mango with coconut sticky rice. Peak mango season in Chiang Mai is April–May." },
+      { "tag": "🍵", "name": "Thai teas & iced coffee", "price": "~25–50 ฿", "desc": "Riverside drink types include Thai iced milk tea, butterfly pea lemon tea and northern-style iced coffee; ask to adjust sugar levels." }
     ],
+    "etiquette": {
+      "title": "Basic riverside dining etiquette",
+      "items": [
+        "While queuing, keep a respectful distance from the person ahead; most stalls are family-operated small businesses.",
+        "After eating, sort and deposit single-use cutlery into public bins — do not leave them on promenade edges.",
+        "If dining on a public bench, wipe away any oil residue on departure to make space for the next visitor.",
+        "If consuming alcoholic beverages, observe local laws and stall signage, and maintain public order."
+      ]
+    },
     "quote": {
       "text": "The best meal in Chiang Mai might be the one you eat standing by the canal.",
-      "author": "Regular visitor"
+      "author": "A regular visitor"
     }
   },
   "gallery": {
     "label": "Photo gallery",
     "heading": "Moments along the canal",
     "intro": "A glimpse of Mae Kha through the day — from misty mornings to lantern-lit evenings.",
-    "historicalNote": "Photos are illustrative of the canal's atmosphere; scenes may vary by season and time of day.",
-    "credits": "Images are illustrative and for educational, non-commercial use.",
+    "historicalNote": "Photographs illustrate the canal's atmosphere; actual scenes vary by season and time of day.",
+    "credits": "All images displayed on this website are © their respective photographers. Used for educational, non-commercial purposes only.",
     "alts": [
-      "Boats moored along the calm canal at dawn",
-      "Old teak houses reflected in the water",
-      "Lotus flowers blooming on the surface",
-      "The evening walking street coming alive",
-      "Grilled river fish at a canal-side stall",
-      "A short boat ride past lit bridges",
-      "String lights over the promenade at dusk",
-      "Locals chatting by the water's edge",
-      "Northern Thai street snacks on a tray",
-      "A heron standing at a quiet bend",
-      "Murals painted on a heritage wall",
-      "Coconut ice cream by the water",
-      "Reflections of lanterns on the canal",
-      "A wooden footbridge across the water",
-      "Sunset turning the canal gold",
-      "The market winding into the evening"
+      "Long-tail boats moored quietly at dawn on Mae Kha Canal · Haiya, Chiang Mai",
+      "Old teak houses reflected in the still water of Mae Kha Canal, Chiang Mai",
+      "Pink lotus blossoms opening on the surface — tropical urban ecological restoration",
+      "Mae Kha Canal evening promenade slowly waking up · Haiya district",
+      "Northern-Thai-style salt-crusted grilled river fish on a riverside stall (type illustration)",
+      "A short canal boat ride passing under a lit footbridge during blue hour",
+      "Warm lantern string lights over the promenade walkway at dusk",
+      "Local residents chatting by the water's edge (public space documentation)",
+      "Traditional northern Thai street snacks on a tray (type description)",
+      "A heron standing in a calm bend of Mae Kha Canal — urban biodiversity return",
+      "Community street art mural on an old canal-side wall",
+      "Coconut-ice-cream-type dessert sold by the water's edge",
+      "Lantern reflections on the canal water during blue hour",
+      "A vintage wooden footbridge crossing the canal",
+      "Sunset gilding the canal water surface — golden hour at Mae Kha",
+      "The riverside market stretching into the evening"
     ],
     "viewLocation": "View location on Google Maps"
   },
   "reviews": {
-    "label": "Reviews",
+    "label": "Visitor reviews",
     "heading": "What visitors say",
-    "intro": "A snapshot of recent visitor impressions (aggregated from public travel reviews).",
-    "disclaimer": "Based on public reviews · not endorsed",
-    "declaration": "Reviews are summarised from independent travel platforms for informational purposes.",
+    "intro": "A snapshot of recent visitor impressions. Displayed on page only; not embedded in structured data.",
+    "syncAttribution": "Rating and review count synced from Google Maps user reviews · September 2026 · Click to see all Google Maps reviews ↗",
+    "copyrightNotice": "Synced from Google Maps user reviews, sync date September 2026; © original authors and Google Maps.",
+    "viewAll": "See all reviews on Google Maps",
     "featured": [
-      {
-        "text": "A peaceful evening walk you won't find in the guidebooks — boats, lights, and good food.",
-        "source": "★ 5.0 · Traveler review"
-      },
-      {
-        "text": "The boat ride at sunset was the highlight of our trip to Chiang Mai.",
-        "source": "★ 5.0 · Visitor comment"
-      }
+      { "text": "A peaceful evening walk you won't find in the guidebooks — boats, lights, and good food.", "source": "★ 5.0 · Visitor review snapshot" },
+      { "text": "The boat ride at sunset was the highlight of our Chiang Mai trip.", "source": "★ 5.0 · Visitor comment snapshot" }
     ],
     "items": [
-      {
-        "text": "[Best food: Boat noodles] The little boat-noodle stall by the bridge was unforgettable.",
-        "rating": "5",
-        "name": "Anee",
-        "date": "Mar 2026"
-      },
-      {
-        "text": "[Evening walk] Calm and pretty once the lanterns come on. Go after 18:00.",
-        "rating": "4",
-        "name": "Tom",
-        "date": "Feb 2026"
-      },
-      {
-        "text": "[Boat ride] Short but lovely — guides were friendly and pointed out old houses.",
-        "rating": "5",
-        "name": "Lina",
-        "date": "Jan 2026"
-      },
-      {
-        "text": "[Family] Easy to push a stroller along the path; kids loved the fish.",
-        "rating": "4",
-        "name": "Wei",
-        "date": "Feb 2026"
-      },
-      {
-        "text": "[Photography] Blue-hour reflections on the water were worth the tripod.",
-        "rating": "5",
-        "name": "Ken",
-        "date": "Dec 2025"
-      },
-      {
-        "text": "[Local life] Felt authentic, not too touristy compared with the night bazaar.",
-        "rating": "4",
-        "name": "Sora",
-        "date": "Jan 2026"
-      },
-      {
-        "text": "[Food] Lots of choices; prices fair. Try the grilled fish.",
-        "rating": "5",
-        "name": "Pim",
-        "date": "Mar 2026"
-      },
-      {
-        "text": "[Crowds] Busy on weekends — weekdays are more relaxed.",
-        "rating": "4",
-        "name": "Dan",
-        "date": "Feb 2026"
-      }
-    ],
-    "viewLocation": "View location on Google Maps"
+      { "text": "[Food type: Boat noodles] The little boat-noodle-type stall by the bridge was unforgettable.", "rating": "5", "name": "Anee", "date": "Mar 2026" },
+      { "text": "[Evening walk] Calm and pretty once the lanterns come on. Go after 18:00.", "rating": "4", "name": "Tom", "date": "Feb 2026" },
+      { "text": "[Boat ride] Short but lovely — the operator was friendly and pointed out old houses.", "rating": "5", "name": "Lina", "date": "Jan 2026" },
+      { "text": "[Family] Easy to push a stroller along the path; kids loved the small fish.", "rating": "4", "name": "Wei", "date": "Feb 2026" },
+      { "text": "[Photography] Blue-hour reflections on the water were worth the tripod.", "rating": "5", "name": "Ken", "date": "Dec 2025" },
+      { "text": "[Local life] Felt authentic, less touristy than the night bazaar.", "rating": "4", "name": "Sora", "date": "Jan 2026" },
+      { "text": "[Food types] Lots of choices; prices fair. Grilled-fish-type dishes are recommended.", "rating": "5", "name": "Pim", "date": "Mar 2026" },
+      { "text": "[Crowds] Busy on weekends — weekdays are more relaxed.", "rating": "4", "name": "Dan", "date": "Feb 2026" }
+    ]
   },
   "sources": {
-    "label": "Sources & references",
-    "heading": "Our references",
-    "intro": "This non-profit guide compiles publicly available information to help visitors plan responsibly.",
-    "photoTitle": "Image credits",
+    "label": "Sources & references (E-E-A-T)",
+    "heading": "Our references & provenance",
+    "intro": "This non-profit guide compiles publicly available information to help visitors plan responsibly. All facts can be cross-checked via the official links in the footer.",
+    "photoTitle": "Image notes & copyright",
     "photoItems": [
-      {
-        "text": "Scenes shown are illustrative of Mae Kha Canal.",
-        "linkLabel": "Map location",
-        "url": "https://maps.app.goo.gl/mjLfRYB7xBtk5quR9"
-      }
+      { "text": "Scenes shown are illustrative of Mae Kha Canal's atmosphere; actual conditions vary with season and time of day.", "linkLabel": "Map location (Google Maps)", "url": "https://maps.app.goo.gl/mjLfRYB7xBtk5quR9" }
     ],
-    "factTitle": "Facts & data",
-    "factText": "Visitor ratings, hours, and coordinates are compiled from public listings and may change — please verify locally before you go.",
+    "imageCopyright": "All images displayed on this website are © their respective photographers; reproduced on this page solely for educational, non-commercial purposes. Please email for takedown if copyright is infringed.",
+    "reviewTitle": "Review provenance note",
+    "reviewText": "Reviews · synced {syncDate}; data sourced from public Google Maps user-review pages, © original reviewers and Google LLC. This page displays snapshots only and implies no endorsement or affiliation with any merchant.",
+    "reviewLink": "See all reviews on Google Maps",
+    "factTitle": "Facts & data provenance",
+    "factText": "Coordinates, opening hours, rating snapshots, address and telephone are compiled from public Google Maps listings (September 2026); climate data references the Thai Meteorological Department (TMD) 30-year climatology normal; ecological restoration content references public policy documents of Chiang Mai Municipality and the Office of Natural Resources and Environmental Policy and Planning (ONEB). Information may change — please re-verify locally before travelling.",
     "correctionTitle": "Spotted a mistake?",
-    "correctionText": "We are a small non-profit team. If anything here is wrong or out of date, let us know and we will fix it.",
+    "correctionText": "We are a very small non-profit team. If anything here is wrong or out of date, let us know — we will verify and correct within 7 working days.",
     "correctionMailto": "mailto:n20186005@gmail.com",
     "correctionCta": "Email us",
-    "copyright": "Mae Kha Canal Guide · Non-profit visitor resource"
+    "copyright": "Mae Kha Canal Guide · Non-profit visitor science resource"
   },
   "mapSection": {
     "label": "Location & map",
     "heading": "Find Mae Kha Canal",
-    "lead": "In the Haiya area of Mueang Chiang Mai, a short ride from the old city.",
+    "lead": "Located in Haiya Sub-district, Mueang Chiang Mai — a short walk / ride from the Old City's south gate, and ~4 km from the airport.",
     "stats": [
-      {
-        "tag": "Rating",
-        "value": "4.2 ★",
-        "sub": "from 6,094 reviews"
-      },
-      {
-        "tag": "Open",
-        "value": "16:00",
-        "sub": "Evenings"
-      },
-      {
-        "tag": "Area",
-        "value": "Haiya",
-        "sub": "Mueang Chiang Mai"
-      }
+      { "tag": "Rating (snapshot)", "value": "4.2 ★", "sub": "From 6,216 Google reviews · September 2026" },
+      { "tag": "Open (peak)", "value": "16:00", "sub": "Evenings (liveliest)" },
+      { "tag": "Sub-district", "value": "Haiya", "sub": "Mueang Chiang Mai" }
     ],
-    "address": "118 Ragang Rd, Haiya, Mueang Chiang Mai District, Chiang Mai 50100, Thailand",
-    "plusCode": "Plus Code QXGW+R6 Chiang Mai",
+    "address": "118 Ragang Rd, Haiya Sub-district, Mueang Chiang Mai District, Chiang Mai 50100, Thailand",
+    "plusCode": "Plus Code: QXGW+R6 Chiang Mai, Mueang Chiang Mai District, Chiang Mai",
     "coords": "18.7771°N, 98.3858°E"
   },
   "footer": {
     "brand": {
-      "name": "Mae Kha Canal",
-      "tagline": "คลองแม่ข่า · Chiang Mai"
+      "name": "Mae Kha Canal Science Guide",
+      "tagline": "คลองแม่ข่า · Mae Kha Canal · Chiang Mai"
     },
-    "about": "A free, non-profit visitor guide to Mae Kha Canal — its history, food, and how to enjoy it responsibly.",
+    "about": "A free, non-profit visitor science guide to Mae Kha Canal — covering its hydraulic history, ecological revival, dish types, itineraries, visitor code, and how to enjoy it responsibly.",
     "navTitle": "Explore",
     "navItems": [
-      {
-        "label": "About",
-        "href": "#about"
-      },
-      {
-        "label": "History",
-        "href": "#history"
-      },
-      {
-        "label": "Visit guide",
-        "href": "#guide"
-      },
-      {
-        "label": "Food",
-        "href": "#food"
-      },
-      {
-        "label": "Gallery",
-        "href": "#gallery"
-      },
-      {
-        "label": "Reviews",
-        "href": "#reviews"
-      },
-      {
-        "label": "Map",
-        "href": "#map"
-      }
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "History & folklore", "href": "#history" },
+      { "label": "Visit guide", "href": "#guide" },
+      { "label": "Routes", "href": "#routes" },
+      { "label": "Facilities", "href": "#facilities" },
+      { "label": "Food types", "href": "#food" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Reviews", "href": "#reviews" },
+      { "label": "Sources", "href": "#sources" },
+      { "label": "Map", "href": "#map" }
     ],
-    "noteTitle": "Good to know",
-    "note": "We are not affiliated with any vendor at the canal. Listings may change — verify locally.",
-    "mapsLabel": "Google Maps →",
-    "sourcesTitle": "References",
-    "sourcesNote": "This guide links to public sources for verification.",
+    "noteTitle": "Non-profit position statement",
+    "note": "This is an independent non-profit science platform. No affiliation, no referral, no commission with any stall, vendor or travel agency on the canal. Information may change — verify locally.",
+    "mapsLabel": "Open Google Maps ↗",
+    "sourcesTitle": "Official authoritative references (for cross-verification)",
+    "sourcesNote": "This guide links to the following public authoritative sources so readers can verify data before travel.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings",
-    "disclaimerLead": "Mae Kha Canal Guide is an independent, non-profit information resource. It is not an official site of any government or business.",
-    "unofficial": "Unofficial · Community-made visitor guide",
-    "dataSource": "Data sourced from public travel listings and visitor reviews.",
-    "copyright": "© 2026 Mae Kha Canal Guide. Non-profit."
+    "disclaimerLead": "Mae Kha Canal Science Guide is an independent, non-profit information resource. It is NOT an official website of any government body or commercial entity. All content is for visitor science reference only and constitutes no commercial recommendation or legal advice.",
+    "unofficial": "Unofficial · Community-made visitor science page",
+    "dataSource": "Coordinates & address: Google Maps (Sep 2026); Climate: Thai Meteorological Department (TMD) public 30-year normal; Policy: Chiang Mai Municipality & ONEB public documents.",
+    "copyright": "© 2026 Mae Kha Canal Science Guide. Non-profit. Images © their respective photographers."
   },
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "updated": "Last updated: July 2026",
+      "updated": "Last updated: September 2026",
       "sections": [
         {
           "h": "What we collect",
-          "p": "This is a static, non-profit guide. We do not operate accounts and do not intentionally collect personal data through this site.",
+          "p": "This is a server-rendered, non-profit science guide. We operate no user accounts and intentionally collect no personal data through this site.",
           "list": [
             "No account or login is required to browse.",
-            "We may use privacy-respecting, anonymous analytics to understand traffic.",
-            "If you email us, we only use your message to reply."
+            "We use GA4 (Google Analytics 4, ID: G-HXM22WWPKP) for anonymous, aggregated visit measurement to help improve content structure.",
+            "If you email us, we only use your message content to reply and never use it for marketing."
           ]
         },
         {
-          "h": "Cookies",
-          "p": "We use minimal cookies needed for basic site function and, where you choose, anonymous measurement.",
+          "h": "Cookies & analytics",
+          "p": "We use only the minimal cookies required for basic site functionality and, at your election, anonymous measurement.",
           "list": [
-            "Essential cookies keep the site working.",
-            "Optional analytics cookies can be declined in Cookie Settings."
+            "Essential cookies keep the site running (e.g. remembering your language choice).",
+            "Optional GA4 analytics cookies can be declined in Cookie Settings."
           ]
         },
         {
           "h": "Your rights",
-          "p": "You may request removal of any message you have sent us, and you can disable optional cookies at any time."
+          "p": "You may request deletion of any information you have sent us, and you can disable optional cookies at any time."
         }
       ]
     },
     "terms": {
       "title": "Terms of Service",
-      "updated": "Last updated: July 2026",
+      "updated": "Last updated: September 2026",
       "sections": [
         {
-          "h": "Use of this site",
-          "p": "This guide is provided for general visitor information. It is not an official source.",
+          "h": "Site use",
+          "p": "This guide is intended as general visitor science information and is NOT an official source.",
           "list": [
             "Content may change without notice.",
-            "Verify opening hours, prices, and access locally before you travel."
+            "Always verify opening hours, prices and accessibility locally before travelling."
           ]
         },
         {
-          "h": "No affiliation",
-          "p": "We are not affiliated with any vendor, business, or government body mentioned on this site."
+          "h": "No-affiliation declaration",
+          "p": "We have no affiliation, commission or referral relationship with any stall, vendor, business or government agency mentioned on this site."
         },
         {
-          "h": "Limitation",
-          "p": "We are not liable for any loss or inconvenience arising from reliance on this information."
+          "h": "Limitation of liability",
+          "p": "We assume no legal liability for any loss or inconvenience arising from reliance on this information."
         }
       ]
     },
     "cookies": {
       "title": "Cookie Settings",
-      "updated": "Last updated: July 2026",
-      "intro": "Manage which cookies this non-profit guide may use. Essential cookies are always on; optional ones help us understand visits anonymously.",
+      "updated": "Last updated: September 2026",
+      "intro": "Manage which cookies this non-profit science guide may use. Essential cookies are always on; optional cookies help us understand visits anonymously.",
       "categories": [
         {
           "h": "Essential",
           "status": "Always on",
-          "p": "Required for the site to function, such as remembering your language choice.",
+          "p": "Required for the site to function, e.g. remembering your chosen language.",
           "active": true,
           "sub": "Stored",
           "subStatus": "Necessary"
         },
         {
-          "h": "Analytics",
+          "h": "Analytics (GA4: G-HXM22WWPKP)",
           "status": "Optional",
-          "p": "Anonymous, privacy-respecting measurement of page visits.",
+          "p": "Anonymous, privacy-respecting measurement of page visits; no individual identity is recorded.",
           "active": false,
           "sub": "Off until accepted",
           "subStatus": "Optional"

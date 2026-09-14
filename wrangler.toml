@@ -1,0 +1,19 @@
+name = "maekhacanal"
+compatibility_date = "2025-03-04"
+compatibility_flags = ["nodejs_compat"]
+
+# 生产环境自定义域部署
+routes = [
+  { pattern = "maekhacanal.com/*", zone_name = "maekhacanal.com" },
+  { pattern = "www.maekhacanal.com/*", zone_name = "maekhacanal.com" },
+]
+
+# 构建产物由 @astrojs/cloudflare 生成
+[build]
+command = "npm run build"
+
+# 可选：如需要 Workers KV 缓存天气数据，可取消注释
+# [[kv_namespaces]]
+# binding = "WEATHER_CACHE"
+# id = ""
+# preview_id = ""

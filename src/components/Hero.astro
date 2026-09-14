@@ -12,13 +12,12 @@ const hero = messages.hero;
 const main = hero.titleMain as string;
 const accent = hero.titleAccent as string;
 const parts = main.split(accent);
-const heroImg = `https://maekhacanal.com/gallery/mae-kha-canal-13.jpg`;
+const heroImg = siteConfig.heroImage;
 const mapsUrl = siteConfig.mapsUrl;
 const coordsLabel = hero.coordsLabel;
 
-// Full weather-code labels (all languages); only the current language is shipped per page.
 const WEATHER_CODES: Record<number, Record<string, { t: string; s: string }>> = {
-  0: { th: { t: 'ท้องฟ้าโปร่งใส', s: 'แดดจัด' }, en: { t: 'Clear sky', s: 'Sunny' }, zh: { t: '晴空', s: '晴' } },
+  0: { th: { t: 'ท้องฟ้าโปร่งใส', s: 'แดดจัด' }, en: { t: 'Clear sky', s: 'Sunny' }, zh: { t: '晴空万里', s: '晴' } },
   1: { th: { t: 'โปร่งโล่ง', s: 'ส่วนใหญ่โปร่ง' }, en: { t: 'Mainly clear', s: 'Mostly clear' }, zh: { t: '少云', s: '少云' } },
   2: { th: { t: 'มีเมฆบางส่วน', s: 'มีเมฆบางส่วน' }, en: { t: 'Partly cloudy', s: 'Partly cloudy' }, zh: { t: '局部多云', s: '局部多云' } },
   3: { th: { t: 'เมฆมาก', s: 'เมฆมาก' }, en: { t: 'Overcast', s: 'Overcast' }, zh: { t: '阴', s: '阴' } },
@@ -40,13 +39,324 @@ const WEATHER_CODES: Record<number, Record<string, { t: string; s: string }>> = 
   96: { th: { t: 'พายุฝนฟ้าคะนองลูกเห็บ', s: 'ฟ้าคะนอง' }, en: { t: 'Thunderstorm', s: 'Storm' }, zh: { t: '雷阵雨', s: '雷雨' } },
   99: { th: { t: 'พายุฝนฟ้าคะนองลูกเห็บหนัก', s: 'ฟ้าคะนอง' }, en: { t: 'Severe thunderstorm', s: 'Storm' }, zh: { t: '强雷阵雨', s: '雷雨' } },
 };
-const weatherMap = Object.fromEntries(
-  Object.entries(WEATHER_CODES).map(([k, v]) => [k, v[lang] ?? v.en])
-);
+
+const LABELS: Record<string, Record<string, { dressing: string; schedule: string; carry: string; risk: string; uv: string; hum: string; riskPrefix: string; noRisk: string }>> = {
+  zh: {
+    dressing: '出行穿搭', schedule: '游玩安排', carry: '随身物品', risk: '风险提醒',
+    uv: '紫外线强', hum: '湿度较高',
+    riskPrefix: '⚠️气象预警', noRisk: '无气象预警',
+  },
+  en: {
+    dressing: 'What to wear', schedule: 'Plan your day', carry: 'What to carry', risk: 'Risk alert',
+    uv: 'Strong UV', hum: 'Humid',
+    riskPrefix: '⚠ Weather alert', noRisk: 'No active alerts',
+  },
+  th: {
+    dressing: 'ชุดที่ควรสวม', schedule: 'ตารางการเที่ยว', carry: 'ของที่ควรพก', risk: 'คำเตือนความเสี่ยง',
+    uv: 'ยูวีแรง', hum: 'ชื้นสูง',
+    riskPrefix: '⚠️คำเตือนอากาศ', noRisk: 'ไม่มีคำเตือน',
+  },
+};
+
+const TIP_LIB: Record<string, any> = {
+  zh: {
+    rainHeavy: '降雨较强，避开低洼地带；运河水位可能上涨，步道临水侧注意防滑',
+    drizzle: '有小雨，地面湿滑，走木质栈道请留意脚下',
+    probHigh: '大概率会下雨，记得带雨具；露天游船可能临时停运',
+    thunder: '谨防雷电，远离水面与空旷步道；不要在桥上或树下逗留；游船码头大概率关停',
+    hot: '气温偏高，避开正午 12–14 点外出；户外尽量走树荫一侧',
+    uvHigh: '紫外线较强，裸露皮肤请做好防晒',
+    muggy: '体感闷热湿度大，建议穿透气速干衣，多补水',
+    bigRange: '昼夜温差大，早晚在河畔会凉，备一件薄外套方便穿脱',
+    cold: '气温偏低，清晨日出时分尤冷，建议厚外套+围巾',
+    windy: '风力偏大，草帽和宽松长裙容易被吹走；运河水面浪大，船行可能颠簸',
+    stormWind: '大风天气，远离沿岸广告牌与树冠大的行道树；游船项目大概率停航',
+    sunny: '天气晴好，适合户外游览；日出/日落时段水面反光非常出片',
+    overcast: '光线柔和无暴晒，适合沿河慢慢散步、拍照，长时间户外活动体验更好',
+    fog: '能见度差，运河两岸景观打折扣；过河桥面请减速，游船容易延误',
+    needUmbrella: '折叠伞',
+    needRaincoat: '雨衣（防风比长柄伞实用）',
+    needSunblock: '防晒霜 SPF50+',
+    needSunglasses: '墨镜',
+    needHat: '遮阳帽',
+    needWater: '足量饮用水',
+    needCoat: '薄外套/披肩',
+    needThickCoat: '厚外套+围巾',
+    needShoes: '防滑运动鞋/防水鞋',
+    needMask: '口罩',
+    needMosquito: '驱蚊液',
+    needFan: '便携小风扇',
+    canalGood: '适合沿河步道漫步 + 傍晚落日游船；黄金时刻水面反光很美',
+    canalRain: '优先安排 清迈古城室内佛寺 / 嘎鲁昂市场室内摊档；户外步道可改为午后雨停后',
+    canalThunder: '坚决不上船；改为 Warorot 室内美食区或古城寺庙巡礼',
+    canalWind: '风大时临水步道体验一般，缩短停留时间；避免走桥面高处',
+    canalFog: '雾气重不适合观景，改去咖啡馆或博物馆，等太阳升高雾散再外出',
+  },
+  en: {
+    rainHeavy: 'Heavy rain — avoid low-lying spots; canal water may rise, walk with care near the waterside',
+    drizzle: 'Light drizzle — wet wooden boardwalks, mind your step',
+    probHigh: 'Rain likely — pack rain gear; open-air boat rides may be suspended',
+    thunder: 'Lightning risk — stay away from the water and open walkways; never shelter under trees or on bridges; piers will likely close',
+    hot: 'Hot day — avoid 12–14 outdoor hours; stick to the shaded side of the promenade',
+    uvHigh: 'Strong UV — cover exposed skin and use sunscreen',
+    muggy: 'Humid & sticky — wear quick-dry breathable clothes, drink often',
+    bigRange: 'Big day-night range — riverside evenings are cool, bring a layer',
+    cold: 'Chilly — especially around sunrise; bring a thick jacket and scarf',
+    windy: 'Windy — hats & loose dresses blow off; canal chop may rock small boats',
+    stormWind: 'Strong wind — keep away from billboards and big trees by the bank; boat rides will likely be cancelled',
+    sunny: 'Nice clear day — perfect for promenade walks; sunrise/sunset reflections on the water are stunning',
+    overcast: 'Soft light, no glare — ideal for a long slow riverside walk & photo stroll',
+    fog: 'Poor visibility — waterscape views muted; slow down on bridges, ferries may delay',
+    needUmbrella: 'Compact brolly',
+    needRaincoat: 'Rain jacket (handier than a long brolly in wind)',
+    needSunblock: 'Sunscreen SPF50+',
+    needSunglasses: 'Sunglasses',
+    needHat: 'Sun hat',
+    needWater: 'Plenty of water',
+    needCoat: 'Light jacket / shawl',
+    needThickCoat: 'Warm jacket + scarf',
+    needShoes: 'Non-slip / waterproof shoes',
+    needMask: 'Face mask',
+    needMosquito: 'Mosquito repellent',
+    needFan: 'Pocket fan',
+    canalGood: 'Ideal for riverside strolls + sunset boat rides; golden-hour reflections are gorgeous',
+    canalRain: 'Switch indoors — Old City temples or Warorot market stalls; return after the rain',
+    canalThunder: 'No boat rides at all; spend the day inside Warorot food court or temple-hopping the Old City',
+    canalWind: 'Windy waterside feels mediocre; shorten your visit and avoid high bridges',
+    canalFog: 'Not great for scenic views — head to a café or museum until the fog lifts',
+  },
+  th: {
+    rainHeavy: 'ฝนตกหนัก — หลีกพื้นที่ต่ำ น้ำในคลองอาจขึ้นสูง เดินระมัดระวังริมน้ำ',
+    drizzle: 'ฝนปรอย — ทางเดินไม้ลื่น ระวังขณะข้ามสะพานไม้',
+    probHigh: 'มีโอกาสฝนสูง — พกร่ม/เสื้อกันฝน; เรืออาจหยุดเดินชั่วคราว',
+    thunder: 'อันตรายฟ้าผ่า — ห่างน้ำและทางเดินโล่ง; อย่ายืนใต้ต้นไม้หรือบนสะพาน; ท่ารถเรือมักปิด',
+    hot: 'อากาศร้อน — หลีกออกกลางวัน 12–14 น.; เดินเลือกด้านร่มเงา',
+    uvHigh: 'ยูวีแรง — ทาครีมกันแดดและปกคลุมผิวหนัง',
+    muggy: 'ชื้นเหนียว — สวมเสื้อระบายอากาศและดื่มน้ำบ่อย',
+    bigRange: 'อุณหภูมิเช้า-เย็นต่างมาก — คลองเย็นตอนเย็น พกเสื้อคลุมบางไว้',
+    cold: 'หนาว — โดยเฉพาะตอนรุ่งขึ้น; พกเสื้อหนาและผ้าพันคอ',
+    windy: 'ลมแรง — หมวกและกระโปรงหลวมจะระเบิด; เรืออาจโก่งคลื่น',
+    stormWind: 'ลมแรงมาก — ห่างป้ายโฆษณาและต้นไม้ใหญ่ริมคลอง; เรือมักยกเลิก',
+    sunny: 'ท้องฟ้าใส — เหมาะเดินเล่นริมคลอง; ภาพสะท้อนน้ำตอนรุ่ง/ตกสวยมาก',
+    overcast: 'แสงนุ่มไม่ร้อน — เหมาะเดินช้าๆ ตามริมน้ำและถ่ายรูปยาวๆ',
+    fog: 'ทัศนียภาพหมอกน้อย — ลดความเร็วบนสะพาน; เรืออาจล่าช้า',
+    needUmbrella: 'ร่มพับ',
+    needRaincoat: 'เสื้อกันฝน (เหนือร่มยาวเวลาลม)',
+    needSunblock: 'ครีมกันแดด SPF50+',
+    needSunglasses: 'แว่นกันแดด',
+    needHat: 'หมวกกันแดด',
+    needWater: 'น้ำดื่มเพียงพอ',
+    needCoat: 'เสื้อคลุม/ผ้าพันไหล่บาง',
+    needThickCoat: 'เสื้อหนา + ผ้าพันคอ',
+    needShoes: 'รองเท้าผ้าใบกันลื่น/กันน้ำ',
+    needMask: 'หน้ากาก',
+    needMosquito: 'สเปรย์กันยุง',
+    needFan: 'พัดลมพกพา',
+    canalGood: 'เหมาะเดินเล่นริมคลอง + ล่องเรือตอนพระอาทิตย์ตก; สะท้อนน้ำตอนแสงทองสวยมาก',
+    canalRain: 'เปลี่ยนมาในอาคาร — วัดในเมืองเก่า หรือ ตลาดวโรรส; กลับไปริมน้ำหลังฝนหยุด',
+    canalThunder: 'ห้ามล่องเรือทั้งหมด; ใช้วันไปเที่ยวในร้านอาหารวโรรส หรือ วัดตามเมืองเก่า',
+    canalWind: 'ลมแรงริมน้ำไม่ค่อยสบาย; ลดเวลาเหลือ และไม่ขึ้นสะพานสูง',
+    canalFog: 'ทัศนียภาพไม่ค่อยชัด — ไปคาเฟ่ หรือ พิพิธภัณฑ์ก่อนจนหมอกสลาย',
+  },
+};
+
+function iconFor(code: number): string {
+  if (code === 0) return '☀️';
+  if (code <= 2) return '🌤️';
+  if (code === 3) return '☁️';
+  if (code === 45 || code === 48) return '🌫️';
+  if (code >= 51 && code <= 57) return '🌦️';
+  if (code >= 61 && code <= 67) return '🌧️';
+  if (code >= 71 && code <= 77) return '❄️';
+  if (code >= 80 && code <= 82) return '🌦️';
+  if (code >= 95) return '⛈️';
+  return '🌡️';
+}
+
+type Advice4 = {
+  dressing: string[];
+  schedule: string[];
+  carry: string[];
+  risk: string[];
+};
+
+type WeatherData = {
+  ok: boolean;
+  code: number;
+  temp: number;
+  wind: number;
+  hum: number;
+  uv: number;
+  precipProb0: number;
+  tMax: number;
+  tMin: number;
+  icon: string;
+  title: string;
+  short: string;
+  golden: string;
+  sunset: string;
+  blue: string;
+  days: Array<{ week: string; icon: string; hi: number; lo: number; prob: number }>;
+  advice: Advice4;
+  uvText: string;
+  humText: string;
+};
+
+const tip = TIP_LIB[lang] ?? TIP_LIB.en;
+const lab = (LABELS as any)[lang] ?? LABELS.en;
+
+function buildAdvice(o: { code: number; temp: number; tMax: number; tMin: number; wind: number; uv: number; hum: number; precipProb0: number }): Advice4 {
+  const res: Advice4 = { dressing: [], schedule: [], carry: [], risk: [] };
+  const { code, temp, tMax, tMin, wind, uv, hum, precipProb0 } = o;
+  const isRainAny = (code >= 51 && code <= 67) || (code >= 80 && code <= 82);
+  const isHeavy = code === 65 || code === 82 || (code >= 95 && code <= 99);
+  const isStorm = code >= 95;
+  const isFog = code === 45 || code === 48;
+  const isClear = code <= 1;
+  const isOvercast = code === 2 || code === 3;
+
+  // 🧥 Dressing
+  if (hum >= 80 || (temp >= 28 && hum >= 65)) res.dressing.push(tip.muggy);
+  if (tMax - tMin > 8) res.dressing.push(tip.bigRange);
+  if (temp >= 32) res.dressing.push(tip.hot);
+  if (tMax <= 10) res.dressing.push(tip.cold);
+  if (isRainAny && isHeavy) res.dressing.push(tip.rainHeavy);
+  if (isRainAny && !isHeavy) res.dressing.push(tip.drizzle);
+  if (wind >= 29 && wind < 39) res.dressing.push(tip.windy);
+  if (wind >= 39) res.dressing.push(tip.stormWind);
+  if (uv >= 5) res.dressing.push(tip.uvHigh);
+  if (isClear && temp < 32) res.dressing.push(tip.sunny);
+  if (isOvercast && !isRainAny) res.dressing.push(tip.overcast);
+  if (isFog) res.dressing.push(tip.fog);
+  if (precipProb0 >= 60 && !isRainAny) res.dressing.push(tip.probHigh);
+  if (isStorm) res.risk.push(tip.thunder);
+  if (wind >= 39 && !isStorm) res.risk.push(tip.stormWind);
+  if (isHeavy && !isStorm && wind < 39) res.risk.push(tip.rainHeavy);
+  if (isFog) res.risk.push(tip.fog);
+
+  // 🗺️ Schedule（结合『运河河湖』+『城市人文』场景）
+  if (isStorm) {
+    res.schedule.push(tip.canalThunder);
+  } else if (isHeavy) {
+    res.schedule.push(tip.canalRain);
+  } else if (wind >= 39) {
+    res.schedule.push(tip.canalWind);
+  } else if (isFog) {
+    res.schedule.push(tip.canalFog);
+  } else if (temp >= 32) {
+    res.schedule.push(tip.hot);
+    res.schedule.push(tip.canalGood);
+  } else if (isRainAny) {
+    res.schedule.push(tip.canalRain);
+  } else if (isClear || isOvercast) {
+    res.schedule.push(tip.canalGood);
+  }
+  if (isFog) res.schedule.push(tip.canalFog);
+
+  // 🎒 Carry（动态只加需要的）
+  if (uv >= 5) { res.carry.push(tip.needSunblock); res.carry.push(tip.needSunglasses); res.carry.push(tip.needHat); }
+  if (temp >= 28) { res.carry.push(tip.needWater); if (hum >= 75) res.carry.push(tip.needFan); }
+  if (precipProb0 >= 60 || isRainAny) {
+    if (isHeavy || wind >= 29) res.carry.push(tip.needRaincoat);
+    else res.carry.push(tip.needUmbrella);
+    res.carry.push(tip.needShoes);
+  }
+  if (tMax - tMin > 8 || tMax <= 18) res.carry.push(tip.needCoat);
+  if (tMax <= 10) res.carry.push(tip.needThickCoat);
+  if (isFog) res.carry.push(tip.needMask);
+  if (code <= 3 && temp >= 22 && hum >= 60) res.carry.push(tip.needMosquito);
+  // 去重
+  const uniq = (a: string[]) => Array.from(new Set(a));
+  res.dressing = uniq(res.dressing);
+  res.schedule = uniq(res.schedule);
+  res.carry = uniq(res.carry);
+  res.risk = uniq(res.risk);
+  return res;
+}
+
+const pad = (n: number) => String(n).padStart(2, '0');
+const fmtHHMM = (iso: string) => { const d = new Date(iso); return pad(d.getHours()) + ':' + pad(d.getMinutes()); };
+const addMinToIso = (iso: string, m: number) => { const d = new Date(new Date(iso).getTime() + m * 60000); return pad(d.getHours()) + ':' + pad(d.getMinutes()); };
+
+const fallback = (): WeatherData => {
+  const code = 2;
+  const advice = buildAdvice({ code, temp: 27, tMax: 31, tMin: 22, wind: 6, uv: 5, hum: 70, precipProb0: 30 });
+  const wm = WEATHER_CODES[code][lang] ?? WEATHER_CODES[code].en;
+  return {
+    ok: false,
+    code, temp: 27, wind: 6, hum: 70, uv: 5, precipProb0: 30, tMax: 31, tMin: 22,
+    icon: iconFor(code), title: wm.t, short: wm.s,
+    golden: hero.defaultGolden, sunset: hero.defaultSunset, blue: hero.defaultBlue,
+    days: [], advice,
+    uvText: (uv: number) => (uv >= 8 ? '很强' : uv >= 5 ? '强' : uv >= 3 ? '中' : '弱') as unknown as string,
+    humText: (h: number) => (h >= 80 ? '很高' : h >= 65 ? '较高' : h >= 45 ? '舒适' : '偏干') as unknown as string,
+  } as WeatherData;
+};
+
+let weather: WeatherData = fallback();
+
+try {
+  const CACHE_TTL = 1000 * 60 * 20;
+  const cacheStore = (globalThis as any).__maeKhaWeatherCache || new Map<string, { v: WeatherData; t: number }>();
+  (globalThis as any).__maeKhaWeatherCache = cacheStore;
+  const cacheKey = `${siteConfig.coords.lat}-${siteConfig.coords.lng}-${lang}-v2`;
+  const cachedEntry = cacheStore.get(cacheKey);
+  if (cachedEntry && Date.now() - cachedEntry.t < CACHE_TTL) {
+    weather = cachedEntry.v;
+  } else {
+    const url =
+      `https://api.open-meteo.com/v1/forecast?latitude=${siteConfig.coords.lat}` +
+      `&longitude=${siteConfig.coords.lng}` +
+      `&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,precipitation_probability` +
+      `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max,uv_index_max,sunrise,sunset` +
+      `&timezone=Asia/Bangkok&wind_speed_unit=kmh&forecast_days=7`;
+    const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
+    if (!res.ok) throw new Error('fetch fail');
+    const d = await res.json();
+    if (!d?.current || !d?.daily) throw new Error('bad payload');
+
+    const code = d.current.weather_code as number;
+    const temp = Math.round(d.current.temperature_2m as number);
+    const wind = Math.round(d.current.wind_speed_10m as number);
+    const hum = Math.round(d.current.relative_humidity_2m as number);
+    const uv = Math.round((d.daily.uv_index_max as number[])[0] ?? 0);
+    const precipProb0 = Math.round((d.daily.precipitation_probability_max as number[])[0] ?? 0);
+    const tMax = Math.round((d.daily.temperature_2m_max as number[])[0] ?? temp + 3);
+    const tMin = Math.round((d.daily.temperature_2m_min as number[])[0] ?? temp - 5);
+    const wm = WEATHER_CODES[code]?.[lang] ?? WEATHER_CODES[code]?.en ?? WEATHER_CODES[3][lang];
+    const week: string[] = (hero.week7 as string[]) ?? ['今天', '明天', '后天', '周四', '周五', '周六', '周日'];
+    const days = (d.daily.weather_code as number[]).slice(0, 7).map((c, i) => ({
+      week: week[i] ?? '',
+      icon: iconFor(c),
+      hi: Math.round((d.daily.temperature_2m_max as number[])[i]),
+      lo: Math.round((d.daily.temperature_2m_min as number[])[i]),
+      prob: Math.round((d.daily.precipitation_probability_max as number[])[i]),
+    }));
+
+    const advice = buildAdvice({ code, temp, tMax, tMin, wind, uv, hum, precipProb0 });
+    const uvHuman = uv >= 8 ? (lang === 'zh' ? '很强' : lang === 'th' ? 'แรงมาก' : 'Very high') : uv >= 5 ? (lang === 'zh' ? '强' : lang === 'th' ? 'แรง' : 'High') : uv >= 3 ? (lang === 'zh' ? '中' : lang === 'th' ? 'ปานกลาง' : 'Moderate') : (lang === 'zh' ? '弱' : lang === 'th' ? 'อ่อน' : 'Low');
+    const humHuman = hum >= 80 ? (lang === 'zh' ? '很高' : lang === 'th' ? 'มาก' : 'Very humid') : hum >= 65 ? (lang === 'zh' ? '较高' : lang === 'th' ? 'ค่อนข้างสูง' : 'Humid') : hum >= 45 ? (lang === 'zh' ? '舒适' : lang === 'th' ? 'สบาย' : 'Comfortable') : (lang === 'zh' ? '偏干' : lang === 'th' ? 'ค่อนข้างแห้ง' : 'Dry');
+
+    weather = {
+      ok: true, code, temp, wind, hum, uv, precipProb0, tMax, tMin,
+      icon: iconFor(code), title: wm.t, short: wm.s,
+      golden: fmtHHMM(d.daily.sunrise[0]) + ' – ' + addMinToIso(d.daily.sunrise[0], 90),
+      sunset: fmtHHMM(d.daily.sunset[0]),
+      blue: addMinToIso(d.daily.sunset[0], 20) + ' – ' + addMinToIso(d.daily.sunset[0], 50),
+      days, advice,
+      uvText: uvHuman, humText: humHuman,
+    };
+    cacheStore.set(cacheKey, { v: weather, t: Date.now() });
+  }
+} catch {
+  weather = fallback();
+  (weather as any).uvText = weather.uv >= 8 ? (lang === 'zh' ? '很强' : lang === 'th' ? 'แรงมาก' : 'Very high') : weather.uv >= 5 ? (lang === 'zh' ? '强' : lang === 'th' ? 'แรง' : 'High') : weather.uv >= 3 ? (lang === 'zh' ? '中' : lang === 'th' ? 'ปานกลาง' : 'Moderate') : (lang === 'zh' ? '弱' : lang === 'th' ? 'อ่อน' : 'Low');
+  (weather as any).humText = weather.hum >= 80 ? (lang === 'zh' ? '很高' : lang === 'th' ? 'มาก' : 'Very humid') : weather.hum >= 65 ? (lang === 'zh' ? '较高' : lang === 'th' ? 'ค่อนข้างสูง' : 'Humid') : weather.hum >= 45 ? (lang === 'zh' ? '舒适' : lang === 'th' ? 'สบาย' : 'Comfortable') : (lang === 'zh' ? '偏干' : lang === 'th' ? 'ค่อนข้างแห้ง' : 'Dry');
+}
 ---
 
 <section id="home" class="relative min-h-screen flex items-end overflow-hidden">
-  <img src={heroImg} alt={main} class="absolute inset-0 w-full h-full object-cover" />
+  <img src={heroImg} alt={`${siteConfig.attractionFullName[lang]} — Main view in ${siteConfig.cityName[lang]}, ${siteConfig.countryName[lang]}`} class="absolute inset-0 w-full h-full object-cover" loading="eager" />
   <div class="absolute inset-0 bg-gradient-to-t from-teakDeep via-teakDeep/70 to-teak/40"></div>
   <div class="hero-glow absolute inset-0"></div>
 
@@ -62,23 +372,22 @@ const weatherMap = Object.fromEntries(
         <a href="#guide" class="inline-flex items-center gap-2 bg-gold text-teak font-semibold px-6 py-3 rounded-full hover:bg-goldBright transition-colors">
           {hero.cta1}
         </a>
-        <a href="#food" class="inline-flex items-center gap-2 border border-gold/50 text-ivory px-6 py-3 rounded-full hover:border-goldBright hover:text-goldBright transition-colors">
+        <a href="#facilities" class="inline-flex items-center gap-2 border border-gold/50 text-ivory px-6 py-3 rounded-full hover:border-goldBright hover:text-goldBright transition-colors">
           {hero.cta2}
         </a>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center gap-5 text-sm text-ivory/80">
-        <span class="stars text-lg">★ {hero.rating}</span>
-        <span>{hero.reviewCount} Google</span>
+        <span class="stars text-lg">★ {siteConfig.rating}</span>
+        <span>{siteConfig.reviewCount} {hero.reviewSuffix}</span>
         <span class="hidden sm:inline text-ivory/40">·</span>
         <span>{coordsLabel}</span>
       </div>
 
-      <a href={mapsUrl} target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 text-goldBright hover:text-gold underline-offset-4 hover:underline text-sm">
-        {hero.viewLocation}
+      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-goldBright hover:text-gold underline-offset-4 hover:underline text-sm">
+        {hero.viewLocation} ↗
       </a>
 
-      <!-- wooden park signboard + carousel dots (bottom-left) -->
       <div class="wood-sign mt-8 inline-block max-w-md px-5 py-4">
         <p class="wood-title text-xs font-semibold uppercase tracking-[0.18em]">{hero.boardCategory}</p>
         <p class="wood-title mt-1 font-display text-2xl font-bold leading-tight">{hero.boardTitle}</p>
@@ -90,124 +399,139 @@ const weatherMap = Object.fromEntries(
       </div>
     </div>
 
-    <!-- live weather + sunset planner (static by default; enhanced by API) -->
     <div class="lg:col-span-5">
       <div class="weather-card rounded-2xl p-5 text-ivory shadow-2xl">
-        <div class="flex items-center justify-between">
+        <!-- 顶部：实时状态栏 -->
+        <div class="flex items-center justify-between flex-wrap gap-2">
           <span class="text-ivory/70 text-sm">{hero.plannerTitle}</span>
-          <span id="weather-status" class="text-xs text-ivory/55">{hero.liveWeather}</span>
+          <span class="text-xs text-ivory/55">{weather.ok ? hero.liveWeather : hero.liveWeather}</span>
         </div>
-        <div id="weather-body">
-          <div class="flex items-center justify-between mt-2">
-            <span id="cur-icon" class="text-2xl">🌦️</span>
-            <span class="text-xs text-ivory/55">{hero.plannerNote}</span>
+
+        <!-- 温度主视觉 + 指标行 -->
+        <div>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-3xl" aria-hidden="true">{weather.icon}</span>
+            <div class="text-xs text-right space-y-0.5 text-ivory/75">
+              <div class="text-goldBright font-semibold">{weather.title}</div>
+              <div><span class="text-gold/90">{hero.extraLabels.uvIndex}</span> <span class="font-semibold text-ivory">{weather.uvText}</span> · <span class="text-gold/90">{hero.extraLabels.humidity}</span> <span class="font-semibold text-ivory">{weather.humText}</span></div>
+            </div>
           </div>
-          <div class="mt-1 flex items-end gap-3">
-            <span id="cur-temp" class="font-display text-5xl font-semibold text-goldBright">{hero.defaultTemp}</span>
+          <div class="mt-2 flex items-end gap-3 flex-wrap">
+            <span class="font-display text-5xl font-semibold text-goldBright leading-none">{weather.temp}°</span>
             <div class="pb-1">
-              <div id="cur-cond" class="text-sm">{hero.defaultCond}</div>
-              <div class="text-xs text-ivory/60">💨 <span id="cur-wind">{hero.defaultWind}</span></div>
+              <div class="text-sm">
+                🌡️ <span class="font-semibold text-ivory">{weather.tMax}°</span>
+                <span class="text-ivory/40"> / </span>
+                <span class="text-ivory/75">{weather.tMin}°</span>
+              </div>
+              <div class="text-xs text-ivory/60 mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5">
+                <span>💨 {weather.wind} km/h</span>
+                <span>💧 {weather.precipProb0}%</span>
+              </div>
             </div>
           </div>
 
-          <div class="mt-4 rounded-xl bg-gold/15 border border-gold/30 px-4 py-3">
-            <div class="flex items-center justify-between gap-2">
-              <span class="text-xs uppercase tracking-wide text-ivory/70">☀️ {hero.sunsetIndexLabel}</span>
+          <!-- 风险：置顶红色显示 -->
+          {weather.advice.risk.length > 0 && (
+            <div class="mt-4 rounded-xl border border-red-500/50 bg-red-500/15 px-4 py-3">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="text-xs uppercase tracking-wide text-red-300">{lab.risk}</span>
+              </div>
+              <ul class="space-y-1.5 text-sm text-red-100">
+                {weather.advice.risk.map((r) => (
+                  <li class="flex gap-2">
+                    <span class="text-red-300 mt-0.5" aria-hidden="true">⚠</span>
+                    <span>{r}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p id="sunset-index" class="mt-1 font-display text-base font-semibold text-goldBright">{hero.sunsetIndexDefault}</p>
+          )}
+
+          <!-- 4 类建议块：不满足的整组完全隐藏 -->
+          <div class="mt-4 space-y-3">
+            {weather.advice.dressing.length > 0 && (
+              <div class="rounded-xl bg-gold/15 border border-gold/30 px-4 py-3">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-xs uppercase tracking-wide text-ivory/70">✅ {lab.dressing}</span>
+                </div>
+                <ul class="mt-2 space-y-1.5 text-sm font-display font-semibold text-goldBright leading-snug">
+                  {weather.advice.dressing.map((s) => (
+                    <li class="flex gap-2">
+                      <span class="text-goldBright mt-0.5" aria-hidden="true">·</span>
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {weather.advice.schedule.length > 0 && (
+              <div class="rounded-xl bg-teal-500/15 border border-teal-400/30 px-4 py-3">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-xs uppercase tracking-wide text-teal-200">✅ {lab.schedule}</span>
+                </div>
+                <ul class="mt-2 space-y-1.5 text-sm text-teal-50 leading-snug">
+                  {weather.advice.schedule.map((s) => (
+                    <li class="flex gap-2">
+                      <span class="text-teal-200 mt-0.5" aria-hidden="true">·</span>
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {weather.advice.carry.length > 0 && (
+              <div class="rounded-xl bg-ivory/10 border border-ivory/25 px-4 py-3">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-xs uppercase tracking-wide text-ivory/70">🎒 {lab.carry}</span>
+                </div>
+                <p class="mt-2 text-sm text-ivory leading-relaxed">
+                  {weather.advice.carry.join(' · ')}
+                </p>
+              </div>
+            )}
+
+            {weather.advice.risk.length === 0 && (
+              <div class="rounded-xl border border-green-400/30 bg-green-500/10 px-4 py-2.5 text-xs text-green-200 flex items-center gap-2">
+                <span aria-hidden="true">✓</span>
+                <span>{lab.noRisk}</span>
+              </div>
+            )}
           </div>
 
-          <div class="mt-4 pt-4 border-t border-gold/20">
-            <p class="font-hand text-gold text-lg">{hero.plannerTitle}</p>
-            <p class="text-xs text-ivory/60 mt-0.5">{hero.plannerNote}</p>
+          <!-- 黄金时刻/蓝调 -->
+          <div class="mt-5 pt-4 border-t border-gold/20">
+            <p class="font-hand text-gold text-lg">{hero.lightLabel}</p>
+            <p class="text-xs text-ivory/60 mt-0.5">{hero.lightNote}</p>
             <div class="mt-3 space-y-2 text-sm">
-              <div class="flex justify-between"><span class="text-ivory/70">{hero.goldenHourLabel}</span><span id="golden-time" class="font-semibold text-goldBright">{hero.defaultGolden}</span></div>
-              <div class="flex justify-between"><span class="text-ivory/70">{hero.sunsetLabel}</span><span id="sunset-time" class="font-semibold text-goldBright">{hero.defaultSunset}</span></div>
-              <div class="flex justify-between"><span class="text-ivory/70">{hero.blueHourLabel}</span><span id="blue-time" class="font-semibold text-goldBright">{hero.defaultBlue}</span></div>
-              <div class="flex justify-between"><span class="text-ivory/70">{hero.crowdWarningLabel}</span><span class="font-semibold text-ivory">{hero.defaultTip}</span></div>
+              <div class="flex justify-between"><span class="text-ivory/70">{hero.goldenHourLabel}</span><span class="font-semibold text-goldBright">{weather.golden}</span></div>
+              <div class="flex justify-between"><span class="text-ivory/70">{hero.sunsetLabel}</span><span class="font-semibold text-goldBright">{weather.sunset}</span></div>
+              <div class="flex justify-between"><span class="text-ivory/70">{hero.blueHourLabel}</span><span class="font-semibold text-goldBright">{weather.blue}</span></div>
+              <div class="flex justify-between"><span class="text-ivory/70">{hero.crowdWarningLabel}</span><span class="font-semibold text-ivory">{hero.defaultCrowd}</span></div>
             </div>
-            <p class="text-[11px] text-ivory/50 mt-2">{hero.lightCaption}</p>
           </div>
+
+          <!-- 7 日预报 -->
+          {weather.days.length > 0 && (
+            <div class="mt-5 pt-4 border-t border-gold/20">
+              <p class="font-hand text-gold text-lg mb-3">{hero.forecastLabel}</p>
+              <div class="grid grid-cols-4 md:grid-cols-7 gap-2 text-center text-xs">
+                {weather.days.map((d) => (
+                  <div class="rounded-lg border border-gold/20 bg-teak/40 py-2 hover:border-goldBright transition">
+                    <div class="text-ivory/60 font-medium">{d.week}</div>
+                    <div class="text-lg my-1" aria-hidden="true">{d.icon}</div>
+                    <div class="text-ivory/90 font-semibold">{d.hi}°</div>
+                    <div class="text-ivory/55">{d.lo}°</div>
+                    <div class="mt-1 text-ivory/50">💧 {d.prob}%</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<script is:inline define:vars={{ lang, lat: siteConfig.coords.lat, lon: siteConfig.coords.lng, weatherError: hero.weatherError, weatherMap, goldenChanceLabel: hero.goldenChanceLabel }}>
-  (function () {
-    // Mae Kha Canal — actual coordinates (Haiya, Mueang Chiang Mai, Chiang Mai, Northern Thailand)
-    const LAT = lat, LON = lon;
-
-    function weatherText(code, mode) {
-      const e = weatherMap[code] || weatherMap[3];
-      return mode === 'short' ? e.s : e.t;
-    }
-
-    // Golden-light probability from the current weather code
-    function goldenChance(code) {
-      if (code === 0) return 95;
-      if (code <= 2) return 85;
-      if (code === 3) return 60;
-      if (code === 45 || code === 48) return 50;
-      if (code >= 51 && code <= 67) return 30;
-      if (code >= 71 && code <= 82) return 35;
-      if (code >= 95) return 15;
-      return 70;
-    }
-
-    function iconFor(code) {
-      if (code === 0) return '☀️';
-      if (code <= 2) return '🌤️';
-      if (code === 3) return '☁️';
-      if (code === 45 || code === 48) return '🌫️';
-      if (code >= 51 && code <= 57) return '🌦️';
-      if (code >= 61 && code <= 67) return '🌧️';
-      if (code >= 71 && code <= 77) return '❄️';
-      if (code >= 80 && code <= 82) return '🌦️';
-      if (code >= 95) return '⛈️';
-      return '🌡️';
-    }
-
-    const pad = (n) => String(n).padStart(2, '0');
-    const fmtDate = (d) => pad(d.getHours()) + ':' + pad(d.getMinutes());
-
-    const statusEl = document.getElementById('weather-status');
-    const bodyEl = document.getElementById('weather-body');
-
-    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current=temperature_2m,weather_code,wind_speed_10m&daily=weather_code,sunrise,sunset&timezone=Asia/Bangkok&wind_speed_unit=kmh`)
-      .then((r) => r.json())
-      .then((d) => {
-        if (!d || !d.current || !d.daily) throw new Error('bad');
-        document.getElementById('cur-temp').textContent = Math.round(d.current.temperature_2m) + '°';
-        document.getElementById('cur-cond').textContent = weatherText(d.current.weather_code, 'title');
-        document.getElementById('cur-wind').textContent = Math.round(d.current.wind_speed_10m) + ' km/h';
-        document.getElementById('cur-icon').textContent = iconFor(d.current.weather_code);
-
-        // Today's sunset-observation index (condition + golden-light chance)
-        const idxEl = document.getElementById('sunset-index');
-        if (idxEl) {
-          idxEl.textContent = iconFor(d.current.weather_code) + ' ' + weatherText(d.current.weather_code, 'short') + ' · ' + goldenChanceLabel + ' ' + goldenChance(d.current.weather_code) + '%';
-        }
-
-        // Live sunrise / sunset / blue hour (based on the attraction's actual coordinates)
-        const fmt = (date) => pad(date.getHours()) + ':' + pad(date.getMinutes());
-        const addMin = (date, m) => new Date(date.getTime() + m * 60000);
-        const sr = new Date(d.daily.sunrise[0]);
-        const ss = new Date(d.daily.sunset[0]);
-        const gEl = document.getElementById('golden-time');
-        const sEl = document.getElementById('sunset-time');
-        const bEl = document.getElementById('blue-time');
-        if (gEl) gEl.textContent = fmt(sr) + ' – ' + fmt(addMin(sr, 90));
-        if (sEl) sEl.textContent = fmt(ss);
-        if (bEl) bEl.textContent = fmt(addMin(ss, 20)) + ' – ' + fmt(addMin(ss, 50));
-
-        if (statusEl) statusEl.textContent = weatherError ? '' : '';
-        if (bodyEl) bodyEl.classList.remove('hidden');
-      })
-      .catch(() => {
-        // keep static default values; do not break the card layout
-        if (bodyEl) bodyEl.classList.remove('hidden');
-      });
-  })();
-</script>

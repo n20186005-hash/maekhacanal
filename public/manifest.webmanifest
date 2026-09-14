@@ -1,0 +1,48 @@
+{
+  "name": "Mae Kha Canal | คลองแม่ข่า | 湄卡运河",
+  "short_name": "Mae Kha Canal",
+  "description": "An educational, non-profit guide to the Mae Kha Canal in Chiang Mai, Thailand — history, ecology, visitor info, and weather.",
+  "start_url": "/th/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#071a1c",
+  "theme_color": "#0d2a2e",
+  "lang": "th",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/gallery/mae-kha-canal-1.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/gallery/mae-kha-canal-2.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["travel", "education", "reference"],
+  "shortcuts": [
+    {
+      "name": "Visitor Guide",
+      "short_name": "Guide",
+      "url": "/th/#guide",
+      "description": "Hours, fees, transport and tips"
+    },
+    {
+      "name": "Weather",
+      "short_name": "Weather",
+      "url": "/th/#home",
+      "description": "Current weather and forecast"
+    },
+    {
+      "name": "Map",
+      "short_name": "Map",
+      "url": "/th/#map",
+      "description": "Location and directions"
+    }
+  ]
+}

@@ -55,7 +55,7 @@ const mapsUrl = siteConfig.mapsUrl;
               rel="noopener noreferrer"
               class="text-goldBright hover:underline inline-flex items-center gap-1"
             >
-              {s.name[lang]} <span class="text-ivory/40">↗</span>
+              {s.name[lang as keyof typeof s.name]} <span class="text-ivory/40">↗</span>
             </a>
           </li>
         ))}
