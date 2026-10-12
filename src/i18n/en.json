@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Mae Kha Canal Chiang Mai: Japanese-Style Canal Village Guide 2026",
-    "description": "Discover Mae Kha Canal (คลองแม่ข่า / Khlong Mae Kha) in Chiang Mai. Rated 4.2★ with 6,200+ reviews — night lightings, riverside street food, boat rides, directions & best time to visit."
+    "title": "Mae Kha Canal Chiang Mai | Hours, Map & Night Market",
+    "description": "Explore Mae Kha Canal (Khlong Mae Kha) in Chiang Mai. Find opening hours, directions, evening market tips, photo spots and practical visitor information."
   },
   "header": {
     "home": "Home",
@@ -20,7 +20,7 @@
     "eyebrow": "Chiang Mai · Lanna Historic Canal Revival",
     "titleMain": "Mae Kha ",
     "titleAccent": "Canal",
-    "subtitle": "A restored Lanna [ล้านนา] era canal, now a flagship community project of Chiang Mai's urban waterway revival — featuring evening promenades, local boat rides, and riverside market spaces.",
+    "subtitle": "Mae Kha Canal (Khlong Mae Kha / คลองแม่ข่า) is a restored Lanna [ล้านนา] era canal, now a flagship community project of Chiang Mai's urban waterway revival — featuring evening promenades, riverside market spaces, and short boat rides when operators are running.",
     "cta1": "Plan your visit",
     "cta2": "Nearby facilities",
     "reviewSuffix": "reviews",
@@ -28,7 +28,7 @@
     "boardCategory": "Chiang Mai Attraction",
     "boardTitle": "Mae Kha Canal",
     "boardEn": "Mae Kha Canal · คลองแม่ข่า",
-    "coordsLabel": "18.7771°N, 98.3858°E · Haiya Sub-district, Chiang Mai",
+    "coordsLabel": "18.7771°N, 98.9836°E · Haiya Sub-district, Chiang Mai",
     "plannerTitle": "Live Sky & Weather",
     "liveWeather": "Live",
     "defaultTemp": "28°",
@@ -76,7 +76,7 @@
       { "value": "Open all year", "label": "Free public space" }
     ],
     "highlights": [
-      { "tag": "🚤", "title": "Evening boat rides", "desc": "Quiet long-tail or reed boats drift past old teak houses." },
+      { "tag": "🚤", "title": "Evening boat rides", "desc": "When boats are running, quiet long-tail boats drift past old teak houses." },
       { "tag": "🍜", "title": "Canal-side street food", "desc": "Grilled river fish, boat noodles, and northern snacks." },
       { "tag": "🎨", "title": "Old town & street art", "desc": "Murals and century-old shophouses along the water." }
     ],
@@ -199,7 +199,7 @@
       "suitsLabel": "Best for:",
       "items": [
         { "name": "Walk the banks", "difficulty": "Easy", "note": "Flat paved paths, accessibility-friendly", "suits": "Families, photographers, low-mobility visitors", "desc": "Stroll the promenade, browse food stalls, and watch the sunset on the water." },
-        { "name": "Boat ride", "difficulty": "Easy", "note": "Short loops ~20–30 min", "suits": "Couples, first-timers, photographers", "desc": "Hop on a small boat for a calm loop past teak houses and lit bridges." }
+        { "name": "Boat ride", "difficulty": "Easy", "note": "Short loops when boats operate", "suits": "Couples, first-timers, photographers", "desc": "When operators are running, small boats make short loops past teak houses and lit bridges. Availability, routes and fares are set by individual operators — confirm on site." }
       ]
     },
     "scamTip": {
@@ -210,18 +210,19 @@
       "tag": "🕒 When to go",
       "time": "16:00 – 22:00 (Evenings)",
       "items": [
-        { "label": "Opens", "value": "16:00" },
+        { "label": "Stalls open (typical)", "value": "16:00" },
         { "label": "Best light", "value": "17:00 – 18:30" },
         { "label": "Liveliest", "value": "18:00 – 20:30" },
-        { "label": "Closes", "value": "22:00" }
-      ]
+        { "label": "Market winds down (typical)", "value": "22:00" }
+      ],
+      "note": "Typical evening window, not official opening hours — the canal is a public space, and stall and boat schedules vary by day and season. Confirm on site."
     },
     "fees": {
       "tag": "💸 Cost",
       "title": "What it costs",
       "items": [
         { "title": "Entry", "desc": "Free to walk the canal and market; the public promenade is open year-round." },
-        { "title": "Boat ride", "desc": "Small fee per person; pay in cash at the pier." },
+        { "title": "Boat ride", "desc": "When boats operate: a small fee per person, paid in cash at the pier. Fares and routes vary by operator — confirm before boarding." },
         { "title": "Food & drinks", "desc": "Street snacks from a few baht; cafés offer full meals." }
       ]
     },
@@ -410,7 +411,7 @@
       "title": "Stay safe",
       "items": [
         { "title": "Near water", "desc": "Supervise children closely; some banks are unrailed." },
-        { "title": "Boat rides", "desc": "Wear the life jacket provided and follow the operator's instructions." },
+        { "title": "Boat rides", "desc": "If you take a boat, wear the life jacket provided and follow the operator's instructions." },
         { "title": "Belongings", "desc": "Keep bags zipped in busy market areas." }
       ]
     },
@@ -439,12 +440,13 @@
     "faqTitle": "Frequently asked questions",
     "faqs": [
       { "q": "Where is Mae Kha Canal? Which district of Chiang Mai?", "a": "Mae Kha Canal (คลองแม่ข่า / Khlong Mae Kha) is located in Haiya Sub-district, Mueang Chiang Mai District, Chiang Mai 50100, Thailand. The specific address is 118 Ragang Rd, Haiya; approximate coordinates are 18.7771°N, 98.9836°E." },
+      { "q": "What are the other names for Mae Kha Canal?", "a": "Mae Kha Canal is also written Khlong Mae Kha (คลองแม่ข่า in Thai; 'khlong' means canal) and sometimes referred to as Chiang Mai Canal or Khlong Mae Kha Canal Village. All of these names refer to the same waterway in Haiya, Chiang Mai." },
       { "q": "Is Mae Kha Canal free? Do I need a ticket?", "a": "Yes. Mae Kha Canal is a free public space (isAccessibleForFree). Walking the promenade and browsing the market require no ticket. Boat rides and food are paid separately." },
-      { "q": "When does it open? What is the best time to visit?", "a": "Evenings 16:00–22:00 are the liveliest windows (stalls and boats operate). Best light is 17:00–19:30 (golden + blue hour). Weekday mornings are the quietest if you prefer solitude." },
+      { "q": "When does it open? What is the best time to visit?", "a": "Evenings 16:00–22:00 are typically the liveliest window, when most stalls open and the lights come on. The canal itself is a public space; stall and boat schedules vary — confirm on site. Best light is 17:00–19:30 (golden + blue hour). Weekday mornings are the quietest if you prefer solitude." },
       { "q": "How do I get there from the Old City / Airport / Night Bazaar?", "a": "From the Old City: red songthaew shared taxi, Grab/Bolt ride-hailing or a short flat bicycle ride (10–15 min). From Chiang Mai International Airport (CNX): ~4 km / 10–15 min drive — use Grab/Bolt or the official Airport Taxi counter. From the Night Bazaar / Chang Klan: 5–8 min walk or cycle along the eastern riverbank. Map keyword: Mae Kha Canal, Haiya / คลองแม่ข่า เชียงใหม่." },
       { "q": "Is parking available nearby? How easy is it to find a spot?", "a": "Both canal banks offer municipal public parking zones and adjacent commercial-space parking types. Spots fill fast on weekend evenings; arriving by songthaew, ride-hailing or bicycle is recommended to avoid circling narrow Haiya lanes." },
-      { "q": "How long should I spend? What does a half-day itinerary look like?", "a": "Allow 1–1.5 hours for the core promenade + food; 2 hours if you add a boat ride. Recommended half-day order: Old City temple circuit (morning) → Warorot Market food run (lunch) → Mae Kha Canal sunset boat + riverside dinner (17:00–20:30)." },
-      { "q": "Are the boat rides worth it?", "a": "Highly worth it for first-timers — a short 20–30 minutes reveals old teak houses and lit bridges unseen from the promenade. Board 30 minutes before sunset." },
+      { "q": "How long should I spend? What does a half-day itinerary look like?", "a": "Allow 1–1.5 hours for the core promenade + food; 2 hours if you add a boat ride. Recommended half-day order: Old City temple circuit (morning) → Warorot Market food run (lunch) → Mae Kha Canal sunset stroll + riverside dinner (17:00–20:30)." },
+      { "q": "Are the boat rides worth it?", "a": "Boat rides, when operating, are a popular way to see old teak houses and lit bridges from the water. Availability, route length and fares are set by individual operators and change with season and weather — confirm at the pier before boarding." },
       { "q": "Is it suitable for families / low-mobility / wheelchair visitors?", "a": "Very suitable — flat promenade, wide food variety, accessibility ramps and rest areas. However, always supervise children near unrailed banks." },
       { "q": "Will there be an odour in the dry season (Mar–Apr)? What is the realistic expectation?", "a": "Slight odour may occur as the water level drops; fundamentally this is a mixed urban waterway. Please treat it as a revival 'in progress' rather than a pristine wilderness river; visit around sunset and shorten your stay if sensitive." },
       { "q": "What is the historical background? Why is it called 'Mae Kha'?", "a": "The canal dates to King Mengrai's Lanna era (c. 1296) as part of an outer dual-ring irrigation-and-defence system. 'Mae' means mother / river; 'Kha' refers to galangal, recalling wild galangal once prolific along its banks — a classic Lanna 'river + plant' toponym." }
@@ -542,24 +544,12 @@
   "reviews": {
     "label": "Visitor reviews",
     "heading": "What visitors say",
-    "intro": "A snapshot of recent visitor impressions. Displayed on page only; not embedded in structured data.",
-    "syncAttribution": "Rating and review count synced from Google Maps user reviews · September 2026 · Click to see all Google Maps reviews ↗",
-    "copyrightNotice": "Synced from Google Maps user reviews, sync date September 2026; © original authors and Google Maps.",
+    "intro": "We show the aggregate Google Maps rating snapshot only. Individual visitor reviews are hosted on Google Maps — we do not reproduce individual comments, because we cannot independently verify their authors or dates.",
+    "syncAttribution": "Rating and review count synced from Google Maps user reviews · October 2026 · Click to see all Google Maps reviews ↗",
+    "copyrightNotice": "Synced from Google Maps user reviews, sync date October 2026; © original authors and Google Maps.",
     "viewAll": "See all reviews on Google Maps",
-    "featured": [
-      { "text": "A peaceful evening walk you won't find in the guidebooks — boats, lights, and good food.", "source": "★ 5.0 · Visitor review snapshot" },
-      { "text": "The boat ride at sunset was the highlight of our Chiang Mai trip.", "source": "★ 5.0 · Visitor comment snapshot" }
-    ],
-    "items": [
-      { "text": "[Food type: Boat noodles] The little boat-noodle-type stall by the bridge was unforgettable.", "rating": "5", "name": "Anee", "date": "Mar 2026" },
-      { "text": "[Evening walk] Calm and pretty once the lanterns come on. Go after 18:00.", "rating": "4", "name": "Tom", "date": "Feb 2026" },
-      { "text": "[Boat ride] Short but lovely — the operator was friendly and pointed out old houses.", "rating": "5", "name": "Lina", "date": "Jan 2026" },
-      { "text": "[Family] Easy to push a stroller along the path; kids loved the small fish.", "rating": "4", "name": "Wei", "date": "Feb 2026" },
-      { "text": "[Photography] Blue-hour reflections on the water were worth the tripod.", "rating": "5", "name": "Ken", "date": "Dec 2025" },
-      { "text": "[Local life] Felt authentic, less touristy than the night bazaar.", "rating": "4", "name": "Sora", "date": "Jan 2026" },
-      { "text": "[Food types] Lots of choices; prices fair. Grilled-fish-type dishes are recommended.", "rating": "5", "name": "Pim", "date": "Mar 2026" },
-      { "text": "[Crowds] Busy on weekends — weekdays are more relaxed.", "rating": "4", "name": "Dan", "date": "Feb 2026" }
-    ]
+    "featured": [],
+    "items": []
   },
   "sources": {
     "label": "Sources & references (E-E-A-T)",
@@ -574,7 +564,7 @@
     "reviewText": "Reviews · synced {syncDate}; data sourced from public Google Maps user-review pages, © original reviewers and Google LLC. This page displays snapshots only and implies no endorsement or affiliation with any merchant.",
     "reviewLink": "See all reviews on Google Maps",
     "factTitle": "Facts & data provenance",
-    "factText": "Coordinates, opening hours, rating snapshots, address and telephone are compiled from public Google Maps listings (September 2026); climate data references the Thai Meteorological Department (TMD) 30-year climatology normal; ecological restoration content references public policy documents of Chiang Mai Municipality and the Office of Natural Resources and Environmental Policy and Planning (ONEB). Information may change — please re-verify locally before travelling.",
+    "factText": "Coordinates, opening hours, rating snapshots, address and telephone are compiled from public Google Maps listings (October 2026); climate data references the Thai Meteorological Department (TMD) 30-year climatology normal; ecological restoration content references public policy documents of Chiang Mai Municipality and the Office of Natural Resources and Environmental Policy and Planning (ONEB). Information may change — please re-verify locally before travelling.",
     "correctionTitle": "Spotted a mistake?",
     "correctionText": "We are a very small non-profit team. If anything here is wrong or out of date, let us know — we will verify and correct within 7 working days.",
     "correctionMailto": "mailto:n20186005@gmail.com",
@@ -586,13 +576,13 @@
     "heading": "Find Mae Kha Canal",
     "lead": "Located in Haiya Sub-district, Mueang Chiang Mai — a short walk / ride from the Old City's south gate, and ~4 km from the airport.",
     "stats": [
-      { "tag": "Rating (snapshot)", "value": "4.2 ★", "sub": "From 6,216 Google reviews · September 2026" },
+      { "tag": "Rating (snapshot)", "value": "4.2 ★", "sub": "From 6,271 Google reviews · October 2026" },
       { "tag": "Open (peak)", "value": "16:00", "sub": "Evenings (liveliest)" },
       { "tag": "Sub-district", "value": "Haiya", "sub": "Mueang Chiang Mai" }
     ],
     "address": "118 Ragang Rd, Haiya Sub-district, Mueang Chiang Mai District, Chiang Mai 50100, Thailand",
     "plusCode": "Plus Code: QXGW+R6 Chiang Mai, Mueang Chiang Mai District, Chiang Mai",
-    "coords": "18.7771°N, 98.3858°E"
+    "coords": "18.7771°N, 98.9836°E"
   },
   "footer": {
     "brand": {
@@ -624,13 +614,13 @@
     "cookies": "Cookie Settings",
     "disclaimerLead": "Mae Kha Canal Science Guide is an independent, non-profit information resource. It is NOT an official website of any government body or commercial entity. All content is for visitor science reference only and constitutes no commercial recommendation or legal advice.",
     "unofficial": "Unofficial · Community-made visitor science page",
-    "dataSource": "Coordinates & address: Google Maps (Sep 2026); Climate: Thai Meteorological Department (TMD) public 30-year normal; Policy: Chiang Mai Municipality & ONEB public documents.",
+    "dataSource": "Coordinates & address: Google Maps (Oct 2026); Climate: Thai Meteorological Department (TMD) public 30-year normal; Policy: Chiang Mai Municipality & ONEB public documents.",
     "copyright": "© 2026 Mae Kha Canal Science Guide. Non-profit. Images © their respective photographers."
   },
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "updated": "Last updated: September 2026",
+      "updated": "Last updated: October 2026",
       "sections": [
         {
           "h": "What we collect",
@@ -657,7 +647,7 @@
     },
     "terms": {
       "title": "Terms of Service",
-      "updated": "Last updated: September 2026",
+      "updated": "Last updated: October 2026",
       "sections": [
         {
           "h": "Site use",
@@ -679,7 +669,7 @@
     },
     "cookies": {
       "title": "Cookie Settings",
-      "updated": "Last updated: September 2026",
+      "updated": "Last updated: October 2026",
       "intro": "Manage which cookies this non-profit science guide may use. Essential cookies are always on; optional cookies help us understand visits anonymously.",
       "categories": [
         {

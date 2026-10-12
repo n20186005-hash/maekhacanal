@@ -18,7 +18,7 @@ const messagesMap: Record<Lang, any> = { th, en, zh };
 export const htmlLang: Record<Lang, string> = {
   th: 'th',
   en: 'en',
-  zh: 'zh-CN',
+  zh: 'zh-Hant',
 };
 
 const lookup = (obj: Record<string, unknown>, key: string): string => {
