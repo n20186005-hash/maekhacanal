@@ -8,11 +8,13 @@ interface Props {
   title: string;
   description: string;
   messages: Record<string, any>;
+  path?: string;
+  includeSiteAttraction?: boolean;
 }
-const { lang, title, description, messages } = Astro.props;
-const canonical = `${siteConfig.domain}/${lang}/`;
+const { lang, title, description, messages, path = '', includeSiteAttraction = true } = Astro.props;
+const canonical = `${siteConfig.domain}/${lang}/${path ? `${path}/` : ''}`;
 
-const faqs = (messages && messages.guide && messages.guide.faqs) ? messages.guide.faqs : [];
+const faqs = !path && messages?.guide?.faqs ? messages.guide.faqs : [];
 
 const allAlternateNames = Array.from(new Set([
   siteConfig.name.th,
@@ -30,7 +32,7 @@ const allAlternateNames = Array.from(new Set([
 ]));
 
 const jsonLd = [
-  {
+  ...(includeSiteAttraction ? [{
     '@context': 'https://schema.org',
     '@type': 'TouristAttraction',
     '@id': `${siteConfig.domain}/#attraction`,
@@ -60,7 +62,7 @@ const jsonLd = [
     },
     hasMap: siteConfig.mapsUrl,
     sameAs: siteConfig.sameAs,
-  },
+  }] : []),
   {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -78,7 +80,8 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: siteConfig.countryName[lang], item: `${siteConfig.domain}/${lang}/` },
       { '@type': 'ListItem', position: 2, name: siteConfig.cityName[lang], item: `${siteConfig.domain}/${lang}/` },
-      { '@type': 'ListItem', position: 3, name: siteConfig.attractionFullName[lang], item: canonical },
+      { '@type': 'ListItem', position: 3, name: siteConfig.attractionFullName[lang], item: `${siteConfig.domain}/${lang}/` },
+      ...(path ? [{ '@type': 'ListItem', position: 4, name: title, item: canonical }] : []),
     ],
   },
   {
@@ -114,9 +117,9 @@ const jsonLd = [
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:alt" content={`${siteConfig.attractionFullName[lang]} in ${siteConfig.cityName[lang]}`} />
     {languagesList.map((l) => (
-      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
+      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/${path ? `${path}/` : ''}`} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/en/`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/en/${path ? `${path}/` : ''}`} />
 
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="theme-color" content="#0d2a2e" />

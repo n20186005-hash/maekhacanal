@@ -40,7 +40,7 @@ const WEATHER_CODES: Record<number, Record<string, { t: string; s: string }>> = 
   99: { th: { t: 'พายุฝนฟ้าคะนองลูกเห็บหนัก', s: 'ฟ้าคะนอง' }, en: { t: 'Severe thunderstorm', s: 'Storm' }, zh: { t: '强雷阵雨', s: '雷雨' } },
 };
 
-const LABELS: Record<string, Record<string, { dressing: string; schedule: string; carry: string; risk: string; uv: string; hum: string; riskPrefix: string; noRisk: string }>> = {
+const LABELS: Record<string, { dressing: string; schedule: string; carry: string; risk: string; uv: string; hum: string; riskPrefix: string; noRisk: string }> = {
   zh: {
     dressing: '出行穿搭', schedule: '游玩安排', carry: '随身物品', risk: '风险提醒',
     uv: '紫外线强', hum: '湿度较高',
@@ -290,7 +290,7 @@ const fallback = (): WeatherData => {
     days: [], advice,
     uvText: (uv: number) => (uv >= 8 ? '很强' : uv >= 5 ? '强' : uv >= 3 ? '中' : '弱') as unknown as string,
     humText: (h: number) => (h >= 80 ? '很高' : h >= 65 ? '较高' : h >= 45 ? '舒适' : '偏干') as unknown as string,
-  } as WeatherData;
+  } as unknown as WeatherData;
 };
 
 let weather: WeatherData = fallback();

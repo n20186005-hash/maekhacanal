@@ -1,0 +1,25 @@
+---
+import { nearbyPlaces } from '../data/guideExtras';
+import { nearbyDetails, type NearbySlug } from '../data/nearbyDetails';
+import type { Lang } from '../i18n/ui';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const copy = {
+  th: { title: 'เที่ยวต่อใกล้คลองแม่ข่า', intro: 'วางแผนเที่ยวคลองแม่ข่าคู่กับย่านเมืองเก่าและถนนคนเดินใกล้เคียง', map: 'อ่านรายละเอียด', guide: 'วางแผนเส้นทางคลองแม่ข่า', hours: 'ตรวจสอบเวลาเที่ยวคลองแม่ข่า' },
+  en: { title: 'Explore near Mae Kha Canal', intro: 'Combine your canal stroll with these distinctive places in and around Chiang Mai Old City.', map: 'Read visitor guide', guide: 'Plan your canal route', hours: 'Check canal visiting hours' },
+  zh: { title: '湄卡运河周边游览', intro: '将运河漫步与清迈古城及周边特色地点安排在同一天。', map: '查看景点详情', guide: '查看运河交通路线', hours: '了解运河开放时间' },
+}[lang];
+---
+<section id="nearby-explore" class="py-20 bg-[#eee8da] text-teakDeep">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="font-display text-3xl md:text-4xl">{copy.title}</h2>
+    <p class="mt-3 text-lg max-w-3xl">{copy.intro}</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+      {nearbyPlaces.map((place) => <a href={`/${lang}/nearby/${place.id}/`} class="bg-white rounded-xl overflow-hidden border border-gold/20 hover:border-gold transition-colors"><img src={nearbyDetails[place.id as NearbySlug].image} alt={place.name[lang]} width="500" height="350" loading="lazy" class="w-full h-40 object-cover"/><div class="p-6"><h3 class="font-display text-xl">{place.name[lang]}</h3><p class="text-sm mt-4 leading-7">{place.note[lang]}</p><span class="inline-block underline font-semibold mt-5">{copy.map} →</span></div></a>)}
+    </div>
+    <div class="mt-9 flex flex-wrap gap-4">
+      <a href={`/${lang}/guides/getting-there/`} class="rounded-full bg-teakDeep text-ivory px-6 py-3 hover:opacity-90">{copy.guide} →</a>
+      <a href={`/${lang}/guides/opening-hours/`} class="rounded-full border border-teakDeep px-6 py-3 hover:bg-white">{copy.hours} →</a>
+    </div>
+  </div>
+</section>

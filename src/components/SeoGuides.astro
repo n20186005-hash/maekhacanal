@@ -1,0 +1,17 @@
+---
+import { guides, guideSlugs, type GuideLang } from '../data/seoGuides';
+import type { Lang } from '../i18n/ui';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const title = { th: 'คู่มือเที่ยวคลองแม่ข่า', en: 'Plan your Mae Kha Canal visit', zh: '湄卡运河游览专题' }[lang];
+const subtitle = { th: 'ข้อมูลเวลาเปิด เส้นทาง และการเดินเล่นริมคลอง', en: 'Practical answers on opening times, directions and the evening promenade', zh: '开放时间、交通方式与傍晚步行路线的详细介绍' }[lang];
+---
+<section id="seo-guides" class="bg-[#f8f5ed] text-teakDeep py-20">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="font-display text-3xl md:text-4xl">{title}</h2>
+    <p class="mt-3 mb-10 text-lg">{subtitle}</p>
+    <div class="grid md:grid-cols-3 gap-5">
+      {guideSlugs.map((slug) => <a href={`/${lang}/guides/${slug}/`} class="block p-7 rounded-xl bg-white border border-gold/25 hover:border-gold transition-colors"><h3 class="font-display text-xl mb-4 leading-snug">{guides[lang as GuideLang][slug].title}</h3><p class="text-sm leading-7">{guides[lang as GuideLang][slug].description}</p><span class="inline-block mt-5 text-teak font-semibold">{lang === 'th' ? 'อ่านต่อ →' : lang === 'en' ? 'Read guide →' : '查看指南 →'}</span></a>)}
+    </div>
+  </div>
+</section>

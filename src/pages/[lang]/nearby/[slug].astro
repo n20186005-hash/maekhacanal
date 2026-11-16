@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Footer from '../../../components/Footer.astro';
+import { nearbyDetails, nearbySlugs, type NearbyLang, type NearbySlug } from '../../../data/nearbyDetails';
+import { languagesList, getI18n } from '../../../i18n/ui';
+import { siteConfig } from '../../../config';
+
+export const prerender = true;
+export function getStaticPaths() {
+  return languagesList.flatMap((lang) => nearbySlugs.map((slug) => ({ params: { lang, slug } })));
+}
+
+const { lang, messages } = await getI18n(Astro.url);
+const slug = Astro.params.slug as NearbySlug;
+const place = nearbyDetails[slug];
+const page = place.locales[lang as NearbyLang];
+const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.mapQuery)}`;
+const labels = {
+  th: { home: 'คลองแม่ข่า', back: 'เที่ยวใกล้เคียง', map: 'แผนที่ Google Maps', intro: 'สำรวจสถานที่', features: 'จุดเด่นของสถานที่', history: 'ประวัติและความสำคัญ', info: 'ข้อมูลพื้นฐาน', hours: 'เวลาเข้าชม', fee: 'ค่าเข้าชม', address: 'ที่อยู่', stay: 'เวลาเที่ยวที่แนะนำ', route: 'แผนเที่ยวทีละขั้น', visit: 'ข้อควรทราบ', photo: 'มุมถ่ายภาพ', transport: 'วิธีเดินทาง', reviews: 'ประสบการณ์ผู้มาเยือน', related: 'ที่เที่ยวใกล้กัน', faq: 'คำถามที่พบบ่อย', source: 'แหล่งข้อมูล', plan: 'กลับไปอ่านคู่มือคลองแม่ข่า', reviewText: 'ตรวจคะแนนและรีวิวล่าสุดของสถานที่นี้จากรายการ Google Maps ของสถานที่โดยตรง' },
+  en: { home: 'Mae Kha Canal', back: 'Nearby places', map: 'Google Maps directions', intro: 'Explore the place', features: 'Highlights and what to notice', history: 'History and significance', info: 'Visitor essentials', hours: 'Opening times', fee: 'Admission', address: 'Address', stay: 'Suggested time', route: 'Step-by-step visit', visit: 'Practical notes', photo: 'Photography spots', transport: 'How to get here', reviews: 'Visitor impressions', related: 'Explore nearby', faq: 'Frequently asked questions', source: 'Sources', plan: 'Back to Mae Kha Canal guides', reviewText: 'Check the place’s own Google Maps listing for current reviews, rating and review count.' },
+  zh: { home: '湄卡运河', back: '周边景点', map: 'Google 地图导航', intro: '景点介绍', features: '特色与观察重点', history: '历史与文化背景', info: '基本信息', hours: '开放时间', fee: '门票费用', address: '具体地址', stay: '建议停留', route: '编号游览路线', visit: '游览须知', photo: '拍照机位', transport: '交通方式', reviews: '游客评价', related: '更多周边景点', faq: '常见问题', source: '资料来源', plan: '返回湄卡运河游览专题', reviewText: '最新评分、评价数量与评论时间，请直接查看该景点自己的 Google 地图列表。' },
+}[lang];
+const fullLabels = {
+  th: { rating: 'คะแนนและรีวิวล่าสุด', advice: 'คำแนะนำการเที่ยว', lodging: 'พักที่ไหนสะดวก?', lodgingText: 'ถ้าต้องการเที่ยวต่อหลายแห่ง เลือกที่พักในเมืองเก่าหรือย่านช้างคลานตามงบประมาณและวิธีเดินทาง ตรวจระยะเดินจริงจากหมุดที่พักและทางเข้าของสถานที่นี้ก่อนจอง', mapGuide: 'เส้นทางและจุดหมาย', gallery: 'ภาพสถานที่จริง', notice: 'ข้อมูลเวลาและค่าบริการอาจเปลี่ยนตามประกาศหน้างาน', mainAttraction: 'กลับไปเที่ยวคลองแม่ข่า' },
+  en: { rating: 'Current rating and reviews', advice: 'Suggested visit', lodging: 'Where to stay nearby', lodgingText: 'For several Chiang Mai stops, compare lodging in the Old City and Chang Khlan areas. Choose based on budget, transport needs and the actual walking route from the property before booking.', mapGuide: 'Map and destination', gallery: 'On-location photograph', notice: 'Hours and fees can change; check current arrangements on arrival', mainAttraction: 'Return to Mae Kha Canal' },
+  zh: { rating: '最新评分与评论', advice: '游览建议', lodging: '附近住宿建议', lodgingText: '若计划连游多处清迈景点，可根据预算与交通方式比较古城及长康路一带的住宿。预订前请核对住处到实际景点入口的步行路线。', mapGuide: '地址与地图导航', gallery: '景点实景照片', notice: '开放时间与费用可能调整，请以现场公告为准', mainAttraction: '返回湄卡运河' },
+}[lang];
+const related = nearbySlugs.filter((s) => s !== slug);
+const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const attractionSchema = { '@context': 'https://schema.org', '@type': 'TouristAttraction', name: page.name, description: page.description, url: `${siteConfig.domain}/${lang}/nearby/${slug}/`, image: `${siteConfig.domain}${place.image}`, address: { '@type': 'PostalAddress', streetAddress: place.address, addressLocality: 'Mueang Chiang Mai', addressRegion: 'Chiang Mai', addressCountry: 'TH' }, hasMap: mapUrl };
+---
+
+<BaseLayout lang={lang} title={`${page.name} | ${siteConfig.name[lang]}`} description={page.description} messages={messages} path={`nearby/${slug}`} includeSiteAttraction={false}>
+  <header class="bg-teakDeep text-ivory border-b border-gold/20">
+    <div class="max-w-6xl mx-auto px-5 py-5 flex flex-wrap justify-between gap-4">
+      <a href={`/${lang}/`} class="font-display text-xl text-goldBright">{siteConfig.name[lang]}</a>
+      <nav class="flex gap-4 flex-wrap text-sm" aria-label="Languages and home"><a href={`/${lang}/#nearby-explore`}>{labels.back}</a>{languagesList.map((l) => <a href={`/${l}/nearby/${slug}/`} class={l === lang ? 'text-goldBright font-bold' : 'hover:text-goldBright'}>{l === 'th' ? 'ไทย' : l === 'en' ? 'English' : '中文'}</a>)}</nav>
+    </div>
+  </header>
+  <main class="bg-[#f8f5ed] text-teakDeep">
+    <section class="bg-teakDeep text-ivory py-16">
+      <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-9 items-center">
+        <div>
+          <p class="text-gold uppercase tracking-widest text-sm mb-4">{labels.back} · {siteConfig.cityName[lang]}</p>
+          <h1 class="font-display text-4xl lg:text-5xl text-goldBright leading-tight">{page.name}</h1>
+          <p class="font-display text-xl text-gold mt-4">{page.tagline}</p>
+          <p class="text-lg leading-8 mt-6">{page.summary}</p>
+          <div class="mt-5 flex flex-wrap gap-2 text-sm"><span class="rounded-full border border-gold/40 px-4 py-2">{place.hours[lang]}</span><span class="rounded-full border border-gold/40 px-4 py-2">{place.duration[lang]}</span><a class="rounded-full border border-gold/40 px-4 py-2 hover:text-goldBright" href={mapUrl} target="_blank" rel="noopener noreferrer">★ {fullLabels.rating} ↗</a></div>
+          <div class="flex flex-wrap gap-3 mt-7"><a class="rounded-full bg-gold text-teakDeep font-semibold px-6 py-3" href={mapUrl} target="_blank" rel="noopener noreferrer">{labels.map} ↗</a><a class="rounded-full border border-gold/50 px-6 py-3" href={`/${lang}/#nearby-explore`}>{labels.back}</a></div>
+        </div>
+        <figure class="rounded-2xl overflow-hidden"><img src={place.image} alt={`${page.name} — ${page.tagline}`} class="w-full h-72 lg:h-96 object-cover" width="1200" height="800" loading="eager"/><figcaption class="text-xs text-ivory/60 px-2 py-2">{page.name} · {siteConfig.cityName[lang]}</figcaption></figure>
+      </div>
+    </section>
+    <div class="max-w-5xl mx-auto px-5 py-14 space-y-14">
+      <section class="bg-white p-7 md:p-10 rounded-2xl border-l-4 border-gold"><h2 class="font-display text-3xl mb-5">{page.managementTitle}</h2><p class="text-lg leading-8">{page.management}</p></section>
+      <section><h2 class="font-display text-3xl mb-5">{labels.intro}</h2><p class="text-lg leading-8">{page.summary}</p></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-5">{fullLabels.advice}</h2><ul class="list-disc pl-6 space-y-3 text-lg leading-8">{page.experience.map((p) => <li>{p}</li>)}</ul><p class="text-sm mt-4 opacity-75">{fullLabels.notice}</p></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.info}</h2><dl class="grid md:grid-cols-2 gap-4">{[[labels.address, place.address], [labels.hours, place.hours[lang]], [labels.fee, place.fee[lang]], [labels.stay, place.duration[lang]]].map(([key, value]) => <div class="bg-white p-5 rounded-xl border border-gold/20"><dt class="text-sm opacity-70">{key}</dt><dd class="mt-2 font-medium leading-7">{value}</dd></div>)}</dl></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.history}</h2><div class="space-y-4">{page.history.map((p) => <p class="text-lg leading-8 max-w-3xl">{p}</p>)}</div></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.features}</h2><ul class="list-disc pl-6 space-y-4 text-lg leading-8">{page.features.map((p) => <li>{p}</li>)}</ul></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{fullLabels.gallery}</h2><figure class="rounded-2xl overflow-hidden max-w-3xl bg-white border border-gold/20"><img src={place.image} alt={`${page.name} — ${page.tagline}`} loading="lazy" class="w-full max-h-[520px] object-cover" width="960" height="640"/><figcaption class="p-4 text-sm">{page.name} · {siteConfig.cityName[lang]}</figcaption></figure></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.route}</h2><ol class="space-y-4">{page.route.map((step, i) => <li class="flex gap-4 items-start text-lg leading-8"><span class="shrink-0 bg-teakDeep text-goldBright w-9 h-9 rounded-full text-center font-bold leading-9">{i + 1}</span><span>{step}</span></li>)}</ol></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.visit}</h2><ul class="list-disc pl-6 space-y-4 text-lg leading-8">{page.visit.map((p) => <li>{p}</li>)}</ul></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.photo}</h2><ul class="list-disc pl-6 space-y-4 text-lg leading-8">{page.photo.map((p) => <li>{p}</li>)}</ul></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.transport}</h2><div class="space-y-4">{page.transport.map((p) => <p class="text-lg leading-8">{p}</p>)}</div><p class="mt-5 font-semibold">{place.address}</p><a class="inline-flex mt-4 underline font-semibold" href={mapUrl} target="_blank" rel="noopener noreferrer">{labels.map} ↗</a></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-5">{fullLabels.lodging}</h2><p class="text-lg leading-8 max-w-3xl">{fullLabels.lodgingText}</p></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.reviews}</h2><p class="text-lg leading-8">{labels.reviewText}</p><a href={mapUrl} target="_blank" rel="noopener noreferrer" class="inline-block underline mt-4">{labels.map} ↗</a></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.faq}</h2><div class="space-y-4">{page.faqs.map((f) => <details class="bg-white border border-gold/20 rounded-xl p-5"><summary class="cursor-pointer font-semibold">{f.q}</summary><p class="mt-4 leading-8">{f.a}</p></details>)}</div></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.related}</h2><div class="grid md:grid-cols-3 gap-4">{related.map((key) => <a class="bg-white border border-gold/20 rounded-xl overflow-hidden hover:border-gold transition-colors" href={`/${lang}/nearby/${key}/`}><img src={nearbyDetails[key].image} alt={nearbyDetails[key].locales[lang].name} loading="lazy" width="400" height="270" class="w-full h-36 object-cover"/><h3 class="font-display text-xl p-4">{nearbyDetails[key].locales[lang].name} →</h3></a>)}</div><a href={`/${lang}/guides/getting-there/`} class="underline inline-block mt-6">{labels.plan} →</a></section>
+      <section class="text-sm leading-7 border-t border-gold/25 pt-8"><h2 class="font-semibold text-lg">{labels.source}</h2><ul class="list-disc pl-6"><li><a class="underline" href={place.source} target="_blank" rel="noopener noreferrer">{place.source}</a></li><li><a class="underline" href={mapUrl} target="_blank" rel="noopener noreferrer">Google Maps · {page.name}</a></li><li><a class="underline" href={place.imageSource} target="_blank" rel="noopener noreferrer">{page.name} · photograph reference</a></li></ul></section>
+      <section class="border-t border-gold/25 pt-8"><h2 class="font-display text-3xl mb-5">{fullLabels.mapGuide}</h2><p class="leading-8 mb-5">{place.address}</p><a class="inline-flex rounded-full bg-teakDeep text-goldBright px-6 py-3" href={mapUrl} target="_blank" rel="noopener noreferrer">{labels.map} ↗</a><a class="ml-5 underline" href={`/${lang}/`}>{fullLabels.mainAttraction} →</a></section>
+    </div>
+  </main>
+  <Footer lang={lang} messages={messages} />
+  <script type="application/ld+json" set:html={JSON.stringify([faqSchema, attractionSchema])} />
+</BaseLayout>

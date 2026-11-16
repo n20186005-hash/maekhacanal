@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Footer from '../../../components/Footer.astro';
+import { guides, guideSlugs, type GuideLang, type GuideSlug } from '../../../data/seoGuides';
+import { getI18n, languagesList } from '../../../i18n/ui';
+import { siteConfig } from '../../../config';
+import { guideExtras, nearbyPlaces } from '../../../data/guideExtras';
+
+export const prerender = true;
+export function getStaticPaths() {
+  return languagesList.flatMap((lang) => guideSlugs.map((slug) => ({ params: { lang, slug } })));
+}
+const { lang, messages } = await getI18n(Astro.url);
+const slug = Astro.params.slug as GuideSlug;
+const page = guides[lang as GuideLang][slug];
+const extra = guideExtras[lang as GuideLang][slug];
+const guidePhotos = {
+  'opening-hours': [3, 4, 10],
+  'getting-there': [6, 13, 15],
+  'evening-walk': [1, 14, 17],
+}[slug];
+const mapQuery = {
+  'opening-hours': 'Mae Kha Canal Khlong Mae Kha Chiang Mai Thailand',
+  'getting-there': 'Mae Kha Canal walking street Sri Don Chai Chiang Mai Thailand',
+  'evening-walk': 'Mae Kha Canal evening walking street Chiang Mai Thailand',
+}[slug];
+const topicMapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
+const labels = {
+  th: { home: 'หน้าแรก', guides: 'คู่มือเที่ยว', facts: 'ข้อมูลสำคัญ', faq: 'คำถามที่พบบ่อย', map: 'เปิด Google Maps', more: 'อ่านคู่มืออื่น', source: 'แหล่งข้อมูลและการตรวจสอบ', sourceNote: 'ข้อมูลเวลาอาจเปลี่ยนได้ ตรวจสอบหน้างานและติดต่อร้านค้าที่ต้องการไปโดยตรง' },
+  en: { home: 'Home', guides: 'Visitor guides', facts: 'At a glance', faq: 'Frequently asked questions', map: 'Open Google Maps', more: 'Explore other guides', source: 'Sources and checking', sourceNote: 'Hours may change. Confirm locally and check with individual businesses before making a special trip.' },
+  zh: { home: '首页', guides: '游览指南', facts: '基本信息', faq: '常见问题', map: '打开 Google 地图', more: '更多专题', source: '资料与核实', sourceNote: '开放与营业安排可能变化，出发前向指定店铺确认并以现场情况为准。' },
+}[lang];
+const guideLinks = guideSlugs.filter((s) => s !== slug);
+const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+---
+
+<BaseLayout lang={lang} title={page.title} description={page.description} messages={messages} path={`guides/${slug}`}>
+  <header class="bg-teakDeep text-ivory border-b border-gold/20">
+    <div class="max-w-6xl mx-auto px-5 py-5 flex flex-wrap justify-between items-center gap-4">
+      <a class="text-goldBright font-display text-xl" href={`/${lang}/`}>{siteConfig.name[lang]}</a>
+      <nav class="flex flex-wrap gap-4 text-sm" aria-label="Page navigation">
+        <a href={`/${lang}/`} class="hover:text-goldBright">{labels.home}</a>
+        <a href={`/${lang}/#seo-guides`} class="hover:text-goldBright">{labels.guides}</a>
+        {languagesList.map((l) => <a href={`/${l}/guides/${slug}/`} class={l === lang ? 'text-goldBright font-bold' : 'hover:text-goldBright'}>{l === 'th' ? 'ไทย' : l === 'en' ? 'English' : '中文'}</a>)}
+      </nav>
+    </div>
+  </header>
+  <main class="bg-[#f8f5ed] text-teakDeep min-h-screen">
+    <section class="bg-teakDeep text-ivory pt-16 pb-20">
+      <div class="max-w-5xl mx-auto px-5">
+        <p class="uppercase tracking-[.2em] text-gold mb-5 text-sm">{page.eyebrow} · {siteConfig.cityName[lang]}</p>
+        <h1 class="font-display text-4xl md:text-5xl leading-tight max-w-4xl text-goldBright">{page.title}</h1>
+        <p class="mt-7 text-lg leading-8 max-w-3xl text-ivory/85">{page.intro}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="bg-gold text-teakDeep rounded-full px-6 py-3 font-semibold" href={topicMapUrl} target="_blank" rel="noopener noreferrer">{labels.map} ↗</a>
+          <a class="border border-gold/60 rounded-full px-6 py-3" href={`/${lang}/#seo-guides`}>{labels.more}</a>
+        </div>
+      </div>
+    </section>
+    <div class="max-w-5xl mx-auto px-5 py-14 space-y-16">
+      <section aria-labelledby="management-title" class="rounded-2xl bg-white border-l-4 border-gold p-7 md:p-10">
+        <h2 id="management-title" class="font-display text-3xl mb-5">{extra.managementTitle}</h2>
+        <div class="space-y-4 max-w-3xl">{extra.management.map((p) => <p class="text-lg leading-8">{p}</p>)}</div>
+        <a class="text-sm underline inline-block mt-5" href="https://doi.org/10.3390/w17071105" target="_blank" rel="noopener noreferrer">Water 2025 · Mae Kha Canal landscape restoration ↗</a>
+      </section>
+      <section aria-label="Mae Kha Canal photo gallery" class="grid md:grid-cols-3 gap-4">
+        {guidePhotos.map((index) => <figure class="rounded-xl overflow-hidden bg-white border border-gold/20"><img src={`/gallery/mae-kha-canal-${index}.${index === 17 ? 'png' : 'jpg'}`} alt={`${siteConfig.name[lang]} — ${page.eyebrow}, canal walkway photograph ${index}`} loading="lazy" width="800" height="600" class="w-full h-60 object-cover"/><figcaption class="text-xs px-4 py-3">{siteConfig.name[lang]} · {page.eyebrow}</figcaption></figure>)}
+      </section>
+      <section aria-labelledby="facts-title">
+        <h2 id="facts-title" class="font-display text-3xl mb-7">{labels.facts}</h2>
+        <dl class="grid md:grid-cols-2 gap-4">
+          {page.facts.map(([term, value]) => <div class="rounded-xl bg-white border border-gold/20 p-5"><dt class="text-sm text-teak/70 mb-2">{term}</dt><dd class="font-medium leading-7">{value}</dd></div>)}
+        </dl>
+      </section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.highlights}</h2><ul class="space-y-3 list-disc pl-6 leading-8 text-lg">{extra.highlights.map((s) => <li>{s}</li>)}</ul></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.history}</h2><div class="space-y-4 max-w-3xl">{extra.history.map((s) => <p class="leading-8 text-lg">{s}</p>)}</div></section>
+      {page.sections.map((section, i) => <section class="border-t border-gold/25 pt-9" aria-labelledby={`section-${i}`}><h2 id={`section-${i}`} class="font-display text-3xl mb-6">{section.heading}</h2><div class="space-y-5 max-w-3xl">{section.paragraphs.map((p) => <p class="leading-8 text-lg">{p}</p>)}</div></section>)}
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.route}</h2><ol class="space-y-4 max-w-3xl">{extra.route.map((s) => <li class="leading-8 text-lg">{s}</li>)}</ol></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.photos}</h2><ul class="list-disc pl-6 space-y-3 text-lg leading-8">{extra.photoTips.map((s) => <li>{s}</li>)}</ul></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.transport}</h2><div class="space-y-4">{extra.transport.map((s) => <p class="text-lg leading-8">{s}</p>)}</div><p class="mt-5">{siteConfig.address}</p><a class="mt-4 inline-flex underline" href={topicMapUrl} target="_blank" rel="noopener noreferrer">{labels.map} ↗</a></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.amenities}</h2><ul class="list-disc pl-6 space-y-3 text-lg leading-8">{extra.amenities.map((s) => <li>{s}</li>)}</ul></section>
+      <section class="border-t border-gold/25 pt-9" aria-labelledby="faq-title"><h2 id="faq-title" class="font-display text-3xl mb-6">{labels.faq}</h2><div class="space-y-4">{page.faqs.map((f) => <details class="bg-white rounded-xl p-5 border border-gold/20"><summary class="font-semibold cursor-pointer">{f.q}</summary><p class="mt-4 leading-7">{f.a}</p></details>)}</div></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.reviews}</h2><p class="leading-8 text-lg">{extra.reviews}</p><a class="underline inline-block mt-4" href={siteConfig.mapsUrl} target="_blank" rel="noopener noreferrer">Google Maps · {siteConfig.name[lang]} ↗</a></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{extra.headings.nearby}</h2><div class="grid md:grid-cols-2 gap-4">{nearbyPlaces.map((place) => <article class="rounded-xl bg-white border border-gold/20 p-6"><h3 class="font-display text-xl">{place.name[lang]}</h3><p class="text-sm mt-3 leading-7">{place.note[lang]}</p><a class="underline inline-block mt-4" href={`/${lang}/nearby/${place.id}/`}>{labels.more} →</a></article>)}</div></section>
+      <section class="border-t border-gold/25 pt-9"><h2 class="font-display text-3xl mb-6">{labels.more}</h2><div class="grid md:grid-cols-2 gap-4">{guideLinks.map((s) => <a href={`/${lang}/guides/${s}/`} class="bg-white border border-gold/20 rounded-xl p-6 hover:border-gold transition-colors"><h3 class="font-display text-xl">{guides[lang as GuideLang][s].title}</h3><p class="text-sm mt-3 leading-6">{guides[lang as GuideLang][s].description}</p></a>)}</div></section>
+      <section class="text-sm leading-7 border-t border-gold/25 pt-8"><h2 class="font-semibold text-lg">{labels.source}</h2><p>{labels.sourceNote}</p><p><a class="underline" href={siteConfig.mapsUrl} target="_blank" rel="noopener noreferrer">Google Maps · Mae Kha Canal</a> · <a class="underline" href="https://www.tourismthailand.org" target="_blank" rel="noopener noreferrer">Tourism Authority of Thailand</a> · <a class="underline" href="https://doi.org/10.3390/w17071105" target="_blank" rel="noopener noreferrer">Mae Kha rehabilitation research</a></p></section>
+    </div>
+  </main>
+  <Footer lang={lang} messages={messages} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</BaseLayout>

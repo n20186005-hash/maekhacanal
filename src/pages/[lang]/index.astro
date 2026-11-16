@@ -12,6 +12,8 @@ import Reviews from '../../components/Reviews.astro';
 import Sources from '../../components/Sources.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
+import SeoGuides from '../../components/SeoGuides.astro';
+import NearbyExplore from '../../components/NearbyExplore.astro';
 import { languagesList, defaultLang, getI18n } from '../../i18n/ui';
 
 export async function getStaticPaths() {
@@ -29,6 +31,8 @@ const { lang, messages } = await getI18n(Astro.url);
     <Ecosystem messages={messages} />
     <History messages={messages} />
     <Guide messages={messages} />
+    <SeoGuides lang={lang} />
+    <NearbyExplore lang={lang} />
     <Food messages={messages} />
     <Gallery messages={messages} />
     <Reviews lang={lang} messages={messages} />
