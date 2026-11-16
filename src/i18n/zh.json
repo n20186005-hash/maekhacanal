@@ -452,7 +452,7 @@
       { "q": "湄卡运河的历史背景是什么？为什么叫「湄卡」？", "a": "该运河可追溯至 1296 年兰纳孟莱王时期的外城排灌双环水系。「Mae」意为母亲/河流，「Kha」指高良姜，反映了早期两岸遍布野生良姜的植被风貌，属于兰纳典型的「河流+植被」型地名。" }
     ],
     "nearby": {
-      "title": "周边地标（不推荐具体商户）",
+      "title": "周边地标",
       "cta": "规划行程 →",
       "items": [
         { "name": "清迈古城 Chiang Mai Old City", "desc": "方形护城河环绕的历史城区，寺庙与街景密度最高。", "url": "https://maps.google.com/?q=Chiang+Mai+Old+City" },
@@ -462,7 +462,7 @@
     },
     "scienceAndDuty": {
       "label": "🔬 科普与访客责任",
-      "title": "科普与访客责任（E-E-A-T 资料板块）",
+      "title": "科普与访客责任",
       "science": {
         "h": "水利与生态修复的科学背景",
         "items": [
@@ -490,7 +490,7 @@
     }
   },
   "food": {
-    "label": "美食与饮品（类型叙述 · 不推荐具体摊名）",
+    "label": "美食与饮品",
     "heading": "在水边用餐：泰北风味露天厨房",
     "lead": "入夜后，河畔夜市变成了一座泰北风味的露天厨房。以下仅介绍常见菜品类型与其文化背景，不点名具体商户。",
     "dishes": [
@@ -545,21 +545,21 @@
     "label": "游客评价",
     "heading": "游客怎么说",
     "intro": "我们仅展示 Google 地图的聚合评分快照。逐条游客评价托管在 Google 地图上——我们无法独立核实其作者与日期，故不转载个别评论。",
-    "syncAttribution": "评分与评价数同步自谷歌地图（Google Maps）用户评价 · 2026 年 10 月 · 点击查看谷歌地图全部评价↗",
-    "copyrightNotice": "同步自 Google 地图用户评价，同步时间 2026 年 10 月；版权归原作者与 Google 地图所有。",
+    "syncAttribution": "评分与评价数同步自谷歌地图（Google Maps）用户评价 · 2026 年 11 月 · 点击查看谷歌地图全部评价↗",
+    "copyrightNotice": "同步自 Google 地图用户评价，同步时间 2026 年 11 月；版权归原作者与 Google 地图所有。",
     "viewAll": "在谷歌地图查看全部评价",
     "featured": [],
     "items": []
   },
   "sources": {
-    "label": "资料与来源（E-E-A-T）",
+    "label": "资料与来源",
     "heading": "我们的参考与出处",
     "intro": "这份非营利科普指南汇总公开可得的信息，帮助游客负责任地规划行程。可使用本页列出的官方参考链接交叉核对相关资料。",
     "photoTitle": "图片说明与版权",
     "photoItems": [
       { "text": "所示场景用于呈现湄卡运河的氛围，实际会随季节与时段变化。", "linkLabel": "地图位置（Google Maps）", "url": "https://maps.app.goo.gl/mjLfRYB7xBtk5quR9" }
     ],
-    "imageCopyright": "本网站所展示的所有图片产权及版权均归原摄影者所有；本页仅以教育、非商业目的转载，如有侵权请联系邮件删除。",
+    "imageCopyright": "本网站所展示的所有图片产权及版权均归原摄影者所有，仅用于教育、非商业用途。",
     "reviewTitle": "评价来源说明",
     "reviewText": "评价 · 同步时间 {syncDate}；数据同步自 Google 地图（Google Maps）公开用户评价页面，版权归原评价作者与 Google LLC 所有。本页仅展示快照，不代表本平台与任何商户存在关联背书。",
     "reviewLink": "在谷歌地图查看全部评价",
@@ -576,7 +576,7 @@
     "heading": "找到湄卡运河（Mae Kha Canal）",
     "lead": "位于清迈直辖县 Haiya（海亚）区，距古城南门步行/骑行仅十余分钟，距机场约 4 公里。",
     "stats": [
-      { "tag": "评分（快照）", "value": "4.2 ★", "sub": "来自 6,271 条 Google 评价 · 2026 年 10 月" },
+      { "tag": "评分（快照）", "value": "4.2 ★", "sub": "来自 6,371 条 Google 评价 · 2026 年 11 月" },
       { "tag": "开放时段", "value": "16:00", "sub": "傍晚（最热闹）" },
       { "tag": "行政区", "value": "Haiya", "sub": "清迈直辖县 Mueang" }
     ],

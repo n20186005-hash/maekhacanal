@@ -51,7 +51,7 @@ export const siteConfig = {
   phoneDisplay: '+66 93 790 8058',
 
   rating: 4.2,
-  reviewCount: '6,271',
+  reviewCount: '6,371',
 
   coords: {
     lat: Number(import.meta.env.PUBLIC_LAT) || 18.7771,
@@ -128,9 +128,9 @@ export const siteConfig = {
   ],
 
   reviewsSyncDate: {
-    th: 'ตุลาคม 2026',
-    en: 'October 2026',
-    zh: '2026 年 10 月',
+    th: 'พฤศจิกายน 2026',
+    en: 'November 2026',
+    zh: '2026 年 11 月',
   },
 };
 

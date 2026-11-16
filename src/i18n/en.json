@@ -297,7 +297,7 @@
     },
     "itinerary": {
       "label": "🗺 General itineraries",
-      "title": "Recommended half-day / full-day routes (no specific vendors)",
+      "title": "Recommended half-day / full-day routes",
       "half": {
         "name": "Half-day (~3 h · evening)",
         "steps": [
@@ -452,7 +452,7 @@
       { "q": "What is the historical background? Why is it called 'Mae Kha'?", "a": "The canal dates to King Mengrai's Lanna era (c. 1296) as part of an outer dual-ring irrigation-and-defence system. 'Mae' means mother / river; 'Kha' refers to galangal, recalling wild galangal once prolific along its banks — a classic Lanna 'river + plant' toponym." }
     ],
     "nearby": {
-      "title": "Nearby landmarks (no specific vendors)",
+      "title": "Nearby landmarks",
       "cta": "Plan your itinerary →",
       "items": [
         { "name": "Chiang Mai Old City", "desc": "Square-moated historic district with the highest density of temples and streetscapes.", "url": "https://maps.google.com/?q=Chiang+Mai+Old+City" },
@@ -462,7 +462,7 @@
     },
     "scienceAndDuty": {
       "label": "🔬 Science & visitor responsibility",
-      "title": "Science & visitor responsibility (E-E-A-T section)",
+      "title": "Science & visitor responsibility",
       "science": {
         "h": "Hydraulic and ecological restoration — scientific background",
         "items": [
@@ -490,7 +490,7 @@
     }
   },
   "food": {
-    "label": "Food & drink (type-only · no specific stalls)",
+    "label": "Food & drink",
     "heading": "Eat by the water: an open-air kitchen of northern flavours",
     "lead": "After sunset the riverside market becomes an open-air kitchen of northern Thai cuisine. Below we describe common dish types and their cultural backgrounds; no specific establishment is named.",
     "dishes": [
@@ -545,21 +545,21 @@
     "label": "Visitor reviews",
     "heading": "What visitors say",
     "intro": "We show the aggregate Google Maps rating snapshot only. Individual visitor reviews are hosted on Google Maps — we do not reproduce individual comments, because we cannot independently verify their authors or dates.",
-    "syncAttribution": "Rating and review count synced from Google Maps user reviews · October 2026 · Click to see all Google Maps reviews ↗",
-    "copyrightNotice": "Synced from Google Maps user reviews, sync date October 2026; © original authors and Google Maps.",
+    "syncAttribution": "Rating and review count synced from Google Maps user reviews · November 2026 · Click to see all Google Maps reviews ↗",
+    "copyrightNotice": "Synced from Google Maps user reviews, sync date November 2026; © original authors and Google Maps.",
     "viewAll": "See all reviews on Google Maps",
     "featured": [],
     "items": []
   },
   "sources": {
-    "label": "Sources & references (E-E-A-T)",
+    "label": "Sources & references",
     "heading": "Our references & provenance",
     "intro": "This non-profit guide compiles publicly available information to help visitors plan responsibly. Reference links on this page allow visitors to cross-check information.",
     "photoTitle": "Image notes & copyright",
     "photoItems": [
       { "text": "Scenes shown are illustrative of Mae Kha Canal's atmosphere; actual conditions vary with season and time of day.", "linkLabel": "Map location (Google Maps)", "url": "https://maps.app.goo.gl/mjLfRYB7xBtk5quR9" }
     ],
-    "imageCopyright": "All images displayed on this website are © their respective photographers; reproduced on this page solely for educational, non-commercial purposes. Please email for takedown if copyright is infringed.",
+    "imageCopyright": "All images displayed on this website remain the property and copyright of their original photographers and are used solely for educational, non-commercial purposes.",
     "reviewTitle": "Review provenance note",
     "reviewText": "Reviews · synced {syncDate}; data sourced from public Google Maps user-review pages, © original reviewers and Google LLC. This page displays snapshots only and implies no endorsement or affiliation with any merchant.",
     "reviewLink": "See all reviews on Google Maps",
@@ -576,7 +576,7 @@
     "heading": "Find Mae Kha Canal",
     "lead": "Located in Haiya Sub-district, Mueang Chiang Mai — a short walk / ride from the Old City's south gate, and ~4 km from the airport.",
     "stats": [
-      { "tag": "Rating (snapshot)", "value": "4.2 ★", "sub": "From 6,271 Google reviews · October 2026" },
+      { "tag": "Rating (snapshot)", "value": "4.2 ★", "sub": "From 6,371 Google reviews · November 2026" },
       { "tag": "Open (peak)", "value": "16:00", "sub": "Evenings (liveliest)" },
       { "tag": "Sub-district", "value": "Haiya", "sub": "Mueang Chiang Mai" }
     ],
