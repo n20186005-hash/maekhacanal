@@ -58,6 +58,21 @@ const syncDate = siteConfig.reviewsSyncDate[currentLang];
       </div>
     </div>
 
+    <div class="mt-8 border-t border-ivory/15 pt-6">
+      <h3 class="font-display text-xl text-goldBright">{messages.footer.sourcesTitle}</h3>
+      <p class="mt-2 text-sm text-ivory/70">{messages.footer.sourcesNote}</p>
+      <ul class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+        {siteConfig.sources.map((source) => (
+          <li><a href={source.url} target="_blank" rel="noopener noreferrer" class="text-goldBright underline hover:underline-offset-4">{source.name[currentLang]} ↗</a></li>
+        ))}
+      </ul>
+      <nav aria-label="Site policies" class="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm">
+        <a href={`/${currentLang}/privacy-policy`} class="text-ivory/75 underline hover:text-goldBright">{messages.footer.privacy}</a>
+        <a href={`/${currentLang}/terms-of-service`} class="text-ivory/75 underline hover:text-goldBright">{messages.footer.terms}</a>
+        <a href={`/${currentLang}/cookie-settings`} class="text-ivory/75 underline hover:text-goldBright">{messages.footer.cookies}</a>
+      </nav>
+    </div>
+
     <p class="mt-8 text-xs text-ivory/45">© {new Date().getFullYear()} {s.copyright}</p>
   </div>
 </section>
