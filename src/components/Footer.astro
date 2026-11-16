@@ -8,8 +8,15 @@ const footer = messages.footer;
 ---
 
 <footer class="bg-teakDeep text-ivory py-8">
-  <div class="max-w-7xl mx-auto px-5 text-center text-sm text-ivory/75 space-y-2">
-    <p>{footer.copyright}</p>
-    <p>{footer.unofficial}</p>
+  <div class="max-w-7xl mx-auto px-5 text-sm text-ivory/75 flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+    <div class="space-y-2">
+      <p>{footer.copyright}</p>
+      <p>{footer.unofficial}</p>
+    </div>
+    <nav aria-label="Site policies" class="flex flex-wrap gap-x-5 gap-y-2 md:justify-end md:text-right shrink-0">
+      <a href={`/${lang}/privacy-policy`} class="hover:text-goldBright hover:underline">{footer.privacy}</a>
+      <a href={`/${lang}/terms-of-service`} class="hover:text-goldBright hover:underline">{footer.terms}</a>
+      <a href={`/${lang}/cookie-settings`} class="hover:text-goldBright hover:underline">{footer.cookies}</a>
+    </nav>
   </div>
 </footer>

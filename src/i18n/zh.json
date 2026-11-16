@@ -554,7 +554,7 @@
   "sources": {
     "label": "资料与来源（E-E-A-T）",
     "heading": "我们的参考与出处",
-    "intro": "这份非营利科普指南汇总公开可得的信息，帮助游客负责任地规划行程。所有事实均可在页脚提供的官方链接中交叉核对。",
+    "intro": "这份非营利科普指南汇总公开可得的信息，帮助游客负责任地规划行程。可使用本页列出的官方参考链接交叉核对相关资料。",
     "photoTitle": "图片说明与版权",
     "photoItems": [
       { "text": "所示场景用于呈现湄卡运河的氛围，实际会随季节与时段变化。", "linkLabel": "地图位置（Google Maps）", "url": "https://maps.app.goo.gl/mjLfRYB7xBtk5quR9" }

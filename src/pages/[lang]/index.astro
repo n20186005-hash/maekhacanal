@@ -8,8 +8,6 @@ import History from '../../components/History.astro';
 import Guide from '../../components/Guide.astro';
 import Food from '../../components/Food.astro';
 import Gallery from '../../components/Gallery.astro';
-import Reviews from '../../components/Reviews.astro';
-import Sources from '../../components/Sources.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
 import SeoGuides from '../../components/SeoGuides.astro';
@@ -35,8 +33,18 @@ const { lang, messages } = await getI18n(Astro.url);
     <NearbyExplore lang={lang} />
     <Food messages={messages} />
     <Gallery messages={messages} />
-    <Reviews lang={lang} messages={messages} />
-    <Sources lang={lang} messages={messages} />
+    <section class="bg-teakDeep text-ivory py-12" aria-label="Reviews and sources">
+      <div class="max-w-5xl mx-auto px-5 grid sm:grid-cols-2 gap-6">
+        <a href={`/${lang}/reviews/`} class="rounded-2xl border border-gold/30 p-6 hover:border-goldBright transition-colors">
+          <h2 class="font-display text-2xl text-goldBright">{messages.reviews.heading}</h2>
+          <p class="mt-2 text-sm text-ivory/70">{messages.reviews.intro}</p>
+        </a>
+        <a href={`/${lang}/sources/`} class="rounded-2xl border border-gold/30 p-6 hover:border-goldBright transition-colors">
+          <h2 class="font-display text-2xl text-goldBright">{messages.sources.heading}</h2>
+          <p class="mt-2 text-sm text-ivory/70">{messages.sources.intro}</p>
+        </a>
+      </div>
+    </section>
     <MapSection lang={lang} messages={messages} />
   </main>
   <Footer lang={lang} messages={messages} />
