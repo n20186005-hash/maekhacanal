@@ -1,5 +1,5 @@
 import { moreNearbyDetails } from './moreNearbyDetails';
-export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum'] as const;
+export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum', 'wat-umong-suan-phutthatham', 'wat-lok-molee', 'wat-ketkaram', 'wat-phra-that-doi-suthep'] as const;
 export type NearbySlug = typeof nearbySlugs[number];
 export type NearbyLang = 'th' | 'en' | 'zh';
 
@@ -13,7 +13,7 @@ type Locale = {
 type Place = {
   image: string; imageSource: string; mapQuery: string; address: string;
   fee: Record<NearbyLang,string>; hours: Record<NearbyLang,string>; duration: Record<NearbyLang,string>;
-  source: string; locales: Record<NearbyLang,Locale>;
+  source: string; additionalSources?: string[]; locales: Record<NearbyLang,Locale>;
 };
 export const nearbyDetails: Record<NearbySlug, Place> = {
   'chiang-mai-gate': {
@@ -1392,6 +1392,645 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         {
           "q": "จัดแสดงอะไร?",
           "a": "โบราณวัตถุและศิลปวัตถุจากภาคเหนือตอนบน"
+        }
+      ]
+    }
+  }
+},
+  "wat-umong-suan-phutthatham": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดอุโมงค์ สวนพุทธธรรม สุเทพ เชียงใหม่",
+  "address": "135 Moo 10, Suthep, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.thailandtravel.or.jp/wat-umong/",
+  "locales": {
+    "en": {
+      "name": "Wat Umong Suan Phutthatham",
+      "tagline": "Forest monastery and historic tunnels",
+      "description": "Wat Umong Suan Phutthatham lies in Suthep at the foot of Doi Suthep. Its wooded grounds contain a chedi above historic tunnels.",
+      "summary": "Wat Umong Suan Phutthatham lies in Suthep at the foot of Doi Suthep. Its wooded grounds contain a chedi above historic tunnels.",
+      "managementTitle": "About the temple and its care",
+      "management": "The Fine Arts Department records cracks to the tunnels after the 2025 earthquake and announced conservation work. Ask the temple which areas are currently safe and open.",
+      "history": [
+        "The site is associated with meditation and later development as Suan Phutthatham. It is distinct from Wat Umong Maha Thera Chan in the Old City."
+      ],
+      "features": [
+        "Observe the chedi and wooded grounds; enter the tunnels only if the temple has opened them."
+      ],
+      "experience": [
+        "Observe the chedi and wooded grounds; enter the tunnels only if the temple has opened them."
+      ],
+      "route": [
+        "Find the Suthep entrance and check the current conservation notices.",
+        "Follow open paths to the chedi and permitted tunnel entrance.",
+        "Continue through the grounds quietly and return by the signed route."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Is this the Old City Wat Umong?",
+          "a": "No. Suan Phutthatham is the forest temple in Suthep; the Old City temple is a different site."
+        },
+        {
+          "q": "Are the tunnels always open?",
+          "a": "Access may change for conservation; check current temple instructions."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "乌蒙寺森林禅修园",
+      "tagline": "森林寺院与历史隧道",
+      "description": "乌蒙寺森林禅修园位于素贴山麓的素贴区，林木环绕的寺地内有佛塔及其下方的历史隧道。",
+      "summary": "乌蒙寺森林禅修园位于素贴山麓的素贴区，林木环绕的寺地内有佛塔及其下方的历史隧道。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "泰国艺术厅记录了 2025 年地震后隧道出现裂缝并公布修复计划；请向寺方确认当前安全开放范围。",
+      "history": [
+        "该地与禅修传统及后来的佛法园发展有关；它不同于古城内的同名乌蒙寺。"
+      ],
+      "features": [
+        "观察佛塔与林地，仅在寺方开放时进入隧道。"
+      ],
+      "experience": [
+        "观察佛塔与林地，仅在寺方开放时进入隧道。"
+      ],
+      "route": [
+        "找到素贴区入口并查看当前修复告示。",
+        "沿开放路线前往佛塔与允许进入的隧道入口。",
+        "安静游览寺地，再按指示路线返回。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "这是古城里的乌蒙寺吗？",
+          "a": "不是。森林禅修园位于素贴区，古城内的是另一座寺院。"
+        },
+        {
+          "q": "隧道一直开放吗？",
+          "a": "开放范围可能因保护工程调整，请确认寺方当前指示。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดอุโมงค์ สวนพุทธธรรม",
+      "tagline": "วัดป่าและอุโมงค์ประวัติศาสตร์",
+      "description": "วัดอุโมงค์ สวนพุทธธรรม ตั้งอยู่ตำบลสุเทพเชิงดอยสุเทพ มีเจดีย์และอุโมงค์เก่าท่ามกลางบริเวณร่มไม้",
+      "summary": "วัดอุโมงค์ สวนพุทธธรรม ตั้งอยู่ตำบลสุเทพเชิงดอยสุเทพ มีเจดีย์และอุโมงค์เก่าท่ามกลางบริเวณร่มไม้",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "กรมศิลปากรบันทึกรอยร้าวของอุโมงค์หลังแผ่นดินไหวปี 2568 และประกาศแผนอนุรักษ์ โปรดสอบถามวัดว่าพื้นที่ใดปลอดภัยและเปิดอยู่",
+      "history": [
+        "สถานที่เกี่ยวข้องกับการปฏิบัติธรรมและการพัฒนาเป็นสวนพุทธธรรม ไม่ใช่วัดอุโมงค์มหาเถรจันทร์ในเมืองเก่า"
+      ],
+      "features": [
+        "ชมเจดีย์และบริเวณป่า เข้าอุโมงค์เฉพาะเมื่อวัดเปิดให้เข้าชม"
+      ],
+      "experience": [
+        "ชมเจดีย์และบริเวณป่า เข้าอุโมงค์เฉพาะเมื่อวัดเปิดให้เข้าชม"
+      ],
+      "route": [
+        "หาทางเข้าตำบลสุเทพและตรวจป้ายอนุรักษ์ปัจจุบัน",
+        "เดินตามเส้นทางที่เปิดไปยังเจดีย์และทางเข้าอุโมงค์ที่อนุญาต",
+        "ชมบริเวณวัดอย่างสงบและกลับตามทางที่กำหนด"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "เป็นวัดอุโมงค์ในเมืองเก่าหรือไม่?",
+          "a": "ไม่ใช่ สวนพุทธธรรมอยู่สุเทพ ส่วนวัดในเมืองเก่าเป็นคนละแห่ง"
+        },
+        {
+          "q": "อุโมงค์เปิดตลอดหรือไม่?",
+          "a": "พื้นที่อาจเปลี่ยนตามงานอนุรักษ์ โปรดตรวจคำแนะนำปัจจุบันของวัด"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://www.finearts.go.th/promotion/view/56279--%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93--%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B3%E0%B8%84%E0%B8%B1%E0%B8%8D%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%81%E0%B8%9C%E0%B9%88%E0%B8%99%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%84%E0%B8%AB%E0%B8%A7"
+  ]
+},
+  "wat-lok-molee": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดโลกโมฬี 229 ถนนมณีนพรัตน์ เชียงใหม่",
+  "address": "229 Manee Nopparat Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.thailandtravel.or.jp/wat-lokmolee/",
+  "locales": {
+    "en": {
+      "name": "Wat Lok Molee",
+      "tagline": "A Lanna temple outside the north-west wall",
+      "description": "Wat Lok Molee stands on Manee Nopparat Road outside the north-western Old City wall. Its historic brick chedi and teak worship hall offer contrasting materials to observe.",
+      "summary": "Wat Lok Molee stands on Manee Nopparat Road outside the north-western Old City wall. Its historic brick chedi and teak worship hall offer contrasting materials to observe.",
+      "managementTitle": "About the temple and its care",
+      "management": "The National Library of Chiang Mai describes royal patronage and a later teak hall; the temple should be consulted about access and photography.",
+      "history": [
+        "The temple’s exact foundation date is uncertain. The National Library records a major chedi built in 1528 and later changes to the complex."
+      ],
+      "features": [
+        "Compare the brick chedi with the later teak worship hall without touching the historic surfaces."
+      ],
+      "experience": [
+        "Compare the brick chedi with the later teak worship hall without touching the historic surfaces."
+      ],
+      "route": [
+        "Reach the entrance on Manee Nopparat Road and read the posted rules.",
+        "Observe the chedi and the hall from permitted areas.",
+        "Return to the moat using a safe crossing."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Where is the temple?",
+          "a": "It is outside the north-west city wall on Manee Nopparat Road."
+        },
+        {
+          "q": "What should I compare?",
+          "a": "The brick chedi and later teak hall show different materials and periods."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "洛摩利寺",
+      "tagline": "古城西北城墙外的兰纳寺院",
+      "description": "洛摩利寺位于古城西北城墙外的玛尼诺帕拉特路，砖砌佛塔与柚木佛殿形成鲜明对照。",
+      "summary": "洛摩利寺位于古城西北城墙外的玛尼诺帕拉特路，砖砌佛塔与柚木佛殿形成鲜明对照。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "清迈国家图书馆介绍寺院的王室供养背景及后建柚木佛殿；开放和拍摄规定请向寺方确认。",
+      "history": [
+        "寺院确切创建时间不详。国家图书馆记载主要佛塔建于 1528 年，寺院后来继续演变。"
+      ],
+      "features": [
+        "比较砖砌佛塔与后建柚木佛殿，不触摸历史表面。"
+      ],
+      "experience": [
+        "比较砖砌佛塔与后建柚木佛殿，不触摸历史表面。"
+      ],
+      "route": [
+        "从玛尼诺帕拉特路进入并查看现场规定。",
+        "在允许区域观察佛塔与佛殿。",
+        "使用安全过街设施返回护城河一侧。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "寺院在哪里？",
+          "a": "位于古城西北城墙外的玛尼诺帕拉特路。"
+        },
+        {
+          "q": "有什么值得比较？",
+          "a": "砖砌佛塔与后建柚木佛殿体现不同材料和时期。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดโลกโมฬี",
+      "tagline": "วัดล้านนานอกกำแพงเมืองด้านตะวันตกเฉียงเหนือ",
+      "description": "วัดโลกโมฬีอยู่บนถนนมณีนพรัตน์นอกกำแพงเมืองด้านตะวันตกเฉียงเหนือ มีเจดีย์อิฐเก่าและวิหารไม้สักที่ให้สังเกตวัสดุต่างยุค",
+      "summary": "วัดโลกโมฬีอยู่บนถนนมณีนพรัตน์นอกกำแพงเมืองด้านตะวันตกเฉียงเหนือ มีเจดีย์อิฐเก่าและวิหารไม้สักที่ให้สังเกตวัสดุต่างยุค",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "หอสมุดแห่งชาติเชียงใหม่กล่าวถึงการอุปถัมภ์จากราชวงศ์และวิหารไม้สักที่สร้างภายหลัง โปรดสอบถามวัดเรื่องการเข้าชมและถ่ายภาพ",
+      "history": [
+        "ไม่ปรากฏปีสร้างวัดแน่ชัด หอสมุดแห่งชาติบันทึกเจดีย์สำคัญสร้างในปี 2071 และการเปลี่ยนแปลงในสมัยต่อมา"
+      ],
+      "features": [
+        "เปรียบเทียบเจดีย์อิฐกับวิหารไม้สักที่สร้างภายหลังโดยไม่สัมผัสโบราณสถาน"
+      ],
+      "experience": [
+        "เปรียบเทียบเจดีย์อิฐกับวิหารไม้สักที่สร้างภายหลังโดยไม่สัมผัสโบราณสถาน"
+      ],
+      "route": [
+        "มาทางเข้าบนถนนมณีนพรัตน์และอ่านป้าย",
+        "ชมเจดีย์และวิหารจากพื้นที่ที่อนุญาต",
+        "ใช้ทางข้ามที่ปลอดภัยกลับไปฝั่งคูเมือง"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดอยู่ที่ไหน?",
+          "a": "อยู่นอกกำแพงเมืองด้านตะวันตกเฉียงเหนือบนถนนมณีนพรัตน์"
+        },
+        {
+          "q": "มีสิ่งใดให้เปรียบเทียบ?",
+          "a": "เจดีย์อิฐกับวิหารไม้สักภายหลังแสดงวัสดุและช่วงเวลาต่างกัน"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "wat-ketkaram": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดเกตการาม ถนนเจริญราษฎร์ เชียงใหม่",
+  "address": "Charoen Rat Road, Wat Ket, Mueang Chiang Mai, Chiang Mai 50000, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-ket-community",
+  "locales": {
+    "en": {
+      "name": "Wat Ketkaram",
+      "tagline": "Temple and community history east of the Ping",
+      "description": "Wat Ketkaram stands in the historic Wat Ket community on the eastern bank of the Ping River. A museum within the temple grounds preserves objects connected with the community and temple.",
+      "summary": "Wat Ketkaram stands in the historic Wat Ket community on the eastern bank of the Ping River. A museum within the temple grounds preserves objects connected with the community and temple.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple and its community museum have their own caretakers. Confirm the museum’s opening and photography rules locally; the Tourism Authority of Thailand supplies visitor information.",
+      "history": [
+        "Before rail transport, Wat Ket was an important river landing. The museum collection includes carved architectural elements and everyday objects that help explain the district’s trading history."
+      ],
+      "features": [
+        "Look at the temple setting and, if open, the museum’s architectural fragments and household objects."
+      ],
+      "experience": [
+        "Look at the temple setting and, if open, the museum’s architectural fragments and household objects."
+      ],
+      "route": [
+        "Find Wat Ketkaram on Charoen Rat Road on the east bank.",
+        "Visit the temple precinct respectfully and ask whether its museum is open.",
+        "Continue along the public riverfront streets without entering private premises."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Where is Wat Ketkaram?",
+          "a": "It is on the eastern bank of the Ping in the Wat Ket community."
+        },
+        {
+          "q": "Is the museum a separate journey?",
+          "a": "The community museum is within the temple area; ask locally about current access."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "吉德卡兰寺",
+      "tagline": "平河东岸的寺院与社区历史",
+      "description": "吉德卡兰寺位于平河东岸的历史性 Wat Ket 社区。寺院内的社区博物馆保存与寺院和街区有关的物件。",
+      "summary": "吉德卡兰寺位于平河东岸的历史性 Wat Ket 社区。寺院内的社区博物馆保存与寺院和街区有关的物件。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺院及社区博物馆分别有现场管理者，博物馆开放与拍摄规定请现场确认；泰国旅游局提供访客资料。",
+      "history": [
+        "铁路出现前，Wat Ket 曾是重要的河运码头。馆藏包括建筑木雕与日常器物，帮助理解街区的贸易历史。"
+      ],
+      "features": [
+        "观察寺院环境；如博物馆开放，可留意建筑构件与生活器物。"
+      ],
+      "experience": [
+        "观察寺院环境；如博物馆开放，可留意建筑构件与生活器物。"
+      ],
+      "route": [
+        "在平河东岸的 Charoen Rat 路找到寺院。",
+        "尊重礼佛者，并询问寺内博物馆是否开放。",
+        "沿公共街道继续游览河岸，不进入私人场所。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "寺院在哪里？",
+          "a": "位于平河东岸的 Wat Ket 社区。"
+        },
+        {
+          "q": "博物馆需要另去别处吗？",
+          "a": "社区博物馆位于寺院范围内，当前开放情况请现场确认。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดเกตการาม",
+      "tagline": "วัดและประวัติชุมชนฝั่งตะวันออกแม่น้ำปิง",
+      "description": "วัดเกตการามอยู่ในชุมชนวัดเกตเก่าฝั่งตะวันออกของแม่น้ำปิง ภายในวัดมีพิพิธภัณฑ์เก็บสิ่งของที่เกี่ยวข้องกับวัดและชุมชน",
+      "summary": "วัดเกตการามอยู่ในชุมชนวัดเกตเก่าฝั่งตะวันออกของแม่น้ำปิง ภายในวัดมีพิพิธภัณฑ์เก็บสิ่งของที่เกี่ยวข้องกับวัดและชุมชน",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดและพิพิธภัณฑ์ชุมชนมีผู้ดูแลในพื้นที่ โปรดตรวจสอบเวลาเปิดและกฎถ่ายภาพ ณ สถานที่ การท่องเที่ยวแห่งประเทศไทยเป็นผู้ให้ข้อมูลผู้มาเยือน",
+      "history": [
+        "ก่อนมีรถไฟ วัดเกตเคยเป็นท่าเรือการค้าสำคัญ พิพิธภัณฑ์เก็บชิ้นส่วนสถาปัตยกรรมและของใช้ที่ช่วยเล่าเรื่องย่านการค้า"
+      ],
+      "features": [
+        "ชมบริบทวัด และหากพิพิธภัณฑ์เปิดให้สังเกตชิ้นส่วนอาคารและของใช้"
+      ],
+      "experience": [
+        "ชมบริบทวัด และหากพิพิธภัณฑ์เปิดให้สังเกตชิ้นส่วนอาคารและของใช้"
+      ],
+      "route": [
+        "หาวัดเกตการามบนถนนเจริญราษฎร์ฝั่งตะวันออก",
+        "ชมวัดด้วยความเคารพและสอบถามว่าพิพิธภัณฑ์เปิดหรือไม่",
+        "เดินต่อบนถนนสาธารณะริมแม่น้ำโดยไม่เข้าพื้นที่ส่วนบุคคล"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดเกตการามอยู่ที่ไหน?",
+          "a": "อยู่ในชุมชนวัดเกตฝั่งตะวันออกของแม่น้ำปิง"
+        },
+        {
+          "q": "พิพิธภัณฑ์อยู่แยกจากวัดหรือไม่?",
+          "a": "พิพิธภัณฑ์ชุมชนอยู่ในบริเวณวัด โปรดสอบถามการเข้าชมปัจจุบัน"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "wat-phra-that-doi-suthep": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดพระธาตุดอยสุเทพราชวรวิหาร เชียงใหม่",
+  "address": "Doi Suthep, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-phra-that-doi-suthep",
+  "locales": {
+    "en": {
+      "name": "Wat Phra That Doi Suthep",
+      "tagline": "Mountain temple overlooking Chiang Mai",
+      "description": "Wat Phra That Doi Suthep is a Buddhist temple on Doi Suthep above Chiang Mai, known for its golden chedi and naga-lined staircase.",
+      "summary": "Wat Phra That Doi Suthep is a Buddhist temple on Doi Suthep above Chiang Mai, known for its golden chedi and naga-lined staircase.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple controls religious spaces, access and visitor arrangements. The Tourism Authority of Thailand publishes visitor guidance; confirm charges and lift availability with the temple.",
+      "history": [
+        "The temple is an important pilgrimage destination associated with a Buddhist relic. Its mountain setting places the historic city below the temple precinct."
+      ],
+      "features": [
+        "Observe the chedi and the naga stairway; check access to the lift if steps are difficult."
+      ],
+      "experience": [
+        "Observe the chedi and the naga stairway; check access to the lift if steps are difficult."
+      ],
+      "route": [
+        "Arrange transport from your Mae Kha Canal entrance to the Doi Suthep temple approach.",
+        "Choose the stairway or ask about the lift, then follow temple signs.",
+        "Visit the permitted temple precinct and plan a safe return down the mountain."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "How do visitors reach the temple precinct?",
+          "a": "The Tourism Authority describes a naga staircase and an electric lift; verify current availability."
+        },
+        {
+          "q": "Is this the forest Wat Umong?",
+          "a": "No. Doi Suthep is the mountain temple; Wat Umong Suan Phutthatham is a separate forest temple in Suthep."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "素贴山双龙寺",
+      "tagline": "俯瞰清迈的山上寺院",
+      "description": "双龙寺位于清迈上方的素贴山，以金色佛塔和那伽护栏台阶著称。",
+      "summary": "双龙寺位于清迈上方的素贴山，以金色佛塔和那伽护栏台阶著称。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺方负责宗教空间和参观安排。泰国旅游局公布游览资料，收费和升降设施可用情况请向寺方确认。",
+      "history": [
+        "这里是与佛教舍利有关的重要朝圣地，山上寺院可俯瞰下方清迈城区。"
+      ],
+      "features": [
+        "观察佛塔与那伽台阶；如上下台阶困难，请确认升降设施是否运行。"
+      ],
+      "experience": [
+        "观察佛塔与那伽台阶；如上下台阶困难，请确认升降设施是否运行。"
+      ],
+      "route": [
+        "从所在湄卡运河入口安排车辆前往双龙寺山上入口。",
+        "选择台阶或询问升降设施，再遵守寺方指示。",
+        "参观开放区域，提前安排安全下山返程。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "怎样到达寺院上层？",
+          "a": "泰国旅游局介绍了那伽台阶及电动升降设施，实际运行请确认。"
+        },
+        {
+          "q": "这就是森林乌蒙寺吗？",
+          "a": "不是。双龙寺在山上，乌蒙寺森林禅修园是素贴区另一座寺院。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดพระธาตุดอยสุเทพราชวรวิหาร",
+      "tagline": "วัดบนดอยเหนือเมืองเชียงใหม่",
+      "description": "วัดพระธาตุดอยสุเทพเป็นวัดบนดอยสุเทพเหนือเมืองเชียงใหม่ มีเจดีย์ทองและบันไดนาคเป็นจุดเด่น",
+      "summary": "วัดพระธาตุดอยสุเทพเป็นวัดบนดอยสุเทพเหนือเมืองเชียงใหม่ มีเจดีย์ทองและบันไดนาคเป็นจุดเด่น",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดดูแลพื้นที่ศาสนกิจและการเข้าชม การท่องเที่ยวแห่งประเทศไทยเผยแพร่ข้อมูลเดินทาง โปรดตรวจค่าบริการและการเปิดลิฟต์กับวัด",
+      "history": [
+        "วัดเป็นสถานที่แสวงบุญสำคัญที่เกี่ยวข้องกับพระบรมสารีริกธาตุ พื้นที่บนดอยมองลงมายังเมืองเชียงใหม่"
+      ],
+      "features": [
+        "ชมเจดีย์และบันไดนาค หากเดินขึ้นลำบากให้สอบถามการเปิดลิฟต์"
+      ],
+      "experience": [
+        "ชมเจดีย์และบันไดนาค หากเดินขึ้นลำบากให้สอบถามการเปิดลิฟต์"
+      ],
+      "route": [
+        "จัดรถจากทางเข้าคลองแม่ข่าที่ใช้อยู่ไปยังทางขึ้นวัดบนดอย",
+        "เลือกบันไดหรือสอบถามลิฟต์ แล้วปฏิบัติตามป้ายวัด",
+        "ชมพื้นที่ที่อนุญาตและวางแผนเดินทางลงดอยอย่างปลอดภัย"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "ขึ้นไปยังบริเวณวัดอย่างไร?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยระบุบันไดนาคและลิฟต์ไฟฟ้า โปรดตรวจการเปิดใช้ปัจจุบัน"
+        },
+        {
+          "q": "เป็นวัดอุโมงค์ในป่าหรือไม่?",
+          "a": "ไม่ใช่ วัดพระธาตุดอยสุเทพอยู่บนดอย ส่วนวัดอุโมงค์สวนพุทธธรรมเป็นอีกแห่งในสุเทพ"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
         }
       ]
     }
