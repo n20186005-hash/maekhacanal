@@ -1,5 +1,5 @@
 import { moreNearbyDetails } from './moreNearbyDetails';
-export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao'] as const;
+export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam'] as const;
 export type NearbySlug = typeof nearbySlugs[number];
 export type NearbyLang = 'th' | 'en' | 'zh';
 
@@ -245,5 +245,329 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
       },
     },
   },
+  "wat-chiang-man": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดเชียงมั่น ถนนราชภาคินัย เชียงใหม่",
+  "address": "Ratchaphakhinai Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Check current admission arrangements at the temple",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "ตรวจสอบค่าบริการกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "30–45 minutes",
+    "zh": "30–45 分钟",
+    "th": "30–45 นาที"
+  },
+  "source": "https://www.onep.go.th/oneponsite-ep3/",
+  "locales": {
+    "en": {
+      "name": "Wat Chiang Man",
+      "tagline": "Elephant-supported chedi in the Old City",
+      "description": "Wat Chiang Man is an Old City temple associated with the founding of Chiang Mai. Its chedi is distinguished by elephant sculptures around its base.",
+      "summary": "Wat Chiang Man is an Old City temple associated with the founding of Chiang Mai. Its chedi is distinguished by elephant sculptures around its base.",
+      "managementTitle": "About Wat Chiang Man and its care",
+      "management": "Wat Chiang Man is an active Buddhist temple. Ask the temple about access to buildings, photography and current arrangements; government heritage descriptions do not constitute temple operating rules.",
+      "history": [
+        "The Fine Arts Department describes a tradition linking the site to King Mangrai’s temporary residence while the city was being founded; the chedi has undergone later rebuilding."
+      ],
+      "features": [
+        "Observe the elephant figures around the chedi base",
+        "Compare the chedi and Lanna-style worship hall without entering restricted spaces"
+      ],
+      "experience": [
+        "Allow time to observe quietly and respect worshippers."
+      ],
+      "route": [
+        "Find the temple on Ratchaphakhinai Road and check signs at the entrance",
+        "View the elephant-supported chedi from permitted paths",
+        "Visit accessible worship halls quietly before continuing through the Old City"
+      ],
+      "photo": [
+        "Photograph only where permitted and avoid disturbing ceremonies."
+      ],
+      "visit": [
+        "Dress respectfully; ask the temple about current hours and fees."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check the route to Wat Chiang Man on Ratchaphakhinai Road; walk or arrange a car according to your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Why is Wat Chiang Man important?",
+          "a": "The temple is associated with the founding of Chiang Mai and King Mangrai."
+        },
+        {
+          "q": "What is distinctive about the chedi?",
+          "a": "Elephant sculptures project around its base."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access may vary with worship and maintenance; follow temple notices and ask staff."
+        }
+      ]
+    },
+    "zh": {
+      "name": "清曼寺",
+      "tagline": "古城中的象驮佛塔",
+      "description": "清曼寺位于清迈古城，与清迈建城历史相关；寺内佛塔基座周围有大象雕塑。",
+      "summary": "清曼寺位于清迈古城，与清迈建城历史相关；寺内佛塔基座周围有大象雕塑。",
+      "managementTitle": "关于清曼寺及其管理",
+      "management": "清曼寺是仍在使用的佛教寺院。建筑开放、拍摄及参观安排请询问寺方；政府文物资料并不代表寺院开放规定。",
+      "history": [
+        "泰国艺术厅介绍，当地传统将寺址与孟莱王建城时的临时住所相联系；佛塔后来历经重建。"
+      ],
+      "features": [
+        "在允许区域观察佛塔基座周围的大象造像",
+        "比较佛塔与兰纳式佛殿，不进入限制区域"
+      ],
+      "experience": [
+        "留出时间安静观察，并尊重礼佛者。"
+      ],
+      "route": [
+        "从拉差帕金奈路找到寺院入口并查看告示",
+        "沿允许通行的路径观察象驮佛塔",
+        "安静参观开放的佛殿，再继续游览古城"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，避免打扰仪式。"
+      ],
+      "visit": [
+        "穿着得体；开放时间与费用请向寺方确认。"
+      ],
+      "transport": [
+        "从所在的湄卡运河入口查询至拉差帕金奈路清曼寺的路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "清曼寺为何重要？",
+          "a": "寺院与清迈建城及孟莱王的历史相关。"
+        },
+        {
+          "q": "佛塔有什么特色？",
+          "a": "佛塔基座四周有大象雕塑。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围可能因礼佛或维护调整，请遵守告示并询问寺方。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดเชียงมั่น",
+      "tagline": "เจดีย์ช้างล้อมในเมืองเก่า",
+      "description": "วัดเชียงมั่นอยู่ในเมืองเก่าและเกี่ยวข้องกับการสร้างเมืองเชียงใหม่ จุดเด่นคือรูปช้างรอบฐานเจดีย์",
+      "summary": "วัดเชียงมั่นอยู่ในเมืองเก่าและเกี่ยวข้องกับการสร้างเมืองเชียงใหม่ จุดเด่นคือรูปช้างรอบฐานเจดีย์",
+      "managementTitle": "เกี่ยวกับวัดเชียงมั่นและการดูแล",
+      "management": "วัดเชียงมั่นเป็นศาสนสถานที่ยังใช้งาน โปรดสอบถามวัดเรื่องการเข้าชมอาคาร การถ่ายภาพ และระเบียบปัจจุบัน ข้อมูลโบราณสถานของรัฐไม่ใช่กฎการเข้าชมของวัด",
+      "history": [
+        "กรมศิลปากรกล่าวถึงตำนานที่เชื่อมพื้นที่กับที่ประทับชั่วคราวของพญามังรายระหว่างสร้างเมือง เจดีย์ได้รับการสร้างใหม่ในสมัยต่อมา"
+      ],
+      "features": [
+        "สังเกตรูปช้างรอบฐานเจดีย์จากทางเดินที่อนุญาต",
+        "ชมความแตกต่างระหว่างเจดีย์กับวิหารแบบล้านนาโดยไม่เข้าพื้นที่หวงห้าม"
+      ],
+      "experience": [
+        "เผื่อเวลาชมอย่างสงบและเคารพผู้มาประกอบศาสนกิจ"
+      ],
+      "route": [
+        "หาทางเข้าวัดบนถนนราชภาคินัยและอ่านป้าย",
+        "เดินตามทางที่อนุญาตเพื่อชมเจดีย์ช้างล้อม",
+        "เข้าชมวิหารที่เปิดอย่างสงบก่อนเที่ยวเมืองเก่าต่อ"
+      ],
+      "photo": [
+        "ถ่ายภาพเฉพาะบริเวณที่อนุญาตและไม่รบกวนพิธี"
+      ],
+      "visit": [
+        "แต่งกายสุภาพ สอบถามเวลาเปิดและค่าบริการกับวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดเชียงมั่นบนถนนราชภาคินัย แล้วเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดเชียงมั่นสำคัญอย่างไร?",
+          "a": "วัดเกี่ยวข้องกับการสร้างเมืองเชียงใหม่และพญามังราย"
+        },
+        {
+          "q": "เจดีย์มีจุดเด่นอะไร?",
+          "a": "มีรูปช้างประดับรอบฐานเจดีย์"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและการดูแล โปรดสอบถามวัดและปฏิบัติตามป้าย"
+        }
+      ]
+    }
+  }
+},
+  "wat-buppharam": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดบุพพาราม 143 ถนนท่าแพ เชียงใหม่",
+  "address": "143 Tha Phae Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai 50100, Thailand",
+  "fee": {
+    "en": "Check current admission arrangements at the temple",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "ตรวจสอบค่าบริการกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "30–45 minutes",
+    "zh": "30–45 分钟",
+    "th": "30–45 นาที"
+  },
+  "source": "https://worldheritagesite.onep.go.th/sitedetail/20",
+  "locales": {
+    "en": {
+      "name": "Wat Buppharam",
+      "tagline": "A historic temple on Tha Phae Road",
+      "description": "Wat Buppharam is a temple at 143 Tha Phae Road in Chiang Mai. Thailand’s heritage office identifies its small worship hall among the city’s historic elements.",
+      "summary": "Wat Buppharam is a temple at 143 Tha Phae Road in Chiang Mai. Thailand’s heritage office identifies its small worship hall among the city’s historic elements.",
+      "managementTitle": "About Wat Buppharam and its care",
+      "management": "Wat Buppharam is a Buddhist temple; the temple should be consulted about access, photography and current visitor arrangements. The heritage office identifies historic elements but is not the visitor operator.",
+      "history": [
+        "The government’s Chiang Mai heritage inventory identifies Wat Buppharam’s small wihan as a historic element. This temple on Tha Phae Road should not be confused with similarly named temples elsewhere."
+      ],
+      "features": [
+        "Look for the small wihan identified in the heritage inventory",
+        "Observe the temple setting along Tha Phae Road without obstructing worship"
+      ],
+      "experience": [
+        "Allow time to observe quietly and respect worshippers."
+      ],
+      "route": [
+        "Locate 143 Tha Phae Road and read the temple entrance notices",
+        "Observe accessible temple buildings from permitted areas",
+        "Continue along Tha Phae Road toward the gate or return to the canal by car"
+      ],
+      "photo": [
+        "Photograph only where permitted and avoid disturbing ceremonies."
+      ],
+      "visit": [
+        "Dress respectfully; ask the temple about current hours and fees."
+      ],
+      "transport": [
+        "From the canal entrance you use, navigate to Wat Buppharam at 143 Tha Phae Road. Check the route before walking or use a car."
+      ],
+      "faqs": [
+        {
+          "q": "Which Wat Buppharam is this?",
+          "a": "This is the temple at 143 Tha Phae Road in Chiang Mai, not a similarly named temple elsewhere."
+        },
+        {
+          "q": "What historic feature is recorded?",
+          "a": "Thailand’s heritage inventory identifies the small wihan."
+        },
+        {
+          "q": "Are all halls open?",
+          "a": "Access may vary; check with the temple and follow signs."
+        }
+      ]
+    },
+    "zh": {
+      "name": "布帕兰寺",
+      "tagline": "塔佩路上的历史寺院",
+      "description": "布帕兰寺位于清迈塔佩路 143 号；泰国环境政策机构将寺内小佛殿列入城市历史要素。",
+      "summary": "布帕兰寺位于清迈塔佩路 143 号；泰国环境政策机构将寺内小佛殿列入城市历史要素。",
+      "managementTitle": "关于布帕兰寺及其管理",
+      "management": "布帕兰寺是佛教寺院，开放范围、拍摄和参观安排请询问寺方。文物资料发布机构负责识别历史要素，并非寺院访客运营方。",
+      "history": [
+        "泰国政府清迈历史要素清单列出布帕兰寺的小佛殿。塔佩路这座寺院应与其他地区同名寺庙区分。"
+      ],
+      "features": [
+        "留意历史要素清单所列的小佛殿",
+        "观察寺院与塔佩路街区的关系，避免妨碍礼佛"
+      ],
+      "experience": [
+        "留出时间安静观察，并尊重礼佛者。"
+      ],
+      "route": [
+        "前往塔佩路 143 号并查看寺院入口告示",
+        "在允许区域观察开放的寺院建筑",
+        "沿塔佩路继续前往城门，或乘车返回运河"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，避免打扰仪式。"
+      ],
+      "visit": [
+        "穿着得体；开放时间与费用请向寺方确认。"
+      ],
+      "transport": [
+        "从所在的湄卡运河入口导航至塔佩路 143 号布帕兰寺；步行前核对路线，也可乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "这是哪一座布帕兰寺？",
+          "a": "这里是清迈塔佩路 143 号的寺院，不是其他地区的同名寺庙。"
+        },
+        {
+          "q": "有什么已登记的历史建筑？",
+          "a": "泰国政府历史要素清单列有寺内小佛殿。"
+        },
+        {
+          "q": "每座佛殿都开放吗？",
+          "a": "开放范围可能调整，请询问寺方并遵守告示。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดบุพพาราม",
+      "tagline": "วัดประวัติศาสตร์บนถนนท่าแพ",
+      "description": "วัดบุพพารามตั้งอยู่เลขที่ 143 ถนนท่าแพ เชียงใหม่ หน่วยงานมรดกของรัฐระบุวิหารเล็กของวัดเป็นองค์ประกอบประวัติศาสตร์ของเมือง",
+      "summary": "วัดบุพพารามตั้งอยู่เลขที่ 143 ถนนท่าแพ เชียงใหม่ หน่วยงานมรดกของรัฐระบุวิหารเล็กของวัดเป็นองค์ประกอบประวัติศาสตร์ของเมือง",
+      "managementTitle": "เกี่ยวกับวัดบุพพารามและการดูแล",
+      "management": "วัดบุพพารามเป็นศาสนสถาน โปรดสอบถามวัดเรื่องพื้นที่เปิด การถ่ายภาพ และระเบียบปัจจุบัน หน่วยงานมรดกเป็นผู้ระบุคุณค่าทางประวัติศาสตร์ ไม่ใช่ผู้ดำเนินการรับผู้มาเยือนของวัด",
+      "history": [
+        "บัญชีองค์ประกอบประวัติศาสตร์เชียงใหม่ของหน่วยงานรัฐระบุวิหารเล็กวัดบุพพาราม ควรแยกวัดบนถนนท่าแพแห่งนี้จากวัดชื่อคล้ายกันในพื้นที่อื่น"
+      ],
+      "features": [
+        "สังเกตวิหารเล็กที่ปรากฏในบัญชีมรดก",
+        "ชมบริบทวัดริมถนนท่าแพโดยไม่รบกวนการประกอบศาสนกิจ"
+      ],
+      "experience": [
+        "เผื่อเวลาชมอย่างสงบและเคารพผู้มาประกอบศาสนกิจ"
+      ],
+      "route": [
+        "ไปเลขที่ 143 ถนนท่าแพและอ่านป้ายทางเข้า",
+        "ชมอาคารที่เปิดจากพื้นที่ที่วัดอนุญาต",
+        "เดินต่อไปทางประตูท่าแพหรือเรียกรถกลับคลอง"
+      ],
+      "photo": [
+        "ถ่ายภาพเฉพาะบริเวณที่อนุญาตและไม่รบกวนพิธี"
+      ],
+      "visit": [
+        "แต่งกายสุภาพ สอบถามเวลาเปิดและค่าบริการกับวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ นำทางไปวัดบุพพาราม เลขที่ 143 ถนนท่าแพ ตรวจเส้นทางเดินหรือใช้รถตามความสะดวก"
+      ],
+      "faqs": [
+        {
+          "q": "วัดบุพพารามแห่งนี้อยู่ที่ไหน?",
+          "a": "อยู่เลขที่ 143 ถนนท่าแพ เชียงใหม่ ไม่ใช่วัดชื่อคล้ายกันในพื้นที่อื่น"
+        },
+        {
+          "q": "มีอาคารประวัติศาสตร์ใดที่ระบุไว้?",
+          "a": "บัญชีมรดกของรัฐระบุวิหารเล็กของวัด"
+        },
+        {
+          "q": "เข้าชมทุกวิหารได้ไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยน โปรดสอบถามวัดและดูป้าย"
+        }
+      ]
+    }
+  }
+},
   ...moreNearbyDetails,
 };

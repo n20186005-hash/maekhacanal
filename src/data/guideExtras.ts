@@ -71,4 +71,6 @@ export const nearbyPlaces = [
   { id: 'wat-chedi-luang', name: { th: 'วัดเจดีย์หลวง', en: 'Wat Chedi Luang', zh: '契迪龙寺' }, place: 'Wat Chedi Luang Chiang Mai Thailand', note: { th: 'เจดีย์อิฐเก่าแก่กลางเมืองเก่า', en: 'Monumental historic brick chedi in the Old City', zh: '清迈古城中心的历史砖砌佛塔' } },
   { id: 'wat-phra-singh', name: { th: 'วัดพระสิงห์', en: 'Wat Phra Singh', zh: '帕辛寺' }, place: 'Wat Phra Singh Chiang Mai Thailand', note: { th: 'ศิลปกรรมวัดล้านนาและเจดีย์ทอง', en: 'Lanna temple architecture and golden chedi', zh: '兰纳建筑艺术与金色佛塔' } },
   { id: 'wat-phan-tao', name: { th: 'วัดพันเตา', en: 'Wat Phan Tao', zh: '盼道寺' }, place: 'Wat Phan Tao Chiang Mai', note: { th: 'วิหารไม้สักใกล้วัดเจดีย์หลวง', en: 'Teakwood hall beside Wat Chedi Luang', zh: '契迪龙寺旁的柚木佛殿' } },
+  {"id": "wat-chiang-man", "name": {"th": "วัดเชียงมั่น", "en": "Wat Chiang Man", "zh": "清曼寺"}, "place": "วัดเชียงมั่น ถนนราชภาคินัย เชียงใหม่", "note": {"th": "เจดีย์ช้างล้อมในเมืองเก่า", "en": "Elephant-supported chedi in the Old City", "zh": "古城中的象驮佛塔"}},
+  {"id": "wat-buppharam", "name": {"th": "วัดบุพพาราม", "en": "Wat Buppharam", "zh": "布帕兰寺"}, "place": "วัดบุพพาราม 143 ถนนท่าแพ เชียงใหม่", "note": {"th": "วัดประวัติศาสตร์บนถนนท่าแพ", "en": "A historic temple on Tha Phae Road", "zh": "塔佩路上的历史寺院"}},
 ] as const;
