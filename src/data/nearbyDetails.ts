@@ -1,5 +1,5 @@
 import { moreNearbyDetails } from './moreNearbyDetails';
-export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam'] as const;
+export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum'] as const;
 export type NearbySlug = typeof nearbySlugs[number];
 export type NearbyLang = 'th' | 'en' | 'zh';
 
@@ -564,6 +564,834 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         {
           "q": "เข้าชมทุกวิหารได้ไหม?",
           "a": "พื้นที่เปิดอาจเปลี่ยน โปรดสอบถามวัดและดูป้าย"
+        }
+      ]
+    }
+  }
+},
+  "wat-suan-dok": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดสวนดอก ถนนสุเทพ เชียงใหม่",
+  "address": "139 Suthep Road, Suthep, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认入场安排",
+    "th": "สอบถามค่าบริการกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "30–45 minutes",
+    "zh": "30–45 分钟",
+    "th": "30–45 นาที"
+  },
+  "source": "https://www.onep.go.th/oneponsite-ep3/",
+  "locales": {
+    "en": {
+      "name": "Wat Suan Dok",
+      "tagline": "White royal memorial chedis on Suthep Road",
+      "description": "Wat Suan Dok is a living temple on Suthep Road. Its white memorial chedis hold the ashes of Chiang Mai rulers and members of the Lanna royal family.",
+      "summary": "Wat Suan Dok is a living temple on Suthep Road. Its white memorial chedis hold the ashes of Chiang Mai rulers and members of the Lanna royal family.",
+      "managementTitle": "About the temple and its care",
+      "management": "This is an active Buddhist temple. The temple sets visitor access and photography rules; the cited government agency supplies historical information and is not the visitor operator.",
+      "history": [
+        "The white memorials mark a royal cemetery, while the large hall remains a place for religious activity; treat both as more than photo backdrops.",
+        "The former flower-garden setting gives the temple its name. A separate large chedi is included in Thailand’s Chiang Mai heritage inventory."
+      ],
+      "features": [
+        "Compare the white royal memorials with the temple’s principal chedi.",
+        "Look across to the large worship hall and observe how the memorial and religious spaces sit together."
+      ],
+      "experience": [
+        "Plan a quiet circuit of the memorial area and leave access clear for worshippers."
+      ],
+      "route": [
+        "Start at the Suthep Road entrance and check the temple’s notices.",
+        "Walk through permitted paths beside the white royal memorial chedis; remember these are resting places.",
+        "Continue to the large worship hall if open, then leave by the signed exit."
+      ],
+      "photo": [
+        "Photograph only where permitted and do not interrupt ceremonies."
+      ],
+      "visit": [
+        "Dress respectfully and follow posted access rules."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check the route to this named temple; walking or a car may be suitable depending on your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "How is this different from Wat Buppharam on Tha Phae Road?",
+          "a": "Suan Dok is a different temple on Suthep Road, despite a similar alternative name."
+        },
+        {
+          "q": "What are the white chedis?",
+          "a": "They are memorials containing the ashes of Chiang Mai rulers and their family."
+        },
+        {
+          "q": "Can visitors enter every building?",
+          "a": "Access can change for worship or conservation; follow signs and ask the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "松德寺",
+      "tagline": "素贴路上的白色王族纪念塔",
+      "description": "松德寺是素贴路上仍在使用的寺院。寺内白色纪念塔安放清迈统治者和兰纳王族成员的骨灰。",
+      "summary": "松德寺是素贴路上仍在使用的寺院。寺内白色纪念塔安放清迈统治者和兰纳王族成员的骨灰。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "这里是仍在使用的佛教寺院，开放范围和拍摄规定由寺方决定；所引政府机构提供历史资料，并非访客运营方。",
+      "history": [
+        "白色纪念塔构成王族墓地，大型佛殿仍用于宗教活动；请将两处视为有实际意义的场所。",
+        "寺名与原有花园有关。泰国清迈历史要素清单另列有寺内佛塔。"
+      ],
+      "features": [
+        "比较白色王族纪念塔与寺院主佛塔。",
+        "观察大型佛殿与纪念区域之间的空间关系。"
+      ],
+      "experience": [
+        "安静绕行纪念区，并为礼佛者保留通道。"
+      ],
+      "route": [
+        "从素贴路入口进入，先查看寺方告示。",
+        "沿允许通行的路径观察白色王族纪念塔，尊重安息之所。",
+        "如大型佛殿开放，可继续参观，再从标示出口离开。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不要打扰仪式。"
+      ],
+      "visit": [
+        "穿着得体，遵守现场开放规定。"
+      ],
+      "transport": [
+        "从所在的湄卡运河入口查询至本寺的路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "它与塔佩路的布帕兰寺是同一座吗？",
+          "a": "不是。松德寺在素贴路，虽然别名相似，但两寺是不同地点。"
+        },
+        {
+          "q": "白色佛塔是什么？",
+          "a": "这些纪念塔安放清迈统治者及其家族成员的骨灰。"
+        },
+        {
+          "q": "所有建筑都开放吗？",
+          "a": "开放范围可能因礼佛或维护调整，请遵守告示并询问寺方。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดสวนดอก",
+      "tagline": "กู่เจ้านายสีขาวบนถนนสุเทพ",
+      "description": "วัดสวนดอกเป็นวัดที่ยังใช้งานบนถนนสุเทพ กู่สีขาวภายในบรรจุพระอัฐิเจ้าผู้ครองนครเชียงใหม่และเชื้อสายล้านนา",
+      "summary": "วัดสวนดอกเป็นวัดที่ยังใช้งานบนถนนสุเทพ กู่สีขาวภายในบรรจุพระอัฐิเจ้าผู้ครองนครเชียงใหม่และเชื้อสายล้านนา",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดนี้เป็นศาสนสถานที่ยังใช้งาน วัดกำหนดพื้นที่เข้าชมและการถ่ายภาพ หน่วยงานรัฐที่อ้างอิงให้ข้อมูลประวัติศาสตร์ ไม่ใช่ผู้ดำเนินการรับผู้มาเยือน",
+      "history": [
+        "กู่สีขาวเป็นพื้นที่อนุสรณ์เจ้านาย ส่วนวิหารใหญ่ยังใช้ประกอบศาสนกิจ ทั้งสองบริเวณมีความหมายมากกว่าฉากถ่ายภาพ",
+        "ชื่อวัดเชื่อมโยงกับสวนดอกไม้เดิม บัญชีมรดกเชียงใหม่ของรัฐยังระบุเจดีย์วัดสวนดอก"
+      ],
+      "features": [
+        "เปรียบเทียบกู่เจ้านายสีขาวกับเจดีย์ประธาน",
+        "สังเกตความสัมพันธ์ของพื้นที่อนุสรณ์กับวิหารใหญ่"
+      ],
+      "experience": [
+        "เดินชมกู่อย่างสงบและเว้นทางให้ผู้มาประกอบศาสนกิจ"
+      ],
+      "route": [
+        "เริ่มที่ทางเข้าถนนสุเทพและตรวจป้ายวัด",
+        "เดินตามทางที่อนุญาตชมกู่เจ้านายสีขาว โดยเคารพสถานที่บรรจุพระอัฐิ",
+        "หากวิหารใหญ่เปิดให้เข้าชมอย่างสงบ แล้วออกตามทางที่กำหนด"
+      ],
+      "photo": [
+        "ถ่ายภาพเฉพาะบริเวณที่อนุญาตและไม่รบกวนพิธี"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้าย"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้ แล้วเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "เป็นวัดเดียวกับวัดบุพพารามบนถนนท่าแพไหม?",
+          "a": "ไม่ใช่ วัดสวนดอกอยู่บนถนนสุเทพ แม้มีชื่อเรียกอื่นคล้ายกันแต่เป็นคนละแห่ง"
+        },
+        {
+          "q": "กู่สีขาวคืออะไร?",
+          "a": "เป็นอนุสรณ์บรรจุพระอัฐิเจ้าผู้ครองนครเชียงใหม่และพระญาติ"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีหรือการดูแล โปรดดูป้ายและสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "wat-chet-yot": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดเจ็ดยอด ถนนซุปเปอร์ไฮเวย์ เชียงใหม่",
+  "address": "90 Chiang Mai–Lampang Super Highway, Chang Phueak, Mueang Chiang Mai, Chiang Mai 50300, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认入场安排",
+    "th": "สอบถามค่าบริการกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "30–45 minutes",
+    "zh": "30–45 分钟",
+    "th": "30–45 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-chedi-jed-yord",
+  "locales": {
+    "en": {
+      "name": "Wat Chet Yot",
+      "tagline": "Seven-spired sanctuary and stucco reliefs",
+      "description": "Wat Chet Yot, also called Wat Photaram Mahawihan, stands beside the Chiang Mai–Lampang Super Highway. Its distinctive sanctuary has seven spires.",
+      "summary": "Wat Chet Yot, also called Wat Photaram Mahawihan, stands beside the Chiang Mai–Lampang Super Highway. Its distinctive sanctuary has seven spires.",
+      "managementTitle": "About the temple and its care",
+      "management": "This is an active Buddhist temple. The temple sets visitor access and photography rules; the cited government agency supplies historical information and is not the visitor operator.",
+      "history": [
+        "The Fine Arts Department describes the seven-spired building and the preservation of its stucco as significant work in Lanna architectural history.",
+        "The sanctuary’s design relates to the Mahabodhi temple at Bodh Gaya; the grounds are associated with a Buddhist scripture council held under King Tilokaraj."
+      ],
+      "features": [
+        "Compare the taller central spire with the six surrounding spires.",
+        "Observe the different poses of the celestial stucco figures from a respectful distance."
+      ],
+      "experience": [
+        "Walk around the sanctuary where permitted, watching for fragile reliefs and conservation notices."
+      ],
+      "route": [
+        "Find the entrance at the Chiang Mai–Lampang Super Highway and check the signs.",
+        "View the seven-spired sanctuary from an allowed path without touching its stucco.",
+        "Look for the celestial relief figures and leave time to observe their varied poses."
+      ],
+      "photo": [
+        "Photograph only where permitted and do not interrupt ceremonies."
+      ],
+      "visit": [
+        "Dress respectfully and follow posted access rules."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check the route to this named temple; walking or a car may be suitable depending on your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Why is it called Chet Yot?",
+          "a": "The name refers to the seven spires on its sanctuary."
+        },
+        {
+          "q": "What should visitors look for?",
+          "a": "The Fine Arts Department highlights the celestial stucco reliefs around the sanctuary."
+        },
+        {
+          "q": "Can visitors enter every building?",
+          "a": "Access can change for worship or conservation; follow signs and ask the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "七塔寺",
+      "tagline": "七座塔尖与灰泥浮雕",
+      "description": "七塔寺又称 Wat Photaram Mahawihan，位于清迈—南邦超级公路旁；特色佛殿上有七座塔尖。",
+      "summary": "七塔寺又称 Wat Photaram Mahawihan，位于清迈—南邦超级公路旁；特色佛殿上有七座塔尖。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "这里是仍在使用的佛教寺院，开放范围和拍摄规定由寺方决定；所引政府机构提供历史资料，并非访客运营方。",
+      "history": [
+        "泰国艺术厅将七塔佛殿及其灰泥浮雕保护视为兰纳建筑史的重要工作。",
+        "建筑设计与印度菩提伽耶的大菩提寺有关，寺院也与提洛迦王时期的经典结集相关。"
+      ],
+      "features": [
+        "比较中央较高塔尖与周围六座塔尖。",
+        "保持距离，观察天神浮雕姿态的变化。"
+      ],
+      "experience": [
+        "在允许区域绕行佛殿，留意易损浮雕及保护告示。"
+      ],
+      "route": [
+        "从清迈—南邦超级公路找到入口并查看告示。",
+        "沿允许路线观察七塔佛殿，不触摸灰泥文物。",
+        "留意天神浮雕不同的姿态，再从寺方指定路线离开。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不要打扰仪式。"
+      ],
+      "visit": [
+        "穿着得体，遵守现场开放规定。"
+      ],
+      "transport": [
+        "从所在的湄卡运河入口查询至本寺的路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "为什么叫七塔寺？",
+          "a": "名称指特色佛殿上的七座塔尖。"
+        },
+        {
+          "q": "有什么建筑细节值得看？",
+          "a": "泰国艺术厅特别介绍佛殿四周的天神灰泥浮雕。"
+        },
+        {
+          "q": "所有建筑都开放吗？",
+          "a": "开放范围可能因礼佛或维护调整，请遵守告示并询问寺方。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดเจ็ดยอด",
+      "tagline": "วิหารเจ็ดยอดและเทวดาปูนปั้น",
+      "description": "วัดเจ็ดยอดหรือวัดโพธารามมหาวิหารอยู่ริมถนนซุปเปอร์ไฮเวย์เชียงใหม่–ลำปาง วิหารมีลักษณะเด่นเป็นยอดเจ็ดองค์",
+      "summary": "วัดเจ็ดยอดหรือวัดโพธารามมหาวิหารอยู่ริมถนนซุปเปอร์ไฮเวย์เชียงใหม่–ลำปาง วิหารมีลักษณะเด่นเป็นยอดเจ็ดองค์",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดนี้เป็นศาสนสถานที่ยังใช้งาน วัดกำหนดพื้นที่เข้าชมและการถ่ายภาพ หน่วยงานรัฐที่อ้างอิงให้ข้อมูลประวัติศาสตร์ ไม่ใช่ผู้ดำเนินการรับผู้มาเยือน",
+      "history": [
+        "กรมศิลปากรให้ความสำคัญกับวิหารเจ็ดยอดและการอนุรักษ์ลายปูนปั้นในประวัติศาสตร์สถาปัตยกรรมล้านนา",
+        "รูปแบบวิหารสัมพันธ์กับมหาวิหารโพธิพุทธคยา และวัดเกี่ยวข้องกับการสังคายนาพระไตรปิฎกสมัยพระเจ้าติโลกราช"
+      ],
+      "features": [
+        "เปรียบเทียบยอดกลางที่สูงกับยอดบริวารทั้งหก",
+        "สังเกตท่าทางต่างกันของเทวดาปูนปั้นจากระยะที่เหมาะสม"
+      ],
+      "experience": [
+        "เดินรอบวิหารเฉพาะส่วนที่อนุญาต สังเกตป้ายอนุรักษ์และไม่สัมผัสลายปูนปั้น"
+      ],
+      "route": [
+        "หาทางเข้าจากถนนซุปเปอร์ไฮเวย์เชียงใหม่–ลำปางและดูป้าย",
+        "ชมวิหารเจ็ดยอดจากทางที่อนุญาตโดยไม่สัมผัสปูนปั้น",
+        "สังเกตท่าทางที่แตกต่างของรูปเทวดา แล้วออกตามทางที่วัดกำหนด"
+      ],
+      "photo": [
+        "ถ่ายภาพเฉพาะบริเวณที่อนุญาตและไม่รบกวนพิธี"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้าย"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้ แล้วเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "เหตุใดจึงเรียกว่าวัดเจ็ดยอด?",
+          "a": "ชื่อนี้หมายถึงยอดเจ็ดองค์ของวิหาร"
+        },
+        {
+          "q": "ควรสังเกตอะไรเป็นพิเศษ?",
+          "a": "กรมศิลปากรให้ความสำคัญกับลายเทวดาปูนปั้นรอบวิหาร"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีหรือการดูแล โปรดดูป้ายและสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "wat-saen-fang": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดแสนฝาง ถนนท่าแพ เชียงใหม่",
+  "address": "Tha Phae Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认入场安排",
+    "th": "สอบถามค่าบริการกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "30–45 minutes",
+    "zh": "30–45 分钟",
+    "th": "30–45 นาที"
+  },
+  "source": "https://worldheritagesite.onep.go.th/sitedetail/20",
+  "locales": {
+    "en": {
+      "name": "Wat Saen Fang",
+      "tagline": "Historic temple in the Tha Phae trading quarter",
+      "description": "Wat Saen Fang is a temple on Tha Phae Road in Chang Moi. The National Archives identifies it among temples associated with the area’s historic trading communities.",
+      "summary": "Wat Saen Fang is a temple on Tha Phae Road in Chang Moi. The National Archives identifies it among temples associated with the area’s historic trading communities.",
+      "managementTitle": "About the temple and its care",
+      "management": "This is an active Buddhist temple. The temple sets visitor access and photography rules; the cited government agency supplies historical information and is not the visitor operator.",
+      "history": [
+        "Thailand’s heritage inventory records both the main and subsidiary worship halls at Wat Saen Fang.",
+        "The National Archives describes Tha Phae Road as a trading corridor linking the Ping River and the old city, with temples reflecting the neighbourhood’s diverse communities."
+      ],
+      "features": [
+        "Look for the relationship between the main and smaller worship halls.",
+        "Consider the temple as one stop in the historic Tha Phae trading corridor."
+      ],
+      "experience": [
+        "Visit the open precinct quietly and compare its setting with neighbouring Wat Buppharam across the district."
+      ],
+      "route": [
+        "Find the temple entrance on Tha Phae Road and check signs.",
+        "Observe the accessible worship halls without interrupting ceremonies.",
+        "Continue along Tha Phae Road to explore its historic trading-quarter context."
+      ],
+      "photo": [
+        "Photograph only where permitted and do not interrupt ceremonies."
+      ],
+      "visit": [
+        "Dress respectfully and follow posted access rules."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check the route to this named temple; walking or a car may be suitable depending on your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "How does it relate to Tha Phae Road?",
+          "a": "The National Archives includes it among temples in the historic commercial quarter."
+        },
+        {
+          "q": "Which buildings are listed as heritage elements?",
+          "a": "The government inventory identifies the main and subsidiary worship halls."
+        },
+        {
+          "q": "Can visitors enter every building?",
+          "a": "Access can change for worship or conservation; follow signs and ask the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "善方寺",
+      "tagline": "塔佩路商贸街区的历史寺院",
+      "description": "善方寺位于清迈长莫区塔佩路；国家档案馆将它列为这一历史商贸街区周边的寺院之一。",
+      "summary": "善方寺位于清迈长莫区塔佩路；国家档案馆将它列为这一历史商贸街区周边的寺院之一。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "这里是仍在使用的佛教寺院，开放范围和拍摄规定由寺方决定；所引政府机构提供历史资料，并非访客运营方。",
+      "history": [
+        "泰国历史要素清单同时列出善方寺的主佛殿与小佛殿。",
+        "国家档案馆将塔佩路描述为连接平河与古城的商贸通道，沿街寺院反映了社区的多元背景。"
+      ],
+      "features": [
+        "留意主佛殿与小佛殿的布局关系。",
+        "把寺院与塔佩路历史商贸走廊联系起来观察。"
+      ],
+      "experience": [
+        "安静参观开放区域，并与附近布帕兰寺的街区环境比较。"
+      ],
+      "route": [
+        "从塔佩路找到寺院入口并查看告示。",
+        "观察开放的佛殿，避免打扰仪式。",
+        "沿塔佩路继续游览，体会历史商贸街区的背景。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不要打扰仪式。"
+      ],
+      "visit": [
+        "穿着得体，遵守现场开放规定。"
+      ],
+      "transport": [
+        "从所在的湄卡运河入口查询至本寺的路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "寺院与塔佩路有什么关系？",
+          "a": "国家档案馆将其列为历史商贸街区周边寺院之一。"
+        },
+        {
+          "q": "哪些建筑列入历史要素？",
+          "a": "政府清单列有主佛殿和小佛殿。"
+        },
+        {
+          "q": "所有建筑都开放吗？",
+          "a": "开放范围可能因礼佛或维护调整，请遵守告示并询问寺方。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดแสนฝาง",
+      "tagline": "วัดเก่าในย่านการค้าถนนท่าแพ",
+      "description": "วัดแสนฝางอยู่บนถนนท่าแพ ตำบลช้างม่อย หอจดหมายเหตุแห่งชาติระบุวัดนี้เป็นหนึ่งในวัดย่านชุมชนการค้าเก่า",
+      "summary": "วัดแสนฝางอยู่บนถนนท่าแพ ตำบลช้างม่อย หอจดหมายเหตุแห่งชาติระบุวัดนี้เป็นหนึ่งในวัดย่านชุมชนการค้าเก่า",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดนี้เป็นศาสนสถานที่ยังใช้งาน วัดกำหนดพื้นที่เข้าชมและการถ่ายภาพ หน่วยงานรัฐที่อ้างอิงให้ข้อมูลประวัติศาสตร์ ไม่ใช่ผู้ดำเนินการรับผู้มาเยือน",
+      "history": [
+        "บัญชีมรดกของรัฐระบุทั้งวิหารใหญ่และวิหารเล็กของวัดแสนฝาง",
+        "หอจดหมายเหตุแห่งชาติอธิบายถนนท่าแพว่าเป็นเส้นทางการค้าเชื่อมแม่น้ำปิงกับเมืองเก่า โดยวัดสะท้อนชุมชนที่หลากหลาย"
+      ],
+      "features": [
+        "สังเกตความสัมพันธ์ระหว่างวิหารใหญ่กับวิหารเล็ก",
+        "มองวัดเป็นจุดหนึ่งบนเส้นทางการค้าประวัติศาสตร์ถนนท่าแพ"
+      ],
+      "experience": [
+        "ชมพื้นที่เปิดอย่างสงบและเปรียบเทียบบริบทย่านกับวัดบุพพารามใกล้เคียง"
+      ],
+      "route": [
+        "หาทางเข้าวัดบนถนนท่าแพและดูป้าย",
+        "ชมวิหารที่เปิดโดยไม่รบกวนพิธี",
+        "เดินต่อไปตามถนนท่าแพเพื่อชมบริบทของย่านการค้าเก่า"
+      ],
+      "photo": [
+        "ถ่ายภาพเฉพาะบริเวณที่อนุญาตและไม่รบกวนพิธี"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้าย"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้ แล้วเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดเกี่ยวข้องกับถนนท่าแพอย่างไร?",
+          "a": "หอจดหมายเหตุแห่งชาติระบุวัดนี้อยู่ในย่านชุมชนการค้าเก่า"
+        },
+        {
+          "q": "อาคารใดอยู่ในบัญชีมรดก?",
+          "a": "บัญชีของรัฐระบุวิหารใหญ่และวิหารเล็ก"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีหรือการดูแล โปรดดูป้ายและสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "lanna-traditional-house-museum": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "พิพิธภัณฑ์เรือนโบราณล้านนา มหาวิทยาลัยเชียงใหม่ 18.79216 98.96177",
+  "address": "Center for the Promotion of Art, Culture and Creative Lanna, Chiang Mai University, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Adult 100 baht; eligible groups exempt — confirm with museum",
+    "zh": "成人 100 泰铢；指定群体豁免，请向馆方确认",
+    "th": "บุคคลทั่วไป 100 บาท กลุ่มที่กำหนดยกเว้น โปรดตรวจสอบกับพิพิธภัณฑ์"
+  },
+  "hours": {
+    "en": "Tue–Sun 08:30–16:30; closed Mondays and public holidays — confirm",
+    "zh": "周二至周日 08:30–16:30；周一及公众假期关闭，请确认",
+    "th": "อังคาร–อาทิตย์ 08:30–16:30 ปิดจันทร์และวันหยุดราชการ โปรดตรวจสอบ"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://accl.cmu.ac.th/EN/Museum/contactmap",
+  "locales": {
+    "en": {
+      "name": "Lanna Traditional House Museum",
+      "tagline": "Historic northern Thai houses at Chiang Mai University",
+      "summary": "The Lanna Traditional House Museum brings traditional northern Thai houses together at Chiang Mai University’s cultural centre. Visitors can learn how domestic architecture relates to Lanna ways of life.",
+      "management": "Chiang Mai University’s Center for the Promotion of Art, Culture and Creative Lanna operates the museum. The museum publishes its own access and fee information; check with its staff before travel.",
+      "history": [
+        "The university collects and conserves traditional Lanna houses as a learning resource about architecture, community life and cultural heritage.",
+        "The museum presents more than one house, allowing visitors to compare materials, raised floors and domestic layouts rather than treating the collection as one residence."
+      ],
+      "features": [
+        "Look for differences in construction and elevated living spaces among the houses.",
+        "Use the museum’s interpretation to connect architectural details with daily life."
+      ],
+      "experience": [
+        "Allow time to move between the houses and read their individual information.",
+        "Check the staff’s instructions before entering any raised house or taking photographs."
+      ],
+      "route": [
+        "Reach the Chiang Mai University cultural centre and confirm admission at the museum entrance.",
+        "Follow the open route among the houses, comparing their forms and construction.",
+        "Read the interpretation at individual houses and return to the entrance before closing."
+      ],
+      "photo": [
+        "Photograph from permitted paths and ask staff before shooting indoors."
+      ],
+      "visit": [
+        "The museum lists Tuesday–Sunday 08:30–16:30, closing Mondays and public holidays; confirm before departure.",
+        "The published general adult fee is 100 baht; exemptions apply to listed groups with evidence."
+      ],
+      "transport": [
+        "Navigate from your actual Mae Kha Canal entrance to the CMU Lanna Traditional House Museum; the university’s map identifies the museum grounds separately from its general postal address."
+      ],
+      "faqs": [
+        {
+          "q": "Who operates the museum?",
+          "a": "It is operated by Chiang Mai University’s cultural centre."
+        },
+        {
+          "q": "When is it open?",
+          "a": "The museum lists Tuesday–Sunday 08:30–16:30, closed Mondays and public holidays; verify current hours."
+        },
+        {
+          "q": "How much is admission?",
+          "a": "The museum lists 100 baht for adults, with exemptions for specified groups; check current eligibility with staff."
+        }
+      ],
+      "description": "The Lanna Traditional House Museum brings traditional northern Thai houses together at Chiang Mai University’s cultural centre. Visitors can learn how domestic architecture relates to Lanna ways of life.",
+      "managementTitle": "About the museum and its management"
+    },
+    "zh": {
+      "name": "兰纳传统民居博物馆",
+      "tagline": "清迈大学保存的泰北传统住宅",
+      "summary": "兰纳传统民居博物馆位于清迈大学文化中心，集中保存泰北传统住宅，让参观者了解民居建筑与兰纳生活方式的关系。",
+      "management": "博物馆由清迈大学艺术文化与兰纳创意促进中心运营。开放及费用由馆方公布，出发前请向馆方确认。",
+      "history": [
+        "大学收集和保护传统兰纳住宅，将建筑、社区生活与文化遗产作为学习资源。",
+        "馆内展示不止一栋住宅，适合比较建筑材料、架高地板与居住空间布局。"
+      ],
+      "features": [
+        "比较不同民居的结构与架高生活空间。",
+        "结合馆方解说，理解建筑细节与日常生活的联系。"
+      ],
+      "experience": [
+        "预留时间在不同民居之间移动并阅读各栋介绍。",
+        "进入架高住宅或在室内拍照前，先确认工作人员的规定。"
+      ],
+      "route": [
+        "到达清迈大学文化中心，在博物馆入口确认入场安排。",
+        "按开放路线参观民居，比较房屋形式与结构。",
+        "阅读各栋解说，并在闭馆前返回入口。"
+      ],
+      "photo": [
+        "在允许的步道拍摄，室内拍照请先询问工作人员。"
+      ],
+      "visit": [
+        "馆方列示周二至周日 08:30–16:30，周一及公众假期关闭；出发前请核实。",
+        "馆方列示普通成人票 100 泰铢；指定群体出示证明可获豁免。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口导航至清迈大学兰纳传统民居博物馆；大学地图可区分馆区与大学一般邮寄地址。"
+      ],
+      "faqs": [
+        {
+          "q": "谁运营这座博物馆？",
+          "a": "由清迈大学文化中心运营。"
+        },
+        {
+          "q": "什么时候开放？",
+          "a": "馆方列示周二至周日 08:30–16:30，周一及公众假期关闭；请核实最新安排。"
+        },
+        {
+          "q": "门票是多少？",
+          "a": "馆方列示成人 100 泰铢；指定群体可获豁免，资格请向馆方确认。"
+        }
+      ],
+      "description": "兰纳传统民居博物馆位于清迈大学文化中心，集中保存泰北传统住宅，让参观者了解民居建筑与兰纳生活方式的关系。",
+      "managementTitle": "关于博物馆及其管理"
+    },
+    "th": {
+      "name": "พิพิธภัณฑ์เรือนโบราณล้านนา มช.",
+      "tagline": "เรือนพื้นถิ่นภาคเหนือที่มหาวิทยาลัยเชียงใหม่",
+      "summary": "พิพิธภัณฑ์เรือนโบราณล้านนารวบรวมเรือนพื้นถิ่นภาคเหนือไว้ที่ศูนย์วัฒนธรรมของมหาวิทยาลัยเชียงใหม่ เพื่อเรียนรู้ความสัมพันธ์ระหว่างสถาปัตยกรรมกับวิถีชีวิตล้านนา",
+      "management": "สำนักส่งเสริมศิลปวัฒนธรรมและล้านนาสร้างสรรค์ มหาวิทยาลัยเชียงใหม่ ดำเนินงานพิพิธภัณฑ์ โดยเผยแพร่ข้อมูลเวลาและค่าบริการเอง โปรดตรวจสอบกับเจ้าหน้าที่ก่อนเดินทาง",
+      "history": [
+        "มหาวิทยาลัยรวบรวมและอนุรักษ์เรือนล้านนาเป็นแหล่งเรียนรู้สถาปัตยกรรม ชีวิตชุมชน และมรดกวัฒนธรรม",
+        "พิพิธภัณฑ์จัดแสดงเรือนมากกว่าหนึ่งหลัง จึงเปรียบเทียบวัสดุ พื้นยกสูง และผังการอยู่อาศัยได้"
+      ],
+      "features": [
+        "เปรียบเทียบโครงสร้างและพื้นที่อยู่อาศัยยกสูงของเรือนแต่ละหลัง",
+        "อ่านคำอธิบายเพื่อเชื่อมรายละเอียดอาคารกับชีวิตประจำวัน"
+      ],
+      "experience": [
+        "เผื่อเวลาเดินระหว่างเรือนและอ่านข้อมูลแต่ละหลัง",
+        "สอบถามเจ้าหน้าที่ก่อนขึ้นเรือนหรือถ่ายภาพภายใน"
+      ],
+      "route": [
+        "ไปศูนย์วัฒนธรรมมหาวิทยาลัยเชียงใหม่และตรวจการเข้าชมที่ทางเข้าพิพิธภัณฑ์",
+        "เดินตามเส้นทางที่เปิดระหว่างเรือน เปรียบเทียบรูปทรงและโครงสร้าง",
+        "อ่านคำอธิบายของแต่ละหลังและกลับทางเข้าก่อนเวลาปิด"
+      ],
+      "photo": [
+        "ถ่ายจากทางเดินที่อนุญาต และสอบถามเจ้าหน้าที่ก่อนถ่ายภายใน"
+      ],
+      "visit": [
+        "พิพิธภัณฑ์ระบุเปิดอังคาร–อาทิตย์ 08:30–16:30 ปิดวันจันทร์และวันหยุดราชการ โปรดตรวจสอบก่อนเดินทาง",
+        "ค่าเข้าชมบุคคลทั่วไปที่ระบุคือ 100 บาท กลุ่มที่กำหนดได้รับยกเว้นเมื่อแสดงหลักฐาน"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ นำทางไปพิพิธภัณฑ์เรือนโบราณล้านนา มช. โดยใช้แผนที่พิพิธภัณฑ์แยกจากที่อยู่ไปรษณีย์ทั่วไปของมหาวิทยาลัย"
+      ],
+      "faqs": [
+        {
+          "q": "ใครดำเนินงานพิพิธภัณฑ์?",
+          "a": "สำนักส่งเสริมศิลปวัฒนธรรมฯ มหาวิทยาลัยเชียงใหม่ดำเนินงาน"
+        },
+        {
+          "q": "เปิดเวลาใด?",
+          "a": "พิพิธภัณฑ์ระบุอังคาร–อาทิตย์ 08:30–16:30 ปิดจันทร์และวันหยุดราชการ โปรดตรวจสอบล่าสุด"
+        },
+        {
+          "q": "ค่าเข้าชมเท่าไร?",
+          "a": "ระบุบุคคลทั่วไป 100 บาท กลุ่มที่กำหนดได้รับยกเว้น โปรดสอบถามสิทธิจากเจ้าหน้าที่"
+        }
+      ],
+      "description": "พิพิธภัณฑ์เรือนโบราณล้านนารวบรวมเรือนพื้นถิ่นภาคเหนือไว้ที่ศูนย์วัฒนธรรมของมหาวิทยาลัยเชียงใหม่ เพื่อเรียนรู้ความสัมพันธ์ระหว่างสถาปัตยกรรมกับวิถีชีวิตล้านนา",
+      "managementTitle": "เกี่ยวกับพิพิธภัณฑ์และการดูแล"
+    }
+  }
+},
+  "chiang-mai-national-museum": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่ ถนนซุปเปอร์ไฮเวย์ เชียงใหม่ ลำปาง",
+  "address": "Chiang Mai–Lampang Super Highway, Chang Phueak, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission with the museum",
+    "zh": "请向博物馆确认当前票价",
+    "th": "ตรวจสอบค่าเข้าชมกับพิพิธภัณฑ์"
+  },
+  "hours": {
+    "en": "Exhibition building Wed–Sun 09:00–16:00; confirm closures",
+    "zh": "展馆周三至周日 09:00–16:00；请确认休馆安排",
+    "th": "อาคารจัดแสดงพุธ–อาทิตย์ 09:00–16:00 โปรดตรวจวันปิด"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://www.finearts.go.th/chiangmaimuseum/contact",
+  "locales": {
+    "en": {
+      "name": "Chiang Mai National Museum",
+      "tagline": "Northern Thai heritage on the Super Highway",
+      "description": "Chiang Mai National Museum presents archaeological and art objects from upper northern Thailand. Its two-storey building has northern-style kalae gable finials.",
+      "summary": "Chiang Mai National Museum presents archaeological and art objects from upper northern Thailand. Its two-storey building has northern-style kalae gable finials.",
+      "managementTitle": "About the museum and its management",
+      "management": "The Fine Arts Department operates the museum through its seventh regional office. Its own visitor notice distinguishes exhibition-building hours from office hours.",
+      "history": [
+        "The museum was established beginning in 1969 and officially opened on 6 February 1973. Its collections were assembled from eight upper northern provinces and later archaeological work."
+      ],
+      "features": [
+        "Compare the building’s northern-style gable finials with the objects inside.",
+        "Check labels for the provenance of objects from different northern provinces."
+      ],
+      "experience": [
+        "Allow time for object labels; ask staff before taking photographs."
+      ],
+      "route": [
+        "Find the entrance on the Chiang Mai–Lampang Super Highway and check admission.",
+        "Explore the open exhibitions, allowing time for labels and object context.",
+        "Finish by comparing the regional collection with the architecture of nearby Wat Chet Yot."
+      ],
+      "photo": [
+        "Allow time for object labels; ask staff before taking photographs."
+      ],
+      "visit": [
+        "Allow time for object labels; ask staff before taking photographs."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, navigate to Chiang Mai National Museum on the Chiang Mai–Lampang Super Highway; a car may be more convenient."
+      ],
+      "faqs": [
+        {
+          "q": "Who runs the museum?",
+          "a": "Thailand’s Fine Arts Department operates it through its Chiang Mai regional office."
+        },
+        {
+          "q": "When are exhibition galleries open?",
+          "a": "The museum lists Wednesday–Sunday 09:00–16:00; confirm closures before travelling."
+        },
+        {
+          "q": "What does the museum collect?",
+          "a": "Archaeological and art objects from upper northern Thailand."
+        }
+      ]
+    },
+    "zh": {
+      "name": "清迈国立博物馆",
+      "tagline": "超级公路旁的泰北文化遗产",
+      "description": "清迈国立博物馆展示泰国北部的考古及艺术文物；两层展馆的山墙饰有泰北传统叉角。",
+      "summary": "清迈国立博物馆展示泰国北部的考古及艺术文物；两层展馆的山墙饰有泰北传统叉角。",
+      "managementTitle": "关于博物馆及其管理",
+      "management": "博物馆由泰国艺术厅第七地区办公室管理。馆方将展馆开放时间与办公室办公时间分开列示。",
+      "history": [
+        "博物馆从 1969 年开始筹建，于 1973 年 2 月 6 日正式开放；馆藏来自泰北八府及后续考古工作。"
+      ],
+      "features": [
+        "比较展馆的泰北叉角装饰与馆内文物。",
+        "留意展品标签所述的泰北各府来源。"
+      ],
+      "experience": [
+        "留出时间阅读展签，拍照前请询问工作人员。"
+      ],
+      "route": [
+        "从清迈—南邦超级公路找到入口并确认入场安排。",
+        "参观开放展厅，留出时间阅读文物背景。",
+        "结束后可结合附近七塔寺的建筑安排参观。"
+      ],
+      "photo": [
+        "留出时间阅读展签，拍照前请询问工作人员。"
+      ],
+      "visit": [
+        "留出时间阅读展签，拍照前请询问工作人员。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口导航至清迈—南邦超级公路上的清迈国立博物馆，可按实际路况选择乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "博物馆由谁管理？",
+          "a": "由泰国艺术厅清迈地区办公室管理。"
+        },
+        {
+          "q": "展馆什么时候开放？",
+          "a": "馆方列示周三至周日 09:00–16:00，出发前请确认休馆安排。"
+        },
+        {
+          "q": "馆藏以什么为主？",
+          "a": "以泰北地区的考古和艺术文物为主。"
+        }
+      ]
+    },
+    "th": {
+      "name": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่",
+      "tagline": "มรดกภาคเหนือบนถนนซุปเปอร์ไฮเวย์",
+      "description": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่ จัดแสดงโบราณวัตถุและศิลปวัตถุจากภาคเหนือตอนบน อาคารสองชั้นประดับกาแลแบบพื้นถิ่นเหนือ",
+      "summary": "พิพิธภัณฑสถานแห่งชาติ เชียงใหม่ จัดแสดงโบราณวัตถุและศิลปวัตถุจากภาคเหนือตอนบน อาคารสองชั้นประดับกาแลแบบพื้นถิ่นเหนือ",
+      "managementTitle": "เกี่ยวกับพิพิธภัณฑ์และการดูแล",
+      "management": "กรมศิลปากรดูแลพิพิธภัณฑ์ผ่านสำนักศิลปากรที่ 7 เชียงใหม่ โดยประกาศเวลาอาคารจัดแสดงแยกจากเวลาสำนักงาน",
+      "history": [
+        "เริ่มจัดตั้งในปี 2512 และเปิดอย่างเป็นทางการเมื่อ 6 กุมภาพันธ์ 2516 รวบรวมวัตถุจากแปดจังหวัดภาคเหนือตอนบนและงานโบราณคดีภายหลัง"
+      ],
+      "features": [
+        "เปรียบเทียบกาแลบนหน้าจั่วอาคารกับวัตถุที่จัดแสดง",
+        "อ่านป้ายเพื่อดูที่มาของวัตถุจากจังหวัดต่าง ๆ ในภาคเหนือ"
+      ],
+      "experience": [
+        "เผื่อเวลาอ่านป้ายวัตถุ และสอบถามเจ้าหน้าที่ก่อนถ่ายภาพ"
+      ],
+      "route": [
+        "หาทางเข้าบนถนนซุปเปอร์ไฮเวย์เชียงใหม่–ลำปางและตรวจค่าเข้าชม",
+        "ชมอาคารจัดแสดงที่เปิด โดยเผื่อเวลาอ่านป้ายและบริบทของวัตถุ",
+        "หลังชมพิพิธภัณฑ์อาจต่อไปดูสถาปัตยกรรมวัดเจ็ดยอดใกล้เคียง"
+      ],
+      "photo": [
+        "เผื่อเวลาอ่านป้ายวัตถุ และสอบถามเจ้าหน้าที่ก่อนถ่ายภาพ"
+      ],
+      "visit": [
+        "เผื่อเวลาอ่านป้ายวัตถุ และสอบถามเจ้าหน้าที่ก่อนถ่ายภาพ"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ นำทางไปพิพิธภัณฑสถานแห่งชาติ เชียงใหม่ บนถนนซุปเปอร์ไฮเวย์ โดยพิจารณาการเดินทางด้วยรถ"
+      ],
+      "faqs": [
+        {
+          "q": "ใครดูแลพิพิธภัณฑ์?",
+          "a": "กรมศิลปากรดูแลผ่านสำนักศิลปากรที่ 7 เชียงใหม่"
+        },
+        {
+          "q": "อาคารจัดแสดงเปิดเมื่อใด?",
+          "a": "พิพิธภัณฑ์ระบุพุธ–อาทิตย์ 09:00–16:00 โปรดตรวจวันปิดก่อนเดินทาง"
+        },
+        {
+          "q": "จัดแสดงอะไร?",
+          "a": "โบราณวัตถุและศิลปวัตถุจากภาคเหนือตอนบน"
         }
       ]
     }
