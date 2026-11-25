@@ -15,7 +15,7 @@ const copy = {
     <h2 class="font-display text-3xl md:text-4xl">{copy.title}</h2>
     <p class="mt-3 text-lg max-w-3xl">{copy.intro}</p>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-      {nearbyPlaces.map((place) => <a href={`/${lang}/nearby/${place.id}/`} class="bg-white rounded-xl overflow-hidden border border-gold/20 hover:border-gold transition-colors"><img src={nearbyDetails[place.id as NearbySlug].image} alt={place.name[lang]} width="500" height="350" loading="lazy" class="w-full h-40 object-cover"/><div class="p-6"><h3 class="font-display text-xl">{place.name[lang]}</h3><p class="text-sm mt-4 leading-7">{place.note[lang]}</p><span class="inline-block underline font-semibold mt-5">{copy.map} →</span></div></a>)}
+      {nearbyPlaces.map((place) => <a href={`/${lang}/nearby/${place.id}/`} class="bg-white rounded-xl overflow-hidden border border-gold/20 hover:border-gold transition-colors">{nearbyDetails[place.id as NearbySlug].image ? <img src={nearbyDetails[place.id as NearbySlug].image} alt={place.name[lang]} width="500" height="350" loading="lazy" class="w-full h-40 object-cover"/> : <div class="h-40 bg-gold/10"></div>}<div class="p-6"><h3 class="font-display text-xl">{place.name[lang]}</h3><p class="text-sm mt-4 leading-7">{place.note[lang]}</p><span class="inline-block underline font-semibold mt-5">{copy.map} →</span></div></a>)}
     </div>
     <div class="mt-9 flex flex-wrap gap-4">
       <a href={`/${lang}/guides/getting-there/`} class="rounded-full bg-teakDeep text-ivory px-6 py-3 hover:opacity-90">{copy.guide} →</a>

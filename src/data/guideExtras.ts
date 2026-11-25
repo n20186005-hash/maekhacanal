@@ -70,4 +70,5 @@ export const nearbyPlaces = [
   { id: 'warorot-market', name: { th: 'ตลาดวโรรส', en: 'Warorot Market', zh: '瓦洛洛市场' }, place: 'Warorot Market Chiang Mai Thailand', note: { th: 'กาดหลวง ตลาดอาหารเหนือและของฝาก', en: 'Traditional Kad Luang market for northern food and gifts', zh: '可体验泰北食品与伴手礼的传统市场' } },
   { id: 'wat-chedi-luang', name: { th: 'วัดเจดีย์หลวง', en: 'Wat Chedi Luang', zh: '契迪龙寺' }, place: 'Wat Chedi Luang Chiang Mai Thailand', note: { th: 'เจดีย์อิฐเก่าแก่กลางเมืองเก่า', en: 'Monumental historic brick chedi in the Old City', zh: '清迈古城中心的历史砖砌佛塔' } },
   { id: 'wat-phra-singh', name: { th: 'วัดพระสิงห์', en: 'Wat Phra Singh', zh: '帕辛寺' }, place: 'Wat Phra Singh Chiang Mai Thailand', note: { th: 'ศิลปกรรมวัดล้านนาและเจดีย์ทอง', en: 'Lanna temple architecture and golden chedi', zh: '兰纳建筑艺术与金色佛塔' } },
+  { id: 'wat-phan-tao', name: { th: 'วัดพันเตา', en: 'Wat Phan Tao', zh: '盼道寺' }, place: 'Wat Phan Tao Chiang Mai', note: { th: 'วิหารไม้สักใกล้วัดเจดีย์หลวง', en: 'Teakwood hall beside Wat Chedi Luang', zh: '契迪龙寺旁的柚木佛殿' } },
 ] as const;

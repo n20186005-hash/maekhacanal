@@ -1,5 +1,5 @@
 import { moreNearbyDetails } from './moreNearbyDetails';
-export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh'] as const;
+export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao'] as const;
 export type NearbySlug = typeof nearbySlugs[number];
 export type NearbyLang = 'th' | 'en' | 'zh';
 
@@ -209,6 +209,39 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         visit: ['广场外部无需统一门票', '节庆与周日市集期间人流可能较大', '不要为了拍照惊扰鸟群或阻碍行人'],
         transport: ['从湄卡运河请独立导航到 Tha Phae Gate，不要误选清迈门', '市集或活动期间部分道路可能禁止车辆通行'],
         faqs: [{ q: '塔佩门免费吗？', a: '城门外部和公共广场无需统一门票。' }, { q: '它位于古城哪边？', a: '位于清迈古城东侧。' }, { q: '周日步行街每天都有吗？', a: '不是。周日步行街是独立的每周活动。' }],
+      },
+    },
+  },
+  'wat-phan-tao': {
+    image: '', imageSource: '', mapQuery: 'วัดพันเตา 105 ถนนพระปกเกล้า เชียงใหม่', address: '105 Phra Pok Klao Road, Phra Sing, Mueang Chiang Mai, Chiang Mai 50200, Thailand',
+    fee: { th: 'ตรวจสอบค่าบริการกับวัด', en: 'Check current admission arrangements at the temple', zh: '请向寺方确认当前入场安排' },
+    hours: { th: 'การท่องเที่ยวแห่งประเทศไทยระบุ 08:00–17:00 น.; ตรวจสอบกับวัดก่อนเดินทาง', en: 'Tourism Authority of Thailand lists 08:00–17:00; confirm with the temple', zh: '泰国旅游局列示 08:00–17:00；出发前请向寺方确认' },
+    duration: { th: '30–45 นาที', en: '30–45 minutes', zh: '30–45 分钟' },
+    source: 'https://www.tourismthailand.org/attraction/wat-phan-tao',
+    locales: {
+      th: {
+        name: 'วัดพันเตา', tagline: 'วิหารไม้สักใกล้วัดเจดีย์หลวง', description: 'เที่ยววัดพันเตา เชียงใหม่ ชมวิหารไม้สัก ประวัติ แผนที่ และการเดินทางจากคลองแม่ข่า',
+        summary: 'วัดพันเตาอยู่บนถนนพระปกเกล้าใกล้วัดเจดีย์หลวง มีวิหารไม้สักที่เคยเป็นหอคำของเจ้าเมืองเชียงใหม่',
+        managementTitle: 'เกี่ยวกับวัดพันเตาและการดูแล', management: 'วัดพันเตาเป็นศาสนสถานที่ยังใช้งาน โปรดสอบถามวัดเกี่ยวกับพื้นที่เข้าชมและการถ่ายภาพ การท่องเที่ยวแห่งประเทศไทยเป็นผู้เผยแพร่ข้อมูล ไม่ใช่ผู้ดำเนินงานวัด',
+        history: ['วิหารไม้สักเดิมเป็นหอคำของพระเจ้ามโหตรประเทศ ก่อนถวายเป็นวิหารของวัดในสมัยพระเจ้าอินทวิชชานนท์'], features: ['สังเกตซุ้มประตูแกะสลักรูปนกยูงและโครงสร้างไม้สัก', 'ด้านหลังวิหารมีเจดีย์ประธาน'], experience: ['เดินชมอย่างสงบและเคารพผู้มาประกอบศาสนกิจ'],
+        route: ['มาถึงวัดบนถนนพระปกเกล้าและตรวจป้ายทางเข้า', 'ชมวิหารไม้สักและซุ้มประตูจากพื้นที่ที่อนุญาต', 'เดินต่อไปชมเจดีย์ด้านหลังเมื่อพื้นที่เปิด แล้วเลือกไปวัดเจดีย์หลวง'], photo: ['ถ่ายจากพื้นที่ที่วัดอนุญาตและไม่รบกวนพิธี'], visit: ['แต่งกายสุภาพและปฏิบัติตามป้ายของวัด', 'เวลาและค่าบริการอาจเปลี่ยน ควรตรวจสอบก่อนเดินทาง'], transport: ['จากคลองแม่ข่าใช้แผนที่จากทางเข้าคลองที่คุณอยู่ เดินหรือเรียกรถไปถนนพระปกเกล้า'],
+        faqs: [{q:'วัดพันเตาอยู่ใกล้วัดเจดีย์หลวงไหม?',a:'อยู่ติดบริเวณใกล้กันบนถนนพระปกเกล้า เหมาะจัดเที่ยวต่อกัน'}, {q:'จุดเด่นของวิหารคืออะไร?',a:'วิหารไม้สักเคยเป็นหอคำ และมีซุ้มประตูแกะสลักรูปนกยูง'}, {q:'เปิดกี่โมง?',a:'การท่องเที่ยวแห่งประเทศไทยระบุ 08:00–17:00 น. โปรดยืนยันกับวัดก่อนเดินทาง'}]
+      },
+      en: {
+        name: 'Wat Phan Tao', tagline: 'A teakwood hall beside Wat Chedi Luang', description: 'Visit Wat Phan Tao in Chiang Mai: the teakwood hall, history, temple etiquette, map and directions from Mae Kha Canal.',
+        summary: 'Wat Phan Tao stands on Phra Pok Klao Road near Wat Chedi Luang. Its teakwood hall was formerly a residence of a Chiang Mai ruler.',
+        managementTitle: 'About Wat Phan Tao and its care', management: 'Wat Phan Tao is an active Buddhist temple. Ask the temple about access and photography. The Tourism Authority of Thailand publishes visitor information; it does not operate the temple.',
+        history: ['The teak hall was formerly the residence of King Mahotara Prateth and was later given to the temple during the reign of King Inthawichayanon.'], features: ['Look for the carved peacock over the doorway and the teak structure', 'The principal chedi stands behind the hall'], experience: ['Walk quietly and respect worshippers and ceremonies'],
+        route: ['Find the entrance on Phra Pok Klao Road and check posted instructions', 'Observe the teak hall and carved doorway from permitted areas', 'See the chedi behind the hall if accessible, then consider Wat Chedi Luang'], photo: ['Photograph only where permitted and avoid interrupting worship'], visit: ['Dress respectfully and follow temple signs', 'Hours and fees can change; confirm before travelling'], transport: ['From your actual Mae Kha Canal entrance, check walking directions or take a car to Phra Pok Klao Road'],
+        faqs: [{q:'Is Wat Phan Tao near Wat Chedi Luang?',a:'Yes. They are adjacent on Phra Pok Klao Road and can be visited together.'}, {q:'What makes the hall distinctive?',a:'It is a former royal teak residence with a carved peacock above its doorway.'}, {q:'When is it open?',a:'The Tourism Authority of Thailand lists 08:00–17:00; confirm current access with the temple.'}]
+      },
+      zh: {
+        name: '盼道寺', tagline: '契迪龙寺旁的柚木佛殿', description: '清迈盼道寺游览指南：柚木佛殿、历史、寺庙礼仪、地图与从湄卡运河出发的交通。',
+        summary: '盼道寺位于帕波格劳路、契迪龙寺附近，其柚木佛殿原为清迈统治者的住所。',
+        managementTitle: '关于盼道寺及其管理', management: '盼道寺是仍在使用的佛教寺院，参观范围及拍摄规定请向寺方确认。泰国旅游局发布游览资料，并非寺庙运营方。',
+        history: ['柚木建筑原为玛霍塔拉帕特统治者的住所，后来在因他威猜亚侬统治时期捐赠给寺院作为佛殿。'], features: ['留意柚木结构及门楣上的孔雀雕刻', '主佛塔位于佛殿后方'], experience: ['安静参观，尊重礼佛者及宗教活动'],
+        route: ['从帕波格劳路找到寺庙入口并查看现场指示', '在允许区域观察柚木佛殿和雕花门楣', '如后方开放，继续参观佛塔，再顺游契迪龙寺'], photo: ['仅在寺方允许的区域拍摄，避免打扰仪式'], visit: ['穿着得体并遵守寺方告示', '开放时间与费用可能调整，出发前请确认'], transport: ['从所在的湄卡运河入口查询步行路线，或乘车前往帕波格劳路'],
+        faqs: [{q:'盼道寺离契迪龙寺近吗？',a:'两寺位于帕波格劳路相邻区域，可安排一起参观。'}, {q:'佛殿有什么特色？',a:'佛殿原是柚木王室住所，门楣有孔雀雕刻。'}, {q:'什么时候开放？',a:'泰国旅游局列示 08:00–17:00，实际开放情况请向寺方确认。'}]
       },
     },
   },
