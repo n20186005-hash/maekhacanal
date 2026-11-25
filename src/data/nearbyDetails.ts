@@ -1,5 +1,5 @@
 import { moreNearbyDetails } from './moreNearbyDetails';
-export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum', 'wat-umong-suan-phutthatham', 'wat-lok-molee', 'wat-ketkaram', 'wat-phra-that-doi-suthep'] as const;
+export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum', 'wat-umong-suan-phutthatham', 'wat-lok-molee', 'wat-ketkaram', 'wat-phra-that-doi-suthep', 'chiang-mai-treasury-museum', 'wat-pha-lat', 'wat-chiang-yuen', 'wat-phra-that-doi-kham'] as const;
 export type NearbySlug = typeof nearbySlugs[number];
 export type NearbyLang = 'th' | 'en' | 'zh';
 
@@ -2027,6 +2027,645 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         {
           "q": "เป็นวัดอุโมงค์ในป่าหรือไม่?",
           "a": "ไม่ใช่ วัดพระธาตุดอยสุเทพอยู่บนดอย ส่วนวัดอุโมงค์สวนพุทธธรรมเป็นอีกแห่งในสุเทพ"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "chiang-mai-treasury-museum": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "พิพิธภัณฑ์ธนารักษ์ จังหวัดเชียงใหม่ 52 ถนนราชดำเนิน",
+  "address": "52 Ratchadamnoen Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Confirm current admission with the museum",
+    "zh": "请向博物馆确认当前票价",
+    "th": "ตรวจสอบค่าเข้าชมกับพิพิธภัณฑ์"
+  },
+  "hours": {
+    "en": "Museum lists Tue–Fri 08:30–16:30 and Sat–Sun 10:00–18:00; closed Mondays — confirm",
+    "zh": "馆方列示周二至周五 08:30–16:30、周末 10:00–18:00；周一关闭，请确认",
+    "th": "พิพิธภัณฑ์ระบุอังคาร–ศุกร์ 08:30–16:30 เสาร์–อาทิตย์ 10:00–18:00 ปิดจันทร์ โปรดตรวจสอบ"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://emuseum-chiangmai.treasury.go.th/",
+  "locales": {
+    "en": {
+      "name": "Chiang Mai Treasury Museum",
+      "tagline": "Lanna currency and national treasures on Ratchadamnoen Road",
+      "description": "Chiang Mai Treasury Museum presents Thai money, royal regalia and decorations in a former residence on Ratchadamnoen Road.",
+      "summary": "Chiang Mai Treasury Museum presents Thai money, royal regalia and decorations in a former residence on Ratchadamnoen Road.",
+      "managementTitle": "About the museum and its management",
+      "management": "The Treasury Department operates the museum and publishes its own visitor information. Coin sales and exchange services are separate from the exhibitions.",
+      "history": [
+        "The Treasury Department converted the former residence of Chao Thipwan Na Chiang Tung into Treasury Pavilion 1 and began using it as a museum in 1995."
+      ],
+      "features": [
+        "Compare displays of Lanna currency with later Thai coinage.",
+        "Note how a former two-storey residence has been adapted for a museum."
+      ],
+      "experience": [
+        "Compare displays of Lanna currency with later Thai coinage."
+      ],
+      "route": [
+        "Find the entrance at 52 Ratchadamnoen Road.",
+        "Check current opening and admission at the museum, then explore the currency exhibits.",
+        "Allow time for the regalia displays and leave by the signed route."
+      ],
+      "photo": [
+        "Allow time for object labels; ask staff before taking photographs."
+      ],
+      "visit": [
+        "Allow time for object labels; ask staff before taking photographs."
+      ],
+      "transport": [
+        "From your Mae Kha Canal entrance, check directions to 52 Ratchadamnoen Road near Klang Wiang intersection."
+      ],
+      "faqs": [
+        {
+          "q": "Who operates the museum?",
+          "a": "Thailand’s Treasury Department operates it."
+        },
+        {
+          "q": "What is displayed?",
+          "a": "The museum presents Thai currency, royal regalia and decorations, including Lanna currency."
+        },
+        {
+          "q": "When is it open?",
+          "a": "Museum lists Tue–Fri 08:30–16:30 and Sat–Sun 10:00–18:00; closed Mondays — confirm"
+        }
+      ]
+    },
+    "zh": {
+      "name": "清迈财政博物馆",
+      "tagline": "拉差丹能路上的兰纳货币与国宝",
+      "description": "清迈财政博物馆位于拉差丹能路一座旧宅内，展示泰国货币、王室仪仗物和勋章。",
+      "summary": "清迈财政博物馆位于拉差丹能路一座旧宅内，展示泰国货币、王室仪仗物和勋章。",
+      "managementTitle": "关于博物馆及其管理",
+      "management": "博物馆由泰国财政厅运营并公布访客信息；纪念币销售及兑换服务与展览是不同服务。",
+      "history": [
+        "财政厅将昭提帕婉·那清东的旧居改建为第一财政展馆，自 1995 年起作为博物馆使用。"
+      ],
+      "features": [
+        "比较兰纳货币与后来的泰国钱币。",
+        "观察两层旧宅如何改作博物馆。"
+      ],
+      "experience": [
+        "比较兰纳货币与后来的泰国钱币。"
+      ],
+      "route": [
+        "前往拉差丹能路 52 号入口。",
+        "向馆方确认当前开放及入场安排，再参观货币展区。",
+        "预留时间观看王室仪仗物展品，并按指示路线离开。"
+      ],
+      "photo": [
+        "留出时间阅读展签，拍照前请询问工作人员。"
+      ],
+      "visit": [
+        "留出时间阅读展签，拍照前请询问工作人员。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询至拉差丹能路 52 号、Klang Wiang 路口附近的路线。"
+      ],
+      "faqs": [
+        {
+          "q": "博物馆由谁运营？",
+          "a": "由泰国财政厅运营。"
+        },
+        {
+          "q": "展示什么？",
+          "a": "展示泰国货币、王室仪仗物与勋章，其中包括兰纳货币。"
+        },
+        {
+          "q": "什么时候开放？",
+          "a": "馆方列示周二至周五 08:30–16:30、周末 10:00–18:00；周一关闭，请确认"
+        }
+      ]
+    },
+    "th": {
+      "name": "พิพิธภัณฑ์ธนารักษ์ จังหวัดเชียงใหม่",
+      "tagline": "เงินตราล้านนาและทรัพย์สินของชาติบนถนนราชดำเนิน",
+      "description": "พิพิธภัณฑ์ธนารักษ์ จังหวัดเชียงใหม่ ตั้งอยู่ในเรือนเก่าบนถนนราชดำเนิน จัดแสดงเงินตราไทย เครื่องราชอิสริยยศ และเครื่องราชอิสริยาภรณ์",
+      "summary": "พิพิธภัณฑ์ธนารักษ์ จังหวัดเชียงใหม่ ตั้งอยู่ในเรือนเก่าบนถนนราชดำเนิน จัดแสดงเงินตราไทย เครื่องราชอิสริยยศ และเครื่องราชอิสริยาภรณ์",
+      "managementTitle": "เกี่ยวกับพิพิธภัณฑ์และการดูแล",
+      "management": "กรมธนารักษ์ดำเนินงานและเผยแพร่ข้อมูลผู้เข้าชม การจำหน่ายและแลกเหรียญเป็นบริการแยกจากนิทรรศการ",
+      "history": [
+        "กรมธนารักษ์ปรับคุ้มเดิมของเจ้าทิพวรรณ ณ เชียงตุงเป็นศาลาธนารักษ์ 1 และใช้เป็นพิพิธภัณฑ์ตั้งแต่ปี 2538"
+      ],
+      "features": [
+        "เปรียบเทียบเงินตราล้านนากับเหรียญไทยยุคหลัง",
+        "สังเกตการปรับเรือนสองชั้นเดิมให้เป็นพิพิธภัณฑ์"
+      ],
+      "experience": [
+        "เปรียบเทียบเงินตราล้านนากับเหรียญไทยยุคหลัง"
+      ],
+      "route": [
+        "ไปทางเข้าเลขที่ 52 ถนนราชดำเนิน",
+        "ตรวจเวลาเปิดและค่าเข้าชมกับพิพิธภัณฑ์ แล้วชมเงินตรา",
+        "เผื่อเวลาชมเครื่องราชอิสริยยศและออกตามทางที่กำหนด"
+      ],
+      "photo": [
+        "เผื่อเวลาอ่านป้ายวัตถุ และสอบถามเจ้าหน้าที่ก่อนถ่ายภาพ"
+      ],
+      "visit": [
+        "เผื่อเวลาอ่านป้ายวัตถุ และสอบถามเจ้าหน้าที่ก่อนถ่ายภาพ"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปเลขที่ 52 ถนนราชดำเนิน ใกล้แยกกลางเวียง"
+      ],
+      "faqs": [
+        {
+          "q": "ใครดำเนินงานพิพิธภัณฑ์?",
+          "a": "กรมธนารักษ์เป็นผู้ดำเนินงาน"
+        },
+        {
+          "q": "จัดแสดงอะไร?",
+          "a": "จัดแสดงเงินตราไทย เครื่องราชอิสริยยศ และเครื่องราชอิสริยาภรณ์ รวมถึงเงินตราล้านนา"
+        },
+        {
+          "q": "เปิดเวลาใด?",
+          "a": "พิพิธภัณฑ์ระบุอังคาร–ศุกร์ 08:30–16:30 เสาร์–อาทิตย์ 10:00–18:00 ปิดจันทร์ โปรดตรวจสอบ"
+        }
+      ]
+    }
+  }
+},
+  "wat-pha-lat": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดผาลาด ถนนศรีวิชัย เชียงใหม่",
+  "address": "101 Sriwichai Alley, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.thailandtravel.or.jp/wat-pha-lat/",
+  "locales": {
+    "en": {
+      "name": "Wat Pha Lat",
+      "tagline": "Forest temple on the Doi Suthep route",
+      "description": "Wat Pha Lat is a forest temple on the route to Wat Phra That Doi Suthep. Its grounds include a small waterfall and historic chedi.",
+      "summary": "Wat Pha Lat is a forest temple on the route to Wat Phra That Doi Suthep. Its grounds include a small waterfall and historic chedi.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple controls access to its religious grounds. Confirm paths and current conditions with the temple, especially in wet weather.",
+      "history": [
+        "A local tradition associates the site with a pause in a white elephant’s journey carrying a relic towards Doi Suthep. The Tourism Authority describes later Burmese and Mon influences in the chedi’s restoration."
+      ],
+      "features": [
+        "Notice the chedi in its wooded setting and the small waterfall without leaving marked paths."
+      ],
+      "experience": [
+        "Notice the chedi in its wooded setting and the small waterfall without leaving marked paths."
+      ],
+      "route": [
+        "Arrange transport to the temple approach on the Doi Suthep route.",
+        "Check current path conditions and visit open temple areas quietly.",
+        "Continue to Doi Suthep or return to the city, allowing for mountain travel."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Is Pha Lat the same as Doi Suthep temple?",
+          "a": "No. It is a separate temple on the way up to Wat Phra That Doi Suthep."
+        },
+        {
+          "q": "What is distinctive about its setting?",
+          "a": "The temple stands in woodland and has a small waterfall within the grounds."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "帕拉特寺",
+      "tagline": "通往素贴山途中的森林寺院",
+      "description": "帕拉特寺是前往素贴山双龙寺途中的森林寺院，寺地内有小瀑布和历史佛塔。",
+      "summary": "帕拉特寺是前往素贴山双龙寺途中的森林寺院，寺地内有小瀑布和历史佛塔。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺方管理宗教场所与参观范围，尤其雨天请向寺方确认步道和现场状况。",
+      "history": [
+        "当地传说将此地与运送舍利前往素贴山的白象途中休息联系起来。泰国旅游局介绍佛塔后来的修复受到缅甸与孟族风格影响。"
+      ],
+      "features": [
+        "沿标示路线观察林中的佛塔与小瀑布。"
+      ],
+      "experience": [
+        "沿标示路线观察林中的佛塔与小瀑布。"
+      ],
+      "route": [
+        "安排车辆前往素贴山道路上的寺院入口。",
+        "确认当前步道状况，安静参观开放区域。",
+        "可继续前往双龙寺或返回市区，并预留山路时间。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "帕拉特寺和双龙寺是同一座吗？",
+          "a": "不是。它是前往双龙寺途中的独立寺院。"
+        },
+        {
+          "q": "这里的环境有什么特色？",
+          "a": "寺院位于林中，寺地内有一处小瀑布。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดผาลาด",
+      "tagline": "วัดป่าระหว่างทางขึ้นดอยสุเทพ",
+      "description": "วัดผาลาดเป็นวัดป่าระหว่างทางไปวัดพระธาตุดอยสุเทพ ภายในมีน้ำตกขนาดเล็กและเจดีย์เก่า",
+      "summary": "วัดผาลาดเป็นวัดป่าระหว่างทางไปวัดพระธาตุดอยสุเทพ ภายในมีน้ำตกขนาดเล็กและเจดีย์เก่า",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดดูแลพื้นที่ศาสนกิจและการเข้าชม โปรดตรวจสภาพทางและพื้นที่เปิดกับวัด โดยเฉพาะช่วงฝน",
+      "history": [
+        "ตำนานท้องถิ่นเชื่อมสถานที่กับการหยุดพักของช้างเผือกที่อัญเชิญพระธาตุไปดอยสุเทพ การท่องเที่ยวแห่งประเทศไทยกล่าวถึงอิทธิพลพม่าและมอญในการบูรณะเจดีย์ภายหลัง"
+      ],
+      "features": [
+        "สังเกตเจดีย์ท่ามกลางป่าและน้ำตกเล็กโดยอยู่ในทางที่กำหนด"
+      ],
+      "experience": [
+        "สังเกตเจดีย์ท่ามกลางป่าและน้ำตกเล็กโดยอยู่ในทางที่กำหนด"
+      ],
+      "route": [
+        "จัดรถไปทางเข้าวัดบนเส้นทางขึ้นดอยสุเทพ",
+        "ตรวจสภาพทางปัจจุบันและชมพื้นที่เปิดอย่างสงบ",
+        "เดินทางต่อไปดอยสุเทพหรือกลับเมือง โดยเผื่อเวลาสำหรับทางขึ้นเขา"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดผาลาดเป็นที่เดียวกับวัดพระธาตุดอยสุเทพไหม?",
+          "a": "ไม่ใช่ เป็นวัดแยกกันซึ่งอยู่ระหว่างทางขึ้นดอยสุเทพ"
+        },
+        {
+          "q": "บริเวณวัดมีอะไรเด่น?",
+          "a": "วัดอยู่ในป่าและมีน้ำตกขนาดเล็กภายในบริเวณ"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "wat-chiang-yuen": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดเชียงยืน 160 ถนนมณีนพรัตน์ เชียงใหม่",
+  "address": "160 Manee Nopparat Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.thailandtravel.or.jp/wat-chiang-yuen/",
+  "locales": {
+    "en": {
+      "name": "Wat Chiang Yuen",
+      "tagline": "Historic temple on Manee Nopparat Road",
+      "description": "Wat Chiang Yuen is a Buddhist temple at 160 Manee Nopparat Road near the north side of Chiang Mai’s Old City.",
+      "summary": "Wat Chiang Yuen is a Buddhist temple at 160 Manee Nopparat Road near the north side of Chiang Mai’s Old City.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple manages its worship spaces and visitor access. Check opening times and photography rules with the temple.",
+      "history": [
+        "The Tourism Authority describes the temple as rebuilt in 1794 after destruction during conflict. Its name is associated with longevity."
+      ],
+      "features": [
+        "Read the setting in relation to the northern city wall and the neighbouring moat."
+      ],
+      "experience": [
+        "Read the setting in relation to the northern city wall and the neighbouring moat."
+      ],
+      "route": [
+        "Find the entrance on Manee Nopparat Road and check signs.",
+        "Observe the open temple buildings without interrupting worship.",
+        "Use a safe crossing to continue towards Chang Phueak Gate."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Where is Wat Chiang Yuen?",
+          "a": "It is on Manee Nopparat Road near the north side of the Old City."
+        },
+        {
+          "q": "What does its name evoke?",
+          "a": "The Tourism Authority associates the name with longevity."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "清元寺",
+      "tagline": "玛尼诺帕拉特路上的历史寺院",
+      "description": "清元寺位于清迈古城北侧附近的玛尼诺帕拉特路 160 号。",
+      "summary": "清元寺位于清迈古城北侧附近的玛尼诺帕拉特路 160 号。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺方负责礼佛空间和访客开放范围；开放时间与拍摄规定请向寺方确认。",
+      "history": [
+        "泰国旅游局介绍，寺院在战乱中遭毁后于 1794 年重建，寺名与长寿之意相关。"
+      ],
+      "features": [
+        "结合北侧城墙与护城河的位置观察寺院环境。"
+      ],
+      "experience": [
+        "结合北侧城墙与护城河的位置观察寺院环境。"
+      ],
+      "route": [
+        "从玛尼诺帕拉特路找到入口并查看告示。",
+        "安静参观开放建筑，避免打扰礼佛。",
+        "使用安全过街设施继续前往昌卜克门。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "清元寺在哪里？",
+          "a": "位于古城北侧附近的玛尼诺帕拉特路。"
+        },
+        {
+          "q": "寺名有什么含义？",
+          "a": "泰国旅游局将寺名与长寿之意联系起来。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดเชียงยืน",
+      "tagline": "วัดเก่าบนถนนมณีนพรัตน์",
+      "description": "วัดเชียงยืนเป็นวัดพุทธเลขที่ 160 ถนนมณีนพรัตน์ใกล้ด้านเหนือของเมืองเก่าเชียงใหม่",
+      "summary": "วัดเชียงยืนเป็นวัดพุทธเลขที่ 160 ถนนมณีนพรัตน์ใกล้ด้านเหนือของเมืองเก่าเชียงใหม่",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดดูแลพื้นที่บูชาและการเข้าชม โปรดสอบถามเวลาเปิดและกฎถ่ายภาพกับวัด",
+      "history": [
+        "การท่องเที่ยวแห่งประเทศไทยระบุว่าวัดสร้างใหม่ในปี 2337 หลังเสียหายจากสงคราม และชื่อวัดเกี่ยวข้องกับความยืนยาว"
+      ],
+      "features": [
+        "สังเกตตำแหน่งวัดสัมพันธ์กับกำแพงเมืองด้านเหนือและคูเมือง"
+      ],
+      "experience": [
+        "สังเกตตำแหน่งวัดสัมพันธ์กับกำแพงเมืองด้านเหนือและคูเมือง"
+      ],
+      "route": [
+        "หาทางเข้าถนนมณีนพรัตน์และดูป้าย",
+        "ชมอาคารที่เปิดโดยไม่รบกวนการบูชา",
+        "ใช้ทางข้ามที่ปลอดภัยเพื่อไปประตูช้างเผือก"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดเชียงยืนอยู่ที่ไหน?",
+          "a": "อยู่บนถนนมณีนพรัตน์ใกล้ด้านเหนือของเมืองเก่า"
+        },
+        {
+          "q": "ชื่อวัดมีความหมายอย่างไร?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยเชื่อมชื่อวัดกับความยืนยาว"
+        },
+        {
+          "q": "เข้าได้ทุกอาคารไหม?",
+          "a": "พื้นที่เปิดอาจเปลี่ยนตามพิธีและงานอนุรักษ์ โปรดสอบถามวัด"
+        }
+      ]
+    }
+  }
+},
+  "wat-phra-that-doi-kham": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดพระธาตุดอยคำ แม่เหียะ เชียงใหม่",
+  "address": "108 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai 50100, Thailand",
+  "fee": {
+    "en": "Ask the temple about current admission",
+    "zh": "请向寺方确认当前入场安排",
+    "th": "สอบถามค่าเข้าชมกับวัด"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "zh": "请向寺方确认当前开放时间",
+    "th": "ตรวจสอบเวลาเปิดกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.thailandtravel.or.jp/wat-phra-that-doi-kham/",
+  "locales": {
+    "en": {
+      "name": "Wat Phra That Doi Kham",
+      "tagline": "Hilltop temple southwest of Chiang Mai",
+      "description": "Wat Phra That Doi Kham is a hilltop temple in Mae Hia southwest of Chiang Mai, known for its chedi and the revered Luang Pho Than Chai image.",
+      "summary": "Wat Phra That Doi Kham is a hilltop temple in Mae Hia southwest of Chiang Mai, known for its chedi and the revered Luang Pho Than Chai image.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple manages worship and access. Confirm admission and current conditions before travelling to the hilltop.",
+      "history": [
+        "The Tourism Authority recounts the temple’s long history, a period of abandonment and later local rebuilding after important objects were discovered in 1966."
+      ],
+      "features": [
+        "Observe the chedi and the worship area for Luang Pho Than Chai while respecting those praying."
+      ],
+      "experience": [
+        "Observe the chedi and the worship area for Luang Pho Than Chai while respecting those praying."
+      ],
+      "route": [
+        "Arrange transport from the canal to the Mae Hia hilltop temple.",
+        "Check temple notices and visit the permitted chedi and worship areas.",
+        "Allow time for the return journey to Chiang Mai."
+      ],
+      "photo": [
+        "Photograph only where permitted; do not interrupt worship."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From your actual Mae Kha Canal entrance, check directions to this named temple and choose walking or a car for your starting point."
+      ],
+      "faqs": [
+        {
+          "q": "Where is Doi Kham?",
+          "a": "It is in Mae Hia, southwest of Chiang Mai city."
+        },
+        {
+          "q": "What image is associated with the temple?",
+          "a": "The Tourism Authority identifies the revered Luang Pho Than Chai image."
+        },
+        {
+          "q": "Can I enter every building?",
+          "a": "Access varies with religious activity and conservation; check with the temple."
+        }
+      ]
+    },
+    "zh": {
+      "name": "金山寺",
+      "tagline": "清迈西南的山顶寺院",
+      "description": "金山寺位于清迈西南的 Mae Hia 山上，以佛塔和受信众敬奉的 Luang Pho Than Chai 佛像闻名。",
+      "summary": "金山寺位于清迈西南的 Mae Hia 山上，以佛塔和受信众敬奉的 Luang Pho Than Chai 佛像闻名。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺方管理礼佛与参观区域。前往山顶前请确认入场安排及当前状况。",
+      "history": [
+        "泰国旅游局介绍该寺历史悠久，曾一度荒废；1966 年发现重要文物后，当地居民协助重建。"
+      ],
+      "features": [
+        "观察佛塔与 Luang Pho Than Chai 礼佛区域，并尊重正在祈祷的人。"
+      ],
+      "experience": [
+        "观察佛塔与 Luang Pho Than Chai 礼佛区域，并尊重正在祈祷的人。"
+      ],
+      "route": [
+        "从运河安排车辆前往 Mae Hia 山顶寺院。",
+        "查看寺方告示，参观开放的佛塔与礼佛区域。",
+        "预留时间返回清迈市区。"
+      ],
+      "photo": [
+        "仅在允许区域拍摄，不打扰礼佛。"
+      ],
+      "visit": [
+        "穿着得体并遵守寺方告示。"
+      ],
+      "transport": [
+        "从所在湄卡运河入口查询本寺路线，按实际起点选择步行或乘车。"
+      ],
+      "faqs": [
+        {
+          "q": "金山寺在哪里？",
+          "a": "位于清迈市区西南的 Mae Hia。"
+        },
+        {
+          "q": "寺院与哪尊佛像有关？",
+          "a": "泰国旅游局介绍了受信众敬奉的 Luang Pho Than Chai 佛像。"
+        },
+        {
+          "q": "所有建筑都能进入吗？",
+          "a": "开放范围随宗教活动和保护工作调整，请向寺方确认。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดพระธาตุดอยคำ",
+      "tagline": "วัดบนดอยทางตะวันตกเฉียงใต้ของเชียงใหม่",
+      "description": "วัดพระธาตุดอยคำเป็นวัดบนดอยในตำบลแม่เหียะทางตะวันตกเฉียงใต้ของเมืองเชียงใหม่ มีเจดีย์และหลวงพ่อทันใจที่ผู้คนเคารพ",
+      "summary": "วัดพระธาตุดอยคำเป็นวัดบนดอยในตำบลแม่เหียะทางตะวันตกเฉียงใต้ของเมืองเชียงใหม่ มีเจดีย์และหลวงพ่อทันใจที่ผู้คนเคารพ",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดดูแลพื้นที่บูชาและการเข้าชม โปรดตรวจการเข้าชมและสภาพปัจจุบันก่อนเดินทางขึ้นดอย",
+      "history": [
+        "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงประวัติยาวนาน ช่วงที่วัดร้าง และการบูรณะโดยชาวบ้านหลังพบโบราณวัตถุสำคัญในปี 2509"
+      ],
+      "features": [
+        "ชมเจดีย์และบริเวณบูชาหลวงพ่อทันใจโดยเคารพผู้กำลังสักการะ"
+      ],
+      "experience": [
+        "ชมเจดีย์และบริเวณบูชาหลวงพ่อทันใจโดยเคารพผู้กำลังสักการะ"
+      ],
+      "route": [
+        "จัดรถจากคลองแม่ข่าไปวัดบนดอยตำบลแม่เหียะ",
+        "ตรวจป้ายวัดและชมเจดีย์กับพื้นที่บูชาที่เปิด",
+        "เผื่อเวลาสำหรับเดินทางกลับเมืองเชียงใหม่"
+      ],
+      "photo": [
+        "ถ่ายเฉพาะพื้นที่อนุญาตและไม่รบกวนการบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากทางเข้าคลองแม่ข่าที่ใช้อยู่ ตรวจเส้นทางไปวัดนี้และเลือกเดินหรือเรียกรถตามจุดเริ่มต้น"
+      ],
+      "faqs": [
+        {
+          "q": "วัดดอยคำอยู่ที่ไหน?",
+          "a": "อยู่ตำบลแม่เหียะทางตะวันตกเฉียงใต้ของเมืองเชียงใหม่"
+        },
+        {
+          "q": "พระพุทธรูปใดเป็นที่รู้จัก?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยระบุหลวงพ่อทันใจเป็นพระพุทธรูปที่ผู้คนเคารพ"
         },
         {
           "q": "เข้าได้ทุกอาคารไหม?",
