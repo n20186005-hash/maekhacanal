@@ -2042,21 +2042,21 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
   "mapQuery": "พิพิธภัณฑ์ธนารักษ์ จังหวัดเชียงใหม่ 52 ถนนราชดำเนิน",
   "address": "52 Ratchadamnoen Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
   "fee": {
-    "en": "Confirm current admission with the museum",
-    "zh": "请向博物馆确认当前票价",
-    "th": "ตรวจสอบค่าเข้าชมกับพิพิธภัณฑ์"
+    "en": "Free admission to exhibitions; confirm current arrangements",
+    "zh": "展览免费，请确认当前安排",
+    "th": "ชมนิทรรศการฟรี โปรดตรวจสอบการเข้าชมปัจจุบัน"
   },
   "hours": {
-    "en": "Museum lists Tue–Fri 08:30–16:30 and Sat–Sun 10:00–18:00; closed Mondays — confirm",
-    "zh": "馆方列示周二至周五 08:30–16:30、周末 10:00–18:00；周一关闭，请确认",
-    "th": "พิพิธภัณฑ์ระบุอังคาร–ศุกร์ 08:30–16:30 เสาร์–อาทิตย์ 10:00–18:00 ปิดจันทร์ โปรดตรวจสอบ"
+    "en": "Tue–Fri 08:30–16:30; Sat–Sun 10:00–18:00; closed 12:00–13:00, Mondays and announced holidays — confirm",
+    "zh": "周二至周五 08:30–16:30、周末 10:00–18:00；每日 12:00–13:00、周一及公告假日关闭，请确认",
+    "th": "อังคาร–ศุกร์ 08:30–16:30 เสาร์–อาทิตย์ 10:00–18:00 ปิดพัก 12:00–13:00 ปิดจันทร์และวันหยุดที่ประกาศ โปรดตรวจสอบ"
   },
   "duration": {
     "en": "60–90 minutes",
     "zh": "60–90 分钟",
     "th": "60–90 นาที"
   },
-  "source": "https://emuseum-chiangmai.treasury.go.th/",
+  "source": "https://emuseum-chiangmai.treasury.go.th/news/260869/",
   "locales": {
     "en": {
       "name": "Chiang Mai Treasury Museum",
@@ -2100,7 +2100,7 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         },
         {
           "q": "When is it open?",
-          "a": "Museum lists Tue–Fri 08:30–16:30 and Sat–Sun 10:00–18:00; closed Mondays — confirm"
+          "a": "Tue–Fri 08:30–16:30; Sat–Sun 10:00–18:00; closed 12:00–13:00, Mondays and announced holidays — confirm"
         }
       ]
     },
@@ -2146,7 +2146,7 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         },
         {
           "q": "什么时候开放？",
-          "a": "馆方列示周二至周五 08:30–16:30、周末 10:00–18:00；周一关闭，请确认"
+          "a": "周二至周五 08:30–16:30、周末 10:00–18:00；每日 12:00–13:00、周一及公告假日关闭，请确认"
         }
       ]
     },
@@ -2192,7 +2192,7 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
         },
         {
           "q": "เปิดเวลาใด?",
-          "a": "พิพิธภัณฑ์ระบุอังคาร–ศุกร์ 08:30–16:30 เสาร์–อาทิตย์ 10:00–18:00 ปิดจันทร์ โปรดตรวจสอบ"
+          "a": "อังคาร–ศุกร์ 08:30–16:30 เสาร์–อาทิตย์ 10:00–18:00 ปิดพัก 12:00–13:00 ปิดจันทร์และวันหยุดที่ประกาศ โปรดตรวจสอบ"
         }
       ]
     }
