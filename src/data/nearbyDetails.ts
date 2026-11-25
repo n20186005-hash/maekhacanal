@@ -1,5 +1,5 @@
 import { moreNearbyDetails } from './moreNearbyDetails';
-export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum', 'wat-umong-suan-phutthatham', 'wat-lok-molee', 'wat-ketkaram', 'wat-phra-that-doi-suthep', 'chiang-mai-treasury-museum', 'wat-pha-lat', 'wat-chiang-yuen', 'wat-phra-that-doi-kham'] as const;
+export const nearbySlugs = ['chiang-mai-gate', 'wat-sri-suphan', 'wua-lai', 'tha-phae', 'night-bazaar', 'warorot-market', 'wat-chedi-luang', 'wat-phra-singh', 'wat-phan-tao', 'wat-chiang-man', 'wat-buppharam', 'wat-suan-dok', 'wat-chet-yot', 'wat-saen-fang', 'lanna-traditional-house-museum', 'chiang-mai-national-museum', 'wat-umong-suan-phutthatham', 'wat-lok-molee', 'wat-ketkaram', 'wat-phra-that-doi-suthep', 'chiang-mai-treasury-museum', 'wat-pha-lat', 'wat-chiang-yuen', 'wat-phra-that-doi-kham', 'chiang-mai-cultural-centre', 'lanna-folklife-centre', 'wat-mueng-nguen-kong', 'wat-chang-khong', 'jing-jai-market', 'wat-buak-krok-luang', 'wat-puak-hong', 'wat-pa-pao', 'ban-khang-wat', 'royal-park-rajapruek', 'wat-inthrawat-ton-kwen', 'chiang-mai-zoo', 'huay-tung-tao-reservoir', 'maiiam-contemporary-art-museum'] as const;
 export type NearbySlug = typeof nearbySlugs[number];
 export type NearbyLang = 'th' | 'en' | 'zh';
 
@@ -2674,6 +2674,2320 @@ export const nearbyDetails: Record<NearbySlug, Place> = {
       ]
     }
   }
+},
+  "chiang-mai-cultural-centre": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "หอศิลปวัฒนธรรมเมืองเชียงใหม่ ถนนพระปกเกล้า",
+  "address": "Chiang Mai Cultural Centre, Prapokklao Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200",
+  "fee": {
+    "en": "Confirm current admission and eligibility with the centre",
+    "zh": "请向馆方确认当前票价及适用条件",
+    "th": "โปรดตรวจสอบค่าเข้าชมและสิทธิ์กับศูนย์"
+  },
+  "hours": {
+    "en": "Wed–Sun 08:30–16:30; closed Mon–Tue; confirm current arrangements",
+    "zh": "周三至周日 08:30–16:30，周一和周二关闭；请确认当前安排",
+    "th": "พุธ–อาทิตย์ 08:30–16:30 ปิดจันทร์–อังคาร โปรดตรวจสอบปัจจุบัน"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://cmocity.com/chiang-mai-art-cultural-centre/",
+  "locales": {
+    "en": {
+      "name": "Chiang Mai Cultural Centre",
+      "tagline": "Trace the city’s development through its cultural exhibits",
+      "description": "This city museum presents Chiang Mai’s history, administration and culture through models, images and multimedia.",
+      "summary": "This city museum presents Chiang Mai’s history, administration and culture through models, images and multimedia.",
+      "managementTitle": "About the museum and its management",
+      "management": "Chiang Mai Municipality’s City Heritage Centre operates the museum and publishes visitor information. Ask staff about current exhibits and accessibility.",
+      "history": [
+        "The city heritage centre records the restoration of the old City Hall in 1999 and the formal opening of the arts and cultural centre on 5 November 2002."
+      ],
+      "features": [
+        "Compare displays on the founding of the city with those on its twentieth-century development.",
+        "Look for models, photographs and multimedia among the permanent exhibitions, which the centre describes as covering 15 rooms."
+      ],
+      "experience": [
+        "Compare displays on the founding of the city with those on its twentieth-century development.",
+        "Look for models, photographs and multimedia among the permanent exhibitions, which the centre describes as covering 15 rooms."
+      ],
+      "route": [
+        "Find the museum on Prapokklao Road at the Three Kings Monument.",
+        "Check tickets at the entrance and start with the introduction to Chiang Mai today.",
+        "Continue through the city-founding and later-history displays, then leave time for the building-history exhibit."
+      ],
+      "photo": [
+        "Ask staff before photographing exhibits."
+      ],
+      "visit": [
+        "Allow time to read the exhibit labels and check current access with staff."
+      ],
+      "transport": [
+        "From Mae Kha Canal, use the museum’s name on Prapokklao Road when arranging transport to the Old City."
+      ],
+      "faqs": [
+        {
+          "q": "Which museum is this?",
+          "a": "It is the city cultural centre by the Three Kings Monument, distinct from the Lanna Folklife Centre across the road."
+        },
+        {
+          "q": "What can I see inside?",
+          "a": "The permanent displays use models, pictures and multimedia to explain the city’s history and culture."
+        },
+        {
+          "q": "When is it open?",
+          "a": "The centre lists Wednesday–Sunday 08:30–16:30; confirm special changes before visiting."
+        }
+      ]
+    },
+    "zh": {
+      "name": "清迈城市艺术文化中心",
+      "tagline": "通过文化展览认识清迈城市发展",
+      "description": "这座市立博物馆以模型、图片和多媒体介绍清迈的历史、治理与文化。",
+      "summary": "这座市立博物馆以模型、图片和多媒体介绍清迈的历史、治理与文化。",
+      "managementTitle": "关于博物馆及其管理",
+      "management": "清迈市政府城市遗产中心运营该馆并公布参观信息；当前展览及无障碍设施请询问工作人员。",
+      "history": [
+        "市府城市遗产中心记载，旧市政厅于 1999 年修复，城市艺术文化中心于 2002 年 11 月 5 日正式开幕。"
+      ],
+      "features": [
+        "比较建城展览与二十世纪城市发展展览。",
+        "留意模型、照片及多媒体；馆方介绍常设展分布于 15 个展室。"
+      ],
+      "experience": [
+        "比较建城展览与二十世纪城市发展展览。",
+        "留意模型、照片及多媒体；馆方介绍常设展分布于 15 个展室。"
+      ],
+      "route": [
+        "前往三王纪念碑旁的帕波格劳路入口。",
+        "在入口确认票务，从今日清迈介绍开始。",
+        "继续参观建城和后期历史展，并为建筑历史展留出时间。"
+      ],
+      "photo": [
+        "拍摄展品前请先询问工作人员。"
+      ],
+      "visit": [
+        "预留时间阅读展签，并向工作人员确认当前开放范围。"
+      ],
+      "transport": [
+        "从湄卡运河前往古城时，以帕波格劳路上的馆名安排交通。"
+      ],
+      "faqs": [
+        {
+          "q": "这是哪座博物馆？",
+          "a": "它是三王纪念碑旁的城市文化中心，与马路对面的兰纳民俗馆不同。"
+        },
+        {
+          "q": "馆内能看什么？",
+          "a": "常设展以模型、图片和多媒体介绍城市历史与文化。"
+        },
+        {
+          "q": "什么时候开放？",
+          "a": "馆方列示周三至周日 08:30–16:30，出发前请确认临时调整。"
+        }
+      ]
+    },
+    "th": {
+      "name": "หอศิลปวัฒนธรรมเมืองเชียงใหม่",
+      "tagline": "เรียนรู้พัฒนาการของเมืองผ่านนิทรรศการ",
+      "description": "พิพิธภัณฑ์เมืองนำเสนอประวัติ การปกครอง และวัฒนธรรมเชียงใหม่ผ่านแบบจำลอง ภาพ และสื่อผสม",
+      "summary": "พิพิธภัณฑ์เมืองนำเสนอประวัติ การปกครอง และวัฒนธรรมเชียงใหม่ผ่านแบบจำลอง ภาพ และสื่อผสม",
+      "managementTitle": "เกี่ยวกับพิพิธภัณฑ์และการดูแล",
+      "management": "ศูนย์มรดกเมืองเชียงใหม่ของเทศบาลนครเชียงใหม่ดูแลพิพิธภัณฑ์และเผยแพร่ข้อมูลผู้เข้าชม สอบถามเจ้าหน้าที่เรื่องนิทรรศการและการเข้าถึงปัจจุบัน",
+      "history": [
+        "ศูนย์มรดกเมืองบันทึกการบูรณะศาลากลางเดิมในปี 2542 และพิธีเปิดหอศิลปวัฒนธรรมเมื่อ 5 พฤศจิกายน 2545"
+      ],
+      "features": [
+        "เปรียบเทียบเรื่องการสร้างเมืองกับการเปลี่ยนแปลงในศตวรรษที่ 20",
+        "ชมแบบจำลอง ภาพ และสื่อผสมในนิทรรศการถาวร ซึ่งศูนย์ระบุว่ามี 15 ห้อง"
+      ],
+      "experience": [
+        "เปรียบเทียบเรื่องการสร้างเมืองกับการเปลี่ยนแปลงในศตวรรษที่ 20",
+        "ชมแบบจำลอง ภาพ และสื่อผสมในนิทรรศการถาวร ซึ่งศูนย์ระบุว่ามี 15 ห้อง"
+      ],
+      "route": [
+        "ไปทางเข้าถนนพระปกเกล้าใกล้อนุสาวรีย์สามกษัตริย์",
+        "ตรวจบัตรที่ทางเข้าและเริ่มจากเรื่องเชียงใหม่ปัจจุบัน",
+        "ชมเรื่องสร้างเมืองและประวัติยุคหลัง แล้วเผื่อเวลาดูประวัติอาคาร"
+      ],
+      "photo": [
+        "สอบถามเจ้าหน้าที่ก่อนถ่ายภาพนิทรรศการ"
+      ],
+      "visit": [
+        "เผื่อเวลาอ่านป้ายและสอบถามเจ้าหน้าที่เรื่องพื้นที่เปิด"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า ใช้ชื่อพิพิธภัณฑ์บนถนนพระปกเกล้าเพื่อจัดรถไปเมืองเก่า"
+      ],
+      "faqs": [
+        {
+          "q": "ที่นี่เป็นพิพิธภัณฑ์ใด?",
+          "a": "เป็นหอศิลปวัฒนธรรมข้างอนุสาวรีย์สามกษัตริย์ แยกจากหอพื้นถิ่นล้านนาฝั่งตรงข้าม"
+        },
+        {
+          "q": "ภายในมีอะไร?",
+          "a": "นิทรรศการถาวรใช้แบบจำลอง ภาพ และสื่อผสมอธิบายประวัติและวัฒนธรรมเมือง"
+        },
+        {
+          "q": "เปิดเมื่อไร?",
+          "a": "ศูนย์ระบุวันพุธ–อาทิตย์ 08:30–16:30 โปรดตรวจการเปลี่ยนแปลงก่อนเดินทาง"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://cmocity.com/history/"
+  ]
+},
+  "lanna-folklife-centre": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "หอพื้นถิ่นล้านนา ถนนพระปกเกล้า เชียงใหม่",
+  "address": "Lanna Folklife Centre, Prapokklao Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200",
+  "fee": {
+    "en": "Confirm current admission and eligibility with the centre",
+    "zh": "请向馆方确认当前票价及适用条件",
+    "th": "โปรดตรวจสอบค่าเข้าชมและสิทธิ์กับศูนย์"
+  },
+  "hours": {
+    "en": "Wed–Sun 08:30–16:30; closed Mon–Tue; confirm current arrangements",
+    "zh": "周三至周日 08:30–16:30，周一和周二关闭；请确认当前安排",
+    "th": "พุธ–อาทิตย์ 08:30–16:30 ปิดจันทร์–อังคาร โปรดตรวจสอบปัจจุบัน"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://cmocity.com/lanna-folklife-museum/",
+  "locales": {
+    "en": {
+      "name": "Lanna Folklife Centre",
+      "tagline": "Discover Lanna craft and everyday life in the former court",
+      "description": "The Lanna Folklife Centre presents northern Thai religious art, architecture, crafts and ways of life in a former district court.",
+      "summary": "The Lanna Folklife Centre presents northern Thai religious art, architecture, crafts and ways of life in a former district court.",
+      "managementTitle": "About the museum and its management",
+      "management": "The Chiang Mai Municipality City Heritage Centre operates the museum. Ask its staff about access and current exhibitions.",
+      "history": [
+        "The former Chiang Mai District Court was converted into the museum; the city heritage centre records its formal opening on 13 August 2013."
+      ],
+      "features": [
+        "Compare lacquerware and ceramics with basketry and textile displays.",
+        "Explore the displays on Lanna worship offerings, mural painting and the traditions of Hae Khrua Than."
+      ],
+      "experience": [
+        "Compare lacquerware and ceramics with basketry and textile displays.",
+        "Explore the displays on Lanna worship offerings, mural painting and the traditions of Hae Khrua Than."
+      ],
+      "route": [
+        "Locate the former court on Prapokklao Road opposite the Three Kings Monument.",
+        "Confirm admission and explore the exhibits on architecture and religious art.",
+        "Continue to craft and everyday-life displays; allow time for the building-history exhibit."
+      ],
+      "photo": [
+        "Ask staff before photographing exhibits."
+      ],
+      "visit": [
+        "Allow time to read the exhibit labels and check current access with staff."
+      ],
+      "transport": [
+        "From Mae Kha Canal, use the museum’s name on Prapokklao Road when arranging transport to the Old City."
+      ],
+      "faqs": [
+        {
+          "q": "Is it the same as the Lanna Traditional House Museum?",
+          "a": "No. This museum is in the former district court in the Old City; the traditional house museum is a separate Chiang Mai University site."
+        },
+        {
+          "q": "What crafts are displayed?",
+          "a": "The centre describes ceramics, lacquerware, textiles and basketry among its exhibits."
+        },
+        {
+          "q": "When is it open?",
+          "a": "The centre lists Wednesday–Sunday 08:30–16:30; confirm special changes before visiting."
+        }
+      ]
+    },
+    "zh": {
+      "name": "兰纳民俗馆",
+      "tagline": "在旧法院探索兰纳工艺与生活",
+      "description": "兰纳民俗馆设于旧地方法院，展示泰北宗教艺术、建筑、工艺和生活方式。",
+      "summary": "兰纳民俗馆设于旧地方法院，展示泰北宗教艺术、建筑、工艺和生活方式。",
+      "managementTitle": "关于博物馆及其管理",
+      "management": "该馆由清迈市政府城市遗产中心运营；开放范围和当前展览请向工作人员确认。",
+      "history": [
+        "清迈地方法院旧址改为博物馆；市府城市遗产中心记载正式开幕日期为 2013 年 8 月 13 日。"
+      ],
+      "features": [
+        "比较漆器、陶器与竹编、织物展品。",
+        "了解兰纳供奉器物、壁画及 Hae Khrua Than 供奉游行传统。"
+      ],
+      "experience": [
+        "比较漆器、陶器与竹编、织物展品。",
+        "了解兰纳供奉器物、壁画及 Hae Khrua Than 供奉游行传统。"
+      ],
+      "route": [
+        "前往帕波格劳路三王纪念碑对面的旧法院。",
+        "确认票务后参观建筑与宗教艺术展区。",
+        "继续观看工艺和生活展，并为建筑历史展留出时间。"
+      ],
+      "photo": [
+        "拍摄展品前请先询问工作人员。"
+      ],
+      "visit": [
+        "预留时间阅读展签，并向工作人员确认当前开放范围。"
+      ],
+      "transport": [
+        "从湄卡运河前往古城时，以帕波格劳路上的馆名安排交通。"
+      ],
+      "faqs": [
+        {
+          "q": "这与兰纳传统民居博物馆是同一处吗？",
+          "a": "不是。本馆位于古城旧地方法院；传统民居博物馆是清迈大学的另一处场所。"
+        },
+        {
+          "q": "展示哪些工艺？",
+          "a": "馆方介绍展品包括陶器、漆器、织物和竹编。"
+        },
+        {
+          "q": "什么时候开放？",
+          "a": "馆方列示周三至周日 08:30–16:30，出发前请确认临时调整。"
+        }
+      ]
+    },
+    "th": {
+      "name": "หอพื้นถิ่นล้านนา",
+      "tagline": "สำรวจหัตถศิลป์และวิถีล้านนาในอาคารศาลเดิม",
+      "description": "หอพื้นถิ่นล้านนาตั้งอยู่ในอาคารศาลแขวงเดิม จัดแสดงพุทธศิลป์ สถาปัตยกรรม หัตถกรรม และวิถีชีวิตภาคเหนือ",
+      "summary": "หอพื้นถิ่นล้านนาตั้งอยู่ในอาคารศาลแขวงเดิม จัดแสดงพุทธศิลป์ สถาปัตยกรรม หัตถกรรม และวิถีชีวิตภาคเหนือ",
+      "managementTitle": "เกี่ยวกับพิพิธภัณฑ์และการดูแล",
+      "management": "ศูนย์มรดกเมืองเชียงใหม่ของเทศบาลนครเชียงใหม่ดูแลพิพิธภัณฑ์ โปรดสอบถามเจ้าหน้าที่เรื่องพื้นที่เปิดและนิทรรศการปัจจุบัน",
+      "history": [
+        "อาคารศาลแขวงเชียงใหม่เดิมปรับเป็นพิพิธภัณฑ์ ศูนย์มรดกเมืองระบุพิธีเปิดเมื่อ 13 สิงหาคม 2556"
+      ],
+      "features": [
+        "เปรียบเทียบเครื่องเขินและเครื่องปั้นดินเผากับเครื่องจักสานและผ้าทอ",
+        "ชมเรื่องเครื่องสักการะ จิตรกรรมล้านนา และประเพณีแห่ครัวทาน"
+      ],
+      "experience": [
+        "เปรียบเทียบเครื่องเขินและเครื่องปั้นดินเผากับเครื่องจักสานและผ้าทอ",
+        "ชมเรื่องเครื่องสักการะ จิตรกรรมล้านนา และประเพณีแห่ครัวทาน"
+      ],
+      "route": [
+        "ไปอาคารศาลเดิมบนถนนพระปกเกล้าตรงข้ามอนุสาวรีย์สามกษัตริย์",
+        "ตรวจค่าเข้าชมแล้วชมนิทรรศการสถาปัตยกรรมและพุทธศิลป์",
+        "ชมงานหัตถกรรมและวิถีชีวิตต่อ พร้อมเผื่อเวลาดูประวัติอาคาร"
+      ],
+      "photo": [
+        "สอบถามเจ้าหน้าที่ก่อนถ่ายภาพนิทรรศการ"
+      ],
+      "visit": [
+        "เผื่อเวลาอ่านป้ายและสอบถามเจ้าหน้าที่เรื่องพื้นที่เปิด"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า ใช้ชื่อพิพิธภัณฑ์บนถนนพระปกเกล้าเพื่อจัดรถไปเมืองเก่า"
+      ],
+      "faqs": [
+        {
+          "q": "เป็นที่เดียวกับพิพิธภัณฑ์เรือนโบราณล้านนาหรือไม่?",
+          "a": "ไม่ใช่ หอแห่งนี้อยู่ในศาลแขวงเดิมกลางเมืองเก่า ส่วนพิพิธภัณฑ์เรือนโบราณเป็นอีกสถานที่ของมหาวิทยาลัยเชียงใหม่"
+        },
+        {
+          "q": "มีงานหัตถกรรมใด?",
+          "a": "ศูนย์ระบุว่ามีเครื่องปั้นดินเผา เครื่องเขิน ผ้าทอ และเครื่องจักสาน"
+        },
+        {
+          "q": "เปิดเมื่อไร?",
+          "a": "ศูนย์ระบุวันพุธ–อาทิตย์ 08:30–16:30 โปรดตรวจการเปลี่ยนแปลงก่อนเดินทาง"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://cmocity.com/history/"
+  ]
+},
+  "wat-mueng-nguen-kong": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดหมื่นเงินกอง 30 ถนนสามล้าน เชียงใหม่",
+  "address": "30 Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai 50200, Thailand",
+  "fee": {
+    "en": "Tourism Authority lists free entry; confirm current arrangements",
+    "zh": "旅游局列示免费参拜，请确认当前安排",
+    "th": "ททท. ระบุเข้าชมฟรี โปรดตรวจสอบปัจจุบัน"
+  },
+  "hours": {
+    "en": "Tourism Authority lists 08:00–17:00; confirm with the temple",
+    "zh": "旅游局列示 08:00–17:00，请向寺方确认",
+    "th": "ททท. ระบุ 08:00–17:00 โปรดตรวจสอบกับวัด"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.thailandtravel.or.jp/wat-mueng-nguen-kong/",
+  "locales": {
+    "en": {
+      "name": "Wat Mueng Nguen Kong",
+      "tagline": "A Lanna wooden prayer hall near Wat Phra Singh",
+      "description": "Wat Mueng Nguen Kong is an Old City temple on Samlan Road known for its wooden Lanna-style prayer hall.",
+      "summary": "Wat Mueng Nguen Kong is an Old City temple on Samlan Road known for its wooden Lanna-style prayer hall.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple manages its worship areas and access. Ask the temple which buildings are open and respect services in progress.",
+      "history": [
+        "The Tourism Authority relates a tradition that a prosperous official donated his land to establish the temple; it notes that the wooden hall was restored in 1989."
+      ],
+      "features": [
+        "Study the ornamented columns and upward-curving roof of the wooden hall.",
+        "See the reclining Buddha and square golden chedi beside the hall where access is permitted."
+      ],
+      "experience": [
+        "Study the ornamented columns and upward-curving roof of the wooden hall.",
+        "See the reclining Buddha and square golden chedi beside the hall where access is permitted."
+      ],
+      "route": [
+        "Locate the entrance at 30 Samlan Road.",
+        "Check which parts are open, then quietly observe the wooden hall.",
+        "Look for the reclining Buddha and chedi before continuing towards Wat Phra Singh."
+      ],
+      "photo": [
+        "Photograph the wooden hall from public areas; ask before photographing worshippers."
+      ],
+      "visit": [
+        "Dress respectfully and follow temple notices."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to 30 Samlan Road in the Old City."
+      ],
+      "faqs": [
+        {
+          "q": "Is this Wat Phra Singh?",
+          "a": "No. Wat Mueng Nguen Kong is a separate temple a short walk away on Samlan Road."
+        },
+        {
+          "q": "What is distinctive about its hall?",
+          "a": "The Tourism Authority identifies its wooden hall as an example of Lanna architecture and notes its 1989 restoration."
+        },
+        {
+          "q": "What else is beside the hall?",
+          "a": "The Tourism Authority describes a reclining Buddha and a square golden chedi nearby."
+        }
+      ]
+    },
+    "zh": {
+      "name": "孟银贡寺",
+      "tagline": "帕辛寺附近的兰纳木造礼佛殿",
+      "description": "孟银贡寺位于古城三兰路，以兰纳风格木造礼佛殿闻名。",
+      "summary": "孟银贡寺位于古城三兰路，以兰纳风格木造礼佛殿闻名。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺方管理礼佛区与参观范围；请询问哪些建筑开放，并尊重正在进行的宗教活动。",
+      "history": [
+        "泰国旅游局介绍，当地传说一位经商致富的官员捐地建寺；木殿于 1989 年修复。"
+      ],
+      "features": [
+        "观察木殿装饰柱与向上翘起的屋顶。",
+        "在允许进入的范围内观看殿旁卧佛与方形金色佛塔。"
+      ],
+      "experience": [
+        "观察木殿装饰柱与向上翘起的屋顶。",
+        "在允许进入的范围内观看殿旁卧佛与方形金色佛塔。"
+      ],
+      "route": [
+        "找到三兰路 30 号入口。",
+        "确认开放范围，安静参观木殿。",
+        "再看卧佛与佛塔，随后可继续前往帕辛寺。"
+      ],
+      "photo": [
+        "在开放区域拍摄木殿；拍摄礼佛者前请先征求同意。"
+      ],
+      "visit": [
+        "着装得体，遵守寺方告示。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往古城三兰路 30 号。"
+      ],
+      "faqs": [
+        {
+          "q": "这是帕辛寺吗？",
+          "a": "不是。孟银贡寺是三兰路上步行可达的另一座寺院。"
+        },
+        {
+          "q": "木殿有何特色？",
+          "a": "旅游局将它列为兰纳建筑实例，并记载其 1989 年修复。"
+        },
+        {
+          "q": "殿旁还有什么？",
+          "a": "旅游局介绍附近有卧佛与方形金色佛塔。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดหมื่นเงินกอง",
+      "tagline": "วิหารไม้ล้านนาใกล้วัดพระสิงห์",
+      "description": "วัดหมื่นเงินกองเป็นวัดในเมืองเก่าบนถนนสามล้าน มีวิหารไม้แบบล้านนา",
+      "summary": "วัดหมื่นเงินกองเป็นวัดในเมืองเก่าบนถนนสามล้าน มีวิหารไม้แบบล้านนา",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "วัดดูแลพื้นที่บูชาและการเข้าชม โปรดสอบถามอาคารที่เปิดและเคารพศาสนกิจ",
+      "history": [
+        "การท่องเที่ยวแห่งประเทศไทยเล่าตำนานว่าขุนนางผู้มั่งคั่งอุทิศที่ดินสร้างวัด และระบุว่าวิหารไม้ได้รับการบูรณะในปี 2532"
+      ],
+      "features": [
+        "สังเกตเสาตกแต่งและหลังคาเชิดขึ้นของวิหารไม้",
+        "ชมพระนอนและเจดีย์ทองฐานสี่เหลี่ยมข้างวิหารในบริเวณที่อนุญาต"
+      ],
+      "experience": [
+        "สังเกตเสาตกแต่งและหลังคาเชิดขึ้นของวิหารไม้",
+        "ชมพระนอนและเจดีย์ทองฐานสี่เหลี่ยมข้างวิหารในบริเวณที่อนุญาต"
+      ],
+      "route": [
+        "หาทางเข้าที่เลขที่ 30 ถนนสามล้าน",
+        "ตรวจพื้นที่เปิดแล้วชมวิหารไม้อย่างสงบ",
+        "ชมพระนอนและเจดีย์ก่อนเดินต่อไปวัดพระสิงห์"
+      ],
+      "photo": [
+        "ถ่ายวิหารไม้จากพื้นที่เปิดและขออนุญาตก่อนถ่ายผู้มาบูชา"
+      ],
+      "visit": [
+        "แต่งกายสุภาพและปฏิบัติตามป้ายวัด"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไปเลขที่ 30 ถนนสามล้านในเมืองเก่า"
+      ],
+      "faqs": [
+        {
+          "q": "เป็นวัดพระสิงห์หรือไม่?",
+          "a": "ไม่ใช่ วัดหมื่นเงินกองเป็นอีกวัดบนถนนสามล้านซึ่งเดินถึงกันได้"
+        },
+        {
+          "q": "วิหารมีลักษณะเด่นอย่างไร?",
+          "a": "ททท. ระบุว่าเป็นวิหารไม้แบบล้านนาและได้รับการบูรณะในปี 2532"
+        },
+        {
+          "q": "ข้างวิหารมีอะไรอีก?",
+          "a": "ททท. กล่าวถึงพระนอนและเจดีย์ทองฐานสี่เหลี่ยมใกล้วิหาร"
+        }
+      ]
+    }
+  }
+},
+  "jing-jai-market": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "ตลาดจริงใจ เชียงใหม่",
+  "address": "45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and individual charges on site",
+    "th": "ตรวจสอบค่าเข้าชมและค่าใช้จ่ายแต่ละรายการ ณ สถานที่",
+    "zh": "请在现场确认入场及各项费用"
+  },
+  "hours": {
+    "en": "Confirm current hours with the market and individual shops",
+    "th": "ตรวจสอบเวลาเปิดกับตลาดและร้านค้าแต่ละแห่ง",
+    "zh": "请向市集及各店确认当前开放时间"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/jing-jai-market-chiang-mai",
+  "locales": {
+    "en": {
+      "name": "Jing Jai Market Chiang Mai",
+      "tagline": "The tourism authority describes a community for craft lovers and a weekend market including farmers and handmade-goods sections.",
+      "description": "A craft and market destination on Atsadathon Road north of Chiang Mai’s old-city centre.",
+      "summary": "A craft and market destination on Atsadathon Road north of Chiang Mai’s old-city centre.",
+      "managementTitle": "About the market and its management",
+      "management": "Individual shops and vendors operate within the market; check the market organiser’s current announcements for event arrangements.",
+      "history": [
+        "By 2024 the Tourism Authority included Jing Jai in its Chiang Mai visitor recommendations, highlighting produce from farmers alongside local food and handmade goods."
+      ],
+      "features": [
+        "The tourism authority describes a community for craft lovers and a weekend market including farmers and handmade-goods sections.",
+        "The Tourism Authority describes products by local designers and artists alongside the weekend craft and farmers’ market."
+      ],
+      "experience": [
+        "The tourism authority describes a community for craft lovers and a weekend market including farmers and handmade-goods sections.",
+        "The weekend market and individual shops may keep different hours; check the current schedule before travelling."
+      ],
+      "route": [
+        "From Mae Kha Canal, navigate to 45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "Check the entrance and current visitor notices.",
+        "Explore the permitted area, then return using the same location on the map."
+      ],
+      "photo": [
+        "Ask stallholders before close photographs and keep market aisles clear."
+      ],
+      "visit": [
+        "The weekend market and individual shops may keep different hours; check the current schedule before travelling."
+      ],
+      "transport": [
+        "From Mae Kha Canal, navigate to 45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "Is Jing Jai the Sunday Walking Street?",
+          "a": "No. Jing Jai is a separate market on Atsadathon Road; the Sunday Walking Street follows the old-city street corridor."
+        },
+        {
+          "q": "What is the weekend market known for?",
+          "a": "The tourism authority describes farmers and craft-market sections; individual sellers vary."
+        },
+        {
+          "q": "Will all shops follow the weekend market timetable?",
+          "a": "Not necessarily. Check the current market schedule and individual shop hours separately."
+        }
+      ]
+    },
+    "zh": {
+      "name": "真心市集（Jing Jai Market）",
+      "tagline": "泰国旅游局将其介绍为手作社群，并提到包含农产品和手工艺区域的周末市集。",
+      "description": "位于清迈古城中心以北 Atsadathon 路的手工艺与市集空间。",
+      "summary": "位于清迈古城中心以北 Atsadathon 路的手工艺与市集空间。",
+      "managementTitle": "关于市集及其管理",
+      "management": "场内店铺与摊贩分别经营；活动安排请看市集主办方最新公告。",
+      "history": [
+        "到 2024 年，泰国旅游局已将真心市集列入清迈推荐，介绍农夫农产品、本地食品与手作商品。"
+      ],
+      "features": [
+        "泰国旅游局将其介绍为手作社群，并提到包含农产品和手工艺区域的周末市集。",
+        "泰国旅游局介绍本地设计师与艺术家的作品，以及周末手作和农夫市集。"
+      ],
+      "experience": [
+        "泰国旅游局将其介绍为手作社群，并提到包含农产品和手工艺区域的周末市集。",
+        "周末市集与各店营业时间可能不同，出发前请核对最新安排。"
+      ],
+      "route": [
+        "从湄卡运河查询前往45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand的路线。",
+        "到达后查看入口与当前访客告示。",
+        "参观开放区域后，使用同一地点定位返回。"
+      ],
+      "photo": [
+        "近距离拍摄摊位前先询问摊主，不要阻挡通道。"
+      ],
+      "visit": [
+        "周末市集与各店营业时间可能不同，出发前请核对最新安排。"
+      ],
+      "transport": [
+        "从湄卡运河查询前往45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand的路线。"
+      ],
+      "faqs": [
+        {
+          "q": "真心市集就是周日步行街吗？",
+          "a": "不是。真心市集在 Atsadathon 路；周日步行街沿古城街道展开。"
+        },
+        {
+          "q": "周末市集有什么特色？",
+          "a": "旅游局提到农夫市集和手工艺区域；实际摊贩可能变化。"
+        },
+        {
+          "q": "所有商店都按周末市集时间营业吗？",
+          "a": "不一定，请分别核对市集活动与各店的最新时间。"
+        }
+      ]
+    },
+    "th": {
+      "name": "ตลาดจริงใจ เชียงใหม่",
+      "tagline": "การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นชุมชนคนรักงานคราฟต์และมีตลาดสุดสัปดาห์ทั้งสินค้าเกษตรและงานทำมือ",
+      "description": "แหล่งงานคราฟต์และตลาดบนถนนอัษฎาธรทางเหนือของใจกลางเมืองเก่าเชียงใหม่",
+      "summary": "แหล่งงานคราฟต์และตลาดบนถนนอัษฎาธรทางเหนือของใจกลางเมืองเก่าเชียงใหม่",
+      "managementTitle": "เกี่ยวกับตลาดและการดูแล",
+      "management": "ร้านค้าและผู้ขายแต่ละรายดำเนินกิจการในพื้นที่ โปรดดูประกาศผู้จัดตลาดเรื่องกิจกรรมปัจจุบัน",
+      "history": [
+        "ภายในปี 2567 ททท. แนะนำตลาดจริงใจในรายการท่องเที่ยวเชียงใหม่ โดยกล่าวถึงผลผลิตเกษตรกร อาหารท้องถิ่น และงานทำมือ"
+      ],
+      "features": [
+        "การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นชุมชนคนรักงานคราฟต์และมีตลาดสุดสัปดาห์ทั้งสินค้าเกษตรและงานทำมือ",
+        "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงสินค้าของนักออกแบบและศิลปินท้องถิ่น รวมถึงตลาดงานคราฟต์และเกษตรกรช่วงสุดสัปดาห์"
+      ],
+      "experience": [
+        "การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นชุมชนคนรักงานคราฟต์และมีตลาดสุดสัปดาห์ทั้งสินค้าเกษตรและงานทำมือ",
+        "ตลาดสุดสัปดาห์และร้านแต่ละร้านอาจเปิดต่างเวลากัน ควรตรวจสอบตารางปัจจุบัน"
+      ],
+      "route": [
+        "จากคลองแม่ข่า ตรวจเส้นทางไป 45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "ตรวจทางเข้าและประกาศผู้เข้าชมปัจจุบัน",
+        "ชมพื้นที่ที่เปิด แล้วใช้หมุดเดียวกันเพื่อเดินทางกลับ"
+      ],
+      "photo": [
+        "ขออนุญาตผู้ค้าก่อนถ่ายใกล้และไม่กีดขวางทางเดิน"
+      ],
+      "visit": [
+        "ตลาดสุดสัปดาห์และร้านแต่ละร้านอาจเปิดต่างเวลากัน ควรตรวจสอบตารางปัจจุบัน"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า ตรวจเส้นทางไป 45 Atsadathon Road, Pa Tan, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "ตลาดจริงใจคือถนนคนเดินวันอาทิตย์หรือไม่?",
+          "a": "ไม่ ตลาดจริงใจอยู่ถนนอัษฎาธร ส่วนถนนคนเดินวันอาทิตย์อยู่ตามถนนในเมืองเก่า"
+        },
+        {
+          "q": "ตลาดสุดสัปดาห์มีอะไรเด่น?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงส่วนตลาดเกษตรกรและงานคราฟต์ โดยผู้ขายอาจเปลี่ยนไป"
+        },
+        {
+          "q": "ทุกร้านเปิดตามเวลาตลาดสุดสัปดาห์หรือไม่?",
+          "a": "ไม่จำเป็น ควรตรวจสอบตารางตลาดและเวลาเปิดของแต่ละร้านแยกกัน"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://thai.tourismthailand.org/Articles/5-must-do-in-chiang-mai"
+  ]
+},
+  "wat-chang-khong": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดช่างฆ้อง ถนนลอยเคราะห์ เชียงใหม่",
+  "address": "Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and individual charges on site",
+    "th": "ตรวจสอบค่าเข้าชมและค่าใช้จ่ายแต่ละรายการ ณ สถานที่",
+    "zh": "请在现场确认入场及各项费用"
+  },
+  "hours": {
+    "en": "Confirm current hours with the temple",
+    "th": "ตรวจสอบเวลาเปิดกับวัด",
+    "zh": "请向寺方确认当前开放时间"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-changkhong",
+  "locales": {
+    "en": {
+      "name": "Wat Chang Khong",
+      "tagline": "The tourism authority identifies the temple as part of the Maha Nikaya Buddhist tradition, on the eastern side of the city.",
+      "description": "A Buddhist temple on Loi Khro Road in the Chang Khlan area of Chiang Mai.",
+      "summary": "A Buddhist temple on Loi Khro Road in the Chang Khlan area of Chiang Mai.",
+      "managementTitle": "About the temple and its care",
+      "management": "The temple community directs religious use and visitor access; ask staff about current arrangements.",
+      "history": [
+        "Thailand’s tourism directory recounts that gong makers migrating from Chiang Saen rebuilt the former Wat Si Phun To in the early Rattanakosin period. Official accounts differ on precise dates."
+      ],
+      "features": [
+        "The tourism authority identifies the temple as part of the Maha Nikaya Buddhist tradition, on the eastern side of the city.",
+        "The Tourism Authority describes the main hall as Lanna style with floral patterns and notes Thai, Chinese and Burmese architectural influences."
+      ],
+      "experience": [
+        "The tourism authority identifies the temple as part of the Maha Nikaya Buddhist tradition, on the eastern side of the city.",
+        "Follow temple guidance and ask before entering buildings used for worship."
+      ],
+      "route": [
+        "From Mae Kha Canal, navigate to Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "Check the entrance and current visitor notices.",
+        "Explore the permitted area, then return using the same location on the map."
+      ],
+      "photo": [
+        "Photograph from permitted grounds and leave space for worshippers."
+      ],
+      "visit": [
+        "Follow temple guidance and ask before entering buildings used for worship."
+      ],
+      "transport": [
+        "From Mae Kha Canal, navigate to Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "Where is Wat Chang Khong?",
+          "a": "The tourism authority places it on Loi Khro Road in Chang Khlan, Mueang Chiang Mai."
+        },
+        {
+          "q": "What Buddhist tradition does the authority identify?",
+          "a": "It identifies Wat Chang Khong as a Maha Nikaya temple."
+        },
+        {
+          "q": "Is it Wat Chedi Luang?",
+          "a": "No. They are separate temples; use the Loi Khro Road listing for Wat Chang Khong."
+        }
+      ]
+    },
+    "zh": {
+      "name": "昌孔寺（Wat Chang Khong）",
+      "tagline": "泰国旅游局将寺院列为上座部大宗派（Maha Nikaya）寺院，位置在城市东侧。",
+      "description": "位于清迈 Chang Khlan 地区 Loi Khro 路的佛寺。",
+      "summary": "位于清迈 Chang Khlan 地区 Loi Khro 路的佛寺。",
+      "managementTitle": "关于寺院及其管理",
+      "management": "寺院僧团及工作人员安排宗教活动与访客进入；请向寺方确认当前规定。",
+      "history": [
+        "泰国官方旅游目录记载，早期拉达那哥欣时期，从清盛迁来的制锣工匠重建了原名 Wat Si Phun To 的寺院；官方资料对确切年代说法不同。"
+      ],
+      "features": [
+        "泰国旅游局将寺院列为上座部大宗派（Maha Nikaya）寺院，位置在城市东侧。",
+        "泰国旅游局介绍主殿采用兰纳风格及花卉图案，并提及泰国、中国和缅甸建筑影响。"
+      ],
+      "experience": [
+        "泰国旅游局将寺院列为上座部大宗派（Maha Nikaya）寺院，位置在城市东侧。",
+        "遵守寺方指引，进入用于宗教活动的建筑前先询问。"
+      ],
+      "route": [
+        "从湄卡运河查询前往Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand的路线。",
+        "到达后查看入口与当前访客告示。",
+        "参观开放区域后，使用同一地点定位返回。"
+      ],
+      "photo": [
+        "在获准进入的区域拍摄，并为礼佛者留出空间。"
+      ],
+      "visit": [
+        "遵守寺方指引，进入用于宗教活动的建筑前先询问。"
+      ],
+      "transport": [
+        "从湄卡运河查询前往Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand的路线。"
+      ],
+      "faqs": [
+        {
+          "q": "昌孔寺在哪里？",
+          "a": "旅游局将其定位在清迈 Mueang 区 Chang Khlan 的 Loi Khro 路。"
+        },
+        {
+          "q": "官方资料将它列为哪个佛教宗派？",
+          "a": "泰国旅游局将其列为 Maha Nikaya 寺院。"
+        },
+        {
+          "q": "它就是契迪龙寺吗？",
+          "a": "不是。两者是不同寺院；请使用 Loi Khro 路的昌孔寺定位。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดช่างฆ้อง",
+      "tagline": "การท่องเที่ยวแห่งประเทศไทยระบุว่าเป็นวัดฝ่ายมหานิกายทางด้านตะวันออกของเมือง",
+      "description": "วัดบนถนนลอยเคราะห์ในย่านช้างคลาน อำเภอเมืองเชียงใหม่",
+      "summary": "วัดบนถนนลอยเคราะห์ในย่านช้างคลาน อำเภอเมืองเชียงใหม่",
+      "managementTitle": "เกี่ยวกับวัดและการดูแล",
+      "management": "คณะสงฆ์และผู้ดูแลวัดจัดการศาสนกิจและการเข้าชม โปรดสอบถามกติกาปัจจุบัน",
+      "history": [
+        "ฐานข้อมูลท่องเที่ยวทางการเล่าว่าช่างทำฆ้องจากเชียงแสนสร้างวัดศรีพูนโตขึ้นใหม่ในช่วงต้นรัตนโกสินทร์ โดยข้อมูลทางการระบุปีที่แน่ชัดแตกต่างกัน"
+      ],
+      "features": [
+        "การท่องเที่ยวแห่งประเทศไทยระบุว่าเป็นวัดฝ่ายมหานิกายทางด้านตะวันออกของเมือง",
+        "การท่องเที่ยวแห่งประเทศไทยระบุว่าวิหารเป็นแบบล้านนามีลายดอกไม้ และกล่าวถึงอิทธิพลสถาปัตยกรรมไทย จีน และพม่า"
+      ],
+      "experience": [
+        "การท่องเที่ยวแห่งประเทศไทยระบุว่าเป็นวัดฝ่ายมหานิกายทางด้านตะวันออกของเมือง",
+        "ปฏิบัติตามคำแนะนำของวัดและสอบถามก่อนเข้าอาคารที่ใช้ประกอบศาสนกิจ"
+      ],
+      "route": [
+        "จากคลองแม่ข่า ตรวจเส้นทางไป Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "ตรวจทางเข้าและประกาศผู้เข้าชมปัจจุบัน",
+        "ชมพื้นที่ที่เปิด แล้วใช้หมุดเดียวกันเพื่อเดินทางกลับ"
+      ],
+      "photo": [
+        "ถ่ายจากบริเวณที่อนุญาตและเว้นทางให้ผู้มาทำบุญ"
+      ],
+      "visit": [
+        "ปฏิบัติตามคำแนะนำของวัดและสอบถามก่อนเข้าอาคารที่ใช้ประกอบศาสนกิจ"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า ตรวจเส้นทางไป Loi Khro Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "วัดช่างฆ้องอยู่ที่ใด?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยระบุว่าตั้งอยู่บนถนนลอยเคราะห์ ตำบลช้างคลาน อำเภอเมืองเชียงใหม่"
+        },
+        {
+          "q": "วัดอยู่ในนิกายใดตามข้อมูลทางการ?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยระบุว่าเป็นวัดฝ่ายมหานิกาย"
+        },
+        {
+          "q": "เป็นวัดเดียวกับวัดเจดีย์หลวงหรือไม่?",
+          "a": "ไม่ เป็นคนละวัด ควรใช้หมุดวัดช่างฆ้องบนถนนลอยเคราะห์"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://www.thailandtourismdirectory.go.th/attraction/3314"
+  ]
+},
+  "wat-buak-krok-luang": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดบวกครกหลวง เชียงใหม่",
+  "address": "Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-buak-krok-luang",
+  "locales": {
+    "en": {
+      "name": "Wat Buak Krok Luang",
+      "tagline": "The paintings depict episodes from the Buddha’s life and Jataka stories. The tourism authority describes them as work by Shan artists.",
+      "description": "A temple in Tha Sala, east of central Chiang Mai, known for murals in its Lanna-style worship hall.",
+      "summary": "A temple in Tha Sala, east of central Chiang Mai, known for murals in its Lanna-style worship hall.",
+      "managementTitle": "About the place and its management",
+      "management": "The temple’s monastic community and staff arrange religious use and access; confirm the hall’s current availability directly.",
+      "history": [
+        "The Tourism Authority says the hall was extensively renovated during Chao Kaew Nawarat’s rule (1911–1939); an inscription dated 1925 may mark that renovation. Its original construction date is unknown."
+      ],
+      "features": [
+        "The paintings depict episodes from the Buddha’s life and Jataka stories. The tourism authority describes them as work by Shan artists."
+      ],
+      "experience": [
+        "The paintings depict episodes from the Buddha’s life and Jataka stories. The tourism authority describes them as work by Shan artists.",
+        "The worship hall may not always be accessible. Ask the temple before planning an interior visit and respect photography restrictions."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "The paintings depict episodes from the Buddha’s life and Jataka stories. The tourism authority describes them as work by Shan artists.",
+        "The worship hall may not always be accessible. Ask the temple before planning an interior visit and respect photography restrictions."
+      ],
+      "photo": [
+        "Photograph the hall from permitted areas; ask before taking pictures of the murals."
+      ],
+      "visit": [
+        "The worship hall may not always be accessible. Ask the temple before planning an interior visit and respect photography restrictions."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "What is distinctive about this temple?",
+          "a": "Its worship hall contains murals of Buddhist narratives, attributed by the tourism authority to Shan artists."
+        },
+        {
+          "q": "Is it in the old city?",
+          "a": "No. It is in Tha Sala east of the centre, along the Chiang Mai–San Kamphaeng corridor."
+        },
+        {
+          "q": "Can I always see the murals?",
+          "a": "Do not assume the hall is open. Ask the temple about access and photography on the day."
+        }
+      ]
+    },
+    "zh": {
+      "name": "卜克洛銮寺（Wat Buak Krok Luang）",
+      "tagline": "壁画描绘佛陀生平与本生故事；泰国旅游局将其归为掸族画师的作品。",
+      "description": "位于清迈市中心以东 Tha Sala 的寺院，兰纳式佛殿内保存壁画。",
+      "summary": "位于清迈市中心以东 Tha Sala 的寺院，兰纳式佛殿内保存壁画。",
+      "managementTitle": "关于此地及其管理",
+      "management": "寺院僧团及工作人员安排宗教活动和访客进入，请直接确认佛殿当前开放情况。",
+      "history": [
+        "泰国旅游局介绍，礼佛殿在昭觉诺拉时期（1911–1939）大规模修缮；1925 年的铭文可能记载该次修缮。寺院最初建造年代未明。"
+      ],
+      "features": [
+        "壁画描绘佛陀生平与本生故事；泰国旅游局将其归为掸族画师的作品。"
+      ],
+      "experience": [
+        "壁画描绘佛陀生平与本生故事；泰国旅游局将其归为掸族画师的作品。",
+        "佛殿未必随时开放，请在安排室内参观前询问寺方，并遵守摄影限制。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand。",
+        "壁画描绘佛陀生平与本生故事；泰国旅游局将其归为掸族画师的作品。",
+        "佛殿未必随时开放，请在安排室内参观前询问寺方，并遵守摄影限制。"
+      ],
+      "photo": [
+        "在允许区域拍摄佛殿外观，拍摄壁画前先征得许可。"
+      ],
+      "visit": [
+        "佛殿未必随时开放，请在安排室内参观前询问寺方，并遵守摄影限制。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "这座寺院有什么特色？",
+          "a": "佛殿壁画描绘佛教故事，泰国旅游局称其为掸族画师的作品。"
+        },
+        {
+          "q": "寺院在古城内吗？",
+          "a": "不在。它位于市中心以东的 Tha Sala，靠近清迈—讪甘烹路线。"
+        },
+        {
+          "q": "任何时候都能看壁画吗？",
+          "a": "不要假定佛殿一直开放；请在出发当天向寺方确认入内及摄影安排。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดบวกครกหลวง",
+      "tagline": "ภาพเขียนเล่าเรื่องพุทธประวัติและชาดก การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นผลงานช่างชาวไทใหญ่",
+      "description": "วัดในตำบลท่าศาลาทางตะวันออกของตัวเมืองเชียงใหม่ มีจิตรกรรมฝาผนังในวิหารล้านนา",
+      "summary": "วัดในตำบลท่าศาลาทางตะวันออกของตัวเมืองเชียงใหม่ มีจิตรกรรมฝาผนังในวิหารล้านนา",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "คณะสงฆ์และผู้ดูแลวัดจัดการศาสนกิจและการเข้าชม ควรสอบถามการเปิดวิหารโดยตรง",
+      "history": [
+        "ททท. ระบุว่าวิหารได้รับการบูรณะครั้งใหญ่สมัยเจ้าแก้วนวรัฐ พ.ศ. 2454–2482 และจารึก พ.ศ. 2468 อาจเป็นปีบูรณะ ส่วนปีสร้างเดิมไม่ปรากฏ"
+      ],
+      "features": [
+        "ภาพเขียนเล่าเรื่องพุทธประวัติและชาดก การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นผลงานช่างชาวไทใหญ่"
+      ],
+      "experience": [
+        "ภาพเขียนเล่าเรื่องพุทธประวัติและชาดก การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นผลงานช่างชาวไทใหญ่",
+        "วิหารอาจไม่ได้เปิดตลอดเวลา ควรสอบถามวัดก่อนเดินทางและเคารพข้อจำกัดการถ่ายภาพ"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "ภาพเขียนเล่าเรื่องพุทธประวัติและชาดก การท่องเที่ยวแห่งประเทศไทยอธิบายว่าเป็นผลงานช่างชาวไทใหญ่",
+        "วิหารอาจไม่ได้เปิดตลอดเวลา ควรสอบถามวัดก่อนเดินทางและเคารพข้อจำกัดการถ่ายภาพ"
+      ],
+      "photo": [
+        "ถ่ายวิหารจากพื้นที่ที่อนุญาต และขออนุญาตก่อนถ่ายจิตรกรรมภายใน"
+      ],
+      "visit": [
+        "วิหารอาจไม่ได้เปิดตลอดเวลา ควรสอบถามวัดก่อนเดินทางและเคารพข้อจำกัดการถ่ายภาพ"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป Tha Sala, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "วัดนี้มีจุดเด่นอะไร?",
+          "a": "วิหารมีจิตรกรรมเรื่องราวทางพุทธศาสนา ซึ่งการท่องเที่ยวแห่งประเทศไทยระบุว่าเป็นงานช่างไทใหญ่"
+        },
+        {
+          "q": "วัดอยู่ในเมืองเก่าหรือไม่?",
+          "a": "ไม่ อยู่ตำบลท่าศาลาทางตะวันออกของเมือง บนแนวถนนเชียงใหม่–สันกำแพง"
+        },
+        {
+          "q": "ชมจิตรกรรมได้ตลอดหรือไม่?",
+          "a": "ไม่ควรสมมติว่าวิหารเปิดเสมอ โปรดสอบถามวัดเรื่องการเข้าและการถ่ายภาพในวันเดินทาง"
+        }
+      ]
+    }
+  }
+},
+  "wat-puak-hong": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดพวกหงษ์ ถนนสามล้าน เชียงใหม่",
+  "address": "Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-puag-hong",
+  "locales": {
+    "en": {
+      "name": "Wat Puak Hong",
+      "tagline": "Look at the chedi’s rounded, layered form and compare it with the square brick mass of Wat Chedi Luang.",
+      "description": "A temple in Chiang Mai whose circular, tiered chedi is an unusual feature of the city’s religious architecture.",
+      "summary": "A temple in Chiang Mai whose circular, tiered chedi is an unusual feature of the city’s religious architecture.",
+      "managementTitle": "About the place and its management",
+      "management": "The temple community oversees worship and local visitor arrangements; the scope of conservation responsibility should be confirmed on site.",
+      "history": [
+        "The Tourism Authority reports a tradition that the chedi was built during King Yot Chiang Rai’s reign in 1487; treat the date as a reported tradition."
+      ],
+      "features": [
+        "Look at the chedi’s rounded, layered form and compare it with the square brick mass of Wat Chedi Luang."
+      ],
+      "experience": [
+        "Look at the chedi’s rounded, layered form and compare it with the square brick mass of Wat Chedi Luang.",
+        "This is a working religious site; follow temple instructions and confirm access before entering buildings."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "Look at the chedi’s rounded, layered form and compare it with the square brick mass of Wat Chedi Luang.",
+        "This is a working religious site; follow temple instructions and confirm access before entering buildings."
+      ],
+      "photo": [
+        "From the grounds, choose a viewpoint that shows the chedi’s stacked circular tiers."
+      ],
+      "visit": [
+        "This is a working religious site; follow temple instructions and confirm access before entering buildings."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "What distinguishes the chedi?",
+          "a": "The tourism authority identifies its round, tiered form as unusual among Chiang Mai chedis."
+        },
+        {
+          "q": "Is it the same as Wat Chedi Luang?",
+          "a": "No. These are separate temples; compare Puak Hong’s rounded tiers with Chedi Luang’s massive square brick structure."
+        },
+        {
+          "q": "How should I locate the correct temple?",
+          "a": "Use the Thai-name map search วัดพวกหงษ์ ถนนสามล้าน เชียงใหม่ and check the listing before travelling."
+        }
+      ]
+    },
+    "zh": {
+      "name": "卜洪寺（Wat Puak Hong）",
+      "tagline": "观察佛塔的圆形层级，再与契迪龙寺巨大的方形砖塔基座作对比。",
+      "description": "清迈一座以层叠圆形佛塔为特色的寺院，这种形制在当地并不多见。",
+      "summary": "清迈一座以层叠圆形佛塔为特色的寺院，这种形制在当地并不多见。",
+      "managementTitle": "关于此地及其管理",
+      "management": "寺院僧团及工作人员安排礼佛和访客活动；文物维护的具体责任范围请向寺方确认。",
+      "history": [
+        "泰国旅游局记载一种说法：佛塔建于清莱育王在位时期的 1487 年；这一年代应视为传说记载。"
+      ],
+      "features": [
+        "观察佛塔的圆形层级，再与契迪龙寺巨大的方形砖塔基座作对比。"
+      ],
+      "experience": [
+        "观察佛塔的圆形层级，再与契迪龙寺巨大的方形砖塔基座作对比。",
+        "寺院仍用于宗教活动，请遵守寺方指引，进入建筑前先确认。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand。",
+        "观察佛塔的圆形层级，再与契迪龙寺巨大的方形砖塔基座作对比。",
+        "寺院仍用于宗教活动，请遵守寺方指引，进入建筑前先确认。"
+      ],
+      "photo": [
+        "在寺院允许区域寻找能呈现佛塔层叠圆形结构的角度。"
+      ],
+      "visit": [
+        "寺院仍用于宗教活动，请遵守寺方指引，进入建筑前先确认。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "佛塔有什么特别之处？",
+          "a": "泰国旅游局指出，这种层叠圆形佛塔在清迈较为少见。"
+        },
+        {
+          "q": "它与契迪龙寺是同一寺院吗？",
+          "a": "不是。两处为不同寺院；可比较卜洪寺的圆形塔层与契迪龙寺巨大的方形砖基座。"
+        },
+        {
+          "q": "如何避免导航到同名地点？",
+          "a": "用泰文 วัดพวกหงษ์ 加清迈搜索地图，并在出发前核对地点。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดพวกหงษ์",
+      "tagline": "สังเกตชั้นเจดีย์ทรงกลม แล้วเปรียบเทียบกับฐานอิฐสี่เหลี่ยมขนาดใหญ่ของวัดเจดีย์หลวง",
+      "description": "วัดในเชียงใหม่ที่มีเจดีย์ทรงกลมเป็นชั้นซึ่งพบไม่บ่อยในเมือง",
+      "summary": "วัดในเชียงใหม่ที่มีเจดีย์ทรงกลมเป็นชั้นซึ่งพบไม่บ่อยในเมือง",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "คณะสงฆ์และผู้ดูแลวัดจัดการศาสนกิจและการเข้าชม ส่วนขอบเขตผู้รับผิดชอบงานอนุรักษ์ควรสอบถามที่วัด",
+      "history": [
+        "ททท. กล่าวตามคำบอกเล่าว่าเจดีย์สร้างในรัชสมัยพระยอดเชียงราย พ.ศ. 2030 จึงควรมองปีนี้เป็นข้อมูลตามคำบอกเล่า"
+      ],
+      "features": [
+        "สังเกตชั้นเจดีย์ทรงกลม แล้วเปรียบเทียบกับฐานอิฐสี่เหลี่ยมขนาดใหญ่ของวัดเจดีย์หลวง"
+      ],
+      "experience": [
+        "สังเกตชั้นเจดีย์ทรงกลม แล้วเปรียบเทียบกับฐานอิฐสี่เหลี่ยมขนาดใหญ่ของวัดเจดีย์หลวง",
+        "เป็นศาสนสถานที่ยังใช้งาน โปรดปฏิบัติตามคำแนะนำของวัดและตรวจสอบก่อนเข้าอาคาร"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "สังเกตชั้นเจดีย์ทรงกลม แล้วเปรียบเทียบกับฐานอิฐสี่เหลี่ยมขนาดใหญ่ของวัดเจดีย์หลวง",
+        "เป็นศาสนสถานที่ยังใช้งาน โปรดปฏิบัติตามคำแนะนำของวัดและตรวจสอบก่อนเข้าอาคาร"
+      ],
+      "photo": [
+        "เลือกมุมจากภายในบริเวณวัดที่เห็นชั้นวงกลมของเจดีย์"
+      ],
+      "visit": [
+        "เป็นศาสนสถานที่ยังใช้งาน โปรดปฏิบัติตามคำแนะนำของวัดและตรวจสอบก่อนเข้าอาคาร"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป Samlan Road, Phra Sing, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "เจดีย์มีลักษณะเด่นอย่างไร?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยระบุว่าเจดีย์ทรงกลมซ้อนชั้นเช่นนี้พบไม่บ่อยในเชียงใหม่"
+        },
+        {
+          "q": "เป็นวัดเดียวกับวัดเจดีย์หลวงหรือไม่?",
+          "a": "ไม่ เป็นคนละวัด เปรียบเทียบชั้นกลมของวัดพวกหงษ์กับฐานอิฐสี่เหลี่ยมขนาดใหญ่ของวัดเจดีย์หลวง"
+        },
+        {
+          "q": "ค้นหาวัดให้ถูกแห่งอย่างไร?",
+          "a": "ใช้ชื่อ วัดพวกหงษ์ ถนนสามล้าน เชียงใหม่ ในแผนที่และตรวจสอบตำแหน่งก่อนเดินทาง"
+        }
+      ]
+    }
+  }
+},
+  "wat-pa-pao": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดป่าเป้า เชียงใหม่",
+  "address": "Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-pa-pao",
+  "locales": {
+    "en": {
+      "name": "Wat Pa Pao",
+      "tagline": "The Tourism Authority of Thailand links the temple with the Tai Yai (Shan) community and describes a school and a museum within the compound.",
+      "description": "A Buddhist temple on Manee Nopparat Road on the northern side of Chiang Mai’s old city.",
+      "summary": "A Buddhist temple on Manee Nopparat Road on the northern side of Chiang Mai’s old city.",
+      "managementTitle": "About the place and its management",
+      "management": "The temple community manages religious activity. Ask the temple directly about access to the school and museum.",
+      "history": [
+        "The Tourism Authority dates the temple’s founding to 1883, during Chao Inthawichayanon’s reign, with Lady Bua Lai and Tai Yai people involved."
+      ],
+      "features": [
+        "The Tourism Authority of Thailand links the temple with the Tai Yai (Shan) community and describes a school and a museum within the compound."
+      ],
+      "experience": [
+        "The Tourism Authority of Thailand links the temple with the Tai Yai (Shan) community and describes a school and a museum within the compound.",
+        "Ask the temple whether the museum and particular buildings are accessible before planning an interior visit."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "The Tourism Authority of Thailand links the temple with the Tai Yai (Shan) community and describes a school and a museum within the compound.",
+        "Ask the temple whether the museum and particular buildings are accessible before planning an interior visit."
+      ],
+      "photo": [
+        "Observe the temple buildings from permitted grounds and avoid interrupting worship or classes."
+      ],
+      "visit": [
+        "Ask the temple whether the museum and particular buildings are accessible before planning an interior visit."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "What community is associated with Wat Pa Pao?",
+          "a": "The Thai tourism authority describes it as a temple associated with Chiang Mai’s Tai Yai community."
+        },
+        {
+          "q": "Is the museum always open?",
+          "a": "The tourism authority mentions a museum in the compound, but current access should be confirmed with the temple."
+        },
+        {
+          "q": "Where is it relative to the monument?",
+          "a": "It is on Manee Nopparat Road north of the old-city centre, rather than in the monument square."
+        }
+      ]
+    },
+    "zh": {
+      "name": "帕炮寺（Wat Pa Pao）",
+      "tagline": "泰国旅游局介绍了寺院与掸族社群的联系，并提到院内的学校与博物馆。",
+      "description": "位于清迈古城北侧 Manee Nopparat 路的佛寺。",
+      "summary": "位于清迈古城北侧 Manee Nopparat 路的佛寺。",
+      "managementTitle": "关于此地及其管理",
+      "management": "寺院僧团安排宗教活动；学校和博物馆的参观范围请直接向寺方确认。",
+      "history": [
+        "泰国旅游局将寺院创建追溯至 1883 年因他威猜亚暖统治时期，由 Bua Lai 女士与掸族居民参与兴建。"
+      ],
+      "features": [
+        "泰国旅游局介绍了寺院与掸族社群的联系，并提到院内的学校与博物馆。"
+      ],
+      "experience": [
+        "泰国旅游局介绍了寺院与掸族社群的联系，并提到院内的学校与博物馆。",
+        "安排室内参观前，请向寺方确认博物馆和各建筑是否开放。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand。",
+        "泰国旅游局介绍了寺院与掸族社群的联系，并提到院内的学校与博物馆。",
+        "安排室内参观前，请向寺方确认博物馆和各建筑是否开放。"
+      ],
+      "photo": [
+        "在允许区域观察寺院建筑，避免打扰礼佛或上课。"
+      ],
+      "visit": [
+        "安排室内参观前，请向寺方确认博物馆和各建筑是否开放。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "帕炮寺与哪个社群有关？",
+          "a": "泰国旅游局介绍了这座寺院与清迈掸族社群的联系。"
+        },
+        {
+          "q": "院内博物馆一直开放吗？",
+          "a": "旅游局提到院内设有博物馆，但当前能否参观须向寺方确认。"
+        },
+        {
+          "q": "从纪念碑往哪里走？",
+          "a": "寺院在古城中心以北的 Manee Nopparat 路，不在纪念碑广场内。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดป่าเป้า",
+      "tagline": "การท่องเที่ยวแห่งประเทศไทยเชื่อมโยงวัดกับชุมชนไทใหญ่ และกล่าวถึงโรงเรียนกับพิพิธภัณฑ์ในบริเวณวัด",
+      "description": "วัดบนถนนมณีนพรัตน์ทางด้านเหนือของเมืองเก่าเชียงใหม่",
+      "summary": "วัดบนถนนมณีนพรัตน์ทางด้านเหนือของเมืองเก่าเชียงใหม่",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "คณะสงฆ์และผู้ดูแลวัดจัดการศาสนกิจ โปรดสอบถามวัดเรื่องการเข้าโรงเรียนและพิพิธภัณฑ์โดยตรง",
+      "history": [
+        "ททท. ระบุว่าสร้างวัดเมื่อ พ.ศ. 2426 สมัยพระเจ้าอินทวิชยานนท์ โดยเจ้าบัวไหลและชาวไทใหญ่ร่วมสร้าง"
+      ],
+      "features": [
+        "การท่องเที่ยวแห่งประเทศไทยเชื่อมโยงวัดกับชุมชนไทใหญ่ และกล่าวถึงโรงเรียนกับพิพิธภัณฑ์ในบริเวณวัด"
+      ],
+      "experience": [
+        "การท่องเที่ยวแห่งประเทศไทยเชื่อมโยงวัดกับชุมชนไทใหญ่ และกล่าวถึงโรงเรียนกับพิพิธภัณฑ์ในบริเวณวัด",
+        "สอบถามวัดก่อนว่าพิพิธภัณฑ์และอาคารแต่ละหลังเปิดให้เข้าชมหรือไม่"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "การท่องเที่ยวแห่งประเทศไทยเชื่อมโยงวัดกับชุมชนไทใหญ่ และกล่าวถึงโรงเรียนกับพิพิธภัณฑ์ในบริเวณวัด",
+        "สอบถามวัดก่อนว่าพิพิธภัณฑ์และอาคารแต่ละหลังเปิดให้เข้าชมหรือไม่"
+      ],
+      "photo": [
+        "ชมอาคารจากบริเวณที่อนุญาตโดยไม่รบกวนการทำบุญหรือการเรียน"
+      ],
+      "visit": [
+        "สอบถามวัดก่อนว่าพิพิธภัณฑ์และอาคารแต่ละหลังเปิดให้เข้าชมหรือไม่"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป Manee Nopparat Road, Chang Moi, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "วัดป่าเป้าเกี่ยวข้องกับชุมชนใด?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยอธิบายความเชื่อมโยงของวัดกับชุมชนไทใหญ่ในเชียงใหม่"
+        },
+        {
+          "q": "พิพิธภัณฑ์เปิดตลอดหรือไม่?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงพิพิธภัณฑ์ในวัด แต่ควรสอบถามวัดเรื่องการเปิดปัจจุบัน"
+        },
+        {
+          "q": "วัดอยู่ตรงไหนเมื่อเทียบกับอนุสาวรีย์?",
+          "a": "อยู่บนถนนมณีนพรัตน์ทางเหนือของใจกลางเมืองเก่า ไม่ได้อยู่ในลานอนุสาวรีย์"
+        }
+      ]
+    }
+  }
+},
+  "ban-khang-wat": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "บ้านข้างวัด เชียงใหม่",
+  "address": "Suthep, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/ban-khang-wat",
+  "locales": {
+    "en": {
+      "name": "Ban Khang Wat",
+      "tagline": "Thailand’s tourism authority lists this as a local shopping and market destination; its independent shops offer a different stop from the old-city temples.",
+      "description": "A small arts and shopping community in the Suthep area west of Chiang Mai’s old city.",
+      "summary": "A small arts and shopping community in the Suthep area west of Chiang Mai’s old city.",
+      "managementTitle": "About the place and its management",
+      "management": "The community consists of independently operated shops and spaces; verify individual opening and workshop arrangements directly.",
+      "history": [
+        "A 2020 Tourism Authority itinerary already described Ban Khang Wat as an arts complex where local artists present crafts; individual businesses and activities continue to change."
+      ],
+      "features": [
+        "Thailand’s tourism authority lists this as a local shopping and market destination; its independent shops offer a different stop from the old-city temples."
+      ],
+      "experience": [
+        "Thailand’s tourism authority lists this as a local shopping and market destination; its independent shops offer a different stop from the old-city temples.",
+        "Shops and activities can operate on different schedules. Check the venue and individual makers before a planned workshop."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to Suthep, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "Thailand’s tourism authority lists this as a local shopping and market destination; its independent shops offer a different stop from the old-city temples.",
+        "Shops and activities can operate on different schedules. Check the venue and individual makers before a planned workshop."
+      ],
+      "photo": [
+        "Ask individual makers before photographing products, workspaces or people."
+      ],
+      "visit": [
+        "Shops and activities can operate on different schedules. Check the venue and individual makers before a planned workshop."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to Suthep, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "Is Ban Khang Wat itself Wat Umong?",
+          "a": "No. It is a separate shopping and arts community in the same western area; Wat Umong is an active temple."
+        },
+        {
+          "q": "Can I attend a workshop without booking?",
+          "a": "Individual makers set their own activities and booking rules; contact the relevant shop first."
+        },
+        {
+          "q": "Is it in the old-city walking loop?",
+          "a": "It is in Suthep west of the old city; allow extra travel time or use local transport."
+        }
+      ]
+    },
+    "zh": {
+      "name": "班康瓦手作村（Ban Khang Wat）",
+      "tagline": "泰国旅游局将这里列为本地购物与市集地点；独立店铺与古城寺院提供不同的游览体验。",
+      "description": "清迈古城以西 Suthep 地区的小型艺术和商店社区。",
+      "summary": "清迈古城以西 Suthep 地区的小型艺术和商店社区。",
+      "managementTitle": "关于此地及其管理",
+      "management": "社区由分别经营的商店和空间组成；开放及工作坊预约安排请直接向各店确认。",
+      "history": [
+        "泰国旅游局 2020 年的行程已将班康瓦介绍为本地艺术家展示手工艺的艺术社区；店铺及活动会随时间变化。"
+      ],
+      "features": [
+        "泰国旅游局将这里列为本地购物与市集地点；独立店铺与古城寺院提供不同的游览体验。"
+      ],
+      "experience": [
+        "泰国旅游局将这里列为本地购物与市集地点；独立店铺与古城寺院提供不同的游览体验。",
+        "各店和活动时间可能不同，计划参加工作坊前请分别向场地及手作者确认。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 Suthep, Mueang Chiang Mai, Chiang Mai, Thailand。",
+        "泰国旅游局将这里列为本地购物与市集地点；独立店铺与古城寺院提供不同的游览体验。",
+        "各店和活动时间可能不同，计划参加工作坊前请分别向场地及手作者确认。"
+      ],
+      "photo": [
+        "拍摄作品、工作空间或人物前，请询问店主。"
+      ],
+      "visit": [
+        "各店和活动时间可能不同，计划参加工作坊前请分别向场地及手作者确认。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 Suthep, Mueang Chiang Mai, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "班康瓦就是乌蒙寺吗？",
+          "a": "不是。班康瓦是艺术商店社区，乌蒙寺是西部同一区域的另一座活跃寺院。"
+        },
+        {
+          "q": "不预约就能参加工作坊吗？",
+          "a": "各手作者自行安排活动和预约，请先联系感兴趣的店铺。"
+        },
+        {
+          "q": "它在古城步行环线上吗？",
+          "a": "它位于古城以西的 Suthep，应额外预留交通时间或使用当地交通。"
+        }
+      ]
+    },
+    "th": {
+      "name": "บ้านข้างวัด",
+      "tagline": "การท่องเที่ยวแห่งประเทศไทยจัดให้เป็นแหล่งชอปปิงและตลาดท้องถิ่น ร้านอิสระให้ประสบการณ์ต่างจากการชมวัดในเมืองเก่า",
+      "description": "ชุมชนร้านค้าและงานศิลปะขนาดย่อมในย่านสุเทพทางตะวันตกของเมืองเก่าเชียงใหม่",
+      "summary": "ชุมชนร้านค้าและงานศิลปะขนาดย่อมในย่านสุเทพทางตะวันตกของเมืองเก่าเชียงใหม่",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "ชุมชนประกอบด้วยร้านและพื้นที่ที่ดำเนินการแยกกัน ควรตรวจสอบเวลาและการจองกับแต่ละร้าน",
+      "history": [
+        "แผนเที่ยวของ ททท. ปี 2563 กล่าวถึงบ้านข้างวัดว่าเป็นพื้นที่ศิลปะที่ศิลปินท้องถิ่นนำเสนองานคราฟต์ ร้านและกิจกรรมแต่ละแห่งเปลี่ยนแปลงได้"
+      ],
+      "features": [
+        "การท่องเที่ยวแห่งประเทศไทยจัดให้เป็นแหล่งชอปปิงและตลาดท้องถิ่น ร้านอิสระให้ประสบการณ์ต่างจากการชมวัดในเมืองเก่า"
+      ],
+      "experience": [
+        "การท่องเที่ยวแห่งประเทศไทยจัดให้เป็นแหล่งชอปปิงและตลาดท้องถิ่น ร้านอิสระให้ประสบการณ์ต่างจากการชมวัดในเมืองเก่า",
+        "แต่ละร้านและกิจกรรมอาจเปิดต่างกัน ควรตรวจสอบสถานที่และผู้จัดก่อนวางแผนเวิร์กช็อป"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป Suthep, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "การท่องเที่ยวแห่งประเทศไทยจัดให้เป็นแหล่งชอปปิงและตลาดท้องถิ่น ร้านอิสระให้ประสบการณ์ต่างจากการชมวัดในเมืองเก่า",
+        "แต่ละร้านและกิจกรรมอาจเปิดต่างกัน ควรตรวจสอบสถานที่และผู้จัดก่อนวางแผนเวิร์กช็อป"
+      ],
+      "photo": [
+        "สอบถามเจ้าของร้านก่อนถ่ายสินค้า พื้นที่ทำงาน หรือบุคคล"
+      ],
+      "visit": [
+        "แต่ละร้านและกิจกรรมอาจเปิดต่างกัน ควรตรวจสอบสถานที่และผู้จัดก่อนวางแผนเวิร์กช็อป"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป Suthep, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "บ้านข้างวัดคือวัดอุโมงค์หรือไม่?",
+          "a": "ไม่ บ้านข้างวัดเป็นชุมชนร้านค้าและศิลปะ ส่วนวัดอุโมงค์เป็นศาสนสถานอีกแห่งในย่านตะวันตก"
+        },
+        {
+          "q": "เข้าร่วมเวิร์กช็อปโดยไม่จองได้หรือไม่?",
+          "a": "ผู้จัดแต่ละร้านกำหนดกิจกรรมและการจองเอง ควรติดต่อร้านที่สนใจก่อน"
+        },
+        {
+          "q": "อยู่ในเส้นทางเดินรอบเมืองเก่าหรือไม่?",
+          "a": "สถานที่อยู่ย่านสุเทพทางตะวันตกนอกเมืองเก่า ควรเผื่อเวลาเดินทางหรือใช้รถท้องถิ่น"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://www.tourismthailand.org/Articles/budget-chiang-mai-trip"
+  ]
+},
+  "royal-park-rajapruek": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "อุทยานหลวงราชพฤกษ์ เชียงใหม่",
+  "address": "334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://rprp2025.royalparkrajapruek.org/en/WhatWeDo/TheRoyalParkRajapruek",
+  "locales": {
+    "en": {
+      "name": "Royal Park Rajapruek",
+      "tagline": "Explore themed gardens and the Lanna-style Ho Kham Luang pavilion, linking horticulture with northern Thai architecture.",
+      "description": "A horticultural park in Mae Hia southwest of central Chiang Mai, developed from the 2006 Royal Flora exposition site.",
+      "summary": "A horticultural park in Mae Hia southwest of central Chiang Mai, developed from the 2006 Royal Flora exposition site.",
+      "managementTitle": "About the place and its management",
+      "management": "The Highland Research and Development Institute (Public Organization) operates Royal Park Rajapruek.",
+      "history": [
+        "The park developed after the 2006 Royal Flora Ratchaphruek exposition and was further developed through the 2011 exposition, according to its operator HRDI."
+      ],
+      "features": [
+        "Explore themed gardens and the Lanna-style Ho Kham Luang pavilion, linking horticulture with northern Thai architecture."
+      ],
+      "experience": [
+        "Explore themed gardens and the Lanna-style Ho Kham Luang pavilion, linking horticulture with northern Thai architecture.",
+        "Allow transport time from the old city and check the park’s current visitor information before travel."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to 334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "Explore themed gardens and the Lanna-style Ho Kham Luang pavilion, linking horticulture with northern Thai architecture.",
+        "Allow transport time from the old city and check the park’s current visitor information before travel."
+      ],
+      "photo": [
+        "From an open path, frame the Ho Kham Luang pavilion with its surrounding gardens."
+      ],
+      "visit": [
+        "Allow transport time from the old city and check the park’s current visitor information before travel."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to 334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "What is the connection to the 2006 exposition?",
+          "a": "The park developed from the site of Royal Flora Ratchaphruek 2006 and continued as a horticultural learning destination."
+        },
+        {
+          "q": "What building should I look for?",
+          "a": "Ho Kham Luang is a Lanna-style pavilion in the park; see the park map for its location and current access."
+        },
+        {
+          "q": "Is this a short walk from Three Kings Monument?",
+          "a": "No. The park is in Mae Hia southwest of the old city, so allow transport time."
+        }
+      ]
+    },
+    "zh": {
+      "name": "皇家拉查帕克公园",
+      "tagline": "游览主题花园及兰纳风格的 Ho Kham Luang 展馆，观察园艺与泰北建筑如何结合。",
+      "description": "位于清迈市中心西南侧 Mae Hia 的园艺公园，由 2006 年皇家园艺博览会场地发展而来。",
+      "summary": "位于清迈市中心西南侧 Mae Hia 的园艺公园，由 2006 年皇家园艺博览会场地发展而来。",
+      "managementTitle": "关于此地及其管理",
+      "management": "泰国高地研究与发展机构（公共组织）运营皇家拉查帕克公园。",
+      "history": [
+        "运营机构高地研究与发展研究所介绍，公园在 2006 年皇家花卉博览会后形成，并借 2011 年博览会进一步发展。"
+      ],
+      "features": [
+        "游览主题花园及兰纳风格的 Ho Kham Luang 展馆，观察园艺与泰北建筑如何结合。"
+      ],
+      "experience": [
+        "游览主题花园及兰纳风格的 Ho Kham Luang 展馆，观察园艺与泰北建筑如何结合。",
+        "从古城出发须预留交通时间，出行前核对公园最新访客信息。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand。",
+        "游览主题花园及兰纳风格的 Ho Kham Luang 展馆，观察园艺与泰北建筑如何结合。",
+        "从古城出发须预留交通时间，出行前核对公园最新访客信息。"
+      ],
+      "photo": [
+        "从开放步道将 Ho Kham Luang 展馆与周围花园一同纳入画面。"
+      ],
+      "visit": [
+        "从古城出发须预留交通时间，出行前核对公园最新访客信息。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "公园与 2006 年博览会有什么关系？",
+          "a": "公园由 2006 年皇家园艺博览会场地发展而来，延续为园艺学习场所。"
+        },
+        {
+          "q": "园内有什么值得观察的建筑？",
+          "a": "Ho Kham Luang 是兰纳风格展馆，具体位置和当前开放情况请看园区地图。"
+        },
+        {
+          "q": "从三王纪念碑步行很近吗？",
+          "a": "不近。公园位于古城西南侧 Mae Hia，需预留交通时间。"
+        }
+      ]
+    },
+    "th": {
+      "name": "อุทยานหลวงราชพฤกษ์",
+      "tagline": "ชมสวนจัดแสดงและหอคำหลวงซึ่งใช้สถาปัตยกรรมล้านนา เชื่อมโยงความรู้พืชสวนกับศิลปะภาคเหนือ",
+      "description": "อุทยานพืชสวนในตำบลแม่เหียะทางตะวันตกเฉียงใต้ของเชียงใหม่ พัฒนาจากพื้นที่มหกรรมพืชสวนโลกปี 2549",
+      "summary": "อุทยานพืชสวนในตำบลแม่เหียะทางตะวันตกเฉียงใต้ของเชียงใหม่ พัฒนาจากพื้นที่มหกรรมพืชสวนโลกปี 2549",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "สถาบันวิจัยและพัฒนาพื้นที่สูง (องค์การมหาชน) บริหารอุทยานหลวงราชพฤกษ์",
+      "history": [
+        "สถาบันวิจัยและพัฒนาพื้นที่สูงผู้ดูแลระบุว่าอุทยานพัฒนาต่อจากงานราชพฤกษ์ พ.ศ. 2549 และพัฒนาเพิ่มเติมผ่านงานปี 2554"
+      ],
+      "features": [
+        "ชมสวนจัดแสดงและหอคำหลวงซึ่งใช้สถาปัตยกรรมล้านนา เชื่อมโยงความรู้พืชสวนกับศิลปะภาคเหนือ"
+      ],
+      "experience": [
+        "ชมสวนจัดแสดงและหอคำหลวงซึ่งใช้สถาปัตยกรรมล้านนา เชื่อมโยงความรู้พืชสวนกับศิลปะภาคเหนือ",
+        "เผื่อเวลาเดินทางจากเมืองเก่าและตรวจสอบข้อมูลผู้เข้าชมล่าสุดก่อนออกเดินทาง"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป 334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "ชมสวนจัดแสดงและหอคำหลวงซึ่งใช้สถาปัตยกรรมล้านนา เชื่อมโยงความรู้พืชสวนกับศิลปะภาคเหนือ",
+        "เผื่อเวลาเดินทางจากเมืองเก่าและตรวจสอบข้อมูลผู้เข้าชมล่าสุดก่อนออกเดินทาง"
+      ],
+      "photo": [
+        "จากทางเดินที่เปิดให้เข้าชม ถ่ายหอคำหลวงพร้อมสวนโดยรอบ"
+      ],
+      "visit": [
+        "เผื่อเวลาเดินทางจากเมืองเก่าและตรวจสอบข้อมูลผู้เข้าชมล่าสุดก่อนออกเดินทาง"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป 334 Moo 3, Mae Hia, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "อุทยานเกี่ยวข้องกับงานปี 2549 อย่างไร?",
+          "a": "พื้นที่พัฒนาต่อจากมหกรรมพืชสวนโลกเฉลิมพระเกียรติฯ ราชพฤกษ์ 2549 เป็นแหล่งเรียนรู้ด้านพืชสวน"
+        },
+        {
+          "q": "มีอาคารใดน่าสังเกต?",
+          "a": "หอคำหลวงเป็นอาคารสถาปัตยกรรมล้านนาในอุทยาน ตรวจสอบตำแหน่งและการเข้าชมจากแผนที่อุทยาน"
+        },
+        {
+          "q": "เดินจากอนุสาวรีย์สามกษัตริย์ใกล้หรือไม่?",
+          "a": "ไม่ อุทยานอยู่แม่เหียะทางตะวันตกเฉียงใต้ของเมืองเก่า ควรเผื่อเวลาเดินทาง"
+        }
+      ]
+    }
+  }
+},
+  "wat-inthrawat-ton-kwen": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "วัดต้นเกว๋น วัดอินทราวาส เชียงใหม่",
+  "address": "Nong Khwai, Hang Dong, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "45–60 minutes",
+    "zh": "45–60 分钟",
+    "th": "45–60 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/wat-inthrawat-wat-tonkwen",
+  "locales": {
+    "en": {
+      "name": "Wat Inthrawat (Wat Ton Kwen)",
+      "tagline": "The tourism authority highlights its old worship hall and carefully carved wooden architectural details.",
+      "description": "A temple in Nong Khwai, Hang Dong, southwest of Chiang Mai.",
+      "summary": "A temple in Nong Khwai, Hang Dong, southwest of Chiang Mai.",
+      "managementTitle": "About the place and its management",
+      "management": "The temple community oversees religious use; confirm visitor access with the temple.",
+      "history": [
+        "Thailand’s cultural-environment office dates the temple approximately to 1856–1869, during Chao Kawilorot Suriyawong’s rule; its original name Ton Kwen came from a local tree."
+      ],
+      "features": [
+        "The tourism authority highlights its old worship hall and carefully carved wooden architectural details."
+      ],
+      "experience": [
+        "The tourism authority highlights its old worship hall and carefully carved wooden architectural details.",
+        "The temple is an active religious place. Confirm access to individual buildings and follow local instructions."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to Nong Khwai, Hang Dong, Chiang Mai, Thailand.",
+        "The tourism authority highlights its old worship hall and carefully carved wooden architectural details.",
+        "The temple is an active religious place. Confirm access to individual buildings and follow local instructions."
+      ],
+      "photo": [
+        "Observe the wooden hall from permitted grounds without interrupting worship."
+      ],
+      "visit": [
+        "The temple is an active religious place. Confirm access to individual buildings and follow local instructions."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to Nong Khwai, Hang Dong, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "Are Wat Inthrawat and Wat Ton Kwen different temples?",
+          "a": "No. The tourism authority uses Wat Ton Kwen as an alternative name for Wat Inthrawat."
+        },
+        {
+          "q": "What is distinctive about the hall?",
+          "a": "The tourism authority notes its older worship hall and carved wooden details."
+        },
+        {
+          "q": "Is it within the old city walls?",
+          "a": "No. It is in Nong Khwai, Hang Dong, southwest of the city; plan transport."
+        }
+      ]
+    },
+    "zh": {
+      "name": "因他拉瓦寺（ต้นเกว๋น寺）",
+      "tagline": "泰国旅游局特别介绍了寺院的古老佛殿及精细木雕建筑细节。",
+      "description": "位于清迈西南侧 Hang Dong 县 Nong Khwai 的佛寺。",
+      "summary": "位于清迈西南侧 Hang Dong 县 Nong Khwai 的佛寺。",
+      "managementTitle": "关于此地及其管理",
+      "management": "寺院僧团及工作人员安排宗教使用；访客进入情况请向寺方确认。",
+      "history": [
+        "泰国自然资源与环境政策规划办公室将建寺年代约定为 1856–1869 年，即 Kawilorot Suriyawong 统治时期；原名 Ton Kwen 来自当地树木。"
+      ],
+      "features": [
+        "泰国旅游局特别介绍了寺院的古老佛殿及精细木雕建筑细节。"
+      ],
+      "experience": [
+        "泰国旅游局特别介绍了寺院的古老佛殿及精细木雕建筑细节。",
+        "这里仍用于宗教活动，请确认各建筑是否可进入并遵守寺方指引。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 Nong Khwai, Hang Dong, Chiang Mai, Thailand。",
+        "泰国旅游局特别介绍了寺院的古老佛殿及精细木雕建筑细节。",
+        "这里仍用于宗教活动，请确认各建筑是否可进入并遵守寺方指引。"
+      ],
+      "photo": [
+        "从获准进入的区域观察木殿，不要打扰礼佛。"
+      ],
+      "visit": [
+        "这里仍用于宗教活动，请确认各建筑是否可进入并遵守寺方指引。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 Nong Khwai, Hang Dong, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "Wat Inthrawat 和 Wat Ton Kwen 是两座寺院吗？",
+          "a": "不是。泰国旅游局将 Wat Ton Kwen 列为 Wat Inthrawat 的别称。"
+        },
+        {
+          "q": "佛殿有什么特色？",
+          "a": "旅游局介绍了古老的佛殿及精细木雕细节。"
+        },
+        {
+          "q": "寺院位于古城墙内吗？",
+          "a": "不在。它位于清迈西南侧 Hang Dong 县 Nong Khwai，需要安排交通。"
+        }
+      ]
+    },
+    "th": {
+      "name": "วัดอินทราวาส (วัดต้นเกว๋น)",
+      "tagline": "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงวิหารเก่าและรายละเอียดไม้แกะสลักของวัด",
+      "description": "วัดในตำบลหนองควาย อำเภอหางดง ทางตะวันตกเฉียงใต้ของเชียงใหม่",
+      "summary": "วัดในตำบลหนองควาย อำเภอหางดง ทางตะวันตกเฉียงใต้ของเชียงใหม่",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "คณะสงฆ์และผู้ดูแลวัดจัดการศาสนกิจ โปรดสอบถามการเข้าชมกับวัด",
+      "history": [
+        "สำนักงานนโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อมระบุว่าวัดสร้างราว พ.ศ. 2399–2412 สมัยเจ้ากาวิโลรสสุริยวงศ์ ชื่อเดิมต้นเกว๋นมาจากต้นไม้ท้องถิ่น"
+      ],
+      "features": [
+        "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงวิหารเก่าและรายละเอียดไม้แกะสลักของวัด"
+      ],
+      "experience": [
+        "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงวิหารเก่าและรายละเอียดไม้แกะสลักของวัด",
+        "เป็นศาสนสถานที่ยังใช้งาน ควรสอบถามการเข้าอาคารและปฏิบัติตามคำแนะนำของวัด"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป Nong Khwai, Hang Dong, Chiang Mai, Thailand",
+        "การท่องเที่ยวแห่งประเทศไทยกล่าวถึงวิหารเก่าและรายละเอียดไม้แกะสลักของวัด",
+        "เป็นศาสนสถานที่ยังใช้งาน ควรสอบถามการเข้าอาคารและปฏิบัติตามคำแนะนำของวัด"
+      ],
+      "photo": [
+        "ชมและถ่ายวิหารไม้จากบริเวณที่อนุญาตโดยไม่รบกวนการทำบุญ"
+      ],
+      "visit": [
+        "เป็นศาสนสถานที่ยังใช้งาน ควรสอบถามการเข้าอาคารและปฏิบัติตามคำแนะนำของวัด"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป Nong Khwai, Hang Dong, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "วัดอินทราวาสกับวัดต้นเกว๋นเป็นคนละวัดหรือไม่?",
+          "a": "ไม่ การท่องเที่ยวแห่งประเทศไทยใช้ชื่อวัดต้นเกว๋นเป็นชื่อเรียกอีกชื่อของวัดอินทราวาส"
+        },
+        {
+          "q": "วิหารมีจุดเด่นอะไร?",
+          "a": "การท่องเที่ยวแห่งประเทศไทยระบุถึงวิหารเก่าและรายละเอียดไม้แกะสลัก"
+        },
+        {
+          "q": "วัดอยู่ในกำแพงเมืองเก่าหรือไม่?",
+          "a": "ไม่ วัดอยู่ตำบลหนองควาย อำเภอหางดง ทางตะวันตกเฉียงใต้ ควรจัดรถเดินทาง"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://culturalenvi.onep.go.th/site/detail/4873"
+  ]
+},
+  "chiang-mai-zoo": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "สวนสัตว์เชียงใหม่ ถนนห้วยแก้ว",
+  "address": "100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://www.chiangmaizoo.com/",
+  "locales": {
+    "en": {
+      "name": "Chiang Mai Zoo",
+      "tagline": "The zoo’s own visitor information distinguishes general zoo admission from separately ticketed attractions such as the aquarium.",
+      "description": "A zoo on Huay Kaew Road west of central Chiang Mai, on the approach towards Doi Suthep.",
+      "summary": "A zoo on Huay Kaew Road west of central Chiang Mai, on the approach towards Doi Suthep.",
+      "managementTitle": "About the place and its management",
+      "management": "The Zoological Park Organization of Thailand manages Chiang Mai Zoo; zoo staff administer visitor facilities and current arrangements.",
+      "history": [
+        "The Chiang Mai City Heritage Centre records a first public opening in 1957; Suthep Municipality says the zoo came under the Zoological Park Organization in 1977."
+      ],
+      "features": [
+        "The zoo’s own visitor information distinguishes general zoo admission from separately ticketed attractions such as the aquarium."
+      ],
+      "experience": [
+        "The zoo’s own visitor information distinguishes general zoo admission from separately ticketed attractions such as the aquarium.",
+        "Check the zoo’s current admission, opening arrangements and any separate attraction tickets before travelling."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to 100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand.",
+        "The zoo’s own visitor information distinguishes general zoo admission from separately ticketed attractions such as the aquarium.",
+        "Check the zoo’s current admission, opening arrangements and any separate attraction tickets before travelling."
+      ],
+      "photo": [
+        "Use public visitor areas and follow animal-enclosure and photography instructions."
+      ],
+      "visit": [
+        "Check the zoo’s current admission, opening arrangements and any separate attraction tickets before travelling."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to 100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "Does zoo admission automatically include the aquarium?",
+          "a": "The zoo lists aquarium admission separately; confirm the current ticket terms before buying."
+        },
+        {
+          "q": "Is the zoo the same destination as Wat Phra That Doi Suthep?",
+          "a": "No. The zoo is on Huay Kaew Road on the approach to the mountain; the temple is farther uphill."
+        },
+        {
+          "q": "Where is the entrance?",
+          "a": "The zoo lists its address as 100 Huay Kaew Road, Suthep, Mueang Chiang Mai."
+        }
+      ]
+    },
+    "zh": {
+      "name": "清迈动物园",
+      "tagline": "园方访客资料将动物园入场与水族馆等独立项目的门票分开列示。",
+      "description": "位于清迈市中心西侧惠考路、前往素贴山方向的动物园。",
+      "summary": "位于清迈市中心西侧惠考路、前往素贴山方向的动物园。",
+      "managementTitle": "关于此地及其管理",
+      "management": "清迈动物园由泰国动物园组织管理；访客设施与当前安排请向园方确认。",
+      "history": [
+        "清迈市城市遗产中心记载动物园于 1957 年首次向公众开放；素贴市政府记载其于 1977 年转归泰国动物园组织。"
+      ],
+      "features": [
+        "园方访客资料将动物园入场与水族馆等独立项目的门票分开列示。"
+      ],
+      "experience": [
+        "园方访客资料将动物园入场与水族馆等独立项目的门票分开列示。",
+        "出发前向动物园核对最新开放安排、入场及各独立项目票务。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand。",
+        "园方访客资料将动物园入场与水族馆等独立项目的门票分开列示。",
+        "出发前向动物园核对最新开放安排、入场及各独立项目票务。"
+      ],
+      "photo": [
+        "使用访客公共区域，遵守动物围栏和摄影标识。"
+      ],
+      "visit": [
+        "出发前向动物园核对最新开放安排、入场及各独立项目票务。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "动物园门票自动包括水族馆吗？",
+          "a": "园方分开列示水族馆门票，购买前请核对当前票务条件。"
+        },
+        {
+          "q": "动物园就是素贴寺吗？",
+          "a": "不是。动物园位于惠考路上山途中，素贴寺则在更高的山上。"
+        },
+        {
+          "q": "入口在哪里？",
+          "a": "园方公布的地址是清迈 Mueang 区 Suthep 惠考路 100 号。"
+        }
+      ]
+    },
+    "th": {
+      "name": "สวนสัตว์เชียงใหม่",
+      "tagline": "ข้อมูลผู้เข้าชมของสวนสัตว์แยกบัตรเข้าสวนสัตว์ออกจากสถานที่บางแห่งที่มีบัตรต่างหาก เช่น อควาเรียม",
+      "description": "สวนสัตว์บนถนนห้วยแก้วทางตะวันตกของตัวเมืองเชียงใหม่ บนเส้นทางไปดอยสุเทพ",
+      "summary": "สวนสัตว์บนถนนห้วยแก้วทางตะวันตกของตัวเมืองเชียงใหม่ บนเส้นทางไปดอยสุเทพ",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "องค์การสวนสัตว์แห่งประเทศไทยดูแลสวนสัตว์เชียงใหม่ เจ้าหน้าที่สวนดูแลสิ่งอำนวยความสะดวกและการเข้าชมปัจจุบัน",
+      "history": [
+        "ศูนย์มรดกเมืองเชียงใหม่บันทึกว่าสวนสัตว์เปิดให้ประชาชนเข้าชมครั้งแรกในปี 2500 และเทศบาลเมืองสุเทพระบุว่าโอนเข้าสังกัดองค์การสวนสัตว์ในปี 2520"
+      ],
+      "features": [
+        "ข้อมูลผู้เข้าชมของสวนสัตว์แยกบัตรเข้าสวนสัตว์ออกจากสถานที่บางแห่งที่มีบัตรต่างหาก เช่น อควาเรียม"
+      ],
+      "experience": [
+        "ข้อมูลผู้เข้าชมของสวนสัตว์แยกบัตรเข้าสวนสัตว์ออกจากสถานที่บางแห่งที่มีบัตรต่างหาก เช่น อควาเรียม",
+        "ตรวจสอบเวลาทำการ ค่าเข้าปัจจุบันและบัตรแยกแต่ละสถานที่กับสวนสัตว์ก่อนเดินทาง"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป 100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand",
+        "ข้อมูลผู้เข้าชมของสวนสัตว์แยกบัตรเข้าสวนสัตว์ออกจากสถานที่บางแห่งที่มีบัตรต่างหาก เช่น อควาเรียม",
+        "ตรวจสอบเวลาทำการ ค่าเข้าปัจจุบันและบัตรแยกแต่ละสถานที่กับสวนสัตว์ก่อนเดินทาง"
+      ],
+      "photo": [
+        "ใช้พื้นที่ผู้เข้าชมและปฏิบัติตามป้ายบริเวณสัตว์และข้อกำหนดการถ่ายภาพ"
+      ],
+      "visit": [
+        "ตรวจสอบเวลาทำการ ค่าเข้าปัจจุบันและบัตรแยกแต่ละสถานที่กับสวนสัตว์ก่อนเดินทาง"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป 100 Huay Kaew Road, Suthep, Mueang Chiang Mai, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "บัตรเข้าสวนสัตว์รวมอควาเรียมหรือไม่?",
+          "a": "สวนสัตว์แสดงบัตรอควาเรียมแยกต่างหาก ควรตรวจสอบเงื่อนไขล่าสุดก่อนซื้อ"
+        },
+        {
+          "q": "สวนสัตว์เป็นแห่งเดียวกับวัดพระธาตุดอยสุเทพหรือไม่?",
+          "a": "ไม่ สวนสัตว์อยู่ถนนห้วยแก้วระหว่างทางขึ้นดอย ส่วนวัดอยู่สูงขึ้นไป"
+        },
+        {
+          "q": "ทางเข้าอยู่ที่ใด?",
+          "a": "สวนสัตว์ระบุที่อยู่เลขที่ 100 ถนนห้วยแก้ว ตำบลสุเทพ อำเภอเมืองเชียงใหม่"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://cmocity.com/th/100-%E0%B8%9B%E0%B8%B5/",
+    "https://www.suthep.go.th/travel_view.php?cateid=0&id=41&p=1"
+  ]
+},
+  "huay-tung-tao-reservoir": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "อ่างเก็บน้ำห้วยตึงเฒ่า เชียงใหม่",
+  "address": "Don Kaeo, Mae Rim, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://www.tourismthailand.org/Attraction/huay-tung-tao-reservoir",
+  "locales": {
+    "en": {
+      "name": "Huay Tung Tao Reservoir",
+      "tagline": "The lakeside setting offers a contrast to the compact civic and temple sites inside the old city.",
+      "description": "A reservoir in Don Kaeo, Mae Rim district, north of central Chiang Mai.",
+      "summary": "A reservoir in Don Kaeo, Mae Rim district, north of central Chiang Mai.",
+      "managementTitle": "About the place and its management",
+      "management": "The reservoir and visitor facilities can have different responsible operators; confirm current access with the site.",
+      "history": [
+        "A Chiang Mai provincial government inventory published in 2015 lists Huay Tung Tao reservoir in Don Kaeo among local royal-initiative projects; consult the site for the precise construction chronology."
+      ],
+      "features": [
+        "The lakeside setting offers a contrast to the compact civic and temple sites inside the old city."
+      ],
+      "experience": [
+        "The lakeside setting offers a contrast to the compact civic and temple sites inside the old city.",
+        "Check current access, water conditions and local safety notices before planning lakeside activities."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to Don Kaeo, Mae Rim, Chiang Mai, Thailand.",
+        "The lakeside setting offers a contrast to the compact civic and temple sites inside the old city.",
+        "Check current access, water conditions and local safety notices before planning lakeside activities."
+      ],
+      "photo": [
+        "Use accessible public viewpoints and stay clear of restricted waterside areas."
+      ],
+      "visit": [
+        "Check current access, water conditions and local safety notices before planning lakeside activities."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to Don Kaeo, Mae Rim, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "Is the reservoir inside the old city?",
+          "a": "No. It is in Don Kaeo, Mae Rim district, north of the city centre and needs a separate journey."
+        },
+        {
+          "q": "Is this a museum or a temple?",
+          "a": "It is a reservoir and lakeside destination, distinct from the old-city heritage sites."
+        },
+        {
+          "q": "Can I assume every waterside activity is available?",
+          "a": "No. Check local access, safety and water-condition notices on the day."
+        }
+      ]
+    },
+    "zh": {
+      "name": "会登套水库",
+      "tagline": "湖畔环境与古城里相对集中的市政广场和寺院构成不同的游览体验。",
+      "description": "位于清迈市中心以北 Mae Rim 县 Don Kaeo 的水库。",
+      "summary": "位于清迈市中心以北 Mae Rim 县 Don Kaeo 的水库。",
+      "managementTitle": "关于此地及其管理",
+      "management": "水库和游客设施可能由不同单位负责；当前进入安排请向现场确认。",
+      "history": [
+        "清迈府政府 2015 年公布的项目清单将 Don Kaeo 的 Huay Tung Tao 水库列入当地皇家倡议项目；确切施工年代请向管理方核实。"
+      ],
+      "features": [
+        "湖畔环境与古城里相对集中的市政广场和寺院构成不同的游览体验。"
+      ],
+      "experience": [
+        "湖畔环境与古城里相对集中的市政广场和寺院构成不同的游览体验。",
+        "计划湖畔活动前，请核对当前入内安排、水况和现场安全公告。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 Don Kaeo, Mae Rim, Chiang Mai, Thailand。",
+        "湖畔环境与古城里相对集中的市政广场和寺院构成不同的游览体验。",
+        "计划湖畔活动前，请核对当前入内安排、水况和现场安全公告。"
+      ],
+      "photo": [
+        "在可进入的公共观景点拍摄，避开限制进入的水边区域。"
+      ],
+      "visit": [
+        "计划湖畔活动前，请核对当前入内安排、水况和现场安全公告。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 Don Kaeo, Mae Rim, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "水库位于古城内吗？",
+          "a": "不在。它位于市中心以北的 Mae Rim 县 Don Kaeo，需另行安排交通。"
+        },
+        {
+          "q": "这里是寺院或博物馆吗？",
+          "a": "不是。这里是水库与湖畔地点，与古城的历史景点不同。"
+        },
+        {
+          "q": "所有水边活动都一定开放吗？",
+          "a": "不能假定；请在当天检查入内、安全和水况公告。"
+        }
+      ]
+    },
+    "th": {
+      "name": "อ่างเก็บน้ำห้วยตึงเฒ่า",
+      "tagline": "บรรยากาศริมอ่างแตกต่างจากวัดและลานประวัติศาสตร์ในเมืองเก่าที่มีพื้นที่ค่อนข้างกระชับ",
+      "description": "อ่างเก็บน้ำในตำบลดอนแก้ว อำเภอแม่ริม ทางเหนือของตัวเมืองเชียงใหม่",
+      "summary": "อ่างเก็บน้ำในตำบลดอนแก้ว อำเภอแม่ริม ทางเหนือของตัวเมืองเชียงใหม่",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "ตัวอ่างและสิ่งอำนวยความสะดวกผู้มาเที่ยวอาจมีผู้รับผิดชอบต่างกัน โปรดสอบถามการเข้าชมกับสถานที่",
+      "history": [
+        "บัญชีโครงการของจังหวัดเชียงใหม่ที่เผยแพร่ในปี 2558 ระบุอ่างห้วยตึงเฒ่าในตำบลดอนแก้วเป็นโครงการอันเนื่องมาจากพระราชดำริ โปรดสอบถามสถานที่เรื่องลำดับปีการก่อสร้างที่แน่ชัด"
+      ],
+      "features": [
+        "บรรยากาศริมอ่างแตกต่างจากวัดและลานประวัติศาสตร์ในเมืองเก่าที่มีพื้นที่ค่อนข้างกระชับ"
+      ],
+      "experience": [
+        "บรรยากาศริมอ่างแตกต่างจากวัดและลานประวัติศาสตร์ในเมืองเก่าที่มีพื้นที่ค่อนข้างกระชับ",
+        "ตรวจสอบการเข้าถึง สภาพน้ำและประกาศความปลอดภัยก่อนวางแผนกิจกรรมริมน้ำ"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป Don Kaeo, Mae Rim, Chiang Mai, Thailand",
+        "บรรยากาศริมอ่างแตกต่างจากวัดและลานประวัติศาสตร์ในเมืองเก่าที่มีพื้นที่ค่อนข้างกระชับ",
+        "ตรวจสอบการเข้าถึง สภาพน้ำและประกาศความปลอดภัยก่อนวางแผนกิจกรรมริมน้ำ"
+      ],
+      "photo": [
+        "ถ่ายจากจุดสาธารณะที่เข้าถึงได้และหลีกเลี่ยงพื้นที่ริมน้ำที่ห้ามเข้า"
+      ],
+      "visit": [
+        "ตรวจสอบการเข้าถึง สภาพน้ำและประกาศความปลอดภัยก่อนวางแผนกิจกรรมริมน้ำ"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป Don Kaeo, Mae Rim, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "อ่างเก็บน้ำอยู่ในเมืองเก่าหรือไม่?",
+          "a": "ไม่ อยู่ตำบลดอนแก้ว อำเภอแม่ริม ทางเหนือของตัวเมือง ต้องวางแผนเดินทางแยก"
+        },
+        {
+          "q": "ที่นี่เป็นวัดหรือพิพิธภัณฑ์หรือไม่?",
+          "a": "ไม่ เป็นอ่างเก็บน้ำและพื้นที่ริมอ่าง ต่างจากแหล่งประวัติศาสตร์ในเมืองเก่า"
+        },
+        {
+          "q": "กิจกรรมริมน้ำเปิดทุกอย่างเสมอหรือไม่?",
+          "a": "ไม่ควรสมมติ ควรตรวจสอบการเข้าถึง ความปลอดภัยและสภาพน้ำในวันเดินทาง"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://www.chiangmai.go.th/managing/public/D2/2D29Dec2015095918.pdf"
+  ]
+},
+  "maiiam-contemporary-art-museum": {
+  "image": "",
+  "imageSource": "",
+  "mapQuery": "MAIIAM Contemporary Art Museum San Kamphaeng Chiang Mai",
+  "address": "122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand",
+  "fee": {
+    "en": "Confirm current admission and any separate charges",
+    "zh": "请确认当前门票及单独收费项目",
+    "th": "ตรวจสอบค่าเข้าชมและค่าบริการแยกปัจจุบัน"
+  },
+  "hours": {
+    "en": "Confirm current opening times with the site",
+    "zh": "请向场地确认当前开放时间",
+    "th": "โปรดตรวจสอบเวลาเปิดปัจจุบันกับสถานที่"
+  },
+  "duration": {
+    "en": "60–90 minutes",
+    "zh": "60–90 分钟",
+    "th": "60–90 นาที"
+  },
+  "source": "https://maiiam.com/en/visit",
+  "locales": {
+    "en": {
+      "name": "MAIIAM Contemporary Art Museum",
+      "tagline": "The museum presents Thai and regional contemporary art in a converted industrial building; its mirrored exterior is a landmark on the San Kamphaeng road.",
+      "description": "A private contemporary-art museum in Ton Pao, San Kamphaeng, east of Chiang Mai.",
+      "summary": "A private contemporary-art museum in Ton Pao, San Kamphaeng, east of Chiang Mai.",
+      "managementTitle": "About the place and its management",
+      "management": "MAIIAM is a private museum founded by the Bunnag Booth family; its team manages exhibitions and visitor access.",
+      "history": [
+        "The museum says Jean Michel Beurdeley, Patsri Bunnag and their son Eric Bunnag Booth established it to share their family collection; an industrial site was converted into the museum.",
+        "The museum identifies The Serenity of Madness, held from July to September 2016, as its inaugural exhibition."
+      ],
+      "features": [
+        "The museum presents Thai and regional contemporary art in a converted industrial building; its mirrored exterior is a landmark on the San Kamphaeng road."
+      ],
+      "experience": [
+        "The museum presents Thai and regional contemporary art in a converted industrial building; its mirrored exterior is a landmark on the San Kamphaeng road.",
+        "The museum’s own pages give different opening days. Confirm its latest schedule and exhibition access before travelling."
+      ],
+      "route": [
+        "From Mae Kha Canal, arrange transport to 122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand.",
+        "The museum presents Thai and regional contemporary art in a converted industrial building; its mirrored exterior is a landmark on the San Kamphaeng road.",
+        "The museum’s own pages give different opening days. Confirm its latest schedule and exhibition access before travelling."
+      ],
+      "photo": [
+        "Photograph the mirrored facade from a safe position and check gallery photography rules inside."
+      ],
+      "visit": [
+        "The museum’s own pages give different opening days. Confirm its latest schedule and exhibition access before travelling."
+      ],
+      "transport": [
+        "From Mae Kha Canal, arrange transport to 122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand."
+      ],
+      "faqs": [
+        {
+          "q": "What kind of art does MAIIAM present?",
+          "a": "The museum presents Thai and regional contemporary art, with changing exhibitions and programmes."
+        },
+        {
+          "q": "Is the building purpose-built as an ancient palace?",
+          "a": "No. The museum describes its building as a transformed former industrial site with a mirrored exterior."
+        },
+        {
+          "q": "Which days is it open?",
+          "a": "Its own pages currently differ on opening days; contact the museum for the latest schedule before setting out."
+        }
+      ]
+    },
+    "zh": {
+      "name": "MAIIAM 当代艺术博物馆",
+      "tagline": "博物馆在改造后的工业建筑中展示泰国及区域当代艺术，镜面外墙是讪甘烹路上的辨识标志。",
+      "description": "位于清迈以东 San Kamphaeng 县 Ton Pao 的私人当代艺术博物馆。",
+      "summary": "位于清迈以东 San Kamphaeng 县 Ton Pao 的私人当代艺术博物馆。",
+      "managementTitle": "关于此地及其管理",
+      "management": "MAIIAM 是由 Bunnag Booth 家族创办的私人博物馆，馆方团队管理展览及入场。",
+      "history": [
+        "馆方介绍 Jean Michel Beurdeley、Patsri Bunnag 与儿子 Eric Bunnag Booth 创立美术馆，分享家族藏品，并将旧工业建筑改作展馆。",
+        "馆方将 2016 年 7 月至 9 月举办的《The Serenity of Madness》列为开馆首展。"
+      ],
+      "features": [
+        "博物馆在改造后的工业建筑中展示泰国及区域当代艺术，镜面外墙是讪甘烹路上的辨识标志。"
+      ],
+      "experience": [
+        "博物馆在改造后的工业建筑中展示泰国及区域当代艺术，镜面外墙是讪甘烹路上的辨识标志。",
+        "博物馆自己的网站页面对开放日的说明不一致，出发前请向馆方确认最新时间及展览。"
+      ],
+      "route": [
+        "从湄卡运河安排交通前往 122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand。",
+        "博物馆在改造后的工业建筑中展示泰国及区域当代艺术，镜面外墙是讪甘烹路上的辨识标志。",
+        "博物馆自己的网站页面对开放日的说明不一致，出发前请向馆方确认最新时间及展览。"
+      ],
+      "photo": [
+        "从安全位置拍摄镜面外墙，在展厅内先核对摄影规定。"
+      ],
+      "visit": [
+        "博物馆自己的网站页面对开放日的说明不一致，出发前请向馆方确认最新时间及展览。"
+      ],
+      "transport": [
+        "从湄卡运河安排交通前往 122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand。"
+      ],
+      "faqs": [
+        {
+          "q": "MAIIAM 展示什么艺术？",
+          "a": "馆方介绍其收藏与展览涵盖泰国和区域当代艺术，并举办更换的展览和活动。"
+        },
+        {
+          "q": "馆舍原来是古代宫殿吗？",
+          "a": "不是。馆方称馆舍由原工业场地改造而成，具有镜面外墙。"
+        },
+        {
+          "q": "博物馆哪几天开放？",
+          "a": "馆方不同页面列出的开放日不一致，出发前请联系博物馆确认最新安排。"
+        }
+      ]
+    },
+    "th": {
+      "name": "พิพิธภัณฑ์ศิลปะร่วมสมัยใหม่เอี่ยม",
+      "tagline": "พิพิธภัณฑ์จัดแสดงศิลปะร่วมสมัยไทยและภูมิภาคในอาคารอุตสาหกรรมที่ปรับใช้ใหม่ มีผิวกระจกเป็นจุดสังเกตบนถนนสันกำแพง",
+      "description": "พิพิธภัณฑ์ศิลปะร่วมสมัยเอกชนในตำบลต้นเปา อำเภอสันกำแพง ทางตะวันออกของเชียงใหม่",
+      "summary": "พิพิธภัณฑ์ศิลปะร่วมสมัยเอกชนในตำบลต้นเปา อำเภอสันกำแพง ทางตะวันออกของเชียงใหม่",
+      "managementTitle": "เกี่ยวกับสถานที่และการดูแล",
+      "management": "ใหม่เอี่ยมเป็นพิพิธภัณฑ์เอกชนที่ก่อตั้งโดยครอบครัวบุนนาคบูธ ทีมพิพิธภัณฑ์ดูแลนิทรรศการและการเข้าชม",
+      "history": [
+        "พิพิธภัณฑ์ระบุว่า Jean Michel Beurdeley, Patsri Bunnag และบุตร Eric Bunnag Booth ร่วมก่อตั้งเพื่อแบ่งปันผลงานสะสมของครอบครัว และปรับพื้นที่อุตสาหกรรมเดิมเป็นพิพิธภัณฑ์",
+        "พิพิธภัณฑ์ระบุว่านิทรรศการเปิดตัว The Serenity of Madness จัดตั้งแต่เดือนกรกฎาคมถึงกันยายน 2559"
+      ],
+      "features": [
+        "พิพิธภัณฑ์จัดแสดงศิลปะร่วมสมัยไทยและภูมิภาคในอาคารอุตสาหกรรมที่ปรับใช้ใหม่ มีผิวกระจกเป็นจุดสังเกตบนถนนสันกำแพง"
+      ],
+      "experience": [
+        "พิพิธภัณฑ์จัดแสดงศิลปะร่วมสมัยไทยและภูมิภาคในอาคารอุตสาหกรรมที่ปรับใช้ใหม่ มีผิวกระจกเป็นจุดสังเกตบนถนนสันกำแพง",
+        "หน้าเว็บไซต์ของพิพิธภัณฑ์ระบุวันเปิดไม่ตรงกัน ควรสอบถามตารางและนิทรรศการล่าสุดก่อนเดินทาง"
+      ],
+      "route": [
+        "จากคลองแม่ข่า จัดรถไป 122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand",
+        "พิพิธภัณฑ์จัดแสดงศิลปะร่วมสมัยไทยและภูมิภาคในอาคารอุตสาหกรรมที่ปรับใช้ใหม่ มีผิวกระจกเป็นจุดสังเกตบนถนนสันกำแพง",
+        "หน้าเว็บไซต์ของพิพิธภัณฑ์ระบุวันเปิดไม่ตรงกัน ควรสอบถามตารางและนิทรรศการล่าสุดก่อนเดินทาง"
+      ],
+      "photo": [
+        "ถ่ายอาคารผิวกระจกจากจุดปลอดภัยและสอบถามกติกาการถ่ายภาพในห้องจัดแสดง"
+      ],
+      "visit": [
+        "หน้าเว็บไซต์ของพิพิธภัณฑ์ระบุวันเปิดไม่ตรงกัน ควรสอบถามตารางและนิทรรศการล่าสุดก่อนเดินทาง"
+      ],
+      "transport": [
+        "จากคลองแม่ข่า จัดรถไป 122 Moo 7, Ton Pao, San Kamphaeng, Chiang Mai, Thailand"
+      ],
+      "faqs": [
+        {
+          "q": "ใหม่เอี่ยมจัดแสดงศิลปะแบบใด?",
+          "a": "พิพิธภัณฑ์นำเสนอศิลปะร่วมสมัยไทยและภูมิภาค พร้อมนิทรรศการและกิจกรรมที่เปลี่ยนแปลง"
+        },
+        {
+          "q": "อาคารเดิมเป็นวังโบราณหรือไม่?",
+          "a": "ไม่ พิพิธภัณฑ์อธิบายว่าเป็นพื้นที่อุตสาหกรรมเดิมที่ปรับใช้ใหม่และมีผิวกระจก"
+        },
+        {
+          "q": "พิพิธภัณฑ์เปิดวันใด?",
+          "a": "หน้าเว็บไซต์ของพิพิธภัณฑ์ระบุวันเปิดต่างกัน โปรดสอบถามตารางล่าสุดก่อนเดินทาง"
+        }
+      ]
+    }
+  },
+  "additionalSources": [
+    "https://maiiam.com/en/exhibition/the-serenity-of-madness"
+  ]
 },
   ...moreNearbyDetails,
 };
